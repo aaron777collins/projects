@@ -5,5 +5,5 @@ This microsite serves as a documentation hub for my projects. It's built using [
 
 ### Links
 - ***Main Site - Personal Portfolio: [www.aaroncollins.info](https://www.aaroncollins.info/).***
-- Github Repos: [github.com/aaron777collins](https://github.com/aaron777collins?tab=repositories)
+- Github Repos (including those that haven't been added here yet): [github.com/aaron777collins](https://github.com/aaron777collins?tab=repositories)
 - Github Projects Microsite: [www.aaroncollins.info/projects/](https://www.aaroncollins.info/projects/).
