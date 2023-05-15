@@ -1,6 +1,8 @@
-site_name: MachineLearningPipelineV4 Docs
+site_name: Projects
 theme:
   name: material
+  # logo: images/logo512.png
+  favicon: images/favicon.ico
   features:
     - content.code.copy
     - content.code.annotate
@@ -10,12 +12,14 @@ theme:
   palette:
     # Palette toggle for light mode
     - scheme: default
+      primary: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: deep purple
       toggle:
         icon: material/brightness-3
         name: Switch to light mode
