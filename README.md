@@ -1,5 +1,6 @@
 # projects
-A microsite showing off my programming projects. Note that this website is part of [www.aaroncollins.info](https://www.aaroncollins.info/)
+A microsite showing off my programming projects. Note that this website is part of [www.aaroncollins.info](https://www.aaroncollins.info/).
+View the website at [www.aaroncollins.info/projects/](https://www.aaroncollins.info/projects/).
 
 ## Setup
 1. Create a virtual environment or activate it if it already exists. On Windows:
