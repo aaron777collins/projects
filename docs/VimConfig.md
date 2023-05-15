@@ -6,4 +6,6 @@ and [Vundle](https://github.com/VundleVim/Vundle.vim).
 You can view the repository at [github.com/aaron777collins/vim-config](https://github.com/aaron777collins/vim-config)
 
 ## Links
-- Repository: [https://github.com/aaron777collins/vim-config](https://github.com/aaron777collins/vim-config)
+- [Repository](https://github.com/aaron777collins/vim-config)
+- [Vim-Plug](https://github.com/junegunn/vim-plug)
+- [Vundle](https://github.com/VundleVim/Vundle.vim)

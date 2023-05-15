@@ -13,3 +13,9 @@ You can visit the documentation at [www.aaroncollins.info/MachineLearningPipelin
 ## Links
 - [MachineLearningPipelineV4 Docs](https://www.aaroncollins.info/MachineLearningPipelineV4/)
 - [Github Repo](https://github.com/aaron777collins/MachineLearningPipelineV4)
+- [Veremi](https://veremi-dataset.github.io/)
+- [Veremi Extension](https://github.com/josephkamel/VeReMi-Dataset)
+- [Wyoming CV Pilot Basic Safety Message One Day Sample](https://www.opendatanetwork.com/dataset/data.transportation.gov/9k4m-a3jc)
+- [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+- [Decision Tree Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
+- [K-Nearest-Neighbours Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
