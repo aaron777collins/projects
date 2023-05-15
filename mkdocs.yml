@@ -2,7 +2,7 @@ site_name: Projects Documentation
 theme:
   name: material
   # logo: images/logo512.png
-  favicon: images/favicon.ico
+  # favicon: images/favicon.ico
   features:
     - content.code.copy
     - content.code.annotate
