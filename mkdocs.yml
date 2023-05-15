@@ -12,14 +12,14 @@ theme:
   palette:
     # Palette toggle for light mode
     - scheme: default
-      primary: deep purple
+      # primary: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
-      primary: deep purple
+      # primary: deep purple
       toggle:
         icon: material/brightness-3
         name: Switch to light mode
