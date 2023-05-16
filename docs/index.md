@@ -3,9 +3,9 @@
 ## Welcome To The Documentation For Aaron Collins' Github Projects
 This microsite serves as a documentation hub for my projects. It was built using [mkdocs](https://www.mkdocs.org/) and the [material theme](https://squidfunk.github.io/mkdocs-material/). The microsite is hosted via [Github Pages](https://pages.github.com/).
 
-**Many projects haven't been documented here yet. Please visit my [Github](https://github.com/aaron777collins?tab=repositories) to see the rest of my projects.**
-
 Feel free to explore this site and learn more about my projects. If you have any questions, feel free to contact me at [aaron777collins@gmail.com](mailto:aaron777collins@gmail.com). You can also learn more about me on my [main site](https://www.aaroncollins.info/). Don't forget to check out the [repository](https://github.com/aaron777collins/projects) for this site. Thanks for visiting!
+
+**Note: Many projects haven't been documented here yet. Please visit my [Github](https://github.com/aaron777collins?tab=repositories) to see the rest of my projects.**
 
 ## Featured Projects
 ### ConnectedDrivingPipelineV4
