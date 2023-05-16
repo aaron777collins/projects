@@ -1,4 +1,4 @@
-# python3-image.vim
+# A Vim Module For Image Viewing - python3-image.vim
 
 ![A Picture Rendered As ASCII](images/image.vim.jpg)
 

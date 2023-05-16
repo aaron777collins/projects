@@ -1,4 +1,4 @@
-# Vim-Config
+# My Vim Configuration - Vim-Config
 ## Summary
 This repository contains my vim configuration files. It's a work in progress because I'm still learning how to use vim. I'm using [Vim-Plug](https://github.com/junegunn/vim-plug)
 and [Vundle](https://github.com/VundleVim/Vundle.vim).
