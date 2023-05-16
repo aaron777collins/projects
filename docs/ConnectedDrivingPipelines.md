@@ -4,7 +4,7 @@
 
 I created a few different connected driving pipelines. Each pipeline has improvements on the previous pipeline. Here are the current pipelines, ordered from latest to oldest:
 
-## ConnectedDrivingPipelineV4 (4th pipeline)
+## ConnectedDrivingPipelineV4 (4th Pipeline)
 
 This is the latest connected driving pipeline. It has new features such as automatic caching, dependency injection, and context/path providers.
 
@@ -20,7 +20,7 @@ This pipeline creates malicious datasets based on customizable attacks and then 
 
 You can visit the documentation at [www.aaroncollins.info/ConnectedDrivingPipelineV4/](https://www.aaroncollins.info/ConnectedDrivingPipelineV4/).
 
-## connecteddrivingresearch (3rd pipeline)
+## Connecteddrivingresearch (3rd Pipeline)
 
 ### Summary
 
