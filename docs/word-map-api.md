@@ -9,7 +9,7 @@ Takes a word array and returns the synonyms/antonyms related to each.
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , 
+- **Languages Used:** Python, Shell, Batchfile
 - **Created:** May 26, 2022
 - **Last Updated:** May 26, 2022
 

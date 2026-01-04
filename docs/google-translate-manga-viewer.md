@@ -9,7 +9,7 @@ Uses google translate to translate the manga to English
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , 
+- **Languages Used:** Python, HTML, Shell
 - **Created:** February 15, 2024
 - **Last Updated:** August 14, 2025
 

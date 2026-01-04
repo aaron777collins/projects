@@ -11,7 +11,7 @@ A robot powered training repository :robot:
 ## 📊 Project Details
 
 - **Primary Language:** HTML
-- **Languages Used:** , , 
+- **Languages Used:** HTML, Shell, Ruby
 - **License:** MIT License
 - **Created:** September 29, 2021
 - **Last Updated:** September 29, 2021

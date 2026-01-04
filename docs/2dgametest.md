@@ -9,7 +9,7 @@ A 2d game using LWJGL
 ## 📊 Project Details
 
 - **Primary Language:** JavaScript
-- **Languages Used:** , , , 
+- **Languages Used:** JavaScript, HTML, CSS, Java
 - **Created:** September 01, 2022
 - **Last Updated:** September 01, 2022
 

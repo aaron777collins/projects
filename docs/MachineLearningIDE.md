@@ -11,7 +11,7 @@ A machine learning IDE that uses scikit learn to build and analyze models
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , , , 
+- **Languages Used:** Python, PowerShell, JavaScript, TypeScript, C, CSS, HTML, Batchfile, Dockerfile
 - **Created:** September 14, 2022
 - **Last Updated:** October 27, 2022
 

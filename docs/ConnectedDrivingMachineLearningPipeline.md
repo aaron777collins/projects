@@ -11,7 +11,7 @@ A pipeline for training models on the connected driving VANET data
 ## 📊 Project Details
 
 - **Primary Language:** HTML
-- **Languages Used:** , , , 
+- **Languages Used:** HTML, Python, Shell, Batchfile
 - **Created:** October 17, 2022
 - **Last Updated:** October 20, 2023
 

@@ -11,7 +11,7 @@
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , 
+- **Languages Used:** TypeScript, Shell, JavaScript
 - **Created:** December 18, 2025
 - **Last Updated:** December 20, 2025
 

@@ -9,7 +9,7 @@ Following the latest angular tutorials to brush the rust off my skills and get r
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , , 
+- **Languages Used:** TypeScript, CSS, JavaScript, HTML
 - **Created:** September 29, 2023
 - **Last Updated:** September 29, 2023
 

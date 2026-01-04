@@ -9,7 +9,7 @@ A document search program that will change the world. It uses openAI's embedding
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , 
+- **Languages Used:** Python, HTML, Dockerfile
 - **Created:** July 01, 2023
 - **Last Updated:** August 04, 2023
 

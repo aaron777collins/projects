@@ -11,7 +11,7 @@ My group project for COMP3340
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , , , 
+- **Languages Used:** TypeScript, CSS, Shell, HTML, Dockerfile
 - **Created:** June 27, 2022
 - **Last Updated:** October 28, 2022
 

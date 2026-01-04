@@ -9,7 +9,7 @@
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , , , 
+- **Languages Used:** Python, C, C++, Cython, Roff, Makefile, CMake, Fortran, PowerShell, Batchfile
 - **Created:** May 24, 2022
 - **Last Updated:** May 24, 2022
 

@@ -12,7 +12,7 @@ This is a 2D game using Three.js and Typescript. My goal is to test out the tech
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , 
+- **Languages Used:** TypeScript, JavaScript, HTML
 - **Created:** April 21, 2023
 - **Last Updated:** May 07, 2023
 

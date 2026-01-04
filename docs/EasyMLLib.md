@@ -11,7 +11,7 @@ This is a library to make machine learning much easier
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , , , 
+- **Languages Used:** Python, Cython, C, CSS, C++, JavaScript, TeX, HTML, PowerShell, Jupyter Notebook, Fortran, Smarty, Roff, MATLAB, Batchfile, XSLT, Jinja, Shell, Makefile, Lua
 - **Created:** June 24, 2022
 - **Last Updated:** June 25, 2022
 

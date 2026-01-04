@@ -12,7 +12,7 @@ Free, Secure, Distributed, Modern Control Panel for Minecraft and Steam Game Ser
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , , , 
+- **Languages Used:** TypeScript, Vue, SCSS, JavaScript, HTML, Shell, Batchfile, Dockerfile
 - **License:** Apache License 2.0
 - **Created:** August 01, 2025
 - **Last Updated:** August 01, 2025

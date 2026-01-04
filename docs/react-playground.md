@@ -10,7 +10,7 @@ A fun react playground
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , 
+- **Languages Used:** TypeScript, HTML, SCSS
 - **Created:** March 16, 2022
 - **Last Updated:** March 17, 2022
 

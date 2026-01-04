@@ -9,7 +9,7 @@ A basic example for showing how to use TLS encryption
 ## 📊 Project Details
 
 - **Primary Language:** JavaScript
-- **Languages Used:** , , 
+- **Languages Used:** JavaScript, HTML, CSS
 - **Created:** July 22, 2022
 - **Last Updated:** July 23, 2022
 

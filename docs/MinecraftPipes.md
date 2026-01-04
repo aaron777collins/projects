@@ -11,7 +11,7 @@ A comprehensive Minecraft datapack for pipe mechanics and automation systems
 ## 📊 Project Details
 
 - **Primary Language:** Shell
-- **Languages Used:** , , 
+- **Languages Used:** Shell, Python, mcfunction
 - **License:** GNU General Public License v3.0
 - **Created:** August 27, 2025
 - **Last Updated:** September 01, 2025

@@ -12,7 +12,7 @@ A node.js version management utility for Windows. Ironically written in Go.
 ## 📊 Project Details
 
 - **Primary Language:** Go
-- **Languages Used:** , , , , 
+- **Languages Used:** Go, Inno Setup, Batchfile, JavaScript, VBScript
 - **License:** MIT License
 - **Created:** December 07, 2023
 - **Last Updated:** January 11, 2024

@@ -10,7 +10,7 @@ A simple xlsx message parser
 ## 📊 Project Details
 
 - **Primary Language:** JavaScript
-- **Languages Used:** , , 
+- **Languages Used:** JavaScript, HTML, CSS
 - **Created:** May 31, 2024
 - **Last Updated:** July 23, 2024
 

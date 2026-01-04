@@ -10,7 +10,7 @@ Manages your flash games and adds them to steam
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , , 
+- **Languages Used:** Python, Shell, CSS, JavaScript
 - **Created:** November 08, 2024
 - **Last Updated:** December 03, 2024
 

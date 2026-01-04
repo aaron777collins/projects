@@ -9,7 +9,7 @@ Quickly snips photos
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , 
+- **Languages Used:** Python, PowerShell, Batchfile
 - **Created:** August 26, 2022
 - **Last Updated:** August 26, 2022
 

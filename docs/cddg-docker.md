@@ -9,7 +9,7 @@ A docker that you can rdp into when running cddg
 ## 📊 Project Details
 
 - **Primary Language:** Shell
-- **Languages Used:** , , 
+- **Languages Used:** Shell, Dockerfile, Batchfile
 - **License:** MIT License
 - **Created:** October 03, 2022
 - **Last Updated:** October 10, 2022

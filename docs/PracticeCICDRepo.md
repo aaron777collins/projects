@@ -9,7 +9,7 @@ This repo is practice for setting up CI/CD repos
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , , , 
+- **Languages Used:** Python, HTML, Mako, Dockerfile, Shell, Procfile
 - **License:** MIT License
 - **Created:** February 12, 2023
 - **Last Updated:** February 12, 2023

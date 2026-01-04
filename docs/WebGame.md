@@ -10,7 +10,7 @@ This is a small and fun web game that uses three.js and typescript
 ## 📊 Project Details
 
 - **Primary Language:** JavaScript
-- **Languages Used:** , , 
+- **Languages Used:** JavaScript, TypeScript, HTML
 - **Created:** April 21, 2023
 - **Last Updated:** April 21, 2023
 

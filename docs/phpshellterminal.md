@@ -9,7 +9,7 @@ This is a test to see if I can make a shell using php
 ## 📊 Project Details
 
 - **Primary Language:** PHP
-- **Languages Used:** , , 
+- **Languages Used:** PHP, Dockerfile, Shell
 - **Created:** April 23, 2023
 - **Last Updated:** April 23, 2023
 

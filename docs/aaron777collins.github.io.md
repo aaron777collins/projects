@@ -12,7 +12,7 @@ A Personal Portfolio v2
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , 
+- **Languages Used:** TypeScript, SCSS, HTML
 - **Created:** March 28, 2022
 - **Last Updated:** August 03, 2025
 

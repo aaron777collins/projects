@@ -9,7 +9,7 @@ This project generates data similar to the VANET dataset for researching connect
 ## 📊 Project Details
 
 - **Primary Language:** C++
-- **Languages Used:** , , , , 
+- **Languages Used:** C++, Python, Perl, Shell, R, Yacc, Makefile, C, XSLT, FreeMarker, HTML, Lex, Raku, Batchfile, Lua, CSS, NSIS
 - **Created:** September 17, 2022
 - **Last Updated:** September 17, 2022
 

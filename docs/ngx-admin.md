@@ -12,7 +12,7 @@ Customizable admin dashboard template based on Angular 10+
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , , 
+- **Languages Used:** TypeScript, HTML, SCSS, JavaScript
 - **License:** MIT License
 - **Created:** September 05, 2024
 - **Last Updated:** September 05, 2024

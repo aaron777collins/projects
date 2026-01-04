@@ -13,7 +13,7 @@ A language for compiling Minecraft Java Datapacks easily!
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , , , , 
+- **Languages Used:** Python, HTML, mcfunction, Shell, TypeScript, PowerShell, CSS, Ruby, Makefile
 - **License:** GNU General Public License v3.0
 - **Created:** August 26, 2025
 - **Last Updated:** January 04, 2026

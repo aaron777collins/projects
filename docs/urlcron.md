@@ -10,7 +10,7 @@ Hits a url at specific intervals
 ## 📊 Project Details
 
 - **Primary Language:** JavaScript
-- **Languages Used:** , , 
+- **Languages Used:** JavaScript, HTML, CSS
 - **License:** Apache License 2.0
 - **Created:** March 14, 2024
 - **Last Updated:** March 14, 2024

@@ -11,7 +11,7 @@ A small website using php for the backend and react for the frontend
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** , , , , 
+- **Languages Used:** TypeScript, PHP, CSS, HTML, Dockerfile, Shell
 - **Created:** March 12, 2023
 - **Last Updated:** June 07, 2023
 

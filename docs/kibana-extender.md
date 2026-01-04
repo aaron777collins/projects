@@ -9,7 +9,7 @@ Adds text to the end of kibana queries to allow you to quickly build common quer
 ## 📊 Project Details
 
 - **Primary Language:** JavaScript
-- **Languages Used:** , , 
+- **Languages Used:** JavaScript, CSS, HTML
 - **License:** Apache License 2.0
 - **Created:** May 14, 2024
 - **Last Updated:** May 14, 2024
