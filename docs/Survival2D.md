@@ -1,17 +1,19 @@
 # Survival2D
 
-A survival game made in unity
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/Survival2D)
+- [View on GitHub](https://github.com/aaron777collins/Survival2D)
 
 ## 📊 Project Details
 
-- **Primary Language:** Unknown
+- **Primary Language:** None
+- **Languages Used:** Not specified
+- **License:** None
 - **Created:** April 17, 2023
 - **Last Updated:** April 17, 2023
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/Survival2D) for more information, code, and documentation.*
+# Survival2D
+A survival game made in unity
+

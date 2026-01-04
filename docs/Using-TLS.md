@@ -1,18 +1,19 @@
 # Using-TLS
 
-A basic example for showing how to use TLS encryption
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/Using-TLS)
+- [View on GitHub](https://github.com/aaron777collins/Using-TLS)
 
 ## 📊 Project Details
 
 - **Primary Language:** JavaScript
 - **Languages Used:** JavaScript, HTML, CSS
+- **License:** None
 - **Created:** July 22, 2022
 - **Last Updated:** July 23, 2022
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/Using-TLS) for more information, code, and documentation.*
+# Using-TLS
+A basic example for showing how to use TLS encryption
+

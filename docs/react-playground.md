@@ -1,19 +1,20 @@
 # react-playground
 
-A fun react playground
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/react-playground)
-- [📄 GitHub Pages](https://www.aaroncollins.info/react-playground/)
+- [View on GitHub](https://github.com/aaron777collins/react-playground)
+- [GitHub Pages Site](https://www.aaroncollins.info/react-playground/)
 
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
 - **Languages Used:** TypeScript, HTML, SCSS
+- **License:** None
 - **Created:** March 16, 2022
 - **Last Updated:** March 17, 2022
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/react-playground) for more information, code, and documentation.*
+# react-playground
+A fun react playground
+

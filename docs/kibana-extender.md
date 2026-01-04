@@ -1,10 +1,8 @@
 # kibana-extender
 
-Adds text to the end of kibana queries to allow you to quickly build common queries.
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/kibana-extender)
+- [View on GitHub](https://github.com/aaron777collins/kibana-extender)
 
 ## 📊 Project Details
 
@@ -14,6 +12,8 @@ Adds text to the end of kibana queries to allow you to quickly build common quer
 - **Created:** May 14, 2024
 - **Last Updated:** May 14, 2024
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/kibana-extender) for more information, code, and documentation.*
+# kibana-extender
+Extends Kibana queries with one or more of your stored extensions. It takes your current query and adds "AND \<your text>".
+

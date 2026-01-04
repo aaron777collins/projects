@@ -1,18 +1,18 @@
 # dwcc-website-snippets
 
-
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/dwcc-website-snippets)
+- [View on GitHub](https://github.com/aaron777collins/dwcc-website-snippets)
 
 ## 📊 Project Details
 
 - **Primary Language:** HTML
-- **Languages Used:** , 
+- **Languages Used:** HTML, JavaScript
+- **License:** None
 - **Created:** December 15, 2022
 - **Last Updated:** December 16, 2022
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/dwcc-website-snippets) for more information, code, and documentation.*
+# dwcc-website-snippets
+

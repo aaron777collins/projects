@@ -1,17 +1,23 @@
 # learningcpp
 
-Using this repo to store my files when learning cpp
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/learningcpp)
+- [View on GitHub](https://github.com/aaron777collins/learningcpp)
 
 ## 📊 Project Details
 
 - **Primary Language:** C++
+- **Languages Used:** C++
+- **License:** None
 - **Created:** April 16, 2023
 - **Last Updated:** April 16, 2023
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/learningcpp) for more information, code, and documentation.*
+# learningcpp
+Using this repo to store my files when learning cpp
+
+Learning from (https://cplusplus.com)(https://cplusplus.com/doc/tutorial)
+
+Currently on: Arrays
+

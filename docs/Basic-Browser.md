@@ -1,17 +1,24 @@
 # Basic-Browser
 
-Experimenting with creating a basic browser
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/Basic-Browser)
+- [View on GitHub](https://github.com/aaron777collins/Basic-Browser)
 
 ## 📊 Project Details
 
 - **Primary Language:** Java
+- **Languages Used:** Java
+- **License:** None
 - **Created:** November 16, 2020
 - **Last Updated:** November 16, 2020
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/Basic-Browser) for more information, code, and documentation.*
+# Basic-Browser
+ Experimenting with creating a basic browser
+
+- Written in Java
+
+NOTE:
+- Javascript does not work with this browser. Use the search bar at the top to go to exact pages
+

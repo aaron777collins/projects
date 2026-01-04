@@ -1,18 +1,18 @@
 # Fast-Marker
 
-Helps quickly mark students via blackboard by copying the files, etc
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/Fast-Marker)
+- [View on GitHub](https://github.com/aaron777collins/Fast-Marker)
 
 ## 📊 Project Details
 
 - **Primary Language:** Shell
-- **Languages Used:** , 
+- **Languages Used:** Shell, Python
+- **License:** None
 - **Created:** February 18, 2022
 - **Last Updated:** February 23, 2023
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/Fast-Marker) for more information, code, and documentation.*
+Helps quickly mark students via blackboard by copying the files, etc
+

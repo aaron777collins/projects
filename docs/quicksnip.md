@@ -1,18 +1,19 @@
 # quicksnip
 
-Quickly snips photos
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/quicksnip)
+- [View on GitHub](https://github.com/aaron777collins/quicksnip)
 
 ## 📊 Project Details
 
 - **Primary Language:** Python
 - **Languages Used:** Python, PowerShell, Batchfile
+- **License:** None
 - **Created:** August 26, 2022
 - **Last Updated:** August 26, 2022
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/quicksnip) for more information, code, and documentation.*
+# quicksnip
+Quickly snips photos
+

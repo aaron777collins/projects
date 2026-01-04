@@ -1,20 +1,26 @@
 # MachineLearningIDE
 
-A machine learning IDE that uses scikit learn to build and analyze models
-
-⭐ **1 stars**
+⭐ 1 stars
 
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/MachineLearningIDE)
+- [View on GitHub](https://github.com/aaron777collins/MachineLearningIDE)
 
 ## 📊 Project Details
 
 - **Primary Language:** Python
 - **Languages Used:** Python, PowerShell, JavaScript, TypeScript, C, CSS, HTML, Batchfile, Dockerfile
+- **License:** None
 - **Created:** September 14, 2022
 - **Last Updated:** October 27, 2022
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/MachineLearningIDE) for more information, code, and documentation.*
+# MachineLearningIDE
+A machine learning IDE that uses scikit learn to build and analyze models
+
+## Setup
+run `docker compose up` in the `machinelearningide` directory
+
+All changes will automatically re-compile
+

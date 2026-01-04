@@ -1,17 +1,19 @@
 # BashFunctions
 
-Useful Bash Functions
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/BashFunctions)
+- [View on GitHub](https://github.com/aaron777collins/BashFunctions)
 
 ## 📊 Project Details
 
 - **Primary Language:** Shell
+- **Languages Used:** Shell
+- **License:** None
 - **Created:** February 07, 2024
 - **Last Updated:** July 29, 2024
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/BashFunctions) for more information, code, and documentation.*
+# BashFunctions
+Useful Bash Functions
+

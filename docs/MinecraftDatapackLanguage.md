@@ -1,14 +1,12 @@
 # MinecraftDatapackLanguage
 
-A language for compiling Minecraft Java Datapacks easily!
-
-⭐ **1 stars** | 🍴 **1 forks**
+⭐ 1 stars | 🔱 1 forks
 
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/MinecraftDatapackLanguage)
-- [📄 GitHub Pages](http://www.mcmdl.com/)
-- [🚀 Latest Release: v18.0.3](https://github.com/aaron777collins/MinecraftDatapackLanguage/releases/tag/v18.0.3) - *September 11, 2025*
+- [View on GitHub](https://github.com/aaron777collins/MinecraftDatapackLanguage)
+- [GitHub Pages Site](http://www.mcmdl.com/)
+- [Latest Release: v18.0.3](https://github.com/aaron777collins/MinecraftDatapackLanguage/releases/tag/v18.0.3) (September 11, 2025)
 
 ## 📊 Project Details
 
@@ -18,6 +16,12 @@ A language for compiling Minecraft Java Datapacks easily!
 - **Created:** August 26, 2025
 - **Last Updated:** January 04, 2026
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/MinecraftDatapackLanguage) for more information, code, and documentation.*
+# <img src="https://github.com/aaron777collins/MinecraftDatapackLanguage/raw/main/icons/icon-128.png" width="32" height="32" alt="MDL Icon"> Minecraft Datapack Language (MDL)
+
+A **modern, scope-aware language** that lets you write Minecraft datapacks with **explicit scoping, variables, control structures, and expressions** that actually work.
+
+📖 **[View Full Documentation](https://www.mcmdl.com/)** - Complete guides, examples, and API reference  
+📦 **[View on PyPI](https://pypi.org/project
+

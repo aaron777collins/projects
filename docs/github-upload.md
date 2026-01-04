@@ -1,18 +1,21 @@
 # github-upload
 
-
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/github-upload)
-- [🌐 Homepage](https://lab.github.com/githubtraining/uploading-your-project-to-github)
+- [View on GitHub](https://github.com/aaron777collins/github-upload)
+- [Project Homepage](https://lab.github.com/githubtraining/uploading-your-project-to-github)
 
 ## 📊 Project Details
 
-- **Primary Language:** Unknown
+- **Primary Language:** None
+- **Languages Used:** Not specified
+- **License:** None
 - **Created:** September 29, 2021
 - **Last Updated:** September 29, 2021
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/github-upload) for more information, code, and documentation.*
+# Test Project For Uploading To Github
+
+*...nothing to see here*
+

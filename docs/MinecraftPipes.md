@@ -1,12 +1,10 @@
 # MinecraftPipes
 
-A comprehensive Minecraft datapack for pipe mechanics and automation systems
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/MinecraftPipes)
-- [📄 GitHub Pages](https://www.aaroncollins.info/MinecraftPipes/)
-- [🚀 Latest Release: ](https://github.com/aaron777collins/MinecraftPipes/releases/tag/v1.0.23) - *September 01, 2025*
+- [View on GitHub](https://github.com/aaron777collins/MinecraftPipes)
+- [GitHub Pages Site](https://www.aaroncollins.info/MinecraftPipes/)
+- [Latest Release: None](https://github.com/aaron777collins/MinecraftPipes/releases/tag/v1.0.23) (September 01, 2025)
 
 ## 📊 Project Details
 
@@ -16,6 +14,16 @@ A comprehensive Minecraft datapack for pipe mechanics and automation systems
 - **Created:** August 27, 2025
 - **Last Updated:** September 01, 2025
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/MinecraftPipes) for more information, code, and documentation.*
+# Minecraft Pipes 🚰
+
+A comprehensive Minecraft datapack and resource pack that adds a beautiful pipe transportation system to your world. Features custom 3D models, automatic item transportation, and redstone integration.
+
+![Minecraft Pipes](https://img.shields.io/badge/Minecraft-1.21+-green) ![Pack Format](https://img.shields.io/badge/Pack%20Format-82-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
+
+## 🎮 Features
+
+### 🚰 **Pipe System**
+- **Custom 3D Models** - Beautif
+

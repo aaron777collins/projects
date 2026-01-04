@@ -1,18 +1,19 @@
 # mouse-mover
 
-Moves the mouse every 1-30 seconds in a random direction at a random speed.
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/mouse-mover)
+- [View on GitHub](https://github.com/aaron777collins/mouse-mover)
 
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , 
+- **Languages Used:** Python, Batchfile
+- **License:** None
 - **Created:** June 16, 2021
 - **Last Updated:** August 13, 2021
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/mouse-mover) for more information, code, and documentation.*
+# mouse-mover
+Moves the mouse every 30 seconds in a random direction at a random speed.
+

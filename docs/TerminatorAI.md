@@ -1,17 +1,19 @@
 # TerminatorAI
 
-An AI with the goal of following general commands on your pc
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/TerminatorAI)
+- [View on GitHub](https://github.com/aaron777collins/TerminatorAI)
 
 ## 📊 Project Details
 
-- **Primary Language:** Unknown
+- **Primary Language:** None
+- **Languages Used:** Not specified
+- **License:** None
 - **Created:** January 18, 2023
 - **Last Updated:** January 18, 2023
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/TerminatorAI) for more information, code, and documentation.*
+# TerminatorAI
+An AI with the goal of following general commands on your pc
+

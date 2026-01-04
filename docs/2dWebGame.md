@@ -1,21 +1,28 @@
 # 2dWebGame
 
-This is a 2D game using Three.js and Typescript. My goal is to test out the technology and eventually make a game from this code.
-
-⭐ **1 stars**
+⭐ 1 stars
 
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/2dWebGame)
-- [📄 GitHub Pages](http://www.aaroncollins.info/2dWebGame/)
+- [View on GitHub](https://github.com/aaron777collins/2dWebGame)
+- [GitHub Pages Site](http://www.aaroncollins.info/2dWebGame/)
 
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
 - **Languages Used:** TypeScript, JavaScript, HTML
+- **License:** None
 - **Created:** April 21, 2023
 - **Last Updated:** May 07, 2023
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/2dWebGame) for more information, code, and documentation.*
+# WebGame
+This is a template for a small and fun web game that uses three.js and typescript
+
+I followed these links to create the template.
+[https://blog.logrocket.com/creating-game-three-js/](https://blog.logrocket.com/creating-game-three-js/)
+[https://sbcode.net/threejs/threejs-typescript-boilerplate/](https://sbcode.net/threejs/threejs-typescript-boilerplate/)
+
+Play the template game [here](https://www.aaroncollins.info/2dWebGame/)
+

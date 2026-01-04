@@ -1,19 +1,23 @@
 # CompressVideoGUI
 
-A GUI for compressing mp4 files
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/CompressVideoGUI)
-- [🚀 Latest Release: v1.0.2](https://github.com/aaron777collins/CompressVideoGUI/releases/tag/v1.0.2) - *July 03, 2025*
+- [View on GitHub](https://github.com/aaron777collins/CompressVideoGUI)
+- [Latest Release: v1.0.2](https://github.com/aaron777collins/CompressVideoGUI/releases/tag/v1.0.2) (July 03, 2025)
 
 ## 📊 Project Details
 
 - **Primary Language:** Python
-- **Languages Used:** , 
+- **Languages Used:** Python, Shell
+- **License:** None
 - **Created:** July 03, 2025
 - **Last Updated:** July 03, 2025
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/CompressVideoGUI) for more information, code, and documentation.*
+# CompressVideoGUI
+<img src='images/VideoCompressor.png' width='100%' />
+
+## A GUI for compressing mp4 files
+This GUI takes in mp4 files, automatically recommends an extension and compression rate, and outputs the compressed mp4 file in the same directory (unless specified). It just works.
+

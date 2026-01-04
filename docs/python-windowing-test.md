@@ -1,17 +1,19 @@
 # python-windowing-test
 
-simple windowing test
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/python-windowing-test)
+- [View on GitHub](https://github.com/aaron777collins/python-windowing-test)
 
 ## 📊 Project Details
 
 - **Primary Language:** Python
+- **Languages Used:** Python
+- **License:** None
 - **Created:** September 03, 2022
 - **Last Updated:** September 03, 2022
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/python-windowing-test) for more information, code, and documentation.*
+# python-windowing-test
+simple windowing test
+

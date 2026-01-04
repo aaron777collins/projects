@@ -1,18 +1,21 @@
 # Marking-Assistant
 
-
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/Marking-Assistant)
+- [View on GitHub](https://github.com/aaron777collins/Marking-Assistant)
 
 ## 📊 Project Details
 
 - **Primary Language:** HTML
-- **Languages Used:** , 
+- **Languages Used:** HTML, JavaScript
+- **License:** None
 - **Created:** January 27, 2022
 - **Last Updated:** January 27, 2022
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/Marking-Assistant) for more information, code, and documentation.*
+**Marking Assistant**
+
+- I created the marking assistant program to aid in marking students
+- This program is somewhat flexible and can be used for many courses
+

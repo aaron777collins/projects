@@ -1,11 +1,9 @@
 # urlcron
 
-Hits a url at specific intervals
-
 ## 🔗 Quick Links
 
-- [📁 Repository](https://github.com/aaron777collins/urlcron)
-- [📄 GitHub Pages](http://www.aaroncollins.info/urlcron/)
+- [View on GitHub](https://github.com/aaron777collins/urlcron)
+- [GitHub Pages Site](http://www.aaroncollins.info/urlcron/)
 
 ## 📊 Project Details
 
@@ -15,6 +13,8 @@ Hits a url at specific intervals
 - **Created:** March 14, 2024
 - **Last Updated:** March 14, 2024
 
----
+## 📝 About
 
-*Visit the [repository](https://github.com/aaron777collins/urlcron) for more information, code, and documentation.*
+# urlcron
+Hits a url at specific intervals
+
