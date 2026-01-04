@@ -1,21 +1,20 @@
 # urlcron
 
-## Description
-
 Hits a url at specific intervals
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** JavaScript
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/urlcron)
+- [📄 GitHub Pages](http://www.aaroncollins.info/urlcron/)
+
+## 📊 Project Details
+
+- **Primary Language:** JavaScript
+- **Languages Used:** , , 
+- **License:** Apache License 2.0
 - **Created:** March 14, 2024
 - **Last Updated:** March 14, 2024
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/urlcron)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/urlcron) for more information, code, and documentation.*

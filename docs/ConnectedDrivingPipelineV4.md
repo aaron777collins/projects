@@ -1,21 +1,21 @@
 # ConnectedDrivingPipelineV4
 
-## Description
-
 A refined pipeline to for machine learning. The goal of this pipeline is to be reusable and easy for teams to use.
 
-## Quick Info
+⭐ **1 stars** | 🍴 **2 forks**
 
-- **Language:** Python
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 2
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/ConnectedDrivingPipelineV4)
+- [📄 GitHub Pages](http://www.aaroncollins.info/ConnectedDrivingPipelineV4/)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
+- **Languages Used:** , 
 - **Created:** April 23, 2023
-- **Last Updated:** October 01, 2023
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/ConnectedDrivingPipelineV4)
+- **Last Updated:** May 16, 2023
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/ConnectedDrivingPipelineV4) for more information, code, and documentation.*

@@ -1,21 +1,17 @@
 # SteamDeckPacmanReInstaller
 
-## Description
-
 My code for managing pacman installations to allow easy re-installing after a steam update.
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Shell
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/SteamDeckPacmanReInstaller)
+
+## 📊 Project Details
+
+- **Primary Language:** Shell
 - **Created:** December 31, 2023
 - **Last Updated:** December 31, 2023
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/SteamDeckPacmanReInstaller)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/SteamDeckPacmanReInstaller) for more information, code, and documentation.*

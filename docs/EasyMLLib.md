@@ -1,21 +1,20 @@
 # EasyMLLib
 
-## Description
-
 This is a library to make machine learning much easier
 
-## Quick Info
+⭐ **1 stars**
 
-- **Language:** Python
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/EasyMLLib)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
+- **Languages Used:** , , , , 
 - **Created:** June 24, 2022
-- **Last Updated:** January 14, 2023
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/EasyMLLib)
+- **Last Updated:** June 25, 2022
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/EasyMLLib) for more information, code, and documentation.*

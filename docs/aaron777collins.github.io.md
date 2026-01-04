@@ -1,21 +1,21 @@
 # aaron777collins.github.io
 
-## Description
-
 A Personal Portfolio v2
 
-## Quick Info
+⭐ **1 stars**
 
-- **Language:** TypeScript
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/aaron777collins.github.io)
+- [📄 GitHub Pages](https://www.aaroncollins.info/)
+
+## 📊 Project Details
+
+- **Primary Language:** TypeScript
+- **Languages Used:** , , 
 - **Created:** March 28, 2022
 - **Last Updated:** August 03, 2025
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/aaron777collins.github.io)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/aaron777collins.github.io) for more information, code, and documentation.*

@@ -1,25 +1,26 @@
 # MCSManager
 
-🔱 Fork
-
-## Description
-
 Free, Secure, Distributed, Modern Control Panel for Minecraft and Steam Game Servers.
 
-## Quick Info
+🔱 **Fork**
 
-- **Language:** TypeScript
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/MCSManager)
+- [🌐 Homepage](https://mcsmanager.com)
+
+## 📊 Project Details
+
+- **Primary Language:** TypeScript
+- **Languages Used:** , , , , 
+- **License:** Apache License 2.0
 - **Created:** August 01, 2025
 - **Last Updated:** August 01, 2025
-- **Homepage:** [https://mcsmanager.com](https://mcsmanager.com)
 
-## Links
+## ℹ️ Status
 
-- [GitHub Repository](https://github.com/aaron777collins/MCSManager)
-- [Live Demo/Homepage](https://mcsmanager.com)
+🔱 **This is a fork** - See the original repository for the upstream project.
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/MCSManager) for more information, code, and documentation.*

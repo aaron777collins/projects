@@ -1,21 +1,18 @@
 # Marking-Assistant
 
-## Description
 
 
+## 🔗 Quick Links
 
-## Quick Info
+- [📁 Repository](https://github.com/aaron777collins/Marking-Assistant)
 
-- **Language:** HTML
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+## 📊 Project Details
+
+- **Primary Language:** HTML
+- **Languages Used:** , 
 - **Created:** January 27, 2022
-- **Last Updated:** January 28, 2022
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/Marking-Assistant)
+- **Last Updated:** January 27, 2022
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/Marking-Assistant) for more information, code, and documentation.*

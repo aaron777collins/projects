@@ -1,21 +1,19 @@
 # MessageParser
 
-## Description
-
 A simple xlsx message parser
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** JavaScript
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/MessageParser)
+- [📄 GitHub Pages](http://www.aaroncollins.info/MessageParser/)
+
+## 📊 Project Details
+
+- **Primary Language:** JavaScript
+- **Languages Used:** , , 
 - **Created:** May 31, 2024
 - **Last Updated:** July 23, 2024
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/MessageParser)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/MessageParser) for more information, code, and documentation.*

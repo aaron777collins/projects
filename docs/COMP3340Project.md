@@ -1,21 +1,20 @@
 # COMP3340Project
 
-## Description
-
 My group project for COMP3340
 
-## Quick Info
+⭐ **1 stars** | 🍴 **1 forks**
 
-- **Language:** TypeScript
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 1
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/COMP3340Project)
+
+## 📊 Project Details
+
+- **Primary Language:** TypeScript
+- **Languages Used:** , , , , 
 - **Created:** June 27, 2022
-- **Last Updated:** August 11, 2022
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/COMP3340Project)
+- **Last Updated:** October 28, 2022
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/COMP3340Project) for more information, code, and documentation.*

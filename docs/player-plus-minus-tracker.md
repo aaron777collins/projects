@@ -1,21 +1,17 @@
 # player-plus-minus-tracker
 
-## Description
-
 Tracks the plus minus of players
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/player-plus-minus-tracker)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
 - **Created:** January 30, 2023
 - **Last Updated:** January 30, 2023
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/player-plus-minus-tracker)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/player-plus-minus-tracker) for more information, code, and documentation.*

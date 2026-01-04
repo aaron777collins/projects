@@ -1,21 +1,17 @@
 # OpenBashInWindowsTerminal
 
-## Description
-
 Adds a menu option to Open Bash In Windows Terminal
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** PowerShell
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/OpenBashInWindowsTerminal)
+
+## 📊 Project Details
+
+- **Primary Language:** PowerShell
 - **Created:** February 07, 2024
 - **Last Updated:** February 07, 2024
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/OpenBashInWindowsTerminal)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/OpenBashInWindowsTerminal) for more information, code, and documentation.*

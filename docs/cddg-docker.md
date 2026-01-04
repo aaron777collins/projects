@@ -1,21 +1,19 @@
 # cddg-docker
 
-## Description
-
 A docker that you can rdp into when running cddg
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Shell
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/cddg-docker)
+
+## 📊 Project Details
+
+- **Primary Language:** Shell
+- **Languages Used:** , , 
+- **License:** MIT License
 - **Created:** October 03, 2022
-- **Last Updated:** October 11, 2022
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/cddg-docker)
+- **Last Updated:** October 10, 2022
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/cddg-docker) for more information, code, and documentation.*

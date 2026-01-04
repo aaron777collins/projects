@@ -1,21 +1,18 @@
 # dotnet6weatherapp
 
-## Description
-
 A simple dotnet 6 weather app using the built in generation for a web api
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** C#
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/dotnet6weatherapp)
+
+## 📊 Project Details
+
+- **Primary Language:** C#
+- **Languages Used:** , 
 - **Created:** May 18, 2023
 - **Last Updated:** May 18, 2023
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/dotnet6weatherapp)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/dotnet6weatherapp) for more information, code, and documentation.*

@@ -1,21 +1,17 @@
 # Art-Data-Gatherer
 
-## Description
-
 Used to gather data for the art project from google forms
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/Art-Data-Gatherer)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
 - **Created:** May 18, 2022
-- **Last Updated:** May 19, 2022
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/Art-Data-Gatherer)
+- **Last Updated:** May 18, 2022
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/Art-Data-Gatherer) for more information, code, and documentation.*

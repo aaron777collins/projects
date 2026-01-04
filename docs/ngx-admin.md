@@ -1,25 +1,26 @@
 # ngx-admin
 
-🔱 Fork
-
-## Description
-
 Customizable admin dashboard template based on Angular 10+
 
-## Quick Info
+🔱 **Fork**
 
-- **Language:** TypeScript
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/ngx-admin)
+- [🌐 Homepage](https://akveo.github.io/ngx-admin/)
+
+## 📊 Project Details
+
+- **Primary Language:** TypeScript
+- **Languages Used:** , , , 
+- **License:** MIT License
 - **Created:** September 05, 2024
-- **Last Updated:** April 11, 2024
-- **Homepage:** [https://akveo.github.io/ngx-admin/](https://akveo.github.io/ngx-admin/)
+- **Last Updated:** September 05, 2024
 
-## Links
+## ℹ️ Status
 
-- [GitHub Repository](https://github.com/aaron777collins/ngx-admin)
-- [Live Demo/Homepage](https://akveo.github.io/ngx-admin/)
+🔱 **This is a fork** - See the original repository for the upstream project.
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/ngx-admin) for more information, code, and documentation.*

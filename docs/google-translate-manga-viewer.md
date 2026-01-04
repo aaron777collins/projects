@@ -1,21 +1,18 @@
 # google-translate-manga-viewer
 
-## Description
-
 Uses google translate to translate the manga to English
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/google-translate-manga-viewer)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
+- **Languages Used:** , , 
 - **Created:** February 15, 2024
 - **Last Updated:** August 14, 2025
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/google-translate-manga-viewer)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/google-translate-manga-viewer) for more information, code, and documentation.*

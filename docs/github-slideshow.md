@@ -1,23 +1,21 @@
 # github-slideshow
 
-## Description
-
 A robot powered training repository :robot:
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** HTML
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/github-slideshow)
+- [🌐 Homepage](https://lab.github.com/githubtraining/introduction-to-github)
+- [📄 GitHub Pages](https://www.aaroncollins.info/github-slideshow/)
+
+## 📊 Project Details
+
+- **Primary Language:** HTML
+- **Languages Used:** , , 
+- **License:** MIT License
 - **Created:** September 29, 2021
 - **Last Updated:** September 29, 2021
-- **Homepage:** [https://lab.github.com/githubtraining/introduction-to-github](https://lab.github.com/githubtraining/introduction-to-github)
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/github-slideshow)
-- [Live Demo/Homepage](https://lab.github.com/githubtraining/introduction-to-github)
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/github-slideshow) for more information, code, and documentation.*

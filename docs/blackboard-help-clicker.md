@@ -1,21 +1,17 @@
 # blackboard-help-clicker
 
-## Description
 
 
+## 🔗 Quick Links
 
-## Quick Info
+- [📁 Repository](https://github.com/aaron777collins/blackboard-help-clicker)
 
-- **Language:** N/A
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+## 📊 Project Details
+
+- **Primary Language:** Unknown
 - **Created:** May 24, 2022
 - **Last Updated:** May 24, 2022
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/blackboard-help-clicker)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/blackboard-help-clicker) for more information, code, and documentation.*

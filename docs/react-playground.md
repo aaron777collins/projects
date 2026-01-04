@@ -1,21 +1,19 @@
 # react-playground
 
-## Description
-
 A fun react playground
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** TypeScript
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/react-playground)
+- [📄 GitHub Pages](https://www.aaroncollins.info/react-playground/)
+
+## 📊 Project Details
+
+- **Primary Language:** TypeScript
+- **Languages Used:** , , 
 - **Created:** March 16, 2022
 - **Last Updated:** March 17, 2022
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/react-playground)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/react-playground) for more information, code, and documentation.*

@@ -1,21 +1,19 @@
 # opengl-sandbox-game
 
-## Description
-
 A small opengl game
 
-## Quick Info
+⭐ **1 stars**
 
-- **Language:** Java
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/opengl-sandbox-game)
+
+## 📊 Project Details
+
+- **Primary Language:** Java
 - **Created:** March 28, 2022
-- **Last Updated:** March 29, 2022
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/opengl-sandbox-game)
+- **Last Updated:** January 15, 2024
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/opengl-sandbox-game) for more information, code, and documentation.*

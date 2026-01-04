@@ -1,21 +1,20 @@
 # ConnectedDrivingMachineLearningPipeline
 
-## Description
-
 A pipeline for training models on the connected driving VANET data
 
-## Quick Info
+⭐ **1 stars**
 
-- **Language:** HTML
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/ConnectedDrivingMachineLearningPipeline)
+
+## 📊 Project Details
+
+- **Primary Language:** HTML
+- **Languages Used:** , , , 
 - **Created:** October 17, 2022
-- **Last Updated:** November 23, 2023
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/ConnectedDrivingMachineLearningPipeline)
+- **Last Updated:** October 20, 2023
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/ConnectedDrivingMachineLearningPipeline) for more information, code, and documentation.*

@@ -1,21 +1,17 @@
 # simple-ai-game
 
-## Description
-
 A simple pygame project with an AI playing it
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/simple-ai-game)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
 - **Created:** June 29, 2021
 - **Last Updated:** August 13, 2021
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/simple-ai-game)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/simple-ai-game) for more information, code, and documentation.*

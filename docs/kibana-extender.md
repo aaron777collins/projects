@@ -1,21 +1,19 @@
 # kibana-extender
 
-## Description
-
 Adds text to the end of kibana queries to allow you to quickly build common queries.
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** JavaScript
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/kibana-extender)
+
+## 📊 Project Details
+
+- **Primary Language:** JavaScript
+- **Languages Used:** , , 
+- **License:** Apache License 2.0
 - **Created:** May 14, 2024
 - **Last Updated:** May 14, 2024
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/kibana-extender)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/kibana-extender) for more information, code, and documentation.*

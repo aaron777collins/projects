@@ -1,21 +1,18 @@
 # 2dgametest
 
-## Description
-
 A 2d game using LWJGL
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** JavaScript
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/2dgametest)
+
+## 📊 Project Details
+
+- **Primary Language:** JavaScript
+- **Languages Used:** , , , 
 - **Created:** September 01, 2022
 - **Last Updated:** September 01, 2022
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/2dgametest)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/2dgametest) for more information, code, and documentation.*

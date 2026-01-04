@@ -1,21 +1,17 @@
 # gitconfig-aliases
 
-## Description
-
 My git config aliases
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** N/A
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/gitconfig-aliases)
+
+## 📊 Project Details
+
+- **Primary Language:** Unknown
 - **Created:** November 22, 2023
 - **Last Updated:** November 22, 2023
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/gitconfig-aliases)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/gitconfig-aliases) for more information, code, and documentation.*

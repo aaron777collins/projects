@@ -1,23 +1,20 @@
 # markdown-portfolio
 
-## Description
 
 
+## 🔗 Quick Links
 
-## Quick Info
+- [📁 Repository](https://github.com/aaron777collins/markdown-portfolio)
+- [🌐 Homepage](https://aaron777collins.github.io/markdown-portfolio)
+- [📄 GitHub Pages](https://www.aaroncollins.info/markdown-portfolio/)
 
-- **Language:** N/A
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+## 📊 Project Details
+
+- **Primary Language:** Unknown
+- **License:** MIT License
 - **Created:** September 29, 2021
 - **Last Updated:** September 29, 2021
-- **Homepage:** [https://aaron777collins.github.io/markdown-portfolio](https://aaron777collins.github.io/markdown-portfolio)
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/markdown-portfolio)
-- [Live Demo/Homepage](https://aaron777collins.github.io/markdown-portfolio)
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/markdown-portfolio) for more information, code, and documentation.*

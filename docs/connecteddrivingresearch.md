@@ -1,21 +1,18 @@
 # connecteddrivingresearch
 
-## Description
-
 Researching connected driving dataset generation
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/connecteddrivingresearch)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
+- **Languages Used:** , 
 - **Created:** January 28, 2023
-- **Last Updated:** May 16, 2023
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/connecteddrivingresearch)
+- **Last Updated:** February 04, 2023
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/connecteddrivingresearch) for more information, code, and documentation.*

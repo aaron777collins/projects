@@ -1,21 +1,17 @@
 # node-manager
 
-## Description
-
 Small scripts to easily switch between node versions
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Shell
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/node-manager)
+
+## 📊 Project Details
+
+- **Primary Language:** Shell
 - **Created:** March 16, 2022
 - **Last Updated:** March 16, 2022
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/node-manager)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/node-manager) for more information, code, and documentation.*

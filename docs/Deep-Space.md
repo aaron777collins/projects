@@ -1,21 +1,18 @@
 # Deep-Space
 
-## Description
-
 A simple game where you fly through an asteroid field
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** HTML
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/Deep-Space)
+- [📄 GitHub Pages](http://www.aaroncollins.info/Deep-Space/)
+
+## 📊 Project Details
+
+- **Primary Language:** HTML
 - **Created:** November 15, 2020
 - **Last Updated:** May 13, 2023
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/Deep-Space)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/Deep-Space) for more information, code, and documentation.*

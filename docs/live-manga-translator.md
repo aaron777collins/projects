@@ -1,21 +1,18 @@
 # live-manga-translator
 
-## Description
-
 A small program which tries to convert chinese/japanese text in a window to english and overlays it
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/live-manga-translator)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
+- **Languages Used:** , 
 - **Created:** December 01, 2023
 - **Last Updated:** December 01, 2023
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/live-manga-translator)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/live-manga-translator) for more information, code, and documentation.*

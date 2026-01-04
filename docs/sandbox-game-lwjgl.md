@@ -1,21 +1,20 @@
 # sandbox-game-lwjgl
 
-## Description
-
 A small sandbox game using lwjgl
 
-## Quick Info
+⭐ **1 stars**
 
-- **Language:** Java
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/sandbox-game-lwjgl)
+
+## 📊 Project Details
+
+- **Primary Language:** Java
+- **Languages Used:** , 
 - **Created:** March 29, 2022
-- **Last Updated:** April 07, 2022
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/sandbox-game-lwjgl)
+- **Last Updated:** January 15, 2024
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/sandbox-game-lwjgl) for more information, code, and documentation.*

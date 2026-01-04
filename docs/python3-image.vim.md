@@ -1,23 +1,24 @@
 # python3-image.vim
 
-🔱 Fork
-
-## Description
-
 View images in Vim, because Vim is awesome! (Forked to allow for python3)
 
-## Quick Info
+🔱 **Fork**
 
-- **Language:** Vim Script
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/python3-image.vim)
+
+## 📊 Project Details
+
+- **Primary Language:** Vim Script
+- **License:** Other
 - **Created:** May 14, 2023
-- **Last Updated:** May 15, 2023
+- **Last Updated:** May 14, 2023
 
-## Links
+## ℹ️ Status
 
-- [GitHub Repository](https://github.com/aaron777collins/python3-image.vim)
+🔱 **This is a fork** - See the original repository for the upstream project.
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/python3-image.vim) for more information, code, and documentation.*

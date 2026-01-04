@@ -1,21 +1,19 @@
 # Control-Windows
 
-## Description
 
 
+⭐ **1 stars**
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/Control-Windows)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
 - **Created:** June 23, 2020
-- **Last Updated:** January 21, 2023
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/Control-Windows)
+- **Last Updated:** October 30, 2021
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/Control-Windows) for more information, code, and documentation.*

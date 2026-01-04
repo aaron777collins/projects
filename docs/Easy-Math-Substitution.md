@@ -1,21 +1,18 @@
 # Easy-Math-Substitution
 
-## Description
-
 A simple script to make typing math equations easier.
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Python
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/Easy-Math-Substitution)
+
+## 📊 Project Details
+
+- **Primary Language:** Python
+- **Languages Used:** , 
 - **Created:** February 07, 2021
 - **Last Updated:** February 22, 2021
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/Easy-Math-Substitution)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/Easy-Math-Substitution) for more information, code, and documentation.*

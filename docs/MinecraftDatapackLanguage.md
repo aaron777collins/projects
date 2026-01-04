@@ -1,21 +1,23 @@
 # MinecraftDatapackLanguage
 
-## Description
-
 A language for compiling Minecraft Java Datapacks easily!
 
-## Quick Info
+⭐ **1 stars** | 🍴 **1 forks**
 
-- **Language:** Python
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 1
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/MinecraftDatapackLanguage)
+- [📄 GitHub Pages](http://www.mcmdl.com/)
+- [🚀 Latest Release: v18.0.3](https://github.com/aaron777collins/MinecraftDatapackLanguage/releases/tag/v18.0.3) - *September 11, 2025*
+
+## 📊 Project Details
+
+- **Primary Language:** Python
+- **Languages Used:** , , , , 
+- **License:** GNU General Public License v3.0
 - **Created:** August 26, 2025
 - **Last Updated:** January 04, 2026
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/MinecraftDatapackLanguage)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/MinecraftDatapackLanguage) for more information, code, and documentation.*

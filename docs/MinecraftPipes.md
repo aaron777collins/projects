@@ -1,21 +1,21 @@
 # MinecraftPipes
 
-## Description
-
 A comprehensive Minecraft datapack for pipe mechanics and automation systems
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Shell
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/MinecraftPipes)
+- [📄 GitHub Pages](https://www.aaroncollins.info/MinecraftPipes/)
+- [🚀 Latest Release: ](https://github.com/aaron777collins/MinecraftPipes/releases/tag/v1.0.23) - *September 01, 2025*
+
+## 📊 Project Details
+
+- **Primary Language:** Shell
+- **Languages Used:** , , 
+- **License:** GNU General Public License v3.0
 - **Created:** August 27, 2025
 - **Last Updated:** September 01, 2025
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/MinecraftPipes)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/MinecraftPipes) for more information, code, and documentation.*

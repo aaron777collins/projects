@@ -1,21 +1,18 @@
 # 2DTestGame
 
-## Description
-
 A game that I made on a whim
 
-## Quick Info
+## 🔗 Quick Links
 
-- **Language:** Java
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+- [📁 Repository](https://github.com/aaron777collins/2DTestGame)
+
+## 📊 Project Details
+
+- **Primary Language:** Java
+- **Languages Used:** , 
 - **Created:** December 22, 2022
 - **Last Updated:** December 31, 2022
 
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/2DTestGame)
-
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/2DTestGame) for more information, code, and documentation.*

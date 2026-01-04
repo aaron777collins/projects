@@ -1,25 +1,25 @@
 # awesome-zerotier
 
-🔱 Fork
-
-## Description
-
 A collection of things you can do with ZeroTier, how-to guides, and more
 
-## Quick Info
+🔱 **Fork**
 
-- **Language:** N/A
-- **Stars:** ⭐ 0
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/awesome-zerotier)
+- [🌐 Homepage](https://docs.zerotier.com)
+
+## 📊 Project Details
+
+- **Primary Language:** Unknown
+- **License:** Creative Commons Zero v1.0 Universal
 - **Created:** July 02, 2024
 - **Last Updated:** July 02, 2024
-- **Homepage:** [https://docs.zerotier.com](https://docs.zerotier.com)
 
-## Links
+## ℹ️ Status
 
-- [GitHub Repository](https://github.com/aaron777collins/awesome-zerotier)
-- [Live Demo/Homepage](https://docs.zerotier.com)
+🔱 **This is a fork** - See the original repository for the upstream project.
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/awesome-zerotier) for more information, code, and documentation.*

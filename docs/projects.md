@@ -1,21 +1,20 @@
 # projects
 
-## Description
-
 A microsite showing off my programming projects. Note that this website is part of [www.aaroncollins.info](https://www.aaroncollins.info/)
 
-## Quick Info
+⭐ **1 stars**
 
-- **Language:** Shell
-- **Stars:** ⭐ 1
-- **Forks:** 🔱 0
+## 🔗 Quick Links
+
+- [📁 Repository](https://github.com/aaron777collins/projects)
+- [📄 GitHub Pages](http://www.aaroncollins.info/projects/)
+
+## 📊 Project Details
+
+- **Primary Language:** Shell
 - **Created:** May 15, 2023
-- **Last Updated:** May 16, 2023
-
-## Links
-
-- [GitHub Repository](https://github.com/aaron777collins/projects)
+- **Last Updated:** January 04, 2026
 
 ---
 
-*This documentation was auto-generated from the GitHub repository.*
+*Visit the [repository](https://github.com/aaron777collins/projects) for more information, code, and documentation.*
