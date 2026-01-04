@@ -5,9 +5,18 @@ This microsite serves as a documentation hub for my projects. It was built using
 
 Feel free to explore this site and learn more about my projects. If you have any questions, feel free to contact me at [aaron777collins@gmail.com](mailto:aaron777collins@gmail.com). You can also learn more about me on my [main site](https://www.aaroncollins.info/). Don't forget to check out the [repository](https://github.com/aaron777collins/projects) for this site. Thanks for visiting!
 
-**Updated:** This site now documents all 87 of my public GitHub projects! Browse by language category or check out the featured projects below.
+**Updated:** This site now documents all 87 of my public GitHub projects!
 
-## Featured Projects
+## Explore My Projects
+
+Browse through my work organized in two ways:
+
+- **Featured Projects** - Check out my top 15 most-starred repositories showcasing my best work
+- **All Projects by Language** - Browse all 87 public projects organized by programming language
+
+Use the navigation menu on the left to explore projects by category, or dive into the Featured Projects section to see highlights from my portfolio.
+
+## Featured Projects Highlights
 ### ConnectedDrivingPipelineV4
 This pipeline is part of my [Connected Driving Pipelines](ConnectedDrivingPipelines.html) and is the most recent version. It has new features such as automatic caching, dependency injection, and context/path providers. Check out the [repository](https://github.com/aaron777collins/ConnectedDrivingPipelineV4) and the [documentation](https://www.aaroncollins.info/ConnectedDrivingPipelineV4/) for more information.
 
