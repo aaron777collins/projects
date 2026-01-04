@@ -123,9 +123,19 @@ def generate_enhanced_markdown(repo_details):
     md += "## 📊 Project Details\n\n"
     md += f"- **Primary Language:** {language}\n"
     
-    if languages and len(languages) > 1:
-        lang_list = ", ".join([lang.get('name', '') for lang in languages[:5]])
-        md += f"- **Languages Used:** {lang_list}\n"
+    if languages and len(languages) > 0:
+        # Languages structure: [{"size": ..., "node": {"name": "Python"}}, ...]
+        lang_names = [lang.get('node', {}).get('name', '') for lang in languages if lang.get('node', {}).get('name')]
+        if lang_names:
+            # Sort by size (largest first) and take top 10
+            langs_sorted = sorted(languages, key=lambda x: x.get('size', 0), reverse=True)[:10]
+            lang_list = ", ".join([lang.get('node', {}).get('name', '') for lang in langs_sorted if lang.get('node', {}).get('name')])
+            if lang_list:
+                md += f"- **Languages Used:** {lang_list}\n"
+            else:
+                md += f"- **Languages Used:** Not specified\n"
+        else:
+            md += f"- **Languages Used:** Not specified\n"
     
     if license_info and license_info.get('name'):
         md += f"- **License:** {license_info['name']}\n"
