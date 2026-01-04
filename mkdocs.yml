@@ -47,3 +47,123 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - md_in_html
+nav:
+  - Home: index.md
+  - Featured Projects:
+      - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
+      - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
+      - Control-Windows: Control-Windows.md
+      - EasyMLLib: EasyMLLib.md
+      - MachineLearningIDE: MachineLearningIDE.md
+      - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
+      - 2dWebGame: 2dWebGame.md
+      - aaron777collins.github.io: aaron777collins.github.io.md
+      - COMP3340Project: COMP3340Project.md
+      - PostAPic: PostAPic.md
+      - projects: projects.md
+      - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
+      - opengl-sandbox-game: opengl-sandbox-game.md
+      - sandbox-game-lwjgl: sandbox-game-lwjgl.md
+  - All Projects:
+      - Python:
+          - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
+          - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
+          - Control-Windows: Control-Windows.md
+          - EasyMLLib: EasyMLLib.md
+          - MachineLearningIDE: MachineLearningIDE.md
+          - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
+          - 2sumsolution: 2sumsolution.md
+          - Art-Data-Gatherer: Art-Data-Gatherer.md
+          - CompressVideoGUI: CompressVideoGUI.md
+          - connecteddrivingresearch: connecteddrivingresearch.md
+          - Coupon-Counter: Coupon-Counter.md
+          - Distracted-Drving-ML-V3: Distracted-Drving-ML-V3.md
+          - DocSearch: DocSearch.md
+          - Easy-Math-Substitution: Easy-Math-Substitution.md
+          - FlashGameManager: FlashGameManager.md
+          - google-translate-manga-viewer: google-translate-manga-viewer.md
+          - live-manga-translator: live-manga-translator.md
+          - mouse-mover: mouse-mover.md
+          - pdf-to-text-ocr: pdf-to-text-ocr.md
+          - player-plus-minus-tracker: player-plus-minus-tracker.md
+          - PracticeCICDRepo: PracticeCICDRepo.md
+          - python-windowing-test: python-windowing-test.md
+          - quicksnip: quicksnip.md
+          - simple-ai-game: simple-ai-game.md
+          - StockTraderBotDDDQN: StockTraderBotDDDQN.md
+          - word-map-api: word-map-api.md
+      - TypeScript:
+          - 2dWebGame: 2dWebGame.md
+          - aaron777collins.github.io: aaron777collins.github.io.md
+          - COMP3340Project: COMP3340Project.md
+          - PostAPic: PostAPic.md
+          - AngularTutorials: AngularTutorials.md
+          - BetterPGVectorN8N: BetterPGVectorN8N.md
+          - GoogleSearchMCP: GoogleSearchMCP.md
+          - MCSManager: MCSManager.md
+          - ngx-admin: ngx-admin.md
+          - react-playground: react-playground.md
+      - Shell:
+          - projects: projects.md
+          - BashFunctions: BashFunctions.md
+          - cddg-docker: cddg-docker.md
+          - Fast-Marker: Fast-Marker.md
+          - MinecraftPipes: MinecraftPipes.md
+          - node-manager: node-manager.md
+          - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
+          - tmux-config: tmux-config.md
+          - zerotier-flatpaks: zerotier-flatpaks.md
+      - Java:
+          - opengl-sandbox-game: opengl-sandbox-game.md
+          - sandbox-game-lwjgl: sandbox-game-lwjgl.md
+          - 2DTestGame: 2DTestGame.md
+          - Basic-Browser: Basic-Browser.md
+          - CampusBookStore: CampusBookStore.md
+          - comp4220_A2: comp4220_A2.md
+          - Key-Finder: Key-Finder.md
+          - Open-World-Zombies: Open-World-Zombies.md
+      - Other:
+          - awesome-zerotier: awesome-zerotier.md
+          - BetterWorldEdit: BetterWorldEdit.md
+          - blackboard-help-clicker: blackboard-help-clicker.md
+          - gitconfig-aliases: gitconfig-aliases.md
+          - github-upload: github-upload.md
+          - markdown-portfolio: markdown-portfolio.md
+          - Survival2D: Survival2D.md
+          - TerminatorAI: TerminatorAI.md
+      - HTML:
+          - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
+          - ChurchScheduleTemplate: ChurchScheduleTemplate.md
+          - Deep-Space: Deep-Space.md
+          - dwcc-website-snippets: dwcc-website-snippets.md
+          - github-slideshow: github-slideshow.md
+          - Marking-Assistant: Marking-Assistant.md
+      - JavaScript:
+          - 2dgametest: 2dgametest.md
+          - kibana-extender: kibana-extender.md
+          - MessageParser: MessageParser.md
+          - urlcron: urlcron.md
+          - Using-TLS: Using-TLS.md
+          - WebGame: WebGame.md
+      - C#:
+          - COMP3770A2: COMP3770A2.md
+          - comp3770A3: comp3770A3.md
+          - dotnet6weatherapp: dotnet6weatherapp.md
+          - dotnet7weatherapp: dotnet7weatherapp.md
+      - C++:
+          - ConnectedDrivingDataGenerator: ConnectedDrivingDataGenerator.md
+          - learningcpp: learningcpp.md
+      - Racket:
+          - COMP4400A4: COMP4400A4.md
+          - COMP4400A5: COMP4400A5.md
+      - Vim Script:
+          - python3-image.vim: python3-image.vim.md
+          - vim-config: vim-config.md
+      - Go:
+          - nvm-windows: nvm-windows.md
+      - PHP:
+          - phpshellterminal: phpshellterminal.md
+      - PowerShell:
+          - OpenBashInWindowsTerminal: OpenBashInWindowsTerminal.md
+      - mcfunction:
+          - BetterFactoryMechanics: BetterFactoryMechanics.md
