@@ -82,6 +82,7 @@ nav:
       - dwcc-website-snippets: dwcc-website-snippets.md
       - github-slideshow: github-slideshow.md
       - Marking-Assistant: Marking-Assistant.md
+      - mermaid-editor: mermaid-editor.md
       - projects-test: projects-test.md
     - Java:
       - 2DTestGame: 2DTestGame.md
