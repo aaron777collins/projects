@@ -10,7 +10,7 @@
 - **Languages Used:** HTML, JavaScript, Python
 - **License:** None
 - **Created:** January 04, 2026
-- **Last Updated:** January 12, 2026
+- **Last Updated:** January 13, 2026
 
 ## 📝 About
 
