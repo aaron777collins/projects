@@ -108,6 +108,7 @@ nav:
       - github-upload: github-upload.md
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
+      - smartbudget: smartbudget.md
       - Survival2D: Survival2D.md
       - TerminatorAI: TerminatorAI.md
     - PHP:
@@ -151,6 +152,7 @@ nav:
       - Fast-Marker: Fast-Marker.md
       - MinecraftPipes: MinecraftPipes.md
       - node-manager: node-manager.md
+      - portableralph: portableralph.md
       - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
       - tmux-config: tmux-config.md
       - zerotier-flatpaks: zerotier-flatpaks.md
