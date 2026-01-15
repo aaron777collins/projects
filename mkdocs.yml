@@ -51,8 +51,8 @@ nav:
   - Home: index.md
   - Featured Projects:
     - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
-    - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - projects: projects.md
+    - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - aaron777collins.github.io: aaron777collins.github.io.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
     - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
@@ -108,7 +108,6 @@ nav:
       - github-upload: github-upload.md
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
-      - smartbudget: smartbudget.md
       - Survival2D: Survival2D.md
       - TerminatorAI: TerminatorAI.md
     - PHP:
@@ -166,6 +165,7 @@ nav:
       - MCSManager: MCSManager.md
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md
+      - smartbudget: smartbudget.md
     - Vim Script:
       - python3-image.vim: python3-image.vim.md
       - vim-config: vim-config.md
