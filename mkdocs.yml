@@ -51,9 +51,9 @@ nav:
   - Home: index.md
   - Featured Projects:
     - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
+    - portableralph: portableralph.md
     - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - projects: projects.md
-    - portableralph: portableralph.md
     - aaron777collins.github.io: aaron777collins.github.io.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
     - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
@@ -85,6 +85,7 @@ nav:
       - Marking-Assistant: Marking-Assistant.md
       - mermaid-editor: mermaid-editor.md
       - projects-test: projects-test.md
+      - smartbudget: smartbudget.md
     - Java:
       - 2DTestGame: 2DTestGame.md
       - Basic-Browser: Basic-Browser.md
@@ -166,7 +167,6 @@ nav:
       - MCSManager: MCSManager.md
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md
-      - smartbudget: smartbudget.md
     - Vim Script:
       - python3-image.vim: python3-image.vim.md
       - vim-config: vim-config.md
