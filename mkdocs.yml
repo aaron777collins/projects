@@ -52,11 +52,11 @@ nav:
   - Featured Projects:
     - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
     - portableralph: portableralph.md
+    - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - projects: projects.md
     - aaron777collins.github.io: aaron777collins.github.io.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
-    - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - 2dWebGame: 2dWebGame.md
     - PostAPic: PostAPic.md
     - Control-Windows: Control-Windows.md
