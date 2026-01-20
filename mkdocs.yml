@@ -167,6 +167,7 @@ nav:
       - MCSManager: MCSManager.md
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md
+      - RecursiveManager: RecursiveManager.md
     - Vim Script:
       - python3-image.vim: python3-image.vim.md
       - vim-config: vim-config.md
