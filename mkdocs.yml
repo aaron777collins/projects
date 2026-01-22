@@ -128,6 +128,7 @@ nav:
       - DocSearch: DocSearch.md
       - Easy-Math-Substitution: Easy-Math-Substitution.md
       - EasyMLLib: EasyMLLib.md
+      - extractembeddedpdftext: extractembeddedpdftext.md
       - FlashGameManager: FlashGameManager.md
       - google-translate-manga-viewer: google-translate-manga-viewer.md
       - live-manga-translator: live-manga-translator.md

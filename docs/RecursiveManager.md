@@ -4,7 +4,7 @@
 
 - [View on GitHub](https://github.com/aaron777collins/RecursiveManager)
 - [GitHub Pages Site](http://www.aaroncollins.info/RecursiveManager/)
-- [Latest Release: RecursiveManager v1.1.4](https://github.com/aaron777collins/RecursiveManager/releases/tag/v1.1.4) (January 21, 2026)
+- [Latest Release: v1.2.2 - Runtime Fixes and Recompilation](https://github.com/aaron777collins/RecursiveManager/releases/tag/v1.2.2) (January 21, 2026)
 
 ## 📊 Project Details
 

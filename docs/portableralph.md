@@ -1,6 +1,6 @@
 # portableralph
 
-⭐ 5 stars | 🔱 1 forks
+⭐ 6 stars | 🔱 3 forks
 
 ## 🔗 Quick Links
 
@@ -14,7 +14,7 @@
 - **Languages Used:** Shell, HTML
 - **License:** None
 - **Created:** January 14, 2026
-- **Last Updated:** January 19, 2026
+- **Last Updated:** January 21, 2026
 
 ## 📝 About
 
