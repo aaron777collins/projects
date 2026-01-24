@@ -4,7 +4,7 @@
 
 - [View on GitHub](https://github.com/aaron777collins/RecursiveManager)
 - [GitHub Pages Site](http://www.aaroncollins.info/RecursiveManager/)
-- [Latest Release: v1.2.2 - Runtime Fixes and Recompilation](https://github.com/aaron777collins/RecursiveManager/releases/tag/v1.2.2) (January 21, 2026)
+- [Latest Release: RecursiveManager v1.2.3 - Critical Audit Fixes](https://github.com/aaron777collins/RecursiveManager/releases/tag/v1.2.3) (January 23, 2026)
 
 ## 📊 Project Details
 
@@ -12,7 +12,7 @@
 - **Languages Used:** TypeScript, HTML, Shell, JavaScript, CSS, Dockerfile
 - **License:** MIT License
 - **Created:** January 18, 2026
-- **Last Updated:** January 21, 2026
+- **Last Updated:** January 23, 2026
 
 ## 📝 About
 
