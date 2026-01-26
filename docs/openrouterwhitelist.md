@@ -7,7 +7,7 @@
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** TypeScript, Dockerfile
+- **Languages Used:** TypeScript, CSS, JavaScript, Dockerfile, HTML
 - **License:** None
 - **Created:** January 24, 2026
 - **Last Updated:** January 25, 2026
