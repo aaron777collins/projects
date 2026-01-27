@@ -6,6 +6,7 @@
 
 - [View on GitHub](https://github.com/aaron777collins/projects)
 - [GitHub Pages Site](http://www.aaroncollins.info/projects/)
+- [Latest Release: v1.0.0 - Remove hardcoded project count](https://github.com/aaron777collins/projects/releases/tag/v1.0.0) (January 26, 2026)
 
 ## 📊 Project Details
 
@@ -13,7 +14,7 @@
 - **Languages Used:** Python, Shell
 - **License:** None
 - **Created:** May 15, 2023
-- **Last Updated:** January 25, 2026
+- **Last Updated:** January 26, 2026
 
 ## 📝 About
 

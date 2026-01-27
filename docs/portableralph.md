@@ -6,15 +6,15 @@
 
 - [View on GitHub](https://github.com/aaron777collins/portableralph)
 - [GitHub Pages Site](https://www.portableralph.com/)
-- [Latest Release: PortableRalph v1.6.0](https://github.com/aaron777collins/portableralph/releases/tag/v1.6.0) (January 15, 2026)
+- [Latest Release: PortableRalph v1.7.0](https://github.com/aaron777collins/portableralph/releases/tag/v1.7.0) (January 26, 2026)
 
 ## 📊 Project Details
 
 - **Primary Language:** Shell
-- **Languages Used:** Shell, HTML
+- **Languages Used:** Shell, PowerShell, HTML, Batchfile, Dockerfile
 - **License:** None
 - **Created:** January 14, 2026
-- **Last Updated:** January 25, 2026
+- **Last Updated:** January 26, 2026
 
 ## 📝 About
 
@@ -34,5 +34,5 @@ Ralph reads your plan, breaks it into tasks, and implements them one by one unti
 
 ## Quick Start
 
-**One-l
+### Lin
 
