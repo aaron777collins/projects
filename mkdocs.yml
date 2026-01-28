@@ -119,6 +119,7 @@ nav:
     - Python:
       - 2sumsolution: 2sumsolution.md
       - Art-Data-Gatherer: Art-Data-Gatherer.md
+      - clawdbotlibrary: clawdbotlibrary.md
       - CompressVideoGUI: CompressVideoGUI.md
       - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
       - connecteddrivingresearch: connecteddrivingresearch.md
@@ -128,6 +129,7 @@ nav:
       - DocSearch: DocSearch.md
       - Easy-Math-Substitution: Easy-Math-Substitution.md
       - EasyMLLib: EasyMLLib.md
+      - EnhanceAndClick: EnhanceAndClick.md
       - extractembeddedpdftext: extractembeddedpdftext.md
       - FlashGameManager: FlashGameManager.md
       - google-translate-manga-viewer: google-translate-manga-viewer.md
@@ -143,6 +145,7 @@ nav:
       - quicksnip: quicksnip.md
       - simple-ai-game: simple-ai-game.md
       - StockTraderBotDDDQN: StockTraderBotDDDQN.md
+      - vclick: vclick.md
       - word-map-api: word-map-api.md
       - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
     - Racket:
