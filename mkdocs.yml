@@ -52,9 +52,9 @@ nav:
   - Featured Projects:
     - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
     - portableralph: portableralph.md
+    - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - projects: projects.md
-    - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - aaron777collins.github.io: aaron777collins.github.io.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
     - 2dWebGame: 2dWebGame.md
@@ -144,6 +144,8 @@ nav:
       - python-windowing-test: python-windowing-test.md
       - quicksnip: quicksnip.md
       - simple-ai-game: simple-ai-game.md
+      - sophie-mcp: sophie-mcp.md
+      - sophie-voice-bridge: sophie-voice-bridge.md
       - StockTraderBotDDDQN: StockTraderBotDDDQN.md
       - vclick: vclick.md
       - word-map-api: word-map-api.md
