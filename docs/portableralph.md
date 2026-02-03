@@ -1,6 +1,6 @@
 # portableralph
 
-⭐ 7 stars | 🔱 3 forks
+⭐ 7 stars | 🔱 5 forks
 
 ## 🔗 Quick Links
 
