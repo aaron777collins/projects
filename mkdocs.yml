@@ -156,6 +156,7 @@ nav:
       - COMP4400A5: COMP4400A5.md
     - Shell:
       - BashFunctions: BashFunctions.md
+      - bible-drawing-pipeline: bible-drawing-pipeline.md
       - cddg-docker: cddg-docker.md
       - Fast-Marker: Fast-Marker.md
       - MinecraftPipes: MinecraftPipes.md
