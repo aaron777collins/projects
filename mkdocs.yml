@@ -162,6 +162,7 @@ nav:
       - MinecraftPipes: MinecraftPipes.md
       - node-manager: node-manager.md
       - portableralph: portableralph.md
+      - sophie: sophie.md
       - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
       - tmux-config: tmux-config.md
       - zerotier-flatpaks: zerotier-flatpaks.md
