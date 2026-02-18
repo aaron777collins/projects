@@ -111,6 +111,7 @@ nav:
       - github-upload: github-upload.md
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
+      - openclaw: openclaw.md
       - Survival2D: Survival2D.md
       - TerminatorAI: TerminatorAI.md
     - PHP:
@@ -174,6 +175,7 @@ nav:
       - COMP3340Project: COMP3340Project.md
       - GoogleSearchMCP: GoogleSearchMCP.md
       - MCSManager: MCSManager.md
+      - melo: melo.md
       - openrouterwhitelist: openrouterwhitelist.md
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md
