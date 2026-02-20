@@ -1,5 +1,7 @@
 # SteamDeckPacmanReInstaller
 
+⭐ 1 stars
+
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/SteamDeckPacmanReInstaller)
@@ -10,7 +12,7 @@
 - **Languages Used:** Shell
 - **License:** None
 - **Created:** December 31, 2023
-- **Last Updated:** December 31, 2023
+- **Last Updated:** February 19, 2026
 
 ## 📝 About
 

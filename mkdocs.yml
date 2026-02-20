@@ -56,6 +56,7 @@ nav:
     - projects: projects.md
     - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - aaron777collins.github.io: aaron777collins.github.io.md
+    - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
     - 2dWebGame: 2dWebGame.md
     - PostAPic: PostAPic.md
@@ -64,7 +65,6 @@ nav:
     - MachineLearningIDE: MachineLearningIDE.md
     - COMP3340Project: COMP3340Project.md
     - sandbox-game-lwjgl: sandbox-game-lwjgl.md
-    - opengl-sandbox-game: opengl-sandbox-game.md
   - All Projects:
     - C#:
       - COMP3770A2: COMP3770A2.md
