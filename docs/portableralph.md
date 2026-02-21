@@ -14,7 +14,7 @@
 - **Languages Used:** Shell, PowerShell, HTML, Batchfile, Dockerfile
 - **License:** None
 - **Created:** January 14, 2026
-- **Last Updated:** February 18, 2026
+- **Last Updated:** February 21, 2026
 
 ## 📝 About
 
