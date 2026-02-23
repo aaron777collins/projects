@@ -163,7 +163,6 @@ nav:
       - MinecraftPipes: MinecraftPipes.md
       - node-manager: node-manager.md
       - portableralph: portableralph.md
-      - sophie: sophie.md
       - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
       - tmux-config: tmux-config.md
       - zerotier-flatpaks: zerotier-flatpaks.md
@@ -180,6 +179,7 @@ nav:
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md
       - RecursiveManager: RecursiveManager.md
+      - sophie: sophie.md
     - Vim Script:
       - python3-image.vim: python3-image.vim.md
       - vim-config: vim-config.md

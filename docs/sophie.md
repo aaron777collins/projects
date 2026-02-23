@@ -6,11 +6,11 @@
 
 ## 📊 Project Details
 
-- **Primary Language:** Shell
-- **Languages Used:** Shell
+- **Primary Language:** TypeScript
+- **Languages Used:** TypeScript, HTML, JavaScript, Shell, CSS, Python, PLpgSQL, Dockerfile
 - **License:** MIT License
 - **Created:** February 14, 2026
-- **Last Updated:** February 18, 2026
+- **Last Updated:** February 23, 2026
 
 ## 📝 About
 
