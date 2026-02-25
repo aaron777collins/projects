@@ -7,10 +7,10 @@
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** TypeScript, HTML, JavaScript, Shell, CSS, Python, PLpgSQL, Dockerfile
+- **Languages Used:** TypeScript, HTML, JavaScript, Python, Shell, CSS, PLpgSQL, Dockerfile
 - **License:** MIT License
 - **Created:** February 14, 2026
-- **Last Updated:** February 23, 2026
+- **Last Updated:** February 24, 2026
 
 ## 📝 About
 
