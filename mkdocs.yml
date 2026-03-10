@@ -112,6 +112,7 @@ nav:
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
       - openclaw: openclaw.md
+      - Star-Office-UI: Star-Office-UI.md
       - Survival2D: Survival2D.md
       - TerminatorAI: TerminatorAI.md
     - PHP:
