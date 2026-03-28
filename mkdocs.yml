@@ -52,6 +52,7 @@ nav:
   - Featured Projects:
     - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
     - portableralph: portableralph.md
+    - paperclip-cli: paperclip-cli.md
     - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - projects: projects.md
     - aaron777collins.github.io: aaron777collins.github.io.md
@@ -64,7 +65,6 @@ nav:
     - EasyMLLib: EasyMLLib.md
     - MachineLearningIDE: MachineLearningIDE.md
     - COMP3340Project: COMP3340Project.md
-    - sandbox-game-lwjgl: sandbox-game-lwjgl.md
   - All Projects:
     - C#:
       - COMP3770A2: COMP3770A2.md
@@ -112,6 +112,7 @@ nav:
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
       - openclaw: openclaw.md
+      - paperclip: paperclip.md
       - pixel-agents: pixel-agents.md
       - Star-Office-UI: Star-Office-UI.md
       - Survival2D: Survival2D.md
@@ -141,6 +142,7 @@ nav:
       - MachineLearningIDE: MachineLearningIDE.md
       - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
       - mouse-mover: mouse-mover.md
+      - paperclip-cli: paperclip-cli.md
       - pdf-to-text-ocr: pdf-to-text-ocr.md
       - player-plus-minus-tracker: player-plus-minus-tracker.md
       - PracticeCICDRepo: PracticeCICDRepo.md
