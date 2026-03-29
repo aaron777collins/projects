@@ -52,9 +52,9 @@ nav:
   - Featured Projects:
     - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
     - portableralph: portableralph.md
-    - paperclip-cli: paperclip-cli.md
     - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - projects: projects.md
+    - paperclip-cli: paperclip-cli.md
     - aaron777collins.github.io: aaron777collins.github.io.md
     - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
