@@ -1,6 +1,6 @@
 # ZeroTier-GUI-Arch
 
-⭐ 40 stars | 🔀 Fork
+⭐ 41 stars | 🔀 Fork
 
 ## 🔗 Quick Links
 
@@ -13,7 +13,7 @@
 - **Languages Used:** Python, Shell
 - **License:** GNU General Public License v3.0
 - **Created:** June 13, 2024
-- **Last Updated:** March 31, 2026
+- **Last Updated:** April 01, 2026
 
 ## 📝 About
 
