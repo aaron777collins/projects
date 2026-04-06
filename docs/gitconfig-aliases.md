@@ -26,5 +26,5 @@ sed -n '/^\[alias\]/,/^$/p' | \
 grep -v "^\[alias\]" >> ~/.gitconfig
 ```
 
-Note that this assumes your aliases are at the bottom of the file. Y
+Note that this assumes your aliases are at the bottom of the file. You may want to verify it works.
 

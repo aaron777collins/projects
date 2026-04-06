@@ -23,5 +23,9 @@ Note: You may want to run
 ```bash
 chmod u+x starttmux
 ```
-and copy it `to /usr/local/bin` to run vim inside a tmux session at a specif
+and copy it `to /usr/local/bin` to run vim inside a tmux session at a specified location. For example
+```bash
+starttmux somefolder
+```
+would open a tmux and vim session in [your current directory]/somefolder. You can use relative or absolute pathing because it just runs the `cd` command to navigate.
 

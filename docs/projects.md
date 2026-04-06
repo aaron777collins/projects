@@ -14,7 +14,7 @@
 - **Languages Used:** Python, Shell
 - **License:** None
 - **Created:** May 15, 2023
-- **Last Updated:** April 05, 2026
+- **Last Updated:** April 06, 2026
 
 ## 📝 About
 
@@ -32,5 +32,8 @@ source venv/Scripts/activate
 ``` bash
 pip install -r requirements.txt
 ```
-3. Run `rundocs.sh` to buil
+3. Run `rundocs.sh` to build the site and serve it locally
+``` bash
+./rundocs.sh
+```
 

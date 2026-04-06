@@ -19,5 +19,5 @@ Creates flatpaks from the AUR repos for [Zerotier-one](https://archlinux.org/pac
 > Abandoned in favor of my new [ZeroTier-GUI-Arch](https://github.com/aaron777collins/ZeroTier-GUI-Arch) project which packages everything into a simple installer and gui.
 
 ## DISCLAIMER
-I am not the owner of either of these repos. I am simply packaging them into flatpaks for personal use with
+I am not the owner of either of these repos. I am simply packaging them into flatpaks for personal use with my steam deck.
 

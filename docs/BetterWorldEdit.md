@@ -38,5 +38,16 @@ A Minecraft datapack created with MDL (Minecraft Datapack Language).
 ## Features
 
 - **Variables**: Player-scoped counter and global timer
-- **Control Flow**:
+- **Control Flow**: If/else statements
+- **Functions**: Main function and load hook
+- **Automatic Execution**: Runs on datapack load
+
+## Development
+
+- Edit `betterworldedit.mdl` to modify the datapack
+- Use `mdl check betterworldedit.mdl` to validate syntax
+- Use `mdl build --mdl betterworldedit.mdl -o dist` to rebuild
+
+For more information, visit: https://www.mcmdl.com
+# BetterWorldEdit
 

@@ -34,5 +34,14 @@ from EasyMLLib.logger import Logger
 ```
 
 ## Running
-1. ru
+1. run the following commands:
+ ```shell
+sklearn-env\Scripts\activate
+python [Desired File].py
+```
+Example: 
+```shell
+sklearn-env\Scripts\activate
+python ModelTrainer.py
+```
 
