@@ -94,7 +94,7 @@ def get_repo_details(repo_name):
     github_pages_url = pages_output if pages_output and pages_output != "null" else None
 
     # Get README preview
-    readme_cmd = f'gh api repos/aaron777collins/{repo_name}/readme --jq \'.content\' | base64 -d | head -c 500'
+    readme_cmd = f'gh api repos/aaron777collins/{repo_name}/readme --jq \'.content\' | base64 -d'
     readme_output = run_gh_command(readme_cmd)
     readme_preview = readme_output if readme_output else details.get('description', '')
 
@@ -196,9 +196,7 @@ def generate_markdown(repo_details):
     # About
     md_content += "## 📝 About\n\n"
     if readme_preview:
-        md_content += readme_preview[:500]
-        if len(readme_preview) > 500:
-            md_content += "..."
+        md_content += readme_preview
     else:
         md_content += description or "No description available."
 

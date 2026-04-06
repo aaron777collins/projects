@@ -44,7 +44,7 @@ def get_repo_details(repo_name):
     # Get README content (first 500 chars for better description)
     readme = subprocess.run(f'gh repo view {repo_name} --json readme -q .readme', shell=True, capture_output=True, text=True)
     if readme.returncode == 0 and readme.stdout.strip():
-        details['readmePreview'] = readme.stdout.strip()[:500]
+        details['readmePreview'] = readme.stdout.strip()
     
     return details
 
