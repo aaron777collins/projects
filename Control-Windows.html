@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4914,8 +4914,47 @@ l - move mouse to location
 
 ` - toggle writing mode
 
-a - ctrl
+a - ctrl + A hotkey
+
+o - ctrl + C hotkey
+
+p - ctrl + V hotkey
+
+x - press twice, once for the top left of the object and once for the bottom right of the object. The program will try to
+find this object later and click the center.
+
+z - press twice, once for the top left of the object and once for the bottom right of the object. The program will try to
+find this object later and double-click the center.
+
+u - press twice, once for the top left of the object (to drag to) and once for the bottom right of the object. The program will try to
+find this object to drag to later (drags to centre).
+
+enter - presses enter (NOTE: it only records enter after the first 
+        action has been recorded AND you are NOT in writing-mode)
+
+e - end sequence
 </code></pre></div>
+<p>NOTE:</p>
+<p>As a fail-safe, you can move your mouse to the top left of your screen to crash the program.
+This will prevent your computer from going wild while running an action.</p>
+<p>This program was written with globals and may have a bug or two but it is
+pretty useful. Feel free to fix any bugs or rewrite the code in a better
+way! I only wrote this because I'm pretty lazy when it comes to repetitive tasks (and to learn python)</p>
+<p>Before installing, make sure you install python (v3) and put the directory of
+your python install within the PATH environment variable. (Check the box on install)</p>
+<p>To make running this program easier, create a batch file(.bat) with the following code:</p>
+<div class="language-text highlight"><pre><span></span><code>@echo off
+python &quot;controlWindows.py&quot;
+</code></pre></div>
+<p>I find it is easiest to paste this into notepad, click File &gt; Save As
+and then name it "runWC.bat". Don't forget to select the file type "All Files (*.*)"</p>
+<p>Then, place the new batch file in the same directory as this project. All files will
+generate within the project folder (images are in "[project folder]\images")</p>
+<p><em>THIS IS IMPORTANT! Do not label your script as controlWindows or checkDependencies. You will overwrite a source file.</em></p>
+<p>(Code was based off of this tutorial:</p>
+<p>https://automatetheboringstuff.com/2e/chapter20/</p>
+<p>and then implemented to my needs)</p>
+<p>Enjoy!</p>
 
 
 

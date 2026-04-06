@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4821,8 +4821,366 @@
 <p><strong><a href="https://aaron777collins.github.io/BetterPGVectorN8N/">View Full Documentation</a></strong> | <a href="https://aaron777collins.github.io/BetterPGVectorN8N/installation">Installation</a> | <a href="https://aaron777collins.github.io/BetterPGVectorN8N/quick-start">Quick Start</a> | <a href="https://aaron777collins.github.io/BetterPGVectorN8N/docker">Docker Guide</a></p>
 <hr />
 <h2 id="install-in-30-seconds">Install in 30 Seconds</h2>
-<p>```bash
-bash</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/aaron777collins/BetterPGVectorN8N/main/install.sh<span class="o">)</span>
+</span></code></pre></div>
+<p>That's it! The installer auto-detects your setup and does the right thing.</p>
+<details>
+<summary><b>What does the installer do?</b></summary>
+
+The script detects your n8n environment and offers the best option:
+
+| Your Setup | What It Does |
+|------------|--------------|
+| Docker Compose | Creates persistent setup that survives rebuilds |
+| Running Container | Installs directly into the container |
+| npm/Local Install | Adds to ~/.n8n/nodes |
+| Nothing Found | Creates fresh n8n + pgvector stack |
+
+</details>
+
+<details>
+<summary><b>Manual install options</b></summary>
+
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Download installer first</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/aaron777collins/BetterPGVectorN8N/main/install.sh<span class="w"> </span>-o<span class="w"> </span>install.sh
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>chmod<span class="w"> </span>+x<span class="w"> </span>install.sh
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Then pick your method:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>./install.sh<span class="w"> </span>--standalone<span class="w">   </span><span class="c1"># New n8n + pgvector Docker setup</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>./install.sh<span class="w"> </span>--docker<span class="w">       </span><span class="c1"># Add to existing Docker Compose</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>./install.sh<span class="w"> </span>--direct<span class="w">       </span><span class="c1"># Install into running container</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>./install.sh<span class="w"> </span>--npm<span class="w">          </span><span class="c1"># Install to ~/.n8n/nodes</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>./install.sh<span class="w"> </span>--update<span class="w">       </span><span class="c1"># Update existing installation</span>
+</span></code></pre></div>
+
+Or via n8n UI: **Settings → Community Nodes → Install → `n8n-nodes-pgvector-advanced`**
+
+</details>
+
+<details>
+<summary><b>Updating to latest version</b></summary>
+
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Update existing installation</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>./install.sh<span class="w"> </span>--update
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Or run the installer again - it auto-updates on container restart</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>docker<span class="w"> </span>compose<span class="w"> </span>restart<span class="w"> </span>n8n
+</span></code></pre></div>
+
+The Docker init script automatically checks for updates on each container start.
+
+</details>
+
+<hr />
+<h2 id="why-use-this">Why Use This?</h2>
+<table>
+<thead>
+<tr>
+<th>Built-in PGVector Node</th>
+<th>This Package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Insert only</td>
+<td>Full CRUD (Upsert, Query, Delete, Get)</td>
+</tr>
+<tr>
+<td>No stable IDs</td>
+<td>External IDs for reliable syncing</td>
+</tr>
+<tr>
+<td>Basic queries</td>
+<td>Filters, pagination, multiple distance metrics</td>
+</tr>
+<tr>
+<td>Single inserts</td>
+<td>Batch operations (1000+ embeddings)</td>
+</tr>
+<tr>
+<td>Manual schema</td>
+<td>Auto table/index creation</td>
+</tr>
+<tr>
+<td>No AI Agent tools</td>
+<td><strong>AI Agent Tool for RAG workflows</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="1-set-up-credentials">1. Set Up Credentials</h3>
+<p>In n8n: <strong>Credentials → Add → Postgres</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Host: your-postgres-host
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Port: 5432
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Database: your_db
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>User: your_user
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Password: your_password
+</span></code></pre></div>
+<h3 id="2-initialize-schema">2. Initialize Schema</h3>
+<p>Add a <strong>PGVector Advanced</strong> node with:
+- Operation: <code>Admin</code>
+- Admin Operation: <code>Ensure Schema</code>
+- Dimensions: <code>1536</code> (or your embedding size)</p>
+<h3 id="3-store-embeddings">3. Store Embeddings</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Operation: Upsert
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Collection: my_documents
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>External ID: doc-123
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Content: &quot;Your document text&quot;
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Embedding: [0.1, 0.2, 0.3, ...]
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Metadata: {&quot;category&quot;: &quot;tech&quot;, &quot;author&quot;: &quot;Jane&quot;}
+</span></code></pre></div>
+<h3 id="4-search">4. Search</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Operation: Query
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Collection: my_documents
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Query Embedding: [0.1, 0.2, ...]
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Top K: 10
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>Distance Metric: cosine
+</span></code></pre></div>
+<hr />
+<h2 id="operations">Operations</h2>
+<h3 id="upsert-insertupdate">Upsert (Insert/Update)</h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;upsert&quot;</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">&quot;collection&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;documents&quot;</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">&quot;externalId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;doc-123&quot;</span><span class="p">,</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Document text&quot;</span><span class="p">,</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tech&quot;</span><span class="p">},</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="nt">&quot;embedding&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">]</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p><strong>Batch mode:</strong> Map fields from input items for bulk inserts.</p>
+<h3 id="query-similarity-search">Query (Similarity Search)</h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;query&quot;</span><span class="p">,</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">&quot;collection&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;documents&quot;</span><span class="p">,</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">&quot;queryEmbedding&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">],</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="nt">&quot;topK&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="nt">&quot;distanceMetric&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cosine&quot;</span><span class="p">,</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="nt">&quot;metadataFilter&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tech&quot;</span><span class="p">}</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="delete">Delete</h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="nt">&quot;operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;delete&quot;</span><span class="p">,</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nt">&quot;collection&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;documents&quot;</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="nt">&quot;deleteBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;externalId&quot;</span><span class="p">,</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="nt">&quot;deleteExternalIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;doc-1, doc-2&quot;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Delete by: <code>id</code>, <code>externalId</code>, or <code>metadata</code> filter.</p>
+<h3 id="get">Get</h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">&quot;operation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;get&quot;</span><span class="p">,</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nt">&quot;collection&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;documents&quot;</span><span class="p">,</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nt">&quot;getBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;externalId&quot;</span><span class="p">,</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="nt">&quot;getExternalIds&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;doc-1, doc-2&quot;</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="admin">Admin</h3>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ensureSchema</code></td>
+<td>Creates table + indexes if missing</td>
+</tr>
+<tr>
+<td><code>createIndex</code></td>
+<td>Adds HNSW or IVFFlat vector index</td>
+</tr>
+<tr>
+<td><code>dropCollection</code></td>
+<td>Deletes all records in a collection</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="distance-metrics">Distance Metrics</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cosine</strong></td>
+<td>Text embeddings (OpenAI, Cohere, etc.)</td>
+</tr>
+<tr>
+<td><strong>L2</strong></td>
+<td>When absolute distance matters</td>
+</tr>
+<tr>
+<td><strong>Inner Product</strong></td>
+<td>Pre-normalized vectors</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="example-workflows">Example Workflows</h2>
+<p><strong>Semantic Search:</strong>
+1. Parse documents → Generate embeddings (OpenAI) → Upsert to PGVector → Query similar</p>
+<p><strong>Deduplication:</strong>
+1. Query existing → If similarity &gt; threshold, skip → Else upsert</p>
+<p><strong>Sync from External System:</strong>
+1. Use <code>externalId</code> to upsert → Automatically updates existing or inserts new</p>
+<hr />
+<h2 id="docker-persistence-how-it-works">Docker Persistence (How It Works)</h2>
+<p>The installer creates a custom Dockerfile that auto-installs community nodes on startup:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>n8n/
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>├── Dockerfile        # Extends official n8n image
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>└── init-nodes.sh     # Installs packages on container start
+</span></code></pre></div>
+<p>To add more packages, edit <code>init-nodes.sh</code>:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">PACKAGES</span><span class="o">=</span><span class="s2">&quot;n8n-nodes-pgvector-advanced other-package&quot;</span>
+</span></code></pre></div>
+<p>Then: <code>docker compose build &amp;&amp; docker compose up -d</code></p>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><strong>"pgvector extension not found"</strong>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="n">EXTENSION</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">vector</span><span class="p">;</span>
+</span></code></pre></div></p>
+<p><strong>Slow queries?</strong>
+- Create an HNSW index via Admin → Create Index
+- Use metadata filters to reduce search space</p>
+<p><strong>Dimension mismatch?</strong>
+- All embeddings in a collection must have the same dimensions
+- Use different collections for different embedding models</p>
+<hr />
+<h2 id="development">Development</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/BetterPGVectorN8N.git
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nb">cd</span><span class="w"> </span>BetterPGVectorN8N
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>npm<span class="w"> </span>install
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>npm<span class="w"> </span>run<span class="w"> </span>build
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>npm<span class="w"> </span><span class="nb">test</span>
+</span></code></pre></div>
+<hr />
+<h2 id="ai-agent-tool">AI Agent Tool</h2>
+<p>The <strong>PGVector Store Tool</strong> lets n8n AI Agents manage knowledge with natural operations:</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Remember</strong></td>
+<td>Store new info, update by ID or similar concept</td>
+</tr>
+<tr>
+<td><strong>Recall</strong></td>
+<td>Search with similarity threshold</td>
+</tr>
+<tr>
+<td><strong>Forget</strong></td>
+<td>Delete by exact ID</td>
+</tr>
+<tr>
+<td><strong>Forget Similar</strong></td>
+<td>Delete by concept (with dry-run safety)</td>
+</tr>
+<tr>
+<td><strong>Lookup</strong></td>
+<td>Get by exact ID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuration">Configuration</h3>
+<p>Each operation has n8n settings (safety/behavior) and AI parameters (data):</p>
+<table>
+<thead>
+<tr>
+<th>n8n Config</th>
+<th>AI Provides</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Collection, thresholds, ID hints</td>
+<td>Content, IDs, queries</td>
+</tr>
+<tr>
+<td>Dry run mode, result limits</td>
+<td>Metadata filters</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example - Remember operation:</strong>
+- n8n: <code>ID Format Hint = "meeting-YYYY-MM-DD"</code>, <code>Auto-Generate ID = ON</code>
+- AI: <code>content</code>, <code>id</code> (optional), <code>metadata</code></p>
+<p><strong>Example - Forget Similar operation:</strong>
+- n8n: <code>Similarity Threshold = 0.8</code>, <code>Dry Run = ON</code>
+- AI: <code>concept</code> (what to delete)</p>
+<p><a href="https://aaron777collins.github.io/BetterPGVectorN8N/ai-tools">Full AI Tools Documentation →</a></p>
+<hr />
+<h2 id="mcp-server-for-external-ai-agents">MCP Server for External AI Agents</h2>
+<p>Use with Claude, GPT, or other AI agents outside n8n.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Run directly</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>npx<span class="w"> </span>n8n-nodes-pgvector-advanced
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># Or install globally</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>n8n-nodes-pgvector-advanced
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>pgvector-mcp
+</span></code></pre></div>
+<p><strong>Available tools:</strong> <code>pgvector_upsert</code>, <code>pgvector_query</code>, <code>pgvector_delete</code>, <code>pgvector_get</code>, <code>pgvector_admin</code></p>
+<p>Set environment variables: <code>PGHOST</code>, <code>PGPORT</code>, <code>PGDATABASE</code>, <code>PGUSER</code>, <code>PGPASSWORD</code></p>
+<p><a href="https://aaron777collins.github.io/BetterPGVectorN8N/mcp">Full MCP Documentation →</a></p>
+<hr />
+<h2 id="documentation">Documentation</h2>
+<table>
+<thead>
+<tr>
+<th>Guide</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://aaron777collins.github.io/BetterPGVectorN8N/installation">Installation</a></td>
+<td>All installation methods</td>
+</tr>
+<tr>
+<td><a href="https://aaron777collins.github.io/BetterPGVectorN8N/quick-start">Quick Start</a></td>
+<td>Get running in 5 minutes</td>
+</tr>
+<tr>
+<td><a href="https://aaron777collins.github.io/BetterPGVectorN8N/operations">Operations</a></td>
+<td>Full operations reference</td>
+</tr>
+<tr>
+<td><a href="https://aaron777collins.github.io/BetterPGVectorN8N/ai-tools">AI Agent Tools</a></td>
+<td>Use with n8n AI Agents</td>
+</tr>
+<tr>
+<td><a href="https://aaron777collins.github.io/BetterPGVectorN8N/mcp">MCP Server</a></td>
+<td>Use with external AI (Claude)</td>
+</tr>
+<tr>
+<td><a href="https://aaron777collins.github.io/BetterPGVectorN8N/docker">Docker Guide</a></td>
+<td>Persistent Docker setup</td>
+</tr>
+<tr>
+<td><a href="https://aaron777collins.github.io/BetterPGVectorN8N/troubleshooting">Troubleshooting</a></td>
+<td>Common issues &amp; fixes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="license">License</h2>
+<p>MIT</p>
+<hr />
+<p><strong>Made with ❤️ for the n8n community</strong></p>
+<p><a href="https://github.com/aaron777collins/BetterPGVectorN8N">View on GitHub</a> | <a href="https://www.npmjs.com/package/n8n-nodes-pgvector-advanced">npm</a> | <a href="https://aaron777collins.github.io/BetterPGVectorN8N/">Full Docs</a></p>
 
 
 

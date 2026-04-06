@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4822,8 +4822,235 @@
 <h2 id="features">🎮 Features</h2>
 <h3 id="pipe-system">🚰 <strong>Pipe System</strong></h3>
 <ul>
-<li><strong>Custom 3D Models</strong> - Beautif</li>
+<li><strong>Custom 3D Models</strong> - Beautiful, detailed pipe models with your own textures</li>
+<li><strong>Multiple Pipe Types</strong> - Inlet, outlet, and basic pipes for different functions</li>
+<li><strong>Automatic Transportation</strong> - Items flow through connected pipes automatically</li>
+<li><strong>Redstone Integration</strong> - Inlet pipes require redstone power to extract items</li>
 </ul>
+<h3 id="visual-design">🎨 <strong>Visual Design</strong></h3>
+<ul>
+<li><strong>Transparent Pipes</strong> - See items moving through the system</li>
+<li><strong>Color-Coded Items</strong> - Different pipe types have distinct colors</li>
+<li><strong>Smooth Animations</strong> - Fluid item movement through pipes</li>
+<li><strong>Custom Textures</strong> - Your own unique pipe designs</li>
+</ul>
+<h3 id="technical-features">⚡ <strong>Technical Features</strong></h3>
+<ul>
+<li><strong>MDL (Minecraft Datapack Language)</strong> - Modern, maintainable code</li>
+<li><strong>CustomModelData</strong> - Efficient resource pack integration</li>
+<li><strong>Cross-Platform</strong> - Works on Windows, Linux, and macOS</li>
+<li><strong>CI/CD Pipeline</strong> - Automated builds and releases</li>
+</ul>
+<h2 id="installation">📦 Installation</h2>
+<h3 id="quick-install">Quick Install</h3>
+<ol>
+<li><strong>Download the latest release</strong> from <a href="https://github.com/aaron777collins/MinecraftPipes/releases">GitHub Releases</a></li>
+<li><strong>Extract the files</strong> to your Minecraft world</li>
+<li><strong>Install both packs:</strong></li>
+<li>Copy <code>pipes_datapack</code> to your world's <code>datapacks</code> folder</li>
+<li>Copy <code>pipes_resource_pack</code> to your world's <code>resourcepacks</code> folder</li>
+<li><strong>Load in game:</strong></li>
+<li>Run <code>/reload</code> to load the datapack</li>
+<li>Enable the resource pack in Settings → Resource Packs</li>
+</ol>
+<h3 id="manual-installation">Manual Installation</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Clone the repository</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/MinecraftPipes.git
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>MinecraftPipes
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Build the project</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>./scripts/build.sh
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># Copy the generated files to your world</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>cp<span class="w"> </span>dist/pipes_datapack.zip<span class="w"> </span>/path/to/your/world/datapacks/
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>cp<span class="w"> </span>dist/pipes_resource_pack.zip<span class="w"> </span>/path/to/your/world/resourcepacks/
+</span></code></pre></div>
+<h2 id="building-from-source">🛠️ Building from Source</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><strong>Python 3.11+</strong> - Required for MDL</li>
+<li><strong>MDL (Minecraft Datapack Language)</strong> - Install with <code>pip install minecraft-datapack-language</code></li>
+<li><strong>Git</strong> - For cloning the repository</li>
+</ul>
+<h3 id="build-commands">Build Commands</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Clone the repository</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/MinecraftPipes.git
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>MinecraftPipes
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Install MDL</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>pip<span class="w"> </span>install<span class="w"> </span>minecraft-datapack-language
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># Build everything</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>./scripts/build.sh
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># Or use npm scripts</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>npm<span class="w"> </span>run<span class="w"> </span>build
+</span></code></pre></div>
+<h3 id="build-outputs">Build Outputs</h3>
+<p>The build process creates the following files in the <code>dist/</code> directory:
+- <code>pipes_datapack.zip</code> - The datapack with recipes and functions
+- <code>pipes_resource_pack.zip</code> - The resource pack with custom 3D models and textures
+- <code>pipes_complete.zip</code> - Combined package with both datapack and resource pack
+- <code>README.md</code> - Installation and usage instructions</p>
+<h2 id="usage">🎯 Usage</h2>
+<h3 id="crafting-recipes">Crafting Recipes</h3>
+<h4 id="pipe-inlet">Pipe Inlet</h4>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>I G I
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>G H G
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>I G I
+</span></code></pre></div>
+- <strong>I</strong> = Iron Ingot
+- <strong>G</strong> = Glass Pane<br />
+- <strong>H</strong> = Hopper
+- <strong>Result</strong>: Blue pipe inlet that extracts items when powered</p>
+<h4 id="pipe-outlet">Pipe Outlet</h4>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>I G I
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>G D G
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>I G I
+</span></code></pre></div>
+- <strong>I</strong> = Iron Ingot
+- <strong>G</strong> = Glass Pane
+- <strong>D</strong> = Dispenser
+- <strong>Result</strong>: Green pipe outlet that deposits items automatically</p>
+<h4 id="basic-pipe">Basic Pipe</h4>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>I G I
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>G   G
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>I G I
+</span></code></pre></div>
+- <strong>I</strong> = Iron Ingot
+- <strong>G</strong> = Glass Pane
+- <strong>Result</strong>: 4 gray pipes for connecting the system</p>
+<h4 id="pipe-wrench">Pipe Wrench</h4>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>  I  
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  I  
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  S  
+</span></code></pre></div>
+- <strong>I</strong> = Iron Ingot
+- <strong>S</strong> = Stick
+- <strong>Result</strong>: Yellow wrench for pipe maintenance</p>
+<h3 id="gameplay">Gameplay</h3>
+<ol>
+<li><strong>Craft the pipes</strong> using the recipes above</li>
+<li><strong>Place inlet pipes</strong> next to chests you want to extract from</li>
+<li><strong>Place outlet pipes</strong> next to chests you want to deposit to</li>
+<li><strong>Connect with basic pipes</strong> to create a network</li>
+<li><strong>Power inlet pipes</strong> with redstone to start extraction</li>
+<li><strong>Watch items flow</strong> through your beautiful pipe system!</li>
+</ol>
+<h2 id="development">🔧 Development</h2>
+<h3 id="project-structure">Project Structure</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>MinecraftPipes/
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>├── pipes/                    # MDL source files
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>│   ├── pipes.mdl            # Main datapack definition
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>│   ├── recipes/             # Recipe JSON files
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>│   └── models/              # Blockbench source models
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>├── assets/                   # Resource pack files
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>│   └── pipes/
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>│       ├── models/          # Item models
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>│       └── textures/        # Custom textures
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>├── scripts/                  # Build scripts
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>│   └── build.sh             # Main build script
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>├── .github/workflows/        # CI/CD pipelines
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>└── dist/                     # Build outputs
+</span></code></pre></div>
+<h3 id="making-changes">Making Changes</h3>
+<ol>
+<li><strong>Edit MDL files</strong> in <code>pipes/</code> for datapack logic</li>
+<li><strong>Update models</strong> in <code>assets/pipes/models/</code> for visual changes</li>
+<li><strong>Modify textures</strong> in <code>assets/pipes/textures/</code> for appearance</li>
+<li><strong>Test locally</strong> with <code>npm run build</code></li>
+<li><strong>Commit and push</strong> to trigger CI/CD</li>
+</ol>
+<h3 id="npm-scripts">NPM Scripts</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>npm<span class="w"> </span>run<span class="w"> </span>build<span class="w">          </span><span class="c1"># Full build process</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>npm<span class="w"> </span>run<span class="w"> </span>build:datapack<span class="w"> </span><span class="c1"># Build only the datapack</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>npm<span class="w"> </span>run<span class="w"> </span>build:resource<span class="w"> </span><span class="c1"># Build only the resource pack</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>npm<span class="w"> </span>run<span class="w"> </span><span class="nb">test</span><span class="w">           </span><span class="c1"># Test the build process</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>npm<span class="w"> </span>run<span class="w"> </span>clean<span class="w">          </span><span class="c1"># Clean build artifacts</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>npm<span class="w"> </span>run<span class="w"> </span>release<span class="w">        </span><span class="c1"># Create a new version tag</span>
+</span></code></pre></div>
+<h2 id="cicd-pipeline">🚀 CI/CD Pipeline</h2>
+<h3 id="automated-builds">Automated Builds</h3>
+<ul>
+<li><strong>Test Builds</strong> - Run on every pull request and push</li>
+<li><strong>Release Builds</strong> - Triggered by version tags</li>
+<li><strong>Manual Builds</strong> - Can be triggered manually via GitHub Actions</li>
+</ul>
+<h3 id="creating-releases">Creating Releases</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Create a version tag</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git<span class="w"> </span>tag<span class="w"> </span>v1.0.0
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>git<span class="w"> </span>push<span class="w"> </span>--tags
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1"># This automatically triggers a release build</span>
+</span></code></pre></div>
+<p>Or manually trigger via GitHub Actions → Build and Release → Run workflow</p>
+<h2 id="troubleshooting">🐛 Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<h4 id="items-appear-as-regular-iron-ingots">Items appear as regular iron ingots</h4>
+<ul>
+<li><strong>Solution</strong>: Make sure the resource pack is enabled in Minecraft settings</li>
+</ul>
+<h4 id="recipes-dont-work">Recipes don't work</h4>
+<ul>
+<li><strong>Solution</strong>: Run <code>/reload</code> to reload the datapack</li>
+</ul>
+<h4 id="build-fails">Build fails</h4>
+<ul>
+<li><strong>Solution</strong>: Check that MDL is installed with <code>pip install minecraft-datapack-language</code></li>
+</ul>
+<h4 id="cicd-fails">CI/CD fails</h4>
+<ul>
+<li><strong>Solution</strong>: Check GitHub Actions logs for specific error messages</li>
+</ul>
+<h3 id="getting-help">Getting Help</h3>
+<ol>
+<li>Check the <a href="BUILD.md">BUILD.md</a> file for detailed build instructions</li>
+<li>Review <a href="https://github.com/aaron777collins/MinecraftPipes/issues">GitHub Issues</a> for known problems</li>
+<li>Create a new issue with detailed error information</li>
+</ol>
+<h2 id="requirements">📋 Requirements</h2>
+<ul>
+<li><strong>Minecraft Version</strong>: 1.21+ (Pack Format 82)</li>
+<li><strong>Python</strong>: 3.11+ (for building from source)</li>
+<li><strong>MDL</strong>: minecraft-datapack-language (for building from source)</li>
+</ul>
+<h2 id="contributing">🤝 Contributing</h2>
+<p>We welcome contributions! Here's how to get started:</p>
+<ol>
+<li><strong>Fork the repository</strong></li>
+<li><strong>Create a feature branch</strong> (<code>git checkout -b feature/amazing-feature</code>)</li>
+<li><strong>Make your changes</strong></li>
+<li><strong>Test locally</strong> with <code>npm run build</code></li>
+<li><strong>Commit your changes</strong> (<code>git commit -m 'Add amazing feature'</code>)</li>
+<li><strong>Push to the branch</strong> (<code>git push origin feature/amazing-feature</code>)</li>
+<li><strong>Open a Pull Request</strong></li>
+</ol>
+<h3 id="development-guidelines">Development Guidelines</h3>
+<ul>
+<li>Test builds locally before pushing</li>
+<li>Follow the existing code style</li>
+<li>Update documentation for new features</li>
+<li>Add tests for new functionality</li>
+</ul>
+<h2 id="license">📄 License</h2>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<h2 id="acknowledgments">🙏 Acknowledgments</h2>
+<ul>
+<li><strong>MDL Team</strong> - For the amazing Minecraft Datapack Language</li>
+<li><strong>Blockbench</strong> - For the excellent 3D modeling tools</li>
+<li><strong>Minecraft Community</strong> - For inspiration and feedback</li>
+</ul>
+<h2 id="support">📞 Support</h2>
+<ul>
+<li><strong>GitHub Issues</strong>: <a href="https://github.com/aaron777collins/MinecraftPipes/issues">Report bugs or request features</a></li>
+<li><strong>Discussions</strong>: <a href="https://github.com/aaron777collins/MinecraftPipes/discussions">Join the community</a></li>
+<li><strong>Wiki</strong>: <a href="https://github.com/aaron777collins/MinecraftPipes/wiki">Detailed documentation</a></li>
+</ul>
+<hr />
+<p><strong>Made with ❤️ for the Minecraft community</strong></p>
+<p><a href="https://github.com/aaron777collins/MinecraftPipes/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/aaron777collins/MinecraftPipes?style=social" /></a>
+<a href="https://github.com/aaron777collins/MinecraftPipes/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/aaron777collins/MinecraftPipes?style=social" /></a>
+<a href="https://github.com/aaron777collins/MinecraftPipes/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/aaron777collins/MinecraftPipes" /></a></p>
 
 
 

@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4828,8 +4828,60 @@
 <h2 id="what-it-does">What It Does</h2>
 <ol>
 <li><strong>Silence Removal</strong> - Cuts dead air and long pauses automatically</li>
-<li><strong>Transcription</strong> - Converts your reading to text using</li>
+<li><strong>Transcription</strong> - Converts your reading to text using Whisper AI</li>
+<li><strong>Filler Word Detection</strong> - Identifies "um", "uh", etc. for removal</li>
+<li><strong>Subtitle Generation</strong> - Creates .srt file for YouTube upload</li>
+<li><strong>Audio Normalization</strong> - Consistent volume levels (-14 LUFS broadcast standard)</li>
+<li><strong>Thumbnail Extraction</strong> - Grabs a nice frame from your drawing</li>
+<li><strong>High Quality Export</strong> - YouTube-optimized MP4</li>
 </ol>
+<h2 id="commands">Commands</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bdp<span class="w"> </span>process<span class="w"> </span>&lt;video&gt;<span class="w">      </span><span class="c1"># Process a single video</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>bdp<span class="w"> </span>watch<span class="w">                </span><span class="c1"># Start folder watcher (foreground)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>bdp<span class="w"> </span>watch<span class="w"> </span>--daemon<span class="w">       </span><span class="c1"># Start folder watcher (background)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>bdp<span class="w"> </span>watch<span class="w"> </span>--stop<span class="w">         </span><span class="c1"># Stop folder watcher</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>bdp<span class="w"> </span>watch<span class="w"> </span>--status<span class="w">       </span><span class="c1"># Check if watcher is running</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>bdp<span class="w"> </span>status<span class="w">               </span><span class="c1"># Show pipeline status</span>
+</span></code></pre></div>
+<h2 id="output-files">Output Files</h2>
+<p>For each video processed, you get:
+- <code>*_edited.mp4</code> - The final edited video
+- <code>*_subtitles.srt</code> - Subtitle file for YouTube
+- <code>*_transcript.txt</code> - Full text transcript
+- <code>*_thumbnail.jpg</code> - Auto-generated thumbnail</p>
+<h2 id="options">Options</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Adjust silence detection (default: 0.5s at -35dB)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>bdp<span class="w"> </span>process<span class="w"> </span>video.mp4<span class="w"> </span>--silence-threshold<span class="w"> </span><span class="m">0</span>.3<span class="w"> </span>--silence-level<span class="w"> </span>-30
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Use larger Whisper model for better accuracy</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>bdp<span class="w"> </span>process<span class="w"> </span>video.mp4<span class="w"> </span>--whisper-model<span class="w"> </span>medium
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Skip subtitle generation</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>bdp<span class="w"> </span>process<span class="w"> </span>video.mp4<span class="w"> </span>--no-subtitles
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># Enable Slack notification when done</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>bdp<span class="w"> </span>process<span class="w"> </span>video.mp4<span class="w"> </span>--notify
+</span></code></pre></div>
+<h2 id="folder-structure">Folder Structure</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>~/bible-drawing-pipeline/
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── input/           # Drop raw videos here
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── output/          # Edited videos appear here
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── processing/      # Temporary work files
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>├── scripts/         # Pipeline scripts
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>├── config.sh        # Customizable settings
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>└── bdp              # Main CLI
+</span></code></pre></div>
+<h2 id="tips">Tips</h2>
+<ul>
+<li><strong>Silence threshold</strong>: Start with 0.5s. If too much is cut, try 0.7s. If not enough, try 0.3s.</li>
+<li><strong>Whisper model</strong>: <code>base</code> is fast and good. Use <code>medium</code> or <code>large</code> for better accuracy on quiet/unclear audio.</li>
+<li><strong>OBS setup</strong>: Record in 1080p, 30fps, high bitrate for best results.</li>
+</ul>
+<h2 id="sophie-integration">Sophie Integration</h2>
+<p>Sophie can:
+- Process videos on request ("Sophie, edit my latest recording")
+- Monitor the pipeline ("Sophie, check video pipeline status")
+- Get notified when processing completes and ping you in Slack</p>
 
 
 

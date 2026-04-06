@@ -370,6 +370,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="projects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -469,34 +497,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    projects
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -4894,13 +4894,214 @@
 <li><strong>Languages Used:</strong> Python, HTML, mcfunction, Shell, TypeScript, PowerShell, CSS, Ruby, Makefile</li>
 <li><strong>License:</strong> GNU General Public License v3.0</li>
 <li><strong>Created:</strong> August 26, 2025</li>
-<li><strong>Last Updated:</strong> April 05, 2026</li>
+<li><strong>Last Updated:</strong> April 06, 2026</li>
 </ul>
 <h2 id="about">📝 About</h2>
 <h1 id="minecraft-datapack-language-mdl"><img src="https://github.com/aaron777collins/MinecraftDatapackLanguage/raw/main/icons/icon-128.png" width="32" height="32" alt="MDL Icon"> Minecraft Datapack Language (MDL)</h1>
 <p>A <strong>modern, scope-aware language</strong> that lets you write Minecraft datapacks with <strong>explicit scoping, variables, control structures, and expressions</strong> that actually work.</p>
 <p>📖 <strong><a href="https://www.mcmdl.com/">View Full Documentation</a></strong> - Complete guides, examples, and API reference<br />
-📦 **[View on PyPI](https://pypi.org/project</p>
+📦 <strong><a href="https://pypi.org/project/minecraft-datapack-language/">View on PyPI</a></strong> - Download and install from PyPI<br />
+🔧 <strong><a href="https://marketplace.visualstudio.com/items?itemName=mdl.minecraft-datapack-language">VS Code Extension</a></strong> - Syntax highlighting, IntelliSense, and snippets</p>
+<p><img alt="CI" src="https://github.com/aaron777collins/MinecraftDatapackLanguage/workflows/CI/badge.svg" />
+<img alt="Documentation" src="https://github.com/aaron777collins/MinecraftDatapackLanguage/workflows/Build%20and%20Deploy%20Documentation/badge.svg" />
+<img alt="PyPI" src="https://img.shields.io/pypi/v/minecraft-datapack-language?style=flat-square" />
+<img alt="Release" src="https://github.com/aaron777collins/MinecraftDatapackLanguage/workflows/Release/badge.svg" /></p>
+<h2 id="modern-mdl-language-with-explicit-scoping">🎯 <strong>MODERN</strong> MDL Language with Explicit Scoping</h2>
+<p><strong>MDL uses a modern, scope-aware language format</strong> with <strong>explicit scoping, control structures, variables, and expressions</strong>:</p>
+<h3 id="modern-features">✨ <strong>MODERN</strong> Features</h3>
+<ul>
+<li><strong>🎯 Explicit scoping</strong> with angle brackets <code>&lt;@s&gt;</code>, <code>&lt;@a[team=red]&gt;</code> for all operations</li>
+<li><strong>📝 Modern comments</strong> using <code>//</code> and <code>/* */</code></li>
+<li><strong>🔢 Number variables</strong> with <code>var num</code> type (stored in scoreboards)</li>
+<li><strong>🔄 Full control structures</strong> including <code>if/else</code>, <code>while</code> loops</li>
+<li><strong>💲 Variable substitution</strong> with <code>$variable&lt;scope&gt;$</code> syntax</li>
+<li><strong>🧮 Expressions</strong> with arithmetic operations (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>)</li>
+<li><strong>📦 Namespace system</strong> for modular code organization</li>
+<li><strong>🏷️ Tag system</strong> for all datapack resources (recipes, loot tables, advancements, etc.)</li>
+<li><strong>🎨 VS Code extension</strong> with full IntelliSense and snippets</li>
+<li><strong>🧪 Comprehensive testing</strong> with E2E validation</li>
+<li><strong>📚 Extensive documentation</strong> with examples for every feature</li>
+</ul>
+<h3 id="core-features">🏗️ Core Features</h3>
+<ul>
+<li>✅ <strong>Default pack_format 82</strong> for latest Minecraft features</li>
+<li>✅ <strong>Explicit scoping</strong> - every variable operation specifies its scope</li>
+<li>✅ <strong>Real control structures</strong> - <code>if/else</code>, <code>while</code> loops</li>
+<li>✅ <strong>Number variables</strong> stored in scoreboards with <code>$variable&lt;scope&gt;$</code> substitution</li>
+<li>✅ <strong>Expressions</strong> with arithmetic operations and variable substitution</li>
+<li>✅ <strong>Multi-file projects</strong> with automatic merging and dependency resolution</li>
+<li>✅ <strong>Variable optimization</strong> - automatic load function generation for initialization</li>
+<li>✅ <strong>Selector optimization</strong> - proper <code>@a</code> usage for system commands</li>
+<li>✅ <strong>Easy hooks</strong> into <code>minecraft:tick</code> and <code>minecraft:load</code> via function tags</li>
+<li>✅ <strong>Tag support</strong> for <code>recipe</code>, <code>loot_table</code>, <code>advancement</code>, <code>item_modifier</code>, <code>predicate</code>, and <code>structure</code></li>
+<li>✅ <strong>Raw blocks</strong> for direct Minecraft command injection</li>
+<li>✅ <strong>Say commands</strong> that auto-convert to <code>tellraw</code> with JSON formatting</li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>: Version 1.0+ uses <strong>pack_format 82</strong> by default for the modern MDL syntax.</p>
+</blockquote>
+<hr />
+<h2 id="install">🚀 Install</h2>
+<h3 id="option-a-from-pypi-recommended-for-users">Option A — from PyPI (recommended for users)</h3>
+<p>Global, isolated CLI via <strong>pipx</strong>:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>pipx
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>pipx<span class="w"> </span>ensurepath<span class="w">    </span><span class="c1"># reopen terminal</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>pipx<span class="w"> </span>install<span class="w"> </span>minecraft-datapack-language
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>mdl<span class="w"> </span>--help
+</span></code></pre></div></p>
+<p>Virtualenv (if you prefer):
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate<span class="w">      </span><span class="c1"># Windows: .\.venv\Scripts\Activate.ps1</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>pip<span class="w"> </span>install<span class="w"> </span>minecraft-datapack-language
+</span></code></pre></div></p>
+<h3 id="option-b-from-source-for-contributors">Option B — from source (for contributors)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># inside the repo</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</span></code></pre></div>
+<hr />
+<h2 id="update">🔄 Update</h2>
+<ul>
+<li><strong>pipx</strong>: <code>pipx upgrade minecraft-datapack-language</code>  </li>
+<li><strong>pip (venv)</strong>: <code>pip install -U minecraft-datapack-language</code>  </li>
+<li>Pin a version: <code>pipx install "minecraft-datapack-language==&lt;version&gt;"</code> (replace <code>&lt;version&gt;</code> with desired version)</li>
+</ul>
+<hr />
+<h2 id="cli">💻 CLI</h2>
+<h3 id="modern-mdl-v10">Modern MDL (v1.0+)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Build (defaults: --mdl . and -o dist)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mdl<span class="w"> </span>build
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Check (scans current directory)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>mdl<span class="w"> </span>check
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Build single file (output still defaults to dist)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>mdl<span class="w"> </span>build<span class="w"> </span>--mdl<span class="w"> </span>my_pack/mypack.mdl
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># Custom output directory</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>mdl<span class="w"> </span>build<span class="w"> </span>-o<span class="w"> </span>out
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># Optional wrapper directory for output</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>mdl<span class="w"> </span>build<span class="w"> </span>--wrapper<span class="w"> </span>mypack
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c1"># Create new projects</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>mdl<span class="w"> </span>new<span class="w"> </span>my_awesome_pack
+</span></code></pre></div>
+<h3 id="quick-start">Quick Start</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Create a new project</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>mdl<span class="w"> </span>new<span class="w"> </span>my_first_pack
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Build it</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nb">cd</span><span class="w"> </span>my_first_pack
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>mdl<span class="w"> </span>build
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># Check for errors</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>mdl<span class="w"> </span>check
+</span></code></pre></div>
+<hr />
+<h2 id="language-examples">📝 Language Examples</h2>
+<h3 id="basic-structure">Basic Structure</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pack &quot;MyPack&quot; &quot;My awesome datapack&quot; 15;
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>namespace &quot;game&quot;;
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>var num player_score&lt;@s&gt; = 0;
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>var num team_score&lt;@a[team=red]&gt; = 0;
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>function game:start {
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    player_score&lt;@s&gt; = 100;
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    say &quot;Welcome! Your score is $player_score&lt;@s&gt;$&quot;;
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>}
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>on_load game:start;
+</span></code></pre></div>
+<h3 id="control-structures">Control Structures</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>function game:check_score {
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    if $player_score&lt;@s&gt;$ &gt; 10 {
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        say &quot;Great score!&quot;;
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        player_score&lt;@s&gt; = $player_score&lt;@s&gt;$ + 5;
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    } else {
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        say &quot;Keep trying!&quot;;
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    }
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    while $player_score&lt;@s&gt;$ &lt; 100 {
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>        player_score&lt;@s&gt; = $player_score&lt;@s&gt;$ + 1;
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    }
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>}
+</span></code></pre></div>
+<h3 id="tags-and-resources">Tags and Resources</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>// Recipe tags
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>tag recipe &quot;diamond_sword&quot; &quot;recipes/diamond_sword.json&quot;;
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>tag loot_table &quot;epic_loot&quot; &quot;loot_tables/epic_loot.json&quot;;
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>tag advancement &quot;first_spell&quot; &quot;advancements/first_spell.json&quot;;
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>// Item modifiers and predicates
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>tag item_modifier &quot;enchanted_tool&quot; &quot;item_modifiers/enchanted_tool.json&quot;;
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>tag predicate &quot;has_mana&quot; &quot;predicates/has_mana.json&quot;;
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>tag structure &quot;wizard_tower&quot; &quot;structures/wizard_tower.json&quot;;
+</span></code></pre></div>
+<h3 id="raw-blocks-and-say-commands">Raw Blocks and Say Commands</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>function game:special_effect {
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    $!raw
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    execute as @s run particle minecraft:explosion ~ ~ ~ 1 1 1 0 10
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    execute as @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 1
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    raw!$
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    say &quot;Special effect triggered! Score: $player_score&lt;@s&gt;$&quot;;
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>}
+</span></code></pre></div>
+<hr />
+<h2 id="development">🔧 Development</h2>
+<h3 id="building-from-source">Building from Source</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/MinecraftDatapackLanguage.git
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">cd</span><span class="w"> </span>MinecraftDatapackLanguage
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</span></code></pre></div>
+<h3 id="running-tests">Running Tests</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Run all tests</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># Run specific test file</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>test_comprehensive_end_to_end.py
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># Run with coverage</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>--cov<span class="o">=</span>minecraft_datapack_language
+</span></code></pre></div>
+<h3 id="building-the-extension">Building the Extension</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">cd</span><span class="w"> </span>vscode-extension
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>npm<span class="w"> </span>install
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>npm<span class="w"> </span>run<span class="w"> </span>compile
+</span></code></pre></div>
+<hr />
+<h2 id="documentation">📚 Documentation</h2>
+<ul>
+<li><strong><a href="https://www.mcmdl.com/docs/language-reference/">Language Reference</a></strong> - Complete language specification</li>
+<li><strong><a href="https://www.mcmdl.com/docs/cli-reference/">CLI Reference</a></strong> - Command usage and options</li>
+<li><strong><a href="https://www.mcmdl.com/docs/vscode-extension/">VS Code Extension</a></strong> - Extension documentation</li>
+<li><strong><a href="https://www.mcmdl.com/docs/examples/">Examples</a></strong> - Sample projects and code snippets</li>
+</ul>
+<hr />
+<h2 id="contributing">🤝 Contributing</h2>
+<p>We welcome contributions! Please see our <a href="CONTRIBUTING.md">Contributing Guide</a> for details.</p>
+<h3 id="development-setup">Development Setup</h3>
+<ol>
+<li>Fork the repository</li>
+<li>Create a feature branch</li>
+<li>Make your changes</li>
+<li>Add tests for new functionality</li>
+<li>Submit a pull request</li>
+</ol>
+<hr />
+<h2 id="license">📄 License</h2>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<hr />
+<h2 id="acknowledgments">🙏 Acknowledgments</h2>
+<ul>
+<li>Minecraft community for inspiration</li>
+<li>Contributors and testers</li>
+<li>VS Code team for the excellent extension API</li>
+</ul>
+<hr />
+<p><strong>Happy coding with MDL! 🎮</strong></p>
 
 
 

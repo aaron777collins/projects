@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4822,7 +4822,10 @@
 Note: You may want to run
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>chmod<span class="w"> </span>u+x<span class="w"> </span>starttmux
 </span></code></pre></div>
-and copy it <code>to /usr/local/bin</code> to run vim inside a tmux session at a specif</li>
+and copy it <code>to /usr/local/bin</code> to run vim inside a tmux session at a specified location. For example
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>starttmux<span class="w"> </span>somefolder
+</span></code></pre></div>
+would open a tmux and vim session in [your current directory]/somefolder. You can use relative or absolute pathing because it just runs the <code>cd</code> command to navigate.</li>
 </ul>
 
 

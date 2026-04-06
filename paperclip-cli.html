@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4902,7 +4902,675 @@
 <h2 id="full-documentation">📚 Full Documentation</h2>
 <p>Detailed per-command docs with option tables, example outputs, and API gotchas:</p>
 <p><strong><a href="https://aaron777collins.github.io/paperclip-cli/">https://aaron777collins.github.io/paperclip-cli/</a></strong></p>
-<p>Or browse locally in t</p>
+<p>Or browse locally in the <a href="docs/"><code>docs/</code></a> folder:
+<a href="docs/company.md">company</a> · <a href="docs/agent.md">agent</a> · <a href="docs/goal.md">goal</a> · <a href="docs/issue.md">issue</a> · <a href="docs/project.md">project</a> · <a href="docs/routine.md">routine</a> · <a href="docs/approval.md">approval</a> · <a href="docs/plugin.md">plugin</a> · <a href="docs/heartbeat.md">heartbeat</a> · <a href="docs/secret.md">secret</a></p>
+<hr />
+<h2 id="command-coverage-at-a-glance">Command Coverage at a Glance</h2>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th style="text-align: center;"><code>list</code></th>
+<th style="text-align: center;"><code>create</code></th>
+<th style="text-align: center;"><code>get</code></th>
+<th style="text-align: center;"><code>update</code></th>
+<th style="text-align: center;"><code>delete</code></th>
+<th>Extra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>company</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>agent</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td><code>wakeup</code></td>
+</tr>
+<tr>
+<td><strong>goal</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>issue</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>project</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>routine</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><code>archive</code>¹</td>
+<td><code>trigger-add</code>, <code>triggers</code>, <code>runs</code>, <code>run</code></td>
+</tr>
+<tr>
+<td><strong>approval</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td><code>approve</code>, <code>reject</code></td>
+</tr>
+<tr>
+<td><strong>plugin</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td><code>examples</code>, <code>install</code></td>
+</tr>
+<tr>
+<td><strong>heartbeat</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>secret</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>¹ The Paperclip API has no hard-delete for routines. <code>routine archive</code> sets status=<code>archived</code> to stop all future runs. To fully remove, delete the parent project.</p>
+</blockquote>
+<p>Every command supports <code>--json</code> for machine-readable output and <code>-h</code>/<code>--help</code> for usage info.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#commands-reference">Commands Reference</a></li>
+<li><a href="#status">status</a></li>
+<li><a href="#company">company</a></li>
+<li><a href="#agent">agent</a></li>
+<li><a href="#goal">goal</a></li>
+<li><a href="#issue">issue</a></li>
+<li><a href="#project">project</a></li>
+<li><a href="#routine">routine</a></li>
+<li><a href="#approval">approval</a></li>
+<li><a href="#plugin">plugin</a></li>
+<li><a href="#heartbeat">heartbeat</a></li>
+<li><a href="#secret">secret</a></li>
+<li><a href="#json-output">JSON Output</a></li>
+<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#tips--patterns">Tips &amp; Patterns</a></li>
+</ul>
+<hr />
+<h2 id="installation">Installation</h2>
+<p><strong>From source (recommended while in development):</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/paperclip-cli.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>paperclip-cli
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</span></code></pre></div>
+<p><strong>Via pip (when published):</strong></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>paperclip-cli
+</span></code></pre></div>
+<hr />
+<h2 id="quick-start">Quick Start</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 1. Point the CLI at your Paperclip server (one-time setup)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>paperclip-cli<span class="w"> </span>configure<span class="w"> </span>--url<span class="w"> </span>http://localhost:3100
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># 2. Verify it can reach the server</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>paperclip-cli<span class="w"> </span>status
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># 3. Create your first company</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;AcmeCorp&quot;</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;My first AI company&quot;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># 4. Grab the company ID</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>list
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># 5. Hire a CEO (auto-approved, can create other agents)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;CEO&quot;</span><span class="w"> </span>--role<span class="w"> </span>ceo<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Chief Executive Officer&quot;</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># 6. Hire a general agent</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Engineer&quot;</span><span class="w"> </span>--role<span class="w"> </span>general<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Backend Engineer&quot;</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="c1"># 7. Approve the hire from the board queue</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>approve<span class="w"> </span>&lt;approval-id&gt;
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="c1"># 8. Create a goal and track work</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Launch v1.0&quot;</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Build auth system&quot;</span>
+</span></code></pre></div>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<p>Configure the CLI once with your server URL (and optionally an auth token):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>paperclip-cli<span class="w"> </span>configure<span class="w"> </span>--url<span class="w"> </span>http://localhost:3100
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># With auth token (for authenticated/private mode servers):</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>paperclip-cli<span class="w"> </span>configure<span class="w"> </span>--url<span class="w"> </span>https://paperclip.example.com<span class="w"> </span>--token<span class="w"> </span>my-secret-token
+</span></code></pre></div>
+<p>Config is saved to <code>~/.config/paperclip-cli/config.json</code>.</p>
+<p>You can also use environment variables (override the saved config):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PAPERCLIP_URL</span><span class="o">=</span>http://localhost:3100
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PAPERCLIP_TOKEN</span><span class="o">=</span>your-token
+</span></code></pre></div>
+<p>Or pass flags directly on any command:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>paperclip-cli<span class="w"> </span>--url<span class="w"> </span>http://localhost:3100<span class="w"> </span>company<span class="w"> </span>list
+</span></code></pre></div>
+<hr />
+<h2 id="commands-reference">Commands Reference</h2>
+<p>All commands support <code>-h</code> / <code>--help</code>. Running a command group with no subcommand also shows help:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>paperclip-cli<span class="w"> </span>--help
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>paperclip-cli<span class="w"> </span>company<span class="w">        </span><span class="c1"># shows company subcommands</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>--help
+</span></code></pre></div>
+<hr />
+<h3 id="status">status</h3>
+<p>Check that the Paperclip server is reachable and healthy.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>paperclip-cli<span class="w"> </span>status
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>paperclip-cli<span class="w"> </span>status<span class="w"> </span>--json
+</span></code></pre></div>
+<p><strong>Example output:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>✓ Paperclip is healthy
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  URL:  http://localhost:3100
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  Version: 2026.325.0
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  Mode: local_trusted
+</span></code></pre></div></p>
+<hr />
+<h3 id="company">company</h3>
+<p>Manage your AI companies. Each company is an isolated org with its own agents, goals, issues, and budget.</p>
+<h4 id="company-list"><code>company list</code></h4>
+<p>List all companies on the server.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>list
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>list<span class="w"> </span>--json
+</span></code></pre></div>
+<h4 id="company-create"><code>company create</code></h4>
+<p>Create a new company.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;AcmeCorp&quot;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;AcmeCorp&quot;</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;AI-powered operations platform&quot;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;AcmeCorp&quot;</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;...&quot;</span><span class="w"> </span>--mission<span class="w"> </span><span class="s2">&quot;Automate business ops&quot;</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name</code></td>
+<td>✅</td>
+<td>Company name</td>
+</tr>
+<tr>
+<td><code>--description</code></td>
+<td>No</td>
+<td>Short description</td>
+</tr>
+<tr>
+<td><code>--mission</code></td>
+<td>No</td>
+<td>Mission statement</td>
+</tr>
+<tr>
+<td><code>--json</code></td>
+<td>No</td>
+<td>Output raw JSON</td>
+</tr>
+</tbody>
+</table>
+<h4 id="company-get"><code>company get</code></h4>
+<p>Get full details for one company.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>get<span class="w"> </span>&lt;company-id&gt;
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>get<span class="w"> </span>6ef9c662-776f-43e0-8e7e-55f36c309edb<span class="w"> </span>--json
+</span></code></pre></div>
+<h4 id="company-update"><code>company update</code></h4>
+<p>Update a company's name, description, or mission.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>update<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;New Name&quot;</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>update<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;Updated description&quot;</span><span class="w"> </span>--mission<span class="w"> </span><span class="s2">&quot;New mission&quot;</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name</code></td>
+<td>New company name</td>
+</tr>
+<tr>
+<td><code>--description</code></td>
+<td>New description</td>
+</tr>
+<tr>
+<td><code>--mission</code></td>
+<td>New mission statement</td>
+</tr>
+</tbody>
+</table>
+<h4 id="company-delete"><code>company delete</code></h4>
+<p>Permanently delete a company and all its data.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>delete<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--yes
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c1"># Without --yes, you&#39;ll be prompted to confirm</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>delete<span class="w"> </span>&lt;company-id&gt;
+</span></code></pre></div>
+<blockquote>
+<p>⚠️ This is irreversible. All agents, goals, and issues will be deleted.</p>
+</blockquote>
+<hr />
+<h3 id="agent">agent</h3>
+<p>Manage agents (the AI workers) inside a company.</p>
+<p><strong>Roles:</strong>
+- <code>ceo</code> — Auto-approved. Has <code>canCreateAgents: true</code>. Sits at the top of the org chart.
+- <code>general</code> — Regular agent. Requires board approval before becoming active.</p>
+<h4 id="agent-list"><code>agent list</code></h4>
+<p>List all agents in a company.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--json
+</span></code></pre></div>
+<p>Shows: ID, name, role, status (idle / pending_approval / active / paused).</p>
+<h4 id="agent-create"><code>agent create</code></h4>
+<p>Hire a new agent. CEOs are auto-approved; general agents go to the board approval queue.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Hire a CEO</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;CEO&quot;</span><span class="w"> </span>--role<span class="w"> </span>ceo<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Chief Executive Officer&quot;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># Hire a general agent</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Engineer&quot;</span><span class="w"> </span>--role<span class="w"> </span>general<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Senior Backend Engineer&quot;</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--company</code></td>
+<td>✅</td>
+<td>—</td>
+<td>Company ID</td>
+</tr>
+<tr>
+<td><code>--name</code></td>
+<td>✅</td>
+<td>—</td>
+<td>Agent name</td>
+</tr>
+<tr>
+<td><code>--role</code></td>
+<td>No</td>
+<td><code>general</code></td>
+<td><code>general</code> or <code>ceo</code></td>
+</tr>
+<tr>
+<td><code>--title</code></td>
+<td>No</td>
+<td>—</td>
+<td>Job title (display only)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="agent-get"><code>agent get</code></h4>
+<p>Get full details for one agent.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>get<span class="w"> </span>&lt;agent-id&gt;
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>get<span class="w"> </span>&lt;agent-id&gt;<span class="w"> </span>--json
+</span></code></pre></div>
+<p>Shows all fields: status, role, permissions, budget, adapter config, last heartbeat.</p>
+<h4 id="agent-update"><code>agent update</code></h4>
+<p>Update an agent's name, title, role, budget, or adapter config.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>update<span class="w"> </span>&lt;agent-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Lead Engineer&quot;</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>update<span class="w"> </span>&lt;agent-id&gt;<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;CTO&quot;</span><span class="w"> </span>--role<span class="w"> </span>ceo
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>update<span class="w"> </span>&lt;agent-id&gt;<span class="w"> </span>--budget<span class="w"> </span><span class="m">5000</span><span class="w">   </span><span class="c1"># $50.00/month in cents</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--name</code></td>
+<td>New name</td>
+</tr>
+<tr>
+<td><code>--title</code></td>
+<td>New job title</td>
+</tr>
+<tr>
+<td><code>--role</code></td>
+<td>New role (<code>general</code> or <code>ceo</code>)</td>
+</tr>
+<tr>
+<td><code>--reports-to</code></td>
+<td>Agent ID this agent reports to</td>
+</tr>
+<tr>
+<td><code>--budget</code></td>
+<td>Monthly budget cap in cents (e.g. <code>5000</code> = $50/month)</td>
+</tr>
+<tr>
+<td><code>--adapter-type</code></td>
+<td>Adapter type (default: <code>process</code>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="agent-delete"><code>agent delete</code></h4>
+<p>Remove an agent from a company.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>delete<span class="w"> </span>&lt;agent-id&gt;<span class="w"> </span>--yes
+</span></code></pre></div>
+<h4 id="agent-wakeup"><code>agent wakeup</code></h4>
+<p>Send a wake-up signal to an idle agent so it checks its inbox and processes pending tasks.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>wakeup<span class="w"> </span>&lt;agent-id&gt;
+</span></code></pre></div>
+<blockquote>
+<p>Note: Only works when the agent's status is <code>idle</code>. Active or paused agents will return an error.</p>
+</blockquote>
+<hr />
+<h3 id="goal">goal</h3>
+<p>Goals are high-level objectives for a company. Issues/tasks are attached to goals.</p>
+<h4 id="goal-list"><code>goal list</code></h4>
+<p>List all goals for a company.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--json
+</span></code></pre></div>
+<h4 id="goal-create"><code>goal create</code></h4>
+<p>Create a new goal.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Reach </span><span class="nv">$10</span><span class="s2">k MRR&quot;</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Reach </span><span class="nv">$10</span><span class="s2">k MRR&quot;</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;By end of Q2 2026&quot;</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--company</code></td>
+<td>✅</td>
+<td>Company ID</td>
+</tr>
+<tr>
+<td><code>--title</code></td>
+<td>✅</td>
+<td>Goal title</td>
+</tr>
+<tr>
+<td><code>--description</code></td>
+<td>No</td>
+<td>Longer description</td>
+</tr>
+</tbody>
+</table>
+<h4 id="goal-update"><code>goal update</code></h4>
+<p>Update a goal's title, description, or status.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>update<span class="w"> </span>&lt;goal-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Reach </span><span class="nv">$20</span><span class="s2">k MRR&quot;</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>update<span class="w"> </span>&lt;goal-id&gt;<span class="w"> </span>--status<span class="w"> </span>completed
+</span></code></pre></div>
+<h4 id="goal-delete"><code>goal delete</code></h4>
+<p>Delete a goal.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>delete<span class="w"> </span>&lt;goal-id&gt;<span class="w"> </span>--yes
+</span></code></pre></div>
+<hr />
+<h3 id="issue">issue</h3>
+<p>Issues are tasks/tickets that agents work on. They can be attached to a goal.</p>
+<h4 id="issue-list"><code>issue list</code></h4>
+<p>List all issues for a company.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--status<span class="w"> </span>backlog
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--status<span class="w"> </span>in_progress<span class="w"> </span>--json
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--company</code></td>
+<td>✅ Company ID</td>
+</tr>
+<tr>
+<td><code>--status</code></td>
+<td>Filter by status: <code>backlog</code>, <code>todo</code>, <code>in_progress</code>, <code>done</code>, <code>cancelled</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="issue-create"><code>issue create</code></h4>
+<p>Create a new issue/task, optionally linked to a goal.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Implement login flow&quot;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Fix signup bug&quot;</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;Users can&#39;t sign up with Gmail&quot;</span><span class="w"> </span>--goal<span class="w"> </span>&lt;goal-id&gt;
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--company</code></td>
+<td>✅</td>
+<td>Company ID</td>
+</tr>
+<tr>
+<td><code>--title</code></td>
+<td>✅</td>
+<td>Issue title</td>
+</tr>
+<tr>
+<td><code>--description</code></td>
+<td>No</td>
+<td>Detailed description</td>
+</tr>
+<tr>
+<td><code>--goal</code></td>
+<td>No</td>
+<td>Goal ID to attach this issue to</td>
+</tr>
+</tbody>
+</table>
+<h4 id="issue-update"><code>issue update</code></h4>
+<p>Update an issue's title, description, status, or assignee.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>update<span class="w"> </span>&lt;issue-id&gt;<span class="w"> </span>--status<span class="w"> </span><span class="k">done</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>update<span class="w"> </span>&lt;issue-id&gt;<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Fix signup bug (Gmail)&quot;</span><span class="w"> </span>--status<span class="w"> </span><span class="k">done</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="c1"># in_progress requires an assignee:</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>update<span class="w"> </span>&lt;issue-id&gt;<span class="w"> </span>--status<span class="w"> </span>in_progress<span class="w"> </span>--assignee<span class="w"> </span>&lt;agent-id&gt;
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--title</code></td>
+<td>New title</td>
+</tr>
+<tr>
+<td><code>--description</code></td>
+<td>New description</td>
+</tr>
+<tr>
+<td><code>--status</code></td>
+<td>New status: <code>backlog</code>, <code>todo</code>, <code>in_progress</code>, <code>done</code>, <code>cancelled</code></td>
+</tr>
+<tr>
+<td><code>--assignee</code></td>
+<td>Agent ID to assign the issue to (⚠️ required when setting <code>in_progress</code>)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Setting <code>--status in_progress</code> requires <code>--assignee &lt;agent-id&gt;</code> — the API enforces that in-progress issues must have an assignee.</p>
+</blockquote>
+<h4 id="issue-delete"><code>issue delete</code></h4>
+<p>Delete an issue.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>paperclip-cli<span class="w"> </span>issue<span class="w"> </span>delete<span class="w"> </span>&lt;issue-id&gt;<span class="w"> </span>--yes
+</span></code></pre></div>
+<hr />
+<h3 id="approval">approval</h3>
+<p>The board approval queue. When a general agent is hired (or other governed actions occur), they appear here as pending approvals. You must approve them before the agent becomes active.</p>
+<h4 id="approval-list"><code>approval list</code></h4>
+<p>List all pending (and past) approvals for a company.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;company-id&gt;<span class="w"> </span>--json
+</span></code></pre></div>
+<p>Shows: ID, type (e.g. <code>hire_agent</code>), status (<code>pending</code> / <code>approved</code> / <code>rejected</code>), requested by.</p>
+<h4 id="approval-approve"><code>approval approve</code></h4>
+<p>Approve a pending action (e.g. hire an agent).</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>approve<span class="w"> </span>&lt;approval-id&gt;
+</span></code></pre></div>
+<p>Once approved, the agent's status changes from <code>pending_approval</code> to <code>idle</code> and they become active.</p>
+<h4 id="approval-reject"><code>approval reject</code></h4>
+<p>Reject a pending action.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>reject<span class="w"> </span>&lt;approval-id&gt;
+</span></code></pre></div>
+<hr />
+<h3 id="plugin">plugin</h3>
+<p>Manage Paperclip plugins that extend agent capabilities.</p>
+<h4 id="plugin-list"><code>plugin list</code></h4>
+<p>List currently installed plugins.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>paperclip-cli<span class="w"> </span>plugin<span class="w"> </span>list
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>paperclip-cli<span class="w"> </span>plugin<span class="w"> </span>list<span class="w"> </span>--json
+</span></code></pre></div>
+<h4 id="plugin-examples"><code>plugin examples</code></h4>
+<p>Browse available example plugins from the Paperclip registry.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>paperclip-cli<span class="w"> </span>plugin<span class="w"> </span>examples
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>paperclip-cli<span class="w"> </span>plugin<span class="w"> </span>examples<span class="w"> </span>--json
+</span></code></pre></div>
+<h4 id="plugin-install"><code>plugin install</code></h4>
+<p>Install a plugin by name or URL.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>paperclip-cli<span class="w"> </span>plugin<span class="w"> </span>install<span class="w"> </span>&lt;name-or-url&gt;
+</span></code></pre></div>
+<hr />
+<h2 id="json-output">JSON Output</h2>
+<p>Every read command supports <code>--json</code> for clean machine-readable output — great for scripting, piping to <code>jq</code>, or agent automation:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># Get a company ID by name</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>list<span class="w"> </span>--json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.[] | select(.name==&quot;AcmeCorp&quot;) | .id&#39;</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="c1"># List all pending approvals across all companies</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>paperclip-cli<span class="w"> </span>company<span class="w"> </span>list<span class="w"> </span>--json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.[].id&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>id<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== </span><span class="nv">$id</span><span class="s2"> ===&quot;</span>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="w">  </span>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span><span class="nv">$id</span><span class="w"> </span>--json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.[] | select(.status==&quot;pending&quot;)&#39;</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="k">done</span>
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="c1"># Check all agent statuses</span>
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span>&lt;id&gt;<span class="w"> </span>--json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.[] | {name, status, role}&#39;</span>
+</span></code></pre></div>
+<hr />
+<h2 id="environment-variables">Environment Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PAPERCLIP_URL</code></td>
+<td>Server URL (overrides saved config)</td>
+</tr>
+<tr>
+<td><code>PAPERCLIP_TOKEN</code></td>
+<td>Auth token (overrides saved config)</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nv">PAPERCLIP_URL</span><span class="o">=</span>http://localhost:3100<span class="w"> </span>paperclip-cli<span class="w"> </span>company<span class="w"> </span>list
+</span></code></pre></div>
+<hr />
+<h2 id="tips-patterns">Tips &amp; Patterns</h2>
+<h3 id="get-ids-quickly">Get IDs quickly</h3>
+<p>Use <code>--json</code> + <code>jq</code> to grab IDs without copying from tables:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1"># Company ID</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="nv">COMPANY</span><span class="o">=</span><span class="k">$(</span>paperclip-cli<span class="w"> </span>company<span class="w"> </span>list<span class="w"> </span>--json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.[] | select(.name==&quot;AcmeCorp&quot;) | .id&#39;</span><span class="k">)</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="c1"># Agent ID</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="nv">AGENT</span><span class="o">=</span><span class="k">$(</span>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$COMPANY</span><span class="s2">&quot;</span><span class="w"> </span>--json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.[] | select(.name==&quot;CEO&quot;) | .id&#39;</span><span class="k">)</span>
+</span></code></pre></div>
+<h3 id="approve-all-pending-hires-at-once">Approve all pending hires at once</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="nv">COMPANY</span><span class="o">=</span>&lt;company-id&gt;
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span><span class="nv">$COMPANY</span><span class="w"> </span>--json<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="w">  </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.[] | select(.status==&quot;pending&quot;) | .id&#39;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>id<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>approve<span class="w"> </span><span class="nv">$id</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</span></code></pre></div>
+<h3 id="bootstrap-a-new-company-end-to-end">Bootstrap a new company end-to-end</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="c1"># Create company</span>
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="nv">CO</span><span class="o">=</span><span class="k">$(</span>paperclip-cli<span class="w"> </span>company<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;NewCo&quot;</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;New AI company&quot;</span><span class="w"> </span>--json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.id&#39;</span><span class="k">)</span>
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="c1"># Hire CEO (auto-approved)</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span><span class="nv">$CO</span><span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;CEO&quot;</span><span class="w"> </span>--role<span class="w"> </span>ceo<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Chief Executive Officer&quot;</span>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a><span class="c1"># Hire some agents</span>
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span><span class="nv">$CO</span><span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Engineer&quot;</span><span class="w"> </span>--role<span class="w"> </span>general<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Backend Engineer&quot;</span>
+</span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a>paperclip-cli<span class="w"> </span>agent<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span><span class="nv">$CO</span><span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Designer&quot;</span><span class="w"> </span>--role<span class="w"> </span>general<span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Product Designer&quot;</span>
+</span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a>
+</span><span id="__span-38-11"><a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a><span class="c1"># Approve all pending hires</span>
+</span><span id="__span-38-12"><a id="__codelineno-38-12" name="__codelineno-38-12" href="#__codelineno-38-12"></a>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>list<span class="w"> </span>--company<span class="w"> </span><span class="nv">$CO</span><span class="w"> </span>--json<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-38-13"><a id="__codelineno-38-13" name="__codelineno-38-13" href="#__codelineno-38-13"></a><span class="w">  </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.[] | select(.status==&quot;pending&quot;) | .id&#39;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-38-14"><a id="__codelineno-38-14" name="__codelineno-38-14" href="#__codelineno-38-14"></a><span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>id<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>paperclip-cli<span class="w"> </span>approval<span class="w"> </span>approve<span class="w"> </span><span class="nv">$id</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</span><span id="__span-38-15"><a id="__codelineno-38-15" name="__codelineno-38-15" href="#__codelineno-38-15"></a>
+</span><span id="__span-38-16"><a id="__codelineno-38-16" name="__codelineno-38-16" href="#__codelineno-38-16"></a><span class="c1"># Set a goal</span>
+</span><span id="__span-38-17"><a id="__codelineno-38-17" name="__codelineno-38-17" href="#__codelineno-38-17"></a>paperclip-cli<span class="w"> </span>goal<span class="w"> </span>create<span class="w"> </span>--company<span class="w"> </span><span class="nv">$CO</span><span class="w"> </span>--title<span class="w"> </span><span class="s2">&quot;Ship MVP&quot;</span><span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;First working product&quot;</span>
+</span><span id="__span-38-18"><a id="__codelineno-38-18" name="__codelineno-38-18" href="#__codelineno-38-18"></a>
+</span><span id="__span-38-19"><a id="__codelineno-38-19" name="__codelineno-38-19" href="#__codelineno-38-19"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Done! Company </span><span class="nv">$CO</span><span class="s2"> is running.&quot;</span>
+</span></code></pre></div>
+<hr />
+<h2 id="license">License</h2>
+<p>MIT</p>
 
 
 

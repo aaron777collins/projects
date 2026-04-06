@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4905,7 +4905,20 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>steamos-readonly<span class="w"> </span>disable
 </span></code></pre></div></p>
 <p>Finally, the following command does the following:
-1. Clones the repo to Programs/install_</p>
+1. Clones the repo to Programs/install_everything
+2. Makes install_everything a runnable command
+3. Backs up the bashrc
+4. Edits the bashrc adds all folders within the Programs folder to be on PATH so you can make other scripts easily too. This also makes the current script, install_everything, runnable from anywhere. You'll still want to edit the programs.txt file to add the programs you want to install though.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/home/deck/Programs/install_everything<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/SteamDeckPacmanReInstaller.git<span class="w"> </span>/home/deck/Programs/install_everything<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/home/deck/Programs/install_everything/install_everything<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>cp<span class="w"> </span>~/.bashrc<span class="w"> </span>~/.bashrc.backup.<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d%H%M%S<span class="k">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">if</span><span class="w"> </span>grep<span class="w"> </span>-q<span class="w"> </span><span class="s1">&#39;# If not running interactively, don&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;t do anything&#39;</span><span class="w"> </span>~/.bashrc<span class="p">;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;/# If not running interactively, don&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;t do anything/i # Adding all folders within Programs to PATH\nfor dir in /home/deck/Programs/*; do\n    if [[ -d &quot;$dir&quot; &amp;&amp; &quot;:$PATH:&quot; != *&quot;:$dir:&quot;* ]]; then\n        PATH=&quot;$dir:$PATH&quot;\n    fi\ndone\n&#39;</span><span class="w"> </span>~/.bashrc<span class="p">;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">else</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;# Adding all folders within Programs to PATH\nfor dir in /home/deck/Programs/*; do\n    if [[ -d \&quot;\$dir\&quot; &amp;&amp; \&quot;:\$PATH:\&quot; != *\&quot;:\$dir:\&quot;* ]]; then\n        PATH=\&quot;\$dir:\$PATH\&quot;\n    fi\ndone&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc<span class="p">;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">fi</span>
+</span></code></pre></div></p>
 
 
 

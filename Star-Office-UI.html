@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4820,7 +4820,313 @@
 <p><img alt="Star Office UI 封面" src="docs/screenshots/readme-cover-2.jpg" /></p>
 <p><strong>一个像素风格的 AI 办公室看板</strong> —— 把 AI 助手的工作状态实时可视化，让你直观看到"谁在做什么、昨天做了什么、现在是否在线"。</p>
 <p>支持多 Agent 协作、中英日三语、AI 生图装修、桌面宠物模式。
-与 <a href="https://github.com/openclaw/openclaw">OpenClaw</a> 深度集成时体</p>
+与 <a href="https://github.com/openclaw/openclaw">OpenClaw</a> 深度集成时体验最佳，也可以独立部署作为状态看板使用。</p>
+<blockquote>
+<p>本项目由 <strong><a href="https://x.com/ring_hyacinth">Ring Hyacinth</a></strong> 与 <strong><a href="https://x.com/simonxxoo">Simon Lee</a></strong> 共同创建（co-created project），并与社区开发者（<a href="https://github.com/Zhaohan-Wang">@Zhaohan-Wang</a>、<a href="https://github.com/Jah-yee">@Jah-yee</a>、<a href="https://github.com/liaoandi">@liaoandi</a>）一起持续维护和共建。
+欢迎提交 Issue 和 PR，也感谢每一位贡献者的支持。</p>
+</blockquote>
+<hr />
+<h2 id="_1">✨ 快速体验</h2>
+<h3 id="openclaw">方式一：让龙虾帮你部署（推荐给 OpenClaw 用户）</h3>
+<p>如果你正在使用 <a href="https://github.com/openclaw/openclaw">OpenClaw</a>，直接把下面这句话发给你的龙虾：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>请按照这个 SKILL.md 帮我完成 Star Office UI 的部署：
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>https://github.com/ringhyacinth/Star-Office-UI/blob/master/SKILL.md
+</span></code></pre></div>
+<p>龙虾会自动完成 clone、安装依赖、启动后端、配置状态同步，并把访问地址发给你。</p>
+<h3 id="30">方式二：30 秒手动部署</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 1) 下载仓库</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ringhyacinth/Star-Office-UI.git
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>Star-Office-UI
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># 2) 安装依赖</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>backend/requirements.txt
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># 3) 准备状态文件（首次）</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>cp<span class="w"> </span>state.sample.json<span class="w"> </span>state.json
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># 4) 启动后端</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="nb">cd</span><span class="w"> </span>backend
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>python3<span class="w"> </span>app.py
+</span></code></pre></div>
+<p>打开 <strong>http://127.0.0.1:19000</strong>，然后试试切状态：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>writing<span class="w"> </span><span class="s2">&quot;正在整理文档&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>error<span class="w"> </span><span class="s2">&quot;发现问题，排查中&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>idle<span class="w"> </span><span class="s2">&quot;待命中&quot;</span>
+</span></code></pre></div>
+<p><img alt="Star Office UI 预览" src="docs/screenshots/readme-cover-1.jpg" /></p>
+<hr />
+<h2 id="_2">🤔 适合谁用？</h2>
+<h3 id="openclaw-ai-agent">有 OpenClaw / AI Agent 的用户</h3>
+<p>这是<strong>完整体验</strong>。Agent 在工作时自动切换状态，办公室里的像素角色会实时走到对应区域——你只需要打开网页，就能看到 AI 此刻在做什么。</p>
+<h3 id="openclaw_1">没有 OpenClaw 的用户</h3>
+<p>也完全可以部署。你可以：
+- 用 <code>set_state.py</code> 或 API 手动 / 脚本推送状态
+- 把它当成一个像素风的个人状态页 / 远程办公看板
+- 接入任何能发 HTTP 请求的系统来驱动状态</p>
+<hr />
+<h2 id="_3">📋 功能一览</h2>
+<ol>
+<li><strong>状态可视化</strong> —— 6 种状态（<code>idle</code> / <code>writing</code> / <code>researching</code> / <code>executing</code> / <code>syncing</code> / <code>error</code>）自动映射到办公室不同区域，动画 + 气泡实时展示</li>
+<li><strong>昨日小记</strong> —— 自动从 <code>memory/*.md</code> 读取最近一天的工作记录，脱敏后展示为"昨日小记"卡片</li>
+<li><strong>多 Agent 协作</strong> —— 通过 join key 邀请其他 Agent 加入你的办公室，实时查看多人状态</li>
+<li><strong>中英日三语</strong> —— CN / EN / JP 一键切换，界面文案、气泡、加载提示全部联动</li>
+<li><strong>美术资产自定义</strong> —— 侧边栏管理角色 / 场景 / 装饰素材，支持动态帧同步，避免闪烁</li>
+<li><strong>AI 生图装修</strong> —— 接入 Gemini API，用 AI 给办公室换背景；不接入 API 也能正常使用核心功能</li>
+<li><strong>移动端适配</strong> —— 手机直接打开即可查看，适合外出时快速瞄一眼</li>
+<li><strong>安全加固</strong> —— 侧边栏密码保护、生产环境弱密码拦截、Session Cookie 加固</li>
+<li><strong>灵活公网访问</strong> —— 推荐 Cloudflare Tunnel 一键公网化，也可用自有域名 / 反向代理</li>
+<li><strong>桌面宠物版</strong> —— 可选的 Tauri 桌面封装，把办公室变成透明窗口的桌面宠物（见下方说明）</li>
+</ol>
+<hr />
+<h2 id="_4">🚀 详细部署指南</h2>
+<h3 id="1">1) 安装依赖</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>Star-Office-UI
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>backend/requirements.txt
+</span></code></pre></div>
+<h3 id="2">2) 初始化状态文件</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cp<span class="w"> </span>state.sample.json<span class="w"> </span>state.json
+</span></code></pre></div>
+<h3 id="3">3) 启动后端</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>backend
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>python3<span class="w"> </span>app.py
+</span></code></pre></div>
+<p>打开 <code>http://127.0.0.1:19000</code></p>
+<blockquote>
+<p>✅ 首次部署可以先保留默认配置；在生产环境中，请复制 <code>.env.example</code> 为 <code>.env</code> 并设置强随机的 <code>FLASK_SECRET_KEY</code> 与 <code>ASSET_DRAWER_PASS</code>，避免弱密码和会话泄露。</p>
+</blockquote>
+<h3 id="4">4) 切换状态</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>writing<span class="w"> </span><span class="s2">&quot;正在整理文档&quot;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>syncing<span class="w"> </span><span class="s2">&quot;同步进度中&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>error<span class="w"> </span><span class="s2">&quot;发现问题，排查中&quot;</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>idle<span class="w"> </span><span class="s2">&quot;待命中&quot;</span>
+</span></code></pre></div>
+<h3 id="5">5) 公网访问（可选）</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>cloudflared<span class="w"> </span>tunnel<span class="w"> </span>--url<span class="w"> </span>http://127.0.0.1:19000
+</span></code></pre></div>
+<p>拿到 <code>https://xxx.trycloudflare.com</code> 链接即可分享。</p>
+<h3 id="6">6) 验证安装（可选）</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>python3<span class="w"> </span>scripts/smoke_test.py<span class="w"> </span>--base-url<span class="w"> </span>http://127.0.0.1:19000
+</span></code></pre></div>
+<p>所有检查显示 <code>OK</code> 即表示部署成功。</p>
+<hr />
+<h2 id="openclaw_2">🦞 OpenClaw 深度集成</h2>
+<blockquote>
+<p>以下内容面向 <a href="https://github.com/openclaw/openclaw">OpenClaw</a> 用户。如果你不使用 OpenClaw，可以跳过这一节。</p>
+</blockquote>
+<h3 id="_5">状态自动同步</h3>
+<p>在你的 <code>SOUL.md</code>（或 Agent 规则文件）中加入以下规则，让 Agent 自觉维护状态：</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="gu">## Star Office 状态同步规则</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">-</span><span class="w"> </span>接到任务时：先执行 <span class="sb">`python3 set_state.py &lt;状态&gt; &quot;&lt;描述&gt;&quot;`</span> 再开始工作
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">-</span><span class="w"> </span>完成任务后：执行 <span class="sb">`python3 set_state.py idle &quot;待命中&quot;`</span> 再回复
+</span></code></pre></div>
+<p><strong>6 种状态 → 3 个区域的映射：</strong></p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>办公室区域</th>
+<th>触发场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>idle</code></td>
+<td>🛋 休息区（沙发）</td>
+<td>待命 / 任务完成</td>
+</tr>
+<tr>
+<td><code>writing</code></td>
+<td>💻 工作区（办公桌）</td>
+<td>写代码 / 写文档</td>
+</tr>
+<tr>
+<td><code>researching</code></td>
+<td>💻 工作区</td>
+<td>搜索 / 调研</td>
+</tr>
+<tr>
+<td><code>executing</code></td>
+<td>💻 工作区</td>
+<td>执行命令 / 跑任务</td>
+</tr>
+<tr>
+<td><code>syncing</code></td>
+<td>💻 工作区</td>
+<td>同步数据 / 推送</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>🐛 Bug 区</td>
+<td>报错 / 异常排查</td>
+</tr>
+</tbody>
+</table>
+<h3 id="agent">邀请其他 Agent 加入办公室</h3>
+<p><strong>Step 1：准备 join key</strong></p>
+<p>首次启动后端时，如果当前目录下不存在 <code>join-keys.json</code>，服务会自动根据 <code>join-keys.sample.json</code> 生成一个运行时的 <code>join-keys.json</code>（内含示例 key，例如 <code>ocj_example_team_01</code>）。你可以在生成后的 <code>join-keys.json</code> 中自行添加、修改或删除 key，每个 key 默认支持最多 3 人同时在线。</p>
+<p><strong>Step 2：让访客 Agent 运行推送脚本</strong></p>
+<p>访客只需下载 <code>office-agent-push.py</code>，填写 3 个变量即可：</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">JOIN_KEY</span> <span class="o">=</span> <span class="s2">&quot;ocj_starteam02&quot;</span>          <span class="c1"># 你分配的 key</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">AGENT_NAME</span> <span class="o">=</span> <span class="s2">&quot;小明的龙虾&quot;</span>            <span class="c1"># 显示名称</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">OFFICE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://office.hyacinth.im&quot;</span>  <span class="c1"># 你的办公室地址</span>
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>python3<span class="w"> </span>office-agent-push.py
+</span></code></pre></div>
+<p>脚本会自动加入办公室并每 15 秒推送一次状态。访客会出现在看板上，根据状态自动走到对应区域。</p>
+<p><strong>Step 3（可选）：访客安装 Skill</strong></p>
+<p>访客也可以把 <code>frontend/join-office-skill.md</code> 作为 Skill 使用，Agent 会自动完成配置和推送。</p>
+<blockquote>
+<p>详细的访客接入说明见 <a href="./frontend/join-office-skill.md"><code>frontend/join-office-skill.md</code></a></p>
+</blockquote>
+<hr />
+<h2 id="api">📡 常用 API</h2>
+<table>
+<thead>
+<tr>
+<th>端点</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET /health</code></td>
+<td>健康检查</td>
+</tr>
+<tr>
+<td><code>GET /status</code></td>
+<td>获取主 Agent 状态</td>
+</tr>
+<tr>
+<td><code>POST /set_state</code></td>
+<td>设置主 Agent 状态</td>
+</tr>
+<tr>
+<td><code>GET /agents</code></td>
+<td>获取多 Agent 列表</td>
+</tr>
+<tr>
+<td><code>POST /join-agent</code></td>
+<td>访客加入办公室</td>
+</tr>
+<tr>
+<td><code>POST /agent-push</code></td>
+<td>访客推送状态</td>
+</tr>
+<tr>
+<td><code>POST /leave-agent</code></td>
+<td>访客离开</td>
+</tr>
+<tr>
+<td><code>GET /yesterday-memo</code></td>
+<td>获取昨日小记</td>
+</tr>
+<tr>
+<td><code>GET /config/gemini</code></td>
+<td>获取 Gemini API 配置</td>
+</tr>
+<tr>
+<td><code>POST /config/gemini</code></td>
+<td>设置 Gemini API 配置</td>
+</tr>
+<tr>
+<td><code>GET /assets/generate-rpg-background/poll</code></td>
+<td>轮询生图进度</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_6">🖥 桌面宠物版（可选）</h2>
+<p><code>desktop-pet/</code> 目录提供了一个基于 <strong>Tauri</strong> 的桌面封装版本，可以把像素办公室变成一个透明窗口的桌面宠物。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">cd</span><span class="w"> </span>desktop-pet
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>npm<span class="w"> </span>install
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>npm<span class="w"> </span>run<span class="w"> </span>dev
+</span></code></pre></div>
+<ul>
+<li>启动时自动拉起 Python 后端</li>
+<li>窗口默认指向 <code>http://127.0.0.1:19000/?desktop=1</code></li>
+<li>支持通过环境变量自定义项目路径和 Python 路径</li>
+</ul>
+<blockquote>
+<p>⚠️ 这是一个<strong>可选的实验性功能</strong>，目前主要在 macOS 上开发测试。详见 <a href="./desktop-pet/README.md"><code>desktop-pet/README.md</code></a>。</p>
+<p>🙏 桌面宠物版由 <a href="https://github.com/Zhaohan-Wang">@Zhaohan-Wang</a> 独立开发，感谢他的贡献！</p>
+</blockquote>
+<hr />
+<h2 id="_7">🎨 美术资产与开源许可</h2>
+<h3 id="_8">资产来源</h3>
+<p>访客角色动画使用了 <strong>LimeZu</strong> 的免费资产：
+- <a href="https://limezu.itch.io/animated-mini-characters-2-platform-free">Animated Mini Characters 2 (Platformer) [FREE]</a></p>
+<p>请在二次发布 / 演示时保留来源说明，并遵守原作者许可条款。</p>
+<h3 id="_9">许可协议</h3>
+<ul>
+<li><strong>代码 / 逻辑：MIT</strong>（见 <a href="./LICENSE"><code>LICENSE</code></a>）</li>
+<li><strong>美术资产：禁止商用</strong>（仅学习 / 演示 / 交流用途）</li>
+</ul>
+<blockquote>
+<p>如需商用，请将所有美术资产替换为你自己的原创素材。</p>
+</blockquote>
+<hr />
+<h2 id="_10">📝 更新日志</h2>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>概要</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-03-06</td>
+<td>🔌 默认端口调整 — 默认后端端口从 18791 调整为 19000，以避开 OpenClaw Browser Control 端口冲突；同步更新脚本、桌面壳与文档默认值</td>
+<td><a href="./docs/CHANGELOG_2026-03.md"><code>docs/CHANGELOG_2026-03.md</code></a></td>
+</tr>
+<tr>
+<td>2026-03-05</td>
+<td>📱 稳定性修复 — CDN 缓存修复、生图异步化、移动端侧边栏优化、Join Key 过期与并发控制</td>
+<td><a href="./docs/UPDATE_REPORT_2026-03-05.md"><code>docs/UPDATE_REPORT_2026-03-05.md</code></a></td>
+</tr>
+<tr>
+<td>2026-03-04</td>
+<td>🔒 P0/P1 安全加固 — 弱密码拦截、后端模块拆分、stale 状态自动回 idle、首屏骨架屏优化</td>
+<td><a href="./docs/UPDATE_REPORT_2026-03-04_P0_P1.md"><code>docs/UPDATE_REPORT_2026-03-04_P0_P1.md</code></a></td>
+</tr>
+<tr>
+<td>2026-03-03</td>
+<td>📋 开源发布检查清单完成</td>
+<td><a href="./docs/OPEN_SOURCE_RELEASE_CHECKLIST.md"><code>docs/OPEN_SOURCE_RELEASE_CHECKLIST.md</code></a></td>
+</tr>
+<tr>
+<td>2026-03-01</td>
+<td>🎉 <strong>v2 重制发布</strong> — 新增三语支持、资产管理系统、AI 生图装修、美术资产全面替换</td>
+<td><a href="./docs/FEATURES_NEW_2026-03-01.md"><code>docs/FEATURES_NEW_2026-03-01.md</code></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_11">📁 项目结构</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Star-Office-UI/
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>├── backend/            # Flask 后端
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>│   ├── app.py
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>│   ├── requirements.txt
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>│   └── run.sh
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>├── frontend/           # 前端页面与资产
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>│   ├── index.html
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>│   ├── join.html
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>│   ├── invite.html
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>│   └── layout.js
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>├── desktop-pet/        # Tauri 桌面宠物版（可选）
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>├── docs/               # 文档与截图
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>│   └── screenshots/
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>├── office-agent-push.py  # 访客推送脚本
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>├── set_state.py          # 状态切换脚本
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>├── state.sample.json     # 状态文件模板
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>├── join-keys.sample.json # Join Key 模板（启动时生成 join-keys.json）
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>├── SKILL.md              # OpenClaw Skill
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>└── LICENSE               # MIT 许可
+</span></code></pre></div>
+<hr />
+<h2 id="star-history">⭐ Star History</h2>
+<p><a href="https://www.star-history.com/?repos=ringhyacinth%2FStar-Office-UI&amp;type=date&amp;legend=top-left"><img alt="Star History Chart" src="https://api.star-history.com/image?repos=ringhyacinth/Star-Office-UI&amp;type=date&amp;legend=top-left" /></a></p>
 <h2 id="i-fork-information">ℹ️ Fork Information</h2>
 <p>This is a fork of another repository.</p>
 

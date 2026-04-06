@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4821,8 +4821,68 @@
 <ul>
 <li>🌙 <strong>Dark theme</strong> — GitHub-inspired dark mode colors</li>
 <li>📄 <strong>File preview</strong> — Click text files to preview in a modal (no page reload)</li>
-<li>⌨️ <strong>Keyboard friendly</strong> — Pr</li>
+<li>⌨️ <strong>Keyboard friendly</strong> — Press Escape to close previews</li>
+<li>📱 <strong>Responsive</strong> — Works on mobile and desktop</li>
+<li>🚀 <strong>Zero dependencies</strong> — Pure HTML/CSS/JS</li>
 </ul>
+<h2 id="supported-preview-extensions">Supported Preview Extensions</h2>
+<p><code>.log</code>, <code>.txt</code>, <code>.csv</code>, <code>.json</code>, <code>.md</code>, <code>.xml</code>, <code>.yaml</code>, <code>.yml</code>, <code>.conf</code>, <code>.ini</code>, <code>.sh</code>, <code>.py</code>, <code>.js</code>, <code>.html</code>, <code>.css</code></p>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Install nginx with fancyindex module:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nginx<span class="w"> </span>libnginx-mod-http-fancyindex
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Copy theme files:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/www/static/fancyindex-theme
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>cp<span class="w"> </span>header.html<span class="w"> </span>footer.html<span class="w"> </span>/var/www/static/fancyindex-theme/
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Configure nginx:
+<div class="language-nginx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kn">server_name</span><span class="w"> </span><span class="s">_</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="kn">root</span><span class="w"> </span><span class="s">/var/www/static</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="kn">fancyindex</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="kn">fancyindex_exact_size</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="kn">fancyindex_localtime</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="kn">fancyindex_header</span><span class="w"> </span><span class="s">&quot;/fancyindex-theme/header.html&quot;</span><span class="p">;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="kn">fancyindex_footer</span><span class="w"> </span><span class="s">&quot;/fancyindex-theme/footer.html&quot;</span><span class="p">;</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="kn">fancyindex_time_format</span><span class="w"> </span><span class="s">&quot;%b</span><span class="w"> </span><span class="s">%d,</span><span class="w"> </span><span class="s">%Y</span><span class="w"> </span><span class="s">%H:%M&quot;</span><span class="p">;</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="kn">try_files</span><span class="w"> </span><span class="nv">$uri</span><span class="w"> </span><span class="nv">$uri/</span><span class="w"> </span><span class="p">=</span><span class="mi">404</span><span class="p">;</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">}</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Reload nginx:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>nginx<span class="w"> </span>-t<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>nginx
+</span></code></pre></div></p>
+</li>
+</ol>
+<h2 id="how-it-works">How It Works</h2>
+<ul>
+<li>Clicking a previewable file fetches the first 512KB via a Range request</li>
+<li>Shows up to 200 lines in a modal overlay</li>
+<li>Click outside, press Escape, or click Close to dismiss</li>
+<li>Download button gets the full file</li>
+</ul>
+<h2 id="customization">Customization</h2>
+<p>Edit <code>header.html</code> to change colors. Key CSS variables:
+- <code>#0d1117</code> — Background
+- <code>#161b22</code> — Secondary background
+- <code>#c9d1d9</code> — Text color
+- <code>#58a6ff</code> — Links/accents
+- <code>#30363d</code> — Borders</p>
+<h2 id="license">License</h2>
+<p>MIT</p>
 
 
 

@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4827,7 +4827,112 @@
 - ✅ Run ESLint (<code>pnpm lint</code>)
 - ✅ Build application (<code>pnpm build</code>)
 - ✅ Run Playwright E2E tests (<code>pnpm test:e2e</code>)
-- ✅ Upload test results as ar</p>
+- ✅ Upload test results as artifacts</p>
+<p><strong>Purpose:</strong> Ensures all pull requests pass quality checks before merging.</p>
+<h3 id="2-build-and-deploy-deployyml">2. Build and Deploy (<code>deploy.yml</code>)</h3>
+<p><strong>Trigger:</strong> Pushes to <code>master</code> branch</p>
+<p><strong>Steps:</strong>
+1. <strong>Test Job:</strong>
+   - Same as PR tests but with production build
+   - Upload build artifacts</p>
+<ol>
+<li><strong>Deploy Job:</strong></li>
+<li>Download build artifacts from test job</li>
+<li>Deploy to dev2.aaroncollins.info via SSH</li>
+<li>Restart application using PM2</li>
+<li>Run health check</li>
+</ol>
+<p><strong>Environment:</strong> <code>development</code> (GitHub environment with protection rules)</p>
+<h3 id="3-docker-build-dockeryml">3. Docker Build (<code>docker.yml</code>)</h3>
+<p><strong>Trigger:</strong> Pushes to <code>master</code> and tags starting with <code>v*</code></p>
+<p><strong>Steps:</strong>
+- ✅ Build Docker image
+- ✅ Push to GitHub Container Registry (ghcr.io)
+- ✅ Tag with branch name or version
+- ✅ Use GitHub Actions cache for faster builds</p>
+<h2 id="environment-configuration">Environment Configuration</h2>
+<h3 id="development-envdevelopment">Development (<code>.env.development</code>)</h3>
+<ul>
+<li>Local development settings</li>
+<li>Debug mode enabled</li>
+<li>Uses file-based SQLite database</li>
+</ul>
+<h3 id="production-envproduction">Production (<code>.env.production</code>)</h3>
+<ul>
+<li>Production optimizations</li>
+<li>PostgreSQL database</li>
+<li>Security configurations</li>
+<li>Deployed to dev2.aaroncollins.info</li>
+</ul>
+<h2 id="deployment-setup">Deployment Setup</h2>
+<h3 id="pm2-configuration-ecosystemconfigjs">PM2 Configuration (<code>ecosystem.config.js</code>)</h3>
+<ul>
+<li>Application name: <code>melo-v2</code></li>
+<li>Single instance (can be scaled later)</li>
+<li>Memory limit: 1GB</li>
+<li>Structured logging to <code>./logs/</code></li>
+</ul>
+<h3 id="required-github-secrets">Required GitHub Secrets</h3>
+<p>For deployment to work, set these in your repository settings:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>DEV2_HOST=dev2.aaroncollins.info
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>DEV2_USERNAME=deploy
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>DEV2_SSH_KEY=&lt;private SSH key&gt;
+</span></code></pre></div>
+<h3 id="server-prerequisites">Server Prerequisites</h3>
+<p>On dev2.aaroncollins.info:
+1. Node.js 18+ installed
+2. pnpm installed globally
+3. PM2 installed globally
+4. SSH access configured for deploy user
+5. Repository cloned to <code>/var/www/melo-v2</code>
+6. Environment variables configured</p>
+<h2 id="health-monitoring">Health Monitoring</h2>
+<h3 id="health-check-endpoint">Health Check Endpoint</h3>
+<p>The deploy workflow includes a health check that verifies the application is running:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl<span class="w"> </span>-f<span class="w"> </span>https://dev2.aaroncollins.info/api/health
+</span></code></pre></div></p>
+<p>This uses the health endpoint from task <code>p12-5-health-endpoints</code>.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="automatic-deployments">Automatic Deployments</h3>
+<ol>
+<li>Push code to <code>master</code> branch</li>
+<li>CI runs tests and builds application</li>
+<li>If tests pass, deploys to dev2.aaroncollins.info</li>
+<li>PM2 reloads the application</li>
+<li>Health check verifies deployment</li>
+</ol>
+<h3 id="manual-operations">Manual Operations</h3>
+<p><strong>Check deployment status:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pm2<span class="w"> </span>status<span class="w"> </span>melo-v2
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>pm2<span class="w"> </span>logs<span class="w"> </span>melo-v2
+</span></code></pre></div></p>
+<p><strong>Manual restart:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pm2<span class="w"> </span>restart<span class="w"> </span>melo-v2
+</span></code></pre></div></p>
+<p><strong>View build logs:</strong>
+Check GitHub Actions tab for detailed build/deploy logs.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>Build failures:</strong>
+- Check Node.js/pnpm versions match CI
+- Ensure all dependencies are in pnpm-lock.yaml
+- Verify TypeScript compilation passes locally</p>
+<p><strong>Deployment failures:</strong>
+- Check SSH key permissions
+- Verify server disk space and memory
+- Check PM2 process status
+- Review server logs in <code>./logs/</code></p>
+<p><strong>Test failures:</strong>
+- Run tests locally: <code>pnpm test:e2e</code>
+- Check Playwright browser dependencies
+- Review test artifacts in GitHub Actions</p>
+<h3 id="logs-and-monitoring">Logs and Monitoring</h3>
+<ul>
+<li><strong>CI Logs:</strong> GitHub Actions tab</li>
+<li><strong>Application Logs:</strong> <code>/var/www/melo-v2/logs/</code> on server</li>
+<li><strong>PM2 Logs:</strong> <code>pm2 logs melo-v2</code></li>
+<li><strong>Health Status:</strong> <code>https://dev2.aaroncollins.info/api/health</code></li>
+</ul>
 
 
 

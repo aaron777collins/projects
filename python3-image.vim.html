@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4823,8 +4823,30 @@
 <ul>
 <li>Let's you open (preview) images in Vim!</li>
 <li>It's safe, never modifies the original image (unless you force write)</li>
-<li>Added higher quality images than the [original</li>
+<li>Added higher quality images than the <a href="https://github.com/ashisha/image.vim">original</a> plugin</li>
 </ul>
+<h1 id="requirements">Requirements</h1>
+<ul>
+<li>Vim with <em>python</em> support. You can verify if your Vim is compiled with python using:</li>
+</ul>
+<p><code>vim --version | grep python</code></p>
+<p>If you see <code>+python3</code>, your Vim has python3 support. If not, figure out how to get one.
+  (See <a href="https://github.com/ashisha/image.vim">https://github.com/ashisha/image.vim</a> for python 2 support)</p>
+<ul>
+<li>Also needs the Python library PIL. You can install PIL using <code>pip install Pillow</code></li>
+</ul>
+<h1 id="installation">Installation</h1>
+<ul>
+<li><a href="https://github.com/tpope/vim-pathogen">Pathogen</a></li>
+<li><code>git clone https://github.com/ashisha/image.vim ~/.vim/bundle/image.vim</code></li>
+<li><a href="https://github.com/gmarik/vundle">Vundle</a></li>
+<li><code>Plugin 'ashisha/image.vim'</code></li>
+<li><a href="https://github.com/Shougo/neobundle.vim">NeoBundle</a></li>
+<li><code>NeoBundle 'ashisha/image.vim'</code></li>
+<li>Manual</li>
+<li>Copy image.vim into your <code>~/.vim/plugin/</code> directory</li>
+</ul>
+<p>Thank you!</p>
 <h2 id="i-fork-information">ℹ️ Fork Information</h2>
 <p>This is a fork of another repository.</p>
 

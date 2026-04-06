@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4822,7 +4822,583 @@
 <p><a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg" /></a>
 <a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.3-blue" /></a>
 <a href="https://nextjs.org/"><img alt="Next.js" src="https://img.shields.io/badge/Next.js-14-black" /></a>
-[![PRs W</p>
+<a href="CONTRIBUTING.md"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a></p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p><strong>SmartBudget</strong> is a comprehensive personal finance management application that helps you:</p>
+<ul>
+<li>Import and manage all your financial transactions</li>
+<li>Automatically categorize expenses and income using AI</li>
+<li>Create and track budgets with real-time progress monitoring</li>
+<li>Set and achieve financial goals</li>
+<li>Gain insights into your spending patterns</li>
+<li>Make data-driven financial decisions</li>
+</ul>
+<p>Optimized for <strong>Canadian banks</strong> (especially CIBC), SmartBudget supports CSV and OFX/QFX import formats with intelligent merchant normalization and AI-powered categorization.</p>
+<hr />
+<h2 id="features">Features</h2>
+<h3 id="core-features">Core Features</h3>
+<ul>
+<li><strong>Universal Transaction Import</strong></li>
+<li>CSV, OFX, QFX format support</li>
+<li>Multi-file drag-and-drop upload</li>
+<li>Automatic duplicate detection</li>
+<li>
+<p>Import preview and validation</p>
+</li>
+<li>
+<p><strong>AI-Powered Auto-Categorization</strong></p>
+</li>
+<li>90%+ accuracy using hybrid ML + rule-based system</li>
+<li>Plaid PFCv2 taxonomy (16 primary, 100+ subcategories)</li>
+<li>Merchant normalization pipeline</li>
+<li>
+<p>Confidence scoring and user feedback loop</p>
+</li>
+<li>
+<p><strong>Unknown Merchant Research</strong></p>
+</li>
+<li>Claude AI integration for merchant lookup</li>
+<li>Web search and business identification</li>
+<li>Automatic category suggestions</li>
+<li>
+<p>Knowledge base learning</p>
+</li>
+<li>
+<p><strong>Comprehensive Dashboard</strong></p>
+</li>
+<li>Real-time financial overview</li>
+<li>Net worth tracking with trends</li>
+<li>Cash flow analysis</li>
+<li>Interactive charts (Recharts + D3.js)</li>
+<li>
+<p>Multiple timeframe views</p>
+</li>
+<li>
+<p><strong>Advanced Budget Management</strong></p>
+</li>
+<li>Multiple budget types (Envelope, Percentage, Fixed, Goal-based)</li>
+<li>Real-time tracking with alerts</li>
+<li>Budget forecasting and analytics</li>
+<li>
+<p>Rollover and fund transfer support</p>
+</li>
+<li>
+<p><strong>Financial Goals</strong></p>
+</li>
+<li>Savings goals with progress tracking</li>
+<li>Debt payoff calculators</li>
+<li>Net worth targets</li>
+<li>Milestone celebrations</li>
+</ul>
+<h3 id="advanced-features">Advanced Features</h3>
+<ul>
+<li><strong>Split Transactions</strong>: Allocate expenses across multiple categories</li>
+<li><strong>Tags &amp; Labels</strong>: Custom organization and tax tracking</li>
+<li><strong>Recurring Detection</strong>: Auto-identify and predict recurring expenses</li>
+<li><strong>Smart Search</strong>: Full-text search with advanced filtering</li>
+<li><strong>Export &amp; Reporting</strong>: CSV, Excel, PDF exports with tax reports</li>
+<li><strong>AI Insights</strong>: Spending patterns, anomaly detection, savings opportunities</li>
+</ul>
+<hr />
+<h2 id="screenshots">Screenshots</h2>
+<h3 id="dashboard">Dashboard</h3>
+<p><img alt="Dashboard" src="https://via.placeholder.com/800x500/f9fafb/2563eb?text=Dashboard+View" /></p>
+<h3 id="transaction-management">Transaction Management</h3>
+<p><img alt="Transactions" src="https://via.placeholder.com/800x500/f9fafb/2563eb?text=Transaction+Management" /></p>
+<h3 id="budget-tracking">Budget Tracking</h3>
+<p><img alt="Budgets" src="https://via.placeholder.com/800x500/f9fafb/2563eb?text=Budget+Tracking" /></p>
+<hr />
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><strong>Node.js</strong> 20+ and npm/yarn/pnpm</li>
+<li><strong>PostgreSQL</strong> 16+ database</li>
+<li><strong>Git</strong> for version control</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<ol>
+<li><strong>Clone the repository</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/yourusername/smartbudget.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>smartbudget
+</span></code></pre></div>
+<ol>
+<li><strong>Install dependencies</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>install
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># or</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>pnpm<span class="w"> </span>install
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># or</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>yarn<span class="w"> </span>install
+</span></code></pre></div>
+<ol>
+<li><strong>Set up environment variables</strong></li>
+</ol>
+<p>Copy the example environment file:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+</span></code></pre></div>
+<p>Edit <code>.env</code> and configure:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># Database
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>DATABASE_URL=&quot;postgresql://user:password@localhost:5432/smartbudget&quot;
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a># NextAuth
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>NEXTAUTH_URL=&quot;http://localhost:3000&quot;
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>NEXTAUTH_SECRET=&quot;your-secret-key-here&quot;
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a># Sentry (optional)
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>SENTRY_DSN=&quot;your-sentry-dsn&quot;
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>NEXT_PUBLIC_SENTRY_DSN=&quot;your-sentry-dsn&quot;
+</span></code></pre></div>
+<ol>
+<li><strong>Set up the database</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Generate Prisma client</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>npx<span class="w"> </span>prisma<span class="w"> </span>generate
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Run migrations</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>npx<span class="w"> </span>prisma<span class="w"> </span>migrate<span class="w"> </span>deploy
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Seed initial data (categories)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>npx<span class="w"> </span>prisma<span class="w"> </span>db<span class="w"> </span>seed
+</span></code></pre></div>
+<ol>
+<li><strong>Start the development server</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>run<span class="w"> </span>dev
+</span></code></pre></div>
+<ol>
+<li><strong>Open your browser</strong></li>
+</ol>
+<p>Navigate to <a href="http://localhost:3000">http://localhost:3000</a></p>
+<hr />
+<h2 id="tech-stack">Tech Stack</h2>
+<h3 id="frontend">Frontend</h3>
+<ul>
+<li><strong>Framework</strong>: <a href="https://nextjs.org/">Next.js 14+</a> (App Router, Server Actions)</li>
+<li><strong>UI Components</strong>: <a href="https://ui.shadcn.com/">shadcn/ui</a> (Radix UI + Tailwind CSS)</li>
+<li><strong>Styling</strong>: <a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+<li><strong>Visualization</strong>: <a href="https://recharts.org/">Recharts</a>, <a href="https://d3js.org/">D3.js</a></li>
+<li><strong>Animation</strong>: <a href="https://www.framer.com/motion/">Framer Motion</a></li>
+<li><strong>Form Handling</strong>: <a href="https://react-hook-form.com/">React Hook Form</a> + <a href="https://zod.dev/">Zod</a></li>
+<li><strong>State Management</strong>: React Context + <a href="https://zustand-demo.pmnd.rs/">Zustand</a></li>
+</ul>
+<h3 id="backend">Backend</h3>
+<ul>
+<li><strong>Runtime</strong>: Node.js 20+</li>
+<li><strong>API</strong>: Next.js API Routes + Server Actions</li>
+<li><strong>Database</strong>: <a href="https://www.postgresql.org/">PostgreSQL 16+</a> with <a href="https://www.prisma.io/">Prisma ORM</a></li>
+<li><strong>Authentication</strong>: <a href="https://authjs.dev/">NextAuth.js v5</a> (Auth.js)</li>
+<li><strong>File Processing</strong>: <a href="https://www.papaparse.com/">Papa Parse</a> (CSV), <a href="https://github.com/kedder/node-ofx-parser">node-ofx-parser</a> (OFX/QFX)</li>
+<li><strong>AI Integration</strong>: <a href="https://www.anthropic.com/api">Anthropic Claude API</a></li>
+</ul>
+<h3 id="aiml">AI/ML</h3>
+<ul>
+<li><strong>Categorization</strong>: Hybrid rule-based + ML model</li>
+<li><strong>Merchant Normalization</strong>: Fuzzy matching (RapidFuzz) + NLP</li>
+<li><strong>Unknown Merchant Lookup</strong>: Claude AI via subprocess (AICEO pattern)</li>
+</ul>
+<h3 id="infrastructure">Infrastructure</h3>
+<ul>
+<li><strong>Hosting</strong>: <a href="https://vercel.com/">Vercel</a></li>
+<li><strong>Database Hosting</strong>: <a href="https://neon.tech/">Neon</a> or <a href="https://supabase.com/">Supabase</a></li>
+<li><strong>Monitoring</strong>: <a href="https://sentry.io/">Sentry</a> (error tracking)</li>
+<li><strong>Analytics</strong>: Vercel Analytics</li>
+</ul>
+<hr />
+<h2 id="project-structure">Project Structure</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>smartbudget/
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>├── src/
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>│   ├── app/                    # Next.js App Router pages
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>│   │   ├── (auth)/            # Authentication pages
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>│   │   ├── (dashboard)/       # Main application pages
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>│   │   ├── api/               # API routes
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>│   │   ├── layout.tsx         # Root layout
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>│   │   └── page.tsx           # Homepage
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>│   ├── components/            # React components
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>│   │   ├── ui/               # shadcn/ui components
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>│   │   ├── dashboard/        # Dashboard components
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>│   │   ├── transactions/     # Transaction components
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>│   │   └── ...
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>│   ├── lib/                   # Utility functions
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>│   │   ├── prisma.ts         # Prisma client
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>│   │   ├── auth.ts           # NextAuth config
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>│   │   ├── categorizer.ts    # Auto-categorization
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>│   │   ├── merchant-normalizer.ts
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>│   │   └── ...
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>│   ├── hooks/                 # Custom React hooks
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>│   ├── types/                 # TypeScript types
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>│   └── styles/                # Global styles
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>├── prisma/
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>│   ├── schema.prisma          # Database schema
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>│   ├── migrations/            # Database migrations
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>│   └── seed.ts                # Seed script
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>├── e2e/                       # End-to-end tests
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>├── public/                    # Static assets
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a>├── docs/                      # Additional documentation
+</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>├── .env                       # Environment variables
+</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>├── next.config.js             # Next.js configuration
+</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>├── tailwind.config.ts         # Tailwind CSS config
+</span><span id="__span-6-33"><a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a>├── tsconfig.json              # TypeScript config
+</span><span id="__span-6-34"><a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>├── package.json               # Dependencies
+</span><span id="__span-6-35"><a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a>└── README.md                  # This file
+</span></code></pre></div>
+<hr />
+<h2 id="documentation">Documentation</h2>
+<p>Comprehensive documentation is available:</p>
+<ul>
+<li><strong><a href="USER_GUIDE.md">User Guide</a></strong> - Complete guide for end users</li>
+<li><strong><a href="API_DOCS.md">API Documentation</a></strong> - REST API reference for developers</li>
+<li><strong><a href="TESTING.md">Testing Guide</a></strong> - Testing infrastructure and best practices</li>
+<li><strong><a href="ERROR_MONITORING.md">Error Monitoring</a></strong> - Sentry configuration and error handling</li>
+<li><strong><a href="prisma/README.md">Database Setup</a></strong> - Database schema and seeding</li>
+</ul>
+<hr />
+<h2 id="development">Development</h2>
+<h3 id="available-scripts">Available Scripts</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Development</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>npm<span class="w"> </span>run<span class="w"> </span>dev<span class="w">              </span><span class="c1"># Start dev server</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>npm<span class="w"> </span>run<span class="w"> </span>build<span class="w">            </span><span class="c1"># Build for production</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>npm<span class="w"> </span>run<span class="w"> </span>start<span class="w">            </span><span class="c1"># Start production server</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>npm<span class="w"> </span>run<span class="w"> </span>lint<span class="w">             </span><span class="c1"># Run ESLint</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>npm<span class="w"> </span>run<span class="w"> </span>format<span class="w">           </span><span class="c1"># Format with Prettier</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="c1"># Database</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>npx<span class="w"> </span>prisma<span class="w"> </span>studio<span class="w">        </span><span class="c1"># Open Prisma Studio (database GUI)</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>npx<span class="w"> </span>prisma<span class="w"> </span>generate<span class="w">      </span><span class="c1"># Generate Prisma client</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>npx<span class="w"> </span>prisma<span class="w"> </span>migrate<span class="w"> </span>dev<span class="w">   </span><span class="c1"># Create and apply migrations</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>npx<span class="w"> </span>prisma<span class="w"> </span>db<span class="w"> </span>seed<span class="w">       </span><span class="c1"># Seed database with initial data</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="c1"># Testing</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>npm<span class="w"> </span>run<span class="w"> </span><span class="nb">test</span><span class="w">             </span><span class="c1"># Run unit tests</span>
+</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>npm<span class="w"> </span>run<span class="w"> </span>test:watch<span class="w">       </span><span class="c1"># Run tests in watch mode</span>
+</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>npm<span class="w"> </span>run<span class="w"> </span>test:coverage<span class="w">    </span><span class="c1"># Generate coverage report</span>
+</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>npm<span class="w"> </span>run<span class="w"> </span>test:e2e<span class="w">         </span><span class="c1"># Run E2E tests</span>
+</span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>npm<span class="w"> </span>run<span class="w"> </span>test:e2e:ui<span class="w">      </span><span class="c1"># Run E2E tests with UI</span>
+</span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+</span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="c1"># Type Checking</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>npm<span class="w"> </span>run<span class="w"> </span>type-check<span class="w">       </span><span class="c1"># Run TypeScript type checking</span>
+</span></code></pre></div>
+<h3 id="development-workflow">Development Workflow</h3>
+<ol>
+<li><strong>Create a feature branch</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/your-feature-name
+</span></code></pre></div>
+<ol>
+<li>
+<p><strong>Make your changes</strong></p>
+</li>
+<li>
+<p>Follow the existing code style</p>
+</li>
+<li>Add tests for new features</li>
+<li>
+<p>Update documentation as needed</p>
+</li>
+<li>
+<p><strong>Run tests and linting</strong></p>
+</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>npm<span class="w"> </span>run<span class="w"> </span>lint
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>npm<span class="w"> </span>run<span class="w"> </span><span class="nb">test</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>npm<span class="w"> </span>run<span class="w"> </span>type-check
+</span></code></pre></div>
+<ol>
+<li><strong>Commit your changes</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add awesome feature&quot;</span>
+</span></code></pre></div>
+<p>Follow <a href="https://www.conventionalcommits.org/">Conventional Commits</a> format:
+- <code>feat:</code> - New feature
+- <code>fix:</code> - Bug fix
+- <code>docs:</code> - Documentation changes
+- <code>style:</code> - Code style changes (formatting)
+- <code>refactor:</code> - Code refactoring
+- <code>test:</code> - Test changes
+- <code>chore:</code> - Build/config changes</p>
+<ol>
+<li><strong>Push and create a Pull Request</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature/your-feature-name
+</span></code></pre></div>
+<hr />
+<h2 id="testing">Testing</h2>
+<p>SmartBudget has comprehensive test coverage:</p>
+<ul>
+<li><strong>Unit Tests</strong>: Vitest for utilities, business logic</li>
+<li><strong>Integration Tests</strong>: API route testing</li>
+<li><strong>E2E Tests</strong>: Playwright for user flows</li>
+</ul>
+<h3 id="running-tests">Running Tests</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># All tests</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>npm<span class="w"> </span>run<span class="w"> </span>test:all
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># Unit tests only</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>npm<span class="w"> </span>run<span class="w"> </span><span class="nb">test</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># E2E tests only</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>npm<span class="w"> </span>run<span class="w"> </span>test:e2e
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="c1"># With coverage</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>npm<span class="w"> </span>run<span class="w"> </span>test:coverage
+</span></code></pre></div>
+<p>See <a href="TESTING.md">TESTING.md</a> for detailed testing documentation.</p>
+<hr />
+<h2 id="deployment">Deployment</h2>
+<h3 id="deploy-to-vercel">Deploy to Vercel</h3>
+<ol>
+<li><strong>Install Vercel CLI</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>vercel
+</span></code></pre></div>
+<ol>
+<li><strong>Link project</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>vercel<span class="w"> </span>link
+</span></code></pre></div>
+<ol>
+<li><strong>Set environment variables</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>vercel<span class="w"> </span>env<span class="w"> </span>add<span class="w"> </span>DATABASE_URL
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>vercel<span class="w"> </span>env<span class="w"> </span>add<span class="w"> </span>NEXTAUTH_SECRET
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># Add other environment variables</span>
+</span></code></pre></div>
+<ol>
+<li><strong>Deploy</strong></li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>vercel<span class="w"> </span>--prod
+</span></code></pre></div>
+<h3 id="database-migration">Database Migration</h3>
+<p>For production deployments, run migrations:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>npx<span class="w"> </span>prisma<span class="w"> </span>migrate<span class="w"> </span>deploy
+</span></code></pre></div>
+<h3 id="environment-variables">Environment Variables</h3>
+<p>Ensure all required environment variables are set:</p>
+<ul>
+<li><code>DATABASE_URL</code> - PostgreSQL connection string</li>
+<li><code>NEXTAUTH_URL</code> - Application URL</li>
+<li><code>NEXTAUTH_SECRET</code> - Secret for session encryption</li>
+<li><code>SENTRY_DSN</code> - Sentry error tracking (optional)</li>
+<li><code>NEXT_PUBLIC_SENTRY_DSN</code> - Client-side Sentry (optional)</li>
+</ul>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<h3 id="database">Database</h3>
+<p>SmartBudget uses PostgreSQL with Prisma ORM. Configure your database connection in <code>.env</code>:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>DATABASE_URL=&quot;postgresql://user:password@host:port/database?schema=public&quot;
+</span></code></pre></div>
+<h3 id="authentication">Authentication</h3>
+<p>Configure NextAuth.js providers in <code>src/auth.ts</code>:</p>
+<ul>
+<li>Username/Password (default)</li>
+<li>Google OAuth (coming soon)</li>
+<li>Apple Sign-In (coming soon)</li>
+</ul>
+<h3 id="ai-integration">AI Integration</h3>
+<p>To enable Claude AI merchant research:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>ANTHROPIC_API_KEY=&quot;your-api-key&quot;
+</span></code></pre></div>
+<h3 id="sentry-error-monitoring">Sentry (Error Monitoring)</h3>
+<p>Optional but recommended for production:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>SENTRY_DSN=&quot;your-sentry-dsn&quot;
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>NEXT_PUBLIC_SENTRY_DSN=&quot;your-public-dsn&quot;
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>SENTRY_ORG=&quot;your-org&quot;
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>SENTRY_PROJECT=&quot;your-project&quot;
+</span></code></pre></div>
+<p>See <a href="ERROR_MONITORING.md">ERROR_MONITORING.md</a> for setup details.</p>
+<hr />
+<h2 id="performance">Performance</h2>
+<p>SmartBudget is optimized for performance:</p>
+<ul>
+<li><strong>Page Load</strong>: &lt;2s (First Contentful Paint)</li>
+<li><strong>API Response</strong>: &lt;200ms (p95)</li>
+<li><strong>Database Queries</strong>: &lt;50ms (p95)</li>
+<li><strong>Transaction Import</strong>: 10,000 transactions in &lt;5s</li>
+<li><strong>Dashboard Render</strong>: &lt;1s with 10,000+ transactions</li>
+</ul>
+<h3 id="performance-features">Performance Features</h3>
+<ul>
+<li>Server-side rendering (SSR) for fast initial loads</li>
+<li>Optimistic UI updates</li>
+<li>API route caching</li>
+<li>Database query optimization with indexes</li>
+<li>Code splitting and lazy loading</li>
+<li>Image optimization</li>
+</ul>
+<hr />
+<h2 id="security">Security</h2>
+<p>SmartBudget takes security seriously:</p>
+<ul>
+<li><strong>Encryption</strong>: AES-256 at rest, TLS 1.3 in transit</li>
+<li><strong>Authentication</strong>: NextAuth.js with secure sessions</li>
+<li><strong>Authorization</strong>: Row-level security for all data access</li>
+<li><strong>Input Validation</strong>: Zod schemas for all inputs</li>
+<li><strong>SQL Injection Protection</strong>: Prisma parameterized queries</li>
+<li><strong>XSS Protection</strong>: React's built-in escaping + CSP headers</li>
+<li><strong>CSRF Protection</strong>: CSRF tokens on all mutations</li>
+</ul>
+<h3 id="security-best-practices">Security Best Practices</h3>
+<ul>
+<li>Never commit <code>.env</code> files</li>
+<li>Rotate secrets regularly</li>
+<li>Keep dependencies updated</li>
+<li>Review code for security issues</li>
+<li>Use strong passwords and 2FA</li>
+<li>Follow OWASP Top 10 guidelines</li>
+</ul>
+<hr />
+<h2 id="privacy">Privacy</h2>
+<p>Your financial data privacy is paramount:</p>
+<ul>
+<li><strong>No Data Selling</strong>: Your data is never sold or shared with third parties</li>
+<li><strong>Encryption</strong>: All sensitive data is encrypted</li>
+<li><strong>Bank Credentials</strong>: Never stored (file-based imports only)</li>
+<li><strong>GDPR Compliant</strong>: Full data portability and deletion rights</li>
+<li><strong>Anonymized Analytics</strong>: Optional and aggregated only</li>
+</ul>
+<h3 id="data-handling">Data Handling</h3>
+<ul>
+<li><strong>Local Processing</strong>: Transaction categorization happens on your server</li>
+<li><strong>Minimal Cloud AI</strong>: Claude AI research is opt-in and merchant-specific</li>
+<li><strong>Data Export</strong>: Download all your data anytime</li>
+<li><strong>Account Deletion</strong>: Permanently delete all data</li>
+</ul>
+<hr />
+<h2 id="contributing">Contributing</h2>
+<p>We welcome contributions! Here's how you can help:</p>
+<h3 id="ways-to-contribute">Ways to Contribute</h3>
+<ul>
+<li><strong>Report Bugs</strong>: <a href="https://github.com/yourusername/smartbudget/issues">Open an issue</a></li>
+<li><strong>Suggest Features</strong>: <a href="https://github.com/yourusername/smartbudget/discussions">Feature requests</a></li>
+<li><strong>Submit Pull Requests</strong>: Fix bugs or add features</li>
+<li><strong>Improve Documentation</strong>: Help others understand SmartBudget</li>
+<li><strong>Translate</strong>: Help translate to other languages</li>
+</ul>
+<h3 id="contribution-guidelines">Contribution Guidelines</h3>
+<ol>
+<li>Fork the repository</li>
+<li>Create a feature branch (<code>git checkout -b feature/amazing-feature</code>)</li>
+<li>Make your changes</li>
+<li>Add tests for new functionality</li>
+<li>Ensure all tests pass (<code>npm run test:all</code>)</li>
+<li>Commit with conventional commits (<code>git commit -m 'feat: add amazing feature'</code>)</li>
+<li>Push to your fork (<code>git push origin feature/amazing-feature</code>)</li>
+<li>Open a Pull Request</li>
+</ol>
+<p>See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for detailed guidelines.</p>
+<hr />
+<h2 id="roadmap">Roadmap</h2>
+<h3 id="current-version-v10-mvp">Current Version: v1.0 (MVP)</h3>
+<p>Released: January 2026</p>
+<h3 id="upcoming-features">Upcoming Features</h3>
+<h4 id="v11-q2-2026">v1.1 (Q2 2026)</h4>
+<ul>
+<li>Mobile responsive enhancements</li>
+<li>Dark mode improvements</li>
+<li>Multi-currency support</li>
+<li>Bank account sync (Plaid integration)</li>
+</ul>
+<h4 id="v12-q3-2026">v1.2 (Q3 2026)</h4>
+<ul>
+<li>Investment tracking</li>
+<li>Credit score monitoring</li>
+<li>Bill payment reminders</li>
+<li>Collaborative budgets (multi-user households)</li>
+</ul>
+<h4 id="v20-q4-2026">v2.0 (Q4 2026)</h4>
+<ul>
+<li>Mobile apps (iOS &amp; Android)</li>
+<li>Advanced AI insights</li>
+<li>Natural language queries</li>
+<li>Receipt OCR</li>
+<li>Tax optimization tools</li>
+</ul>
+<p>See <a href="ROADMAP.md">ROADMAP.md</a> for detailed plans.</p>
+<hr />
+<h2 id="faq">FAQ</h2>
+<h3 id="general">General</h3>
+<p><strong>Q: Is SmartBudget free?</strong>
+A: Yes, SmartBudget is currently free during the beta period. Future pricing TBD.</p>
+<p><strong>Q: Do I need to connect my bank account?</strong>
+A: No! SmartBudget uses file-based imports (CSV, OFX). No bank credentials required.</p>
+<p><strong>Q: Which banks are supported?</strong>
+A: Any bank that exports CSV or OFX/QFX files. Optimized for Canadian banks (CIBC, TD, RBC, Scotiabank, BMO).</p>
+<h3 id="technical">Technical</h3>
+<p><strong>Q: Is my data secure?</strong>
+A: Yes. All data is encrypted (AES-256 at rest, TLS 1.3 in transit). We never store bank credentials.</p>
+<p><strong>Q: Can I self-host SmartBudget?</strong>
+A: Yes! SmartBudget is open-source. Follow the installation guide above.</p>
+<p><strong>Q: Does it work offline?</strong>
+A: The web app requires internet. Future mobile apps will have offline support.</p>
+<p><strong>Q: How accurate is the auto-categorization?</strong>
+A: 90%+ accuracy after initial training. Improves as you correct transactions.</p>
+<hr />
+<h2 id="support">Support</h2>
+<h3 id="get-help">Get Help</h3>
+<ul>
+<li><strong>Documentation</strong>: <a href="USER_GUIDE.md">User Guide</a> | <a href="API_DOCS.md">API Docs</a></li>
+<li><strong>Issues</strong>: <a href="https://github.com/yourusername/smartbudget/issues">GitHub Issues</a></li>
+<li><strong>Discussions</strong>: <a href="https://github.com/yourusername/smartbudget/discussions">GitHub Discussions</a></li>
+<li><strong>Email</strong>: support@smartbudget.app</li>
+</ul>
+<h3 id="community">Community</h3>
+<ul>
+<li><strong>Discord</strong>: <a href="https://discord.gg/smartbudget">Join our Discord</a> (coming soon)</li>
+<li><strong>Twitter</strong>: <a href="https://twitter.com/smartbudgetapp">@SmartBudgetApp</a> (coming soon)</li>
+<li><strong>Blog</strong>: <a href="https://blog.smartbudget.app">blog.smartbudget.app</a> (coming soon)</li>
+</ul>
+<hr />
+<h2 id="license">License</h2>
+<p>This project is licensed under the <strong>MIT License</strong> - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>MIT License
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>Copyright (c) 2026 SmartBudget Contributors
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>Permission is hereby granted, free of charge, to any person obtaining a copy
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>of this software and associated documentation files (the &quot;Software&quot;), to deal
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>in the Software without restriction, including without limitation the rights
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+</span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>copies of the Software, and to permit persons to whom the Software is
+</span><span id="__span-21-10"><a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>furnished to do so, subject to the following conditions:
+</span><span id="__span-21-11"><a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>
+</span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>The above copyright notice and this permission notice shall be included in all
+</span><span id="__span-21-13"><a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>copies or substantial portions of the Software.
+</span><span id="__span-21-14"><a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>
+</span><span id="__span-21-15"><a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+</span><span id="__span-21-16"><a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+</span><span id="__span-21-17"><a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+</span><span id="__span-21-18"><a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+</span><span id="__span-21-19"><a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+</span><span id="__span-21-20"><a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+</span><span id="__span-21-21"><a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>SOFTWARE.
+</span></code></pre></div>
+<hr />
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>Built with amazing open-source technologies:</p>
+<ul>
+<li><a href="https://nextjs.org/">Next.js</a> - React framework</li>
+<li><a href="https://tailwindcss.com/">Tailwind CSS</a> - Utility-first CSS</li>
+<li><a href="https://ui.shadcn.com/">shadcn/ui</a> - UI component library</li>
+<li><a href="https://www.prisma.io/">Prisma</a> - Database ORM</li>
+<li><a href="https://authjs.dev/">NextAuth.js</a> - Authentication</li>
+<li><a href="https://recharts.org/">Recharts</a> - Charting library</li>
+<li><a href="https://www.anthropic.com/">Anthropic Claude</a> - AI assistant</li>
+</ul>
+<p>Special thanks to the open-source community for making projects like this possible.</p>
+<hr />
+<h2 id="star-history">Star History</h2>
+<p>If you find SmartBudget useful, please consider starring the repository!</p>
+<p><a href="https://star-history.com/#yourusername/smartbudget&amp;Date"><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=yourusername/smartbudget&amp;type=Date" /></a></p>
+<hr />
+<div align="center">
+
+**Made with ❤️ by the SmartBudget Team**
+
+[Website](https://smartbudget.app) • [Documentation](USER_GUIDE.md) • [API](API_DOCS.md) • [Support](mailto:support@smartbudget.app)
+
+</div>
 
 
 

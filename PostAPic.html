@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4899,7 +4899,18 @@
 <p>A small website using php for the backend and react for the frontend</p>
 <p><a href="https://colli11s.myweb.cs.uwindsor.ca/COMP-2707-W23/project/frontend/build/">Link To The Website</a></p>
 <h2 id="running-the-project">Running The Project</h2>
-<p>Run <code>docker-compose up -d</code> in the base directory to run the backend (run <code>docker-compose build</code> before your first run). Use <code>cd frontend</code> in another terminal to go to the frontend directory and then run <code>npm start</code> for a frontend dev server. You will need to run <code>npm install</code> the first time this</p>
+<p>Run <code>docker-compose up -d</code> in the base directory to run the backend (run <code>docker-compose build</code> before your first run). Use <code>cd frontend</code> in another terminal to go to the frontend directory and then run <code>npm start</code> for a frontend dev server. You will need to run <code>npm install</code> the first time this
+project is run.</p>
+<p><em>Note: On your first run, you should navigate to <a href="http://localhost:8080/createtables.php">http://localhost:8080/createtables.php</a> to initialize your tables.</em></p>
+<p><em>(On your first run, don't forget to copy the '.env copy' and '.env example' files to be a '.env' file in their respective directories)</em></p>
+<p>Optionally, you can run <code>npm run build</code> to build a production version of the frontend. You can serve the <code>build/</code> directory within frontend to run a production frontend (Ex. <code>npx serve -s build</code>). However, you may want to adjust the default address in app, etc. if you aren't serving on the UWindsor server.</p>
+<h2 id="testing">Testing</h2>
+<p>These tests are written using selenium web driver.
+Launch the project as mentioned above and then in a new terminal
+<code>cd frontend</code> and run <code>npm test</code>.</p>
+<p><em>Note: You may
+also need to edit your Selenium settings to allow
+file uploads/urls</em>.</p>
 
 
 

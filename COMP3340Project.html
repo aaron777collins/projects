@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4907,7 +4907,21 @@
 <h2 id="development">Development</h2>
 <h3 id="backend-development">Backend Development:</h3>
 <p>Go to the <code>site/backend</code> directory and then run</p>
-<p>`np</p>
+<p><code>npm start</code></p>
+<h3 id="frontend-development">Frontend Development:</h3>
+<p>Go to the <code>site/frontend/funstuff</code> directory and then run</p>
+<p><code>npm start</code></p>
+<h3 id="viewing-front-end">Viewing Front-end:</h3>
+<p>Go to <a href="http://localhost:3000">http://localhost:3000</a></p>
+<h3 id="run-entire-system"><strong>Run Entire System:</strong></h3>
+<p>Go to the <code>/site</code> directory and run <code>./run.sh</code> with git bash</p>
+<p>This runs both repos in 1 terminal. You can use <code>Ctrl + C</code> to exit.</p>
+<h3 id="dev-notes">Dev Notes:</h3>
+<p>You should include logging for classes as follows:
+1. Include <code>const log = getLogger("view.home");</code> at the top of the file and replace <code>home</code> with the view name. 
+1. Change <code>view</code> to <code>controller</code>, <code>service</code> or <code>model</code> depending on the class type.
+1. Import the getLogger class. 
+1. Once finished, logging is as easy as <code>log.debug("Your log stuffs");</code>!</p>
 
 
 

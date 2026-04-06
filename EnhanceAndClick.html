@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4821,7 +4821,139 @@
 1. Take a screenshot
 2. Try to guess pixel coordinates from the full image
 3. Miss by 50 pixels and click the wrong thing</p>
-<p><strong>EnhanceAndClick</strong> solves this by letting the</p>
+<p><strong>EnhanceAndClick</strong> solves this by letting the AI iteratively "enhance" (zoom) into the target area until it's confident, then save that view as a template for future clicks.</p>
+<h2 id="installation">Installation</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Dependencies</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pip<span class="w"> </span>install<span class="w"> </span>pyautogui<span class="w"> </span>opencv-python<span class="w"> </span>numpy
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>scrot<span class="w"> </span>imagemagick<span class="w">  </span><span class="c1"># Linux</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Install</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/EnhanceAndClick.git
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">cd</span><span class="w"> </span>EnhanceAndClick
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>chmod<span class="w"> </span>+x<span class="w"> </span>zoomclick.py
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/zoomclick.py<span class="w"> </span>/usr/local/bin/zoomclick
+</span></code></pre></div>
+<h2 id="workflow">Workflow</h2>
+<h3 id="1-start-a-session">1. Start a session</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>zoomclick<span class="w"> </span>--start
+</span></code></pre></div>
+Returns a screenshot with quadrant overlay:
+- <strong>Red lines</strong> divide into 4 quadrants
+- <strong>Green box</strong> shows the center region</p>
+<h3 id="2-zoom-iteratively">2. Zoom iteratively</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>zoomclick<span class="w"> </span>--zoom<span class="w"> </span>top-left<span class="w">      </span><span class="c1"># or: top-right, bottom-left, bottom-right, center</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>zoomclick<span class="w"> </span>--zoom<span class="w"> </span>center<span class="w">        </span><span class="c1"># keep zooming until target is BIG and CENTERED</span>
+</span></code></pre></div>
+Each zoom returns a new cropped image. Keep zooming until your target element fills most of the image.</p>
+<h3 id="3-save-as-template">3. Save as template</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>zoomclick<span class="w"> </span>--save<span class="w"> </span><span class="s2">&quot;submit_button&quot;</span>
+</span></code></pre></div>
+Saves the current zoomed region for future clicking:
+- Cropped image (for template matching)
+- Center coordinates (fallback)</p>
+<h3 id="4-click-anytime">4. Click anytime</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>zoomclick<span class="w"> </span>--click<span class="w"> </span><span class="s2">&quot;submit_button&quot;</span>
+</span></code></pre></div>
+Finds the template on screen using OpenCV and clicks its center.</p>
+<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--start</code></td>
+<td>Start new session with full screenshot + overlay</td>
+</tr>
+<tr>
+<td><code>--zoom &lt;quadrant&gt;</code></td>
+<td>Zoom into quadrant</td>
+</tr>
+<tr>
+<td><code>--save &lt;name&gt;</code></td>
+<td>Save current view as named template</td>
+</tr>
+<tr>
+<td><code>--click &lt;name&gt;</code></td>
+<td>Find and click saved template</td>
+</tr>
+<tr>
+<td><code>--click-center</code></td>
+<td>Click center of current viewport</td>
+</tr>
+<tr>
+<td><code>--list</code></td>
+<td>List all saved templates</td>
+</tr>
+<tr>
+<td><code>--reset</code></td>
+<td>Reset zoom session</td>
+</tr>
+<tr>
+<td><code>--delete &lt;name&gt;</code></td>
+<td>Delete a saved template</td>
+</tr>
+<tr>
+<td><code>--no-click</code></td>
+<td>With --click, locate but don't click</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-session">Example Session</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Want to click a &quot;Submit&quot; button on a webpage</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>zoomclick<span class="w"> </span>--start
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># → Analyze screenshot, target is in bottom-right</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>zoomclick<span class="w"> </span>--zoom<span class="w"> </span>bottom-right
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># → Getting closer, target now in top-left of this view</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>zoomclick<span class="w"> </span>--zoom<span class="w"> </span>top-left
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1"># → Target is big and centered!</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>zoomclick<span class="w"> </span>--save<span class="w"> </span><span class="s2">&quot;submit_btn&quot;</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="c1"># → Template saved at ~/.zoomclick/templates/submit_btn.png</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c1"># Later, click it anytime:</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>zoomclick<span class="w"> </span>--click<span class="w"> </span><span class="s2">&quot;submit_btn&quot;</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="c1"># → Finds button on screen, clicks it</span>
+</span></code></pre></div>
+<h2 id="storage">Storage</h2>
+<ul>
+<li><strong>Templates:</strong> <code>~/.zoomclick/templates/</code> (persistent)</li>
+<li><strong>Working files:</strong> <code>/tmp/zoomclick/</code> (temporary)</li>
+<li><strong>State:</strong> <code>/tmp/zoomclick/state.json</code> (current session)</li>
+</ul>
+<h2 id="how-it-works">How It Works</h2>
+<ol>
+<li>Each zoom halves the viewport dimensions</li>
+<li>3-4 zooms: 1920×1080 → 960×540 → 480×270 → 240×135</li>
+<li>Template matching uses OpenCV with adaptive confidence (starts at 100%, decreases until found)</li>
+<li>Falls back to saved coordinates if matching fails</li>
+</ol>
+<h2 id="for-ai-agents">For AI Agents</h2>
+<p>The tool outputs JSON for easy parsing:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;success&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">&quot;quadrant&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nt">&quot;screenshot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/tmp/zoomclick/overlay_1_1234567890.png&quot;</span><span class="p">,</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="nt">&quot;viewport&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">480</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">270</span><span class="p">,</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">960</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">540</span><span class="p">,</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nt">&quot;zoom_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="nt">&quot;screen_coords&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="nt">&quot;center_x&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">960</span><span class="p">,</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="nt">&quot;center_y&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">540</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="license">License</h2>
+<p>MIT</p>
 
 
 

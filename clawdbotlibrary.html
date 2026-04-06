@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4831,10 +4831,118 @@
 </tr>
 <tr>
 <td><a href="docs/headless-browser-setup.md">Headless Browser Setup</a></td>
-<td><strong>Complete guide</strong> to</td>
+<td><strong>Complete guide</strong> to Chrome + Clawdbot Browser Relay on Xvfb</td>
+</tr>
+<tr>
+<td><a href="docs/sophie-voice-bridge.md">Sophie Voice Bridge</a></td>
+<td><strong>Voice calls</strong> with Sophie via ElevenLabs + WhatsApp</td>
+</tr>
+<tr>
+<td><a href="docs/zoomclick.md">ZoomClick Tool</a></td>
+<td>AI-friendly iterative zoom-and-click for UI automation</td>
+</tr>
+<tr>
+<td><a href="docs/vclick.md">VClick Tool</a></td>
+<td>Vision-based clicking and template matching</td>
 </tr>
 </tbody>
 </table>
+<h2 id="tools-included">🛠️ Tools Included</h2>
+<h3 id="voice-communication">Voice &amp; Communication</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>sophie-voice-bridge</strong></td>
+<td>ElevenLabs Custom LLM for WhatsApp voice calls with Sophie</td>
+<td><a href="https://github.com/aaron777collins/sophie-voice-bridge">sophie-voice-bridge</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="screen-interaction">Screen Interaction</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>zoomclick</strong></td>
+<td>Iterative zoom navigation for precise UI clicking</td>
+<td><a href="https://github.com/aaron777collins/EnhanceAndClick">EnhanceAndClick</a></td>
+</tr>
+<tr>
+<td><strong>vclick</strong></td>
+<td>Direct coordinate clicking with vision support</td>
+<td><a href="https://github.com/aaron777collins/vclick">vclick</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="browser-automation">Browser Automation</h3>
+<ul>
+<li><strong>start-chrome-automation.sh</strong> - Launch Chrome with Clawdbot extension on virtual display</li>
+<li>Chrome DevTools integration via port 9222</li>
+</ul>
+<h2 id="quick-start-fresh-server">🚀 Quick Start (Fresh Server)</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 1. Clone this repo</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/clawdbotlibrary.git
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>clawdbotlibrary
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># 2. Run the full setup script (as root for system deps)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>sudo<span class="w"> </span>./scripts/setup-all.sh
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># 3. Start Chrome with browser automation</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nv">$HOME</span>/start-chrome-automation.sh
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># 4. Test it works</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nv">DISPLAY</span><span class="o">=</span>:99<span class="w"> </span>scrot<span class="w"> </span>/tmp/test.png
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>curl<span class="w"> </span>-s<span class="w"> </span>http://localhost:9222/json/version
+</span></code></pre></div>
+<h2 id="repository-structure">📁 Repository Structure</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>clawdbotlibrary/
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── README.md                       # This file
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├── docs/
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│   ├── agent-guidelines.md         # Problem-solving best practices
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>│   ├── headless-browser-setup.md   # Full browser setup guide
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│   ├── zoomclick.md                # ZoomClick documentation
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│   └── vclick.md                   # VClick documentation
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>├── scripts/
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>│   ├── setup-all.sh                # One-command full setup
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│   ├── start-chrome-automation.sh  # Chrome launcher for Xvfb
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│   └── install-deps.sh             # Install system dependencies
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>└── tools/
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    ├── zoomclick/                  # ZoomClick source
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    └── vclick/                     # VClick source
+</span></code></pre></div>
+<h2 id="requirements">🔧 Requirements</h2>
+<ul>
+<li>Ubuntu 22.04+ (tested on 24.04)</li>
+<li>Python 3.10+</li>
+<li>Xvfb for headless display</li>
+<li>Chrome browser</li>
+<li>scrot (for screenshots)</li>
+</ul>
+<h2 id="for-ai-agents">📖 For AI Agents</h2>
+<p>If you're an AI model reading this:
+1. <strong>Read <a href="docs/agent-guidelines.md">Agent Guidelines</a></strong> - Learn to use sub-agents and plan properly
+2. Start with <a href="docs/headless-browser-setup.md">Headless Browser Setup</a> for complete instructions
+3. Use <code>zoomclick</code> for finding and clicking UI elements
+4. Always start fluxbox BEFORE Chrome on Xvfb
+5. Use <code>scrot</code> for screenshots on display :99
+6. Extension icon coords fallback: <code>1752, 32</code></p>
+<h2 id="contributing">🤝 Contributing</h2>
+<p>This is living documentation. Update it whenever you create something useful!</p>
+<h2 id="license">📄 License</h2>
+<p>MIT</p>
 
 
 

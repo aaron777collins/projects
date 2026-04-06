@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4823,8 +4823,130 @@
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                                                                          (full capabilities)
 </span></code></pre></div>
 <ul>
-<li><strong>Haiku</strong> handles fast voice responses (1-3 senten</li>
+<li><strong>Haiku</strong> handles fast voice responses (1-3 sentences)</li>
+<li><strong>ask_sophie tool</strong> escalates complex questions to Sophie (Opus with tools)</li>
+<li>Sophie has access to calendar, email, web search, files, memory, etc.</li>
 </ul>
+<h2 id="quick-start-docker">Quick Start (Docker)</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Clone</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/sophie-voice-bridge.git
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>sophie-voice-bridge
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Configure</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Edit .env with your Clawdbot gateway token</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># Run</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># Check health</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>curl<span class="w"> </span>http://localhost:8013/health
+</span></code></pre></div>
+<h2 id="configuration">Configuration</h2>
+<p>Create <code>.env</code> file:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CLAWDBOT_GATEWAY_URL=http://localhost:18789
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>CLAWDBOT_GATEWAY_TOKEN=your-gateway-token
+</span></code></pre></div>
+<h2 id="api-endpoints">API Endpoints</h2>
+<p>Both routes work (ElevenLabs uses <code>/chat/completions</code>):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>POST /v1/chat/completions    # OpenAI standard
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>POST /chat/completions       # ElevenLabs format
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>GET  /health                 # Health check
+</span></code></pre></div>
+<hr />
+<h2 id="elevenlabs-setup-guide">🎙️ ElevenLabs Setup Guide</h2>
+<h3 id="step-1-create-an-agent">Step 1: Create an Agent</h3>
+<ol>
+<li>Go to <a href="https://elevenlabs.io/app/agents">ElevenLabs Agents Platform</a></li>
+<li>Click <strong>"Create Agent"</strong></li>
+<li>Give it a name (e.g., "Sophie Voice")</li>
+</ol>
+<h3 id="step-2-configure-llm-custom">Step 2: Configure LLM (Custom)</h3>
+<ol>
+<li>In Agent settings, go to <strong>"LLM"</strong> section</li>
+<li>Select <strong>"Custom LLM"</strong></li>
+<li>Configure:</li>
+<li><strong>Server URL:</strong> <code>https://voice.aaroncollins.info</code></li>
+<li><strong>Model:</strong> <code>haiku</code> (or anything - it's ignored)</li>
+<li><strong>Custom LLM extra body:</strong> ✅ Enable this</li>
+<li><strong>Limit token usage:</strong> <code>5000</code> (recommended)</li>
+</ol>
+<h3 id="step-3-configure-voice">Step 3: Configure Voice</h3>
+<ol>
+<li>Go to <strong>"Voice"</strong> section</li>
+<li>Choose a voice you like (the voice Sophie will speak with)</li>
+<li>Adjust stability/clarity as needed</li>
+</ol>
+<h3 id="step-4-connect-whatsapp-via-twilio">Step 4: Connect WhatsApp (via Twilio)</h3>
+<ol>
+<li>Go to <strong>"Phone Numbers"</strong> section</li>
+<li>Click <strong>"Import Phone Number"</strong></li>
+<li>Enter your Twilio credentials:</li>
+<li><strong>Phone Number:</strong> Your Twilio number with WhatsApp enabled</li>
+<li><strong>Twilio SID:</strong> From Twilio console</li>
+<li><strong>Twilio Token:</strong> From Twilio console</li>
+<li><strong>Assign the agent</strong> to the phone number</li>
+</ol>
+<h3 id="step-5-test">Step 5: Test</h3>
+<p><strong>Outbound call (you call someone):</strong>
+1. In Phone Numbers, click the outbound call button
+2. Select your agent
+3. Enter the phone number to call
+4. Click "Send Test Call"</p>
+<p><strong>Inbound call (someone calls you):</strong>
+- Call your Twilio number on WhatsApp
+- The agent will answer automatically</p>
+<hr />
+<h2 id="how-it-works">How It Works</h2>
+<ol>
+<li><strong>You speak</strong> on WhatsApp call</li>
+<li><strong>ElevenLabs STT</strong> transcribes your speech to text</li>
+<li><strong>Text sent</strong> to <code>/chat/completions</code> endpoint</li>
+<li><strong>Haiku evaluates:</strong></li>
+<li>Simple question → responds directly (fast, 1-3 sentences)</li>
+<li>Complex question → uses <code>ask_sophie</code> tool</li>
+<li><strong>If ask_sophie used:</strong></li>
+<li>Sophie (Opus) processes with full tool access</li>
+<li>Can check calendar, email, search web, access files</li>
+<li>Haiku relays response conversationally</li>
+<li><strong>ElevenLabs TTS</strong> converts response to speech</li>
+<li><strong>You hear</strong> Sophie's voice response</li>
+</ol>
+<h2 id="when-ask_sophie-is-used">When ask_sophie is Used</h2>
+<p>Haiku automatically escalates to Sophie when you ask about:
+- Calendar, schedule, events, appointments
+- Emails, messages, notifications
+- Files, documents, code, projects
+- Research requiring web search or browsing
+- Complex technical or business questions
+- Anything requiring memory of past conversations</p>
+<p>Simple greetings, math, and general knowledge are handled by Haiku directly.</p>
+<hr />
+<h2 id="development">Development</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Local setup</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Run locally</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>python<span class="w"> </span>bridge.py
+</span></code></pre></div>
+<h2 id="test-commands">Test Commands</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Health check</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>curl<span class="w"> </span>https://voice.aaroncollins.info/health
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Simple question (Haiku direct)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://voice.aaroncollins.info/chat/completions<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What is 2+2?&quot;}], &quot;stream&quot;: false}&#39;</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># Complex question (triggers ask_sophie)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://voice.aaroncollins.info/chat/completions<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What meetings do I have tomorrow?&quot;}], &quot;stream&quot;: false}&#39;</span>
+</span></code></pre></div>
+<h2 id="license">License</h2>
+<p>MIT</p>
 
 
 

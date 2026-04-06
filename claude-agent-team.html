@@ -373,14 +373,14 @@
   
   
     <li class="md-nav__item">
-      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+      <a href="projects.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    MinecraftDatapackLanguage
+    projects
   
 
     
@@ -401,14 +401,14 @@
   
   
     <li class="md-nav__item">
-      <a href="projects.html" class="md-nav__link">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    projects
+    MinecraftDatapackLanguage
   
 
     
@@ -4822,7 +4822,226 @@
 <p><strong>Point your Claude at this repo and tell it:</strong>
 "Read the README at <code>pranavprem/claude-agent-team</code> and follow the setup instructions to install agent teams on this machine."</p>
 </blockquote>
-<p>Claude: fo</p>
+<p>Claude: follow these steps exactly.</p>
+<h3 id="step-1-copy-agent-personas">Step 1: Copy Agent Personas</h3>
+<p>Copy <strong>all <code>.md</code> files</strong> (except <code>README.md</code> and <code>CLAUDE.md</code>) from this repo into <code>~/.claude/agents/</code>. Create the directory if it doesn't exist.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>~/.claude/agents/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── architect.md
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── architecture-reviewer.md
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── code-reviewer.md
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── developer.md
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── tester.md
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>└── retrospective.md
+</span></code></pre></div>
+<p><strong>Important:</strong> Do NOT overwrite any existing agent files. If an agent with the same name already exists, ask the user whether to replace or skip it.</p>
+<h3 id="step-2-append-to-claudemd-do-not-replace">Step 2: Append to CLAUDE.md (DO NOT REPLACE)</h3>
+<p>Read <code>~/.claude/CLAUDE.md</code> if it exists. <strong>Append</strong> the contents of this repo's <code>CLAUDE.md</code> to the end of the existing file. Do not delete or modify any existing content.</p>
+<p>If <code>~/.claude/CLAUDE.md</code> does not exist, copy this repo's <code>CLAUDE.md</code> as-is.</p>
+<p><strong>Never replace an existing CLAUDE.md.</strong> Always append.</p>
+<h3 id="step-3-merge-settings">Step 3: Merge Settings</h3>
+<p>Read <code>~/.claude/settings.json</code> if it exists. Merge these two settings into it:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">&quot;teammateMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tmux&quot;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>If <code>env</code> already exists, add the <code>CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS</code> key to it</li>
+<li>If <code>teammateMode</code> already exists, overwrite it with <code>"tmux"</code></li>
+<li>Preserve all other existing settings</li>
+</ul>
+<p>If <code>~/.claude/settings.json</code> does not exist, create it with the contents of this repo's <code>settings.json</code>.</p>
+<h3 id="step-4-verify">Step 4: Verify</h3>
+<p>Run <code>claude --version</code> to confirm Claude Code is installed and ≥ v2.1.32. Check that <code>tmux</code> is available. Report the results to the user.</p>
+<h3 id="step-5-done">Step 5: Done</h3>
+<p>Tell the user the setup is complete and show them the quick start guide below.</p>
+<hr />
+<h2 id="whats-inside">What's Inside</h2>
+<p><strong>6 specialized agent personas</strong> that work together through Claude Code's <a href="https://code.claude.com/docs/en/agent-teams">agent teams</a> feature:</p>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Role</th>
+<th>Personality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>architect</strong></td>
+<td>System Designer</td>
+<td>18yr Principal Architect (AWS/Netflix). Produces detailed design docs.</td>
+</tr>
+<tr>
+<td><strong>architecture-reviewer</strong></td>
+<td>Design + Conformance</td>
+<td>22yr Distinguished Engineer. Reviews designs AND validates implementations match.</td>
+</tr>
+<tr>
+<td><strong>developer</strong></td>
+<td>Implementer</td>
+<td>15yr Staff SWE. Clean, linted, well-commented code. Language-agnostic.</td>
+</tr>
+<tr>
+<td><strong>tester</strong></td>
+<td>Test Engineer</td>
+<td>16yr Principal SDET. Unit, integration, e2e, and security tests.</td>
+</tr>
+<tr>
+<td><strong>code-reviewer</strong></td>
+<td>Code Reviewer</td>
+<td>20yr Staff Engineer. Read-only. Security → correctness → performance → quality.</td>
+</tr>
+<tr>
+<td><strong>retrospective</strong></td>
+<td>Session Analyst</td>
+<td>Extracts learnings and updates agent prompts, CLAUDE.md, and memory files.</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>main Claude session acts as team lead</strong> (manager), orchestrating the pipeline:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>architect → arch-reviewer ⟲ → developer → tester → code-reviewer ⟲ → arch conformance → commit → retrospective
+</span></code></pre></div>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><a href="https://code.claude.com">Claude Code</a> v2.1.32+ (<code>claude --version</code>)</li>
+<li><a href="https://github.com/tmux/tmux/wiki">tmux</a> for split-pane display (recommended)</li>
+<li>macOS: <code>brew install tmux</code></li>
+<li>Linux: <code>apt install tmux</code></li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 1. Start tmux</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>tmux<span class="w"> </span>new<span class="w"> </span>-s<span class="w"> </span>dev
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 2. Navigate to your project</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">cd</span><span class="w"> </span>~/your-project
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># 3. Launch Claude Code</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>claude
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># 4. Tell it to create a team</span>
+</span></code></pre></div>
+<p>Prompt for full pipeline:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Create an agent team to build [your feature].
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Follow the development lifecycle in CLAUDE.md.
+</span></code></pre></div></p>
+<h3 id="simplified-variants">Simplified Variants</h3>
+<p><strong>Architecture + Implementation</strong> (medium complexity):
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Create an agent team. Task: [your task]
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Spawn architect and developer. Architect designs, developer implements.
+</span></code></pre></div></p>
+<p><strong>Implementation + Review</strong> (well-understood tasks):
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Create an agent team. Task: [your task]
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Spawn developer, tester, and code-reviewer.
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Developer implements, tester writes tests, code-reviewer reviews.
+</span></code></pre></div></p>
+<p><strong>Individual agents</strong> (quick tasks):
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Use the code-reviewer subagent to review my recent changes
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Use the architect to design the new auth module
+</span></code></pre></div></p>
+<h2 id="the-8-phase-pipeline">The 8-Phase Pipeline</h2>
+<ol>
+<li><strong>Architecture</strong> — Architect produces a design document (components, data flow, API contracts, security, error handling)</li>
+<li><strong>Architecture Review</strong> ⟲ — Reviewer evaluates the design. Loop until approved.</li>
+<li><strong>Implementation</strong> — Developer implements following the approved architecture</li>
+<li><strong>Testing</strong> — Tester writes comprehensive tests (happy path, edge cases, errors, security)</li>
+<li><strong>Code Review</strong> ⟲ — Reviewer checks code. Loop with developer until approved.</li>
+<li><strong>Architecture Conformance</strong> — Reviewer validates implementation matches the design</li>
+<li><strong>Completion</strong> — Atomic commits, push</li>
+<li><strong>Retrospective</strong> — Analyst extracts learnings, updates agent prompts &amp; CLAUDE.md</li>
+</ol>
+<h2 id="tmux-navigation">tmux Navigation</h2>
+<p>With <code>teammateMode: "tmux"</code>, each agent gets its own pane:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Switch panes</td>
+<td>Click (with mouse on) or <code>Ctrl+B</code> + arrow key</td>
+</tr>
+<tr>
+<td>Jump to pane by number</td>
+<td><code>Ctrl+B</code> then <code>q</code> then number</td>
+</tr>
+<tr>
+<td>Zoom/unzoom a pane</td>
+<td><code>Ctrl+B</code> then <code>z</code></td>
+</tr>
+<tr>
+<td>Show task list</td>
+<td><code>Ctrl+T</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tip:</strong> Enable mouse support:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;set -g mouse on&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.tmux.conf
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>tmux<span class="w"> </span>source-file<span class="w"> </span>~/.tmux.conf
+</span></code></pre></div></p>
+<h2 id="design-principles-baked-in">Design Principles Baked In</h2>
+<p>Every agent has these principles embedded:</p>
+<ul>
+<li><strong>Security first</strong> — validate input, parameterize queries, least privilege, never log secrets</li>
+<li><strong>Clean code</strong> — self-documenting names, small functions, no dead code, DRY (rule of three)</li>
+<li><strong>Meaningful comments</strong> — explain <em>why</em>, not <em>what</em></li>
+<li><strong>Typed errors</strong> — specific, actionable error messages</li>
+<li><strong>Immutability by default</strong> — const/final/readonly everywhere</li>
+<li><strong>Test behavior, not implementation</strong> — tests survive refactoring</li>
+<li><strong>Lint and format always</strong> — follow the project's existing style</li>
+</ul>
+<h2 id="customization">Customization</h2>
+<h3 id="modify-agent-personas">Modify agent personas</h3>
+<p>Edit files in <code>~/.claude/agents/</code>. Each agent is a markdown file with YAML frontmatter:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nn">---</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">architect</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;System</span><span class="nv"> </span><span class="s">Architect.</span><span class="nv"> </span><span class="s">Designs</span><span class="nv"> </span><span class="s">scalable,</span><span class="nv"> </span><span class="s">secure</span><span class="nv"> </span><span class="s">architectures...&quot;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nt">tools</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Read, Grep, Glob, Bash, Write, Edit, WebFetch, WebSearch</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">opus</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="nn">---</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="l l-Scalar l-Scalar-Plain">You are a **Principal Software Architect**...</span>
+</span></code></pre></div>
+<h3 id="change-the-model">Change the model</h3>
+<p>Edit the <code>model:</code> field in each agent's frontmatter. Options: <code>opus</code>, <code>sonnet</code>, <code>haiku</code>, or <code>inherit</code>.</p>
+<p><strong>Cost optimization:</strong> Use <code>opus</code> for architect + code-reviewer (strongest reasoning), <code>sonnet</code> for developer + tester (good coding, cheaper).</p>
+<h3 id="update-the-pipeline">Update the pipeline</h3>
+<p>Edit <code>~/.claude/CLAUDE.md</code> to change the phase order, add phases, or modify management principles.</p>
+<h3 id="add-project-specific-context">Add project-specific context</h3>
+<p>Create <code>.claude/CLAUDE.md</code> in your project root for project-specific conventions. Agents read both user-level and project-level CLAUDE.md.</p>
+<h2 id="how-it-gets-smarter">How It Gets Smarter</h2>
+<p>The <strong>retrospective</strong> agent runs at the end of every session and:</p>
+<ol>
+<li>Analyzes what went right and wrong</li>
+<li>Classifies learnings as universal (all projects) or project-specific</li>
+<li>Updates agent prompts with new checklist items</li>
+<li>Updates CLAUDE.md with new standards</li>
+<li>Writes to memory files for future reference</li>
+</ol>
+<p>Over time, your team evolves — common mistakes get caught earlier, patterns get codified, and each agent's instructions become more refined.</p>
+<h2 id="file-structure">File Structure</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>claude-agent-team/
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>├── README.md                    # This file (includes setup instructions for Claude)
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>├── CLAUDE.md                    # Orchestration instructions (appended to existing)
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>├── settings.json                # Agent teams enabled + tmux mode
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>├── architect.md                 # System architecture agent
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>├── architecture-reviewer.md     # Design review + conformance agent
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>├── developer.md                 # Implementation agent
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>├── tester.md                    # Test engineering agent
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>├── code-reviewer.md             # Code review agent
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>└── retrospective.md             # Session learning agent
+</span></code></pre></div>
+<h2 id="credits">Credits</h2>
+<p>Built by <a href="https://github.com/pranavprem">pranavprem</a> with <a href="https://github.com/openclaw/openclaw">Neo</a> 🌀</p>
+<p>Inspired by:
+- <a href="https://code.claude.com/docs/en/agent-teams">Claude Code Agent Teams docs</a>
+- <a href="https://code.claude.com/docs/en/sub-agents">Claude Code Sub-agents docs</a>
+- Community patterns from <a href="https://github.com/rahulvrane/awesome-claude-agents">awesome-claude-agents</a></p>
 <h2 id="i-fork-information">ℹ️ Fork Information</h2>
 <p>This is a fork of another repository.</p>
 
