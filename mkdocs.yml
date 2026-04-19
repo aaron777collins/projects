@@ -125,6 +125,7 @@ nav:
       - OpenBashInWindowsTerminal: OpenBashInWindowsTerminal.md
     - Python:
       - 2sumsolution: 2sumsolution.md
+      - agentcompany: agentcompany.md
       - Art-Data-Gatherer: Art-Data-Gatherer.md
       - clawdbotlibrary: clawdbotlibrary.md
       - CompressVideoGUI: CompressVideoGUI.md
