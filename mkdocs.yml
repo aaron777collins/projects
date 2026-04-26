@@ -110,6 +110,7 @@ nav:
       - claude-agent-team: claude-agent-team.md
       - gitconfig-aliases: gitconfig-aliases.md
       - github-upload: github-upload.md
+      - himalaya: himalaya.md
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
       - openclaw: openclaw.md
