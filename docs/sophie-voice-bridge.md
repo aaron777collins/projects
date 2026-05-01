@@ -1,5 +1,7 @@
 # sophie-voice-bridge
 
+⭐ 1 stars
+
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/sophie-voice-bridge)
@@ -10,7 +12,7 @@
 - **Languages Used:** Python, Dockerfile
 - **License:** None
 - **Created:** January 28, 2026
-- **Last Updated:** January 28, 2026
+- **Last Updated:** April 30, 2026
 
 ## 📝 About
 

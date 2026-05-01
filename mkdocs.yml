@@ -57,6 +57,7 @@ nav:
     - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - paperclip-cli: paperclip-cli.md
     - aaron777collins.github.io: aaron777collins.github.io.md
+    - sophie-voice-bridge: sophie-voice-bridge.md
     - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
     - 2dWebGame: 2dWebGame.md
@@ -64,7 +65,6 @@ nav:
     - Control-Windows: Control-Windows.md
     - EasyMLLib: EasyMLLib.md
     - MachineLearningIDE: MachineLearningIDE.md
-    - COMP3340Project: COMP3340Project.md
   - All Projects:
     - C#:
       - COMP3770A2: COMP3770A2.md
