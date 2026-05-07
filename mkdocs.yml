@@ -107,6 +107,7 @@ nav:
       - awesome-zerotier: awesome-zerotier.md
       - BetterWorldEdit: BetterWorldEdit.md
       - blackboard-help-clicker: blackboard-help-clicker.md
+      - browsidian: browsidian.md
       - claude-agent-team: claude-agent-team.md
       - gitconfig-aliases: gitconfig-aliases.md
       - github-upload: github-upload.md
@@ -118,6 +119,7 @@ nav:
       - pixel-agents: pixel-agents.md
       - Star-Office-UI: Star-Office-UI.md
       - Survival2D: Survival2D.md
+      - synapse: synapse.md
       - TerminatorAI: TerminatorAI.md
       - tmux-sm: tmux-sm.md
     - PHP:
