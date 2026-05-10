@@ -122,7 +122,6 @@ nav:
       - Survival2D: Survival2D.md
       - TerminatorAI: TerminatorAI.md
       - tmux-sm: tmux-sm.md
-      - websitetemplate: websitetemplate.md
     - PHP:
       - phpshellterminal: phpshellterminal.md
     - PowerShell:
@@ -193,6 +192,7 @@ nav:
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md
       - RecursiveManager: RecursiveManager.md
+      - websitetemplate: websitetemplate.md
     - Vim Script:
       - python3-image.vim: python3-image.vim.md
       - vim-config: vim-config.md

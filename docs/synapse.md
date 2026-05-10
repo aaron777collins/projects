@@ -7,7 +7,7 @@
 ## 📊 Project Details
 
 - **Primary Language:** Svelte
-- **Languages Used:** Svelte, JavaScript, TypeScript, CSS, HTML, Dockerfile
+- **Languages Used:** Svelte, TypeScript, JavaScript, CSS, HTML, Dockerfile
 - **License:** MIT License
 - **Created:** May 07, 2026
 - **Last Updated:** May 09, 2026
