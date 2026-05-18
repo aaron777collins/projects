@@ -10,7 +10,7 @@
 - **Languages Used:** Svelte, TypeScript, JavaScript, CSS, HTML, Dockerfile
 - **License:** MIT License
 - **Created:** May 07, 2026
-- **Last Updated:** May 13, 2026
+- **Last Updated:** May 18, 2026
 
 ## 📝 About
 

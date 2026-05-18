@@ -178,7 +178,6 @@ nav:
       - zerotier-flatpaks: zerotier-flatpaks.md
     - Svelte:
       - synapse: synapse.md
-      - synapse-notes: synapse-notes.md
     - TypeScript:
       - 2dWebGame: 2dWebGame.md
       - aaron777collins.github.io: aaron777collins.github.io.md
