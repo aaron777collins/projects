@@ -12,7 +12,7 @@
 - **Languages Used:** TypeScript, HTML, JavaScript, CSS
 - **License:** MIT License
 - **Created:** March 10, 2026
-- **Last Updated:** March 10, 2026
+- **Last Updated:** May 21, 2026
 
 ## 📝 About
 
