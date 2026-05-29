@@ -13,7 +13,7 @@
 - **Languages Used:** TypeScript, SCSS, HTML
 - **License:** None
 - **Created:** March 28, 2022
-- **Last Updated:** March 02, 2026
+- **Last Updated:** May 28, 2026
 
 ## 📝 About
 

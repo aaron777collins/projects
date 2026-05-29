@@ -52,11 +52,11 @@ nav:
   - Featured Projects:
     - ZeroTier-GUI-Arch: ZeroTier-GUI-Arch.md
     - portableralph: portableralph.md
+    - aaron777collins.github.io: aaron777collins.github.io.md
     - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
     - projects: projects.md
     - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - paperclip-cli: paperclip-cli.md
-    - aaron777collins.github.io: aaron777collins.github.io.md
     - sophie-voice-bridge: sophie-voice-bridge.md
     - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
@@ -101,6 +101,7 @@ nav:
       - 2dgametest: 2dgametest.md
       - kibana-extender: kibana-extender.md
       - MessageParser: MessageParser.md
+      - resume: resume.md
       - urlcron: urlcron.md
       - Using-TLS: Using-TLS.md
       - WebGame: WebGame.md
