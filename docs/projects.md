@@ -14,7 +14,7 @@
 - **Languages Used:** Python, Shell
 - **License:** None
 - **Created:** May 15, 2023
-- **Last Updated:** May 31, 2026
+- **Last Updated:** June 01, 2026
 
 ## 📝 About
 
