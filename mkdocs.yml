@@ -117,7 +117,6 @@ nav:
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
       - odysseus: odysseus.md
-      - oneplatform: oneplatform.md
       - openclaw: openclaw.md
       - paperclip: paperclip.md
       - pixel-agents: pixel-agents.md
@@ -191,6 +190,7 @@ nav:
       - GoogleSearchMCP: GoogleSearchMCP.md
       - MCSManager: MCSManager.md
       - melo: melo.md
+      - oneplatform: oneplatform.md
       - openrouterwhitelist: openrouterwhitelist.md
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md

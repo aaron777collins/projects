@@ -6,11 +6,11 @@
 
 ## 📊 Project Details
 
-- **Primary Language:** None
-- **Languages Used:** Not specified
+- **Primary Language:** TypeScript
+- **Languages Used:** TypeScript, PLpgSQL, JavaScript, Shell, CSS, HTML
 - **License:** None
 - **Created:** June 10, 2026
-- **Last Updated:** June 10, 2026
+- **Last Updated:** June 11, 2026
 
 ## 📝 About
 
