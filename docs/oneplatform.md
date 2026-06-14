@@ -7,10 +7,10 @@
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** TypeScript, PLpgSQL, JavaScript, Shell, CSS, HTML
+- **Languages Used:** TypeScript, PLpgSQL, Shell, JavaScript, CSS, HTML
 - **License:** None
 - **Created:** June 10, 2026
-- **Last Updated:** June 12, 2026
+- **Last Updated:** June 14, 2026
 
 ## 📝 About
 
