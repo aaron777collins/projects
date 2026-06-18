@@ -2318,6 +2318,34 @@
   
   
     <li class="md-nav__item">
+      <a href="lavish-axi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lavish-axi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="markdown-portfolio.html" class="md-nav__link">
         
   
@@ -5167,14 +5195,15 @@
 <h2 id="quick-links">🔗 Quick Links</h2>
 <ul>
 <li><a href="https://github.com/aaron777collins/oneplatform">View on GitHub</a></li>
+<li><a href="http://www.aaroncollins.info/oneplatform/">GitHub Pages Site</a></li>
 </ul>
 <h2 id="project-details">📊 Project Details</h2>
 <ul>
 <li><strong>Primary Language:</strong> TypeScript</li>
-<li><strong>Languages Used:</strong> TypeScript, Shell, PLpgSQL, MDX, JavaScript, CSS, HTML</li>
-<li><strong>License:</strong> None</li>
+<li><strong>Languages Used:</strong> TypeScript, Shell, PLpgSQL, MDX, JavaScript, Go Template, CSS, HTML</li>
+<li><strong>License:</strong> Other</li>
 <li><strong>Created:</strong> June 10, 2026</li>
-<li><strong>Last Updated:</strong> June 15, 2026</li>
+<li><strong>Last Updated:</strong> June 18, 2026</li>
 </ul>
 <h2 id="about">📝 About</h2>
 <h1 id="oneplatform_1">OnePlatform</h1>
@@ -5244,9 +5273,10 @@
 <h2 id="quick-start">Quick Start</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/oneplatform.git
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>oneplatform
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>up
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker/docker-compose.yml<span class="w"> </span>up<span class="w"> </span>-d
 </span></code></pre></div>
-<p>The platform will be available at <code>http://localhost:3000</code>.</p>
+<p>The platform will be available at <code>https://localhost</code> (Caddy provides TLS with a self-signed cert for development).</p>
 <h2 id="tech-stack">Tech Stack</h2>
 <ul>
 <li><strong>Frontend:</strong> React 18, TypeScript, Tailwind CSS v4, shadcn/ui</li>
@@ -5309,8 +5339,13 @@
 <li><a href="./DEVELOPMENT-PROCESS.md">Development Process</a> — How we build and review code</li>
 </ul>
 <h2 id="license">License</h2>
-<p>Business Source License (BSL) — source-available, free to self-host and modify. Converts to Apache 2.0 after 4 years.</p>
+<p>Business Source License (BSL) — source-available, free to self-host and modify. Converts to MIT License after 4 years.</p>
 <p>See <a href="./LICENSE">LICENSE</a> for details.</p>
+<p>License Summary:</p>
+<p>oneplatform is licensed under the Business Source License 1.1.</p>
+<p>Non-production use is permitted under the terms of the LICENSE file.</p>
+<p>Production use, including internal business use, hosted use, or commercial deployment, requires separate written permission or a commercial license from Aaron Collins.</p>
+<p>On 2030-06-17, the Licensed Work converts to the MIT License.</p>
 
 
 
