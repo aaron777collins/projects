@@ -3,14 +3,15 @@
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/oneplatform)
+- [GitHub Pages Site](http://www.aaroncollins.info/oneplatform/)
 
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** TypeScript, Shell, PLpgSQL, MDX, JavaScript, CSS, HTML
-- **License:** None
+- **Languages Used:** TypeScript, Shell, PLpgSQL, MDX, JavaScript, Go Template, CSS, HTML
+- **License:** Other
 - **Created:** June 10, 2026
-- **Last Updated:** June 15, 2026
+- **Last Updated:** June 18, 2026
 
 ## 📝 About
 
@@ -54,10 +55,11 @@ OnePlatform is a free, open-source alternative to Fivetran + n8n + Retool — co
 ```bash
 git clone https://github.com/aaron777collins/oneplatform.git
 cd oneplatform
-docker compose up
+cp .env.example .env
+docker compose -f docker/docker-compose.yml up -d
 ```
 
-The platform will be available at `http://localhost:3000`.
+The platform will be available at `https://localhost` (Caddy provides TLS with a self-signed cert for development).
 
 ## Tech Stack
 
@@ -106,7 +108,17 @@ pnpm lint       # Lint all packages
 
 ## License
 
-Business Source License (BSL) — source-available, free to self-host and modify. Converts to Apache 2.0 after 4 years.
+Business Source License (BSL) — source-available, free to self-host and modify. Converts to MIT License after 4 years.
 
 See [LICENSE](./LICENSE) for details.
+
+License Summary:
+
+oneplatform is licensed under the Business Source License 1.1.
+
+Non-production use is permitted under the terms of the LICENSE file.
+
+Production use, including internal business use, hosted use, or commercial deployment, requires separate written permission or a commercial license from Aaron Collins.
+
+On 2030-06-17, the Licensed Work converts to the MIT License.
 
