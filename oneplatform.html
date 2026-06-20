@@ -5203,7 +5203,7 @@
 <li><strong>Languages Used:</strong> TypeScript, Shell, HCL, JavaScript, PLpgSQL, MDX, Go Template, HTML, CSS</li>
 <li><strong>License:</strong> Other</li>
 <li><strong>Created:</strong> June 10, 2026</li>
-<li><strong>Last Updated:</strong> June 19, 2026</li>
+<li><strong>Last Updated:</strong> June 20, 2026</li>
 </ul>
 <h2 id="about">📝 About</h2>
 <h1 id="oneplatform_1">OnePlatform</h1>
@@ -5276,7 +5276,7 @@
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker/docker-compose.yml<span class="w"> </span>up<span class="w"> </span>-d
 </span></code></pre></div>
-<p>The platform will be available at <code>https://localhost</code> (Caddy provides TLS with a self-signed cert for development).</p>
+<p>The platform will be available at <code>https://localhost</code> (Caddy provides TLS with a self-signed certificate for local development; your browser will show a security warning that you can safely accept).</p>
 <h2 id="tech-stack">Tech Stack</h2>
 <ul>
 <li><strong>Frontend:</strong> React 18, TypeScript, Tailwind CSS v4, shadcn/ui</li>
@@ -5324,7 +5324,7 @@
 <ul>
 <li>Node.js 22+</li>
 <li>pnpm 9+</li>
-<li>Docker &amp; Docker Compose</li>
+<li>Docker Engine 20.10+ &amp; Docker Compose V2 (<code>docker compose version</code> -- V1 <code>docker-compose</code> is unsupported)</li>
 </ul>
 <h3 id="development-setup">Development Setup</h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pnpm<span class="w"> </span>install
