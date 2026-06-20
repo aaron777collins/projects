@@ -11,7 +11,7 @@
 - **Languages Used:** TypeScript, Shell, HCL, JavaScript, PLpgSQL, MDX, Go Template, HTML, CSS
 - **License:** Other
 - **Created:** June 10, 2026
-- **Last Updated:** June 19, 2026
+- **Last Updated:** June 20, 2026
 
 ## 📝 About
 
@@ -59,7 +59,7 @@ cp .env.example .env
 docker compose -f docker/docker-compose.yml up -d
 ```
 
-The platform will be available at `https://localhost` (Caddy provides TLS with a self-signed cert for development).
+The platform will be available at `https://localhost` (Caddy provides TLS with a self-signed certificate for local development; your browser will show a security warning that you can safely accept).
 
 ## Tech Stack
 
@@ -89,7 +89,7 @@ See [DEVELOPMENT-PROCESS.md](./DEVELOPMENT-PROCESS.md) for the full development 
 
 - Node.js 22+
 - pnpm 9+
-- Docker & Docker Compose
+- Docker Engine 20.10+ & Docker Compose V2 (`docker compose version` -- V1 `docker-compose` is unsupported)
 
 ### Development Setup
 
