@@ -193,6 +193,7 @@ nav:
       - melo: melo.md
       - oneplatform: oneplatform.md
       - openrouterwhitelist: openrouterwhitelist.md
+      - pickr: pickr.md
       - PostAPic: PostAPic.md
       - react-playground: react-playground.md
       - RecursiveManager: RecursiveManager.md
