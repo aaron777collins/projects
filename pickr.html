@@ -5227,35 +5227,37 @@
 <h2 id="project-details">📊 Project Details</h2>
 <ul>
 <li><strong>Primary Language:</strong> TypeScript</li>
-<li><strong>Languages Used:</strong> TypeScript, CSS, Rust, HTML</li>
+<li><strong>Languages Used:</strong> TypeScript, Python, Rust, CSS, HTML</li>
 <li><strong>License:</strong> MIT License</li>
 <li><strong>Created:</strong> June 21, 2026</li>
 <li><strong>Last Updated:</strong> June 21, 2026</li>
 </ul>
 <h2 id="about">📝 About</h2>
 <h1 id="pickr_1">Pickr</h1>
-<p>Drag-to-reorder photo/video curation tool with AI helpers.</p>
-<p>Pick the best shots from a folder, reorder them, and export clean numbered copies. AI badges surface sharpness, duplicates, and faces so you can decide fast.</p>
-<blockquote>
-<p><strong>Work in progress</strong> -- not yet functional.</p>
-</blockquote>
-<h2 id="v1-scope">v1 Scope</h2>
+<p>Drag-to-reorder photo/video curation tool with AI helpers. Built with Tauri 2 + React.</p>
+<p>Pick the best shots from a folder of photos and videos, reorder them by dragging, and export clean numbered copies. AI badges surface sharpness, near-duplicates, and faces so you can curate fast.</p>
+<h2 id="features-v01">Features (v0.1)</h2>
 <ul>
-<li>Folder picker (native dialog)</li>
-<li>Thumbnail grid with lazy loading</li>
-<li>Drag-and-drop reorder</li>
-<li>Lightbox preview (photos + video)</li>
-<li>Include / Skip toggle per media item</li>
-<li>AI badges: sharpness, near-duplicate, face count</li>
-<li>Face recognition (group by person)</li>
-<li>Export renamed/numbered copies</li>
-<li>Save / load session (JSON)</li>
+<li><strong>Folder scanner</strong> -- native dialog, scans for JPG/PNG/HEIC/MP4/MOV/AVI/WebM/MKV</li>
+<li><strong>Thumbnail grid</strong> with responsive layout and lazy loading</li>
+<li><strong>Drag-and-drop reorder</strong> via dnd-kit</li>
+<li><strong>Fullscreen lightbox</strong> for photos (zoom/pan) and videos (HTML5 controls)</li>
+<li><strong>Include / Skip toggle</strong> per item (Space in lightbox, eye icon on thumbnails)</li>
+<li><strong>AI badges</strong> on every thumbnail:</li>
+<li>Sharpness score (1-10, color-coded green/amber/red)</li>
+<li>Face count</li>
+<li>Duplicate group indicator (pHash-based)</li>
+<li><strong>Smart filters</strong> -- Sharp only, Has faces, Hide duplicates, Skipped only</li>
+<li><strong>Face recognition</strong> -- detect faces, tag with names, find the same person across all photos</li>
+<li><strong>Export</strong> -- copy selected items to a folder with numbered prefixes (01_, 02_, ...)</li>
+<li><strong>Auto-save</strong> -- project state (order, selections, face tags) saved to <code>.pickr.json</code></li>
+<li><strong>Dark mode</strong> by default, toggleable</li>
 </ul>
-<h2 id="v2-scope">v2 Scope</h2>
+<h2 id="v2-roadmap">v2 Roadmap</h2>
 <ul>
-<li>Face blurring (privacy export)</li>
-<li>Aesthetic scoring</li>
-<li>AI captioning</li>
+<li>Face blurring on export (non-tagged faces Gaussian blurred)</li>
+<li>Aesthetic scoring (NIMA model)</li>
+<li>AI captioning (BLIP-2 / LLaVA)</li>
 </ul>
 <h2 id="tech-stack">Tech Stack</h2>
 <table>
@@ -5283,20 +5285,46 @@
 <td>Zustand</td>
 </tr>
 <tr>
-<td>DnD</td>
+<td>Drag &amp; drop</td>
 <td>dnd-kit</td>
 </tr>
 <tr>
 <td>AI sidecar</td>
-<td>Python 3.10+ CLI (ONNX Runtime, face_recognition, OpenCV)</td>
+<td>Python 3.10+ (OpenCV, face_recognition/dlib, imagehash, Pillow)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="development">Development</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w">          </span><span class="c1"># install frontend deps</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>npm<span class="w"> </span>run<span class="w"> </span>dev<span class="w">          </span><span class="c1"># Vite dev server only</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>npm<span class="w"> </span>run<span class="w"> </span>tauri<span class="w"> </span>dev<span class="w">    </span><span class="c1"># full Tauri app (compiles Rust on first run)</span>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Node.js 20+</li>
+<li>Rust (via rustup)</li>
+<li>Python 3.10+</li>
+<li>System deps (Linux): <code>sudo apt install cmake build-essential libopenblas-dev liblapack-dev libgtk-3-dev libwebkit2gtk-4.1-dev libsoup-3.0-dev librsvg2-dev ffmpeg</code></li>
+</ul>
+<h3 id="setup">Setup</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Frontend</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>npm<span class="w"> </span>install
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Python sidecar</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">cd</span><span class="w"> </span>sidecar
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span><span class="w">        </span><span class="c1"># core features</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev,faces]&quot;</span><span class="w">  </span><span class="c1"># + face recognition (requires cmake + dlib)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">cd</span><span class="w"> </span>..
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># Run</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>npm<span class="w"> </span>run<span class="w"> </span>dev<span class="w">          </span><span class="c1"># Vite dev server only (http://localhost:1420)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>npm<span class="w"> </span>run<span class="w"> </span>tauri<span class="w"> </span>dev<span class="w">    </span><span class="c1"># full desktop app (compiles Rust on first run)</span>
 </span></code></pre></div>
+<h2 id="architecture">Architecture</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>src/                  React frontend (components, stores, features)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>src-tauri/            Rust backend (Tauri commands, sidecar spawning)
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sidecar/              Python CLI for media analysis
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>docs/                 Architecture docs + usage guide
+</span></code></pre></div>
+<p>See <a href="docs/ARCHITECTURE.md">docs/ARCHITECTURE.md</a> for the full architecture and <a href="docs/USAGE.md">docs/USAGE.md</a> for the user journey.</p>
 <h2 id="license">License</h2>
 <p>MIT</p>
 
