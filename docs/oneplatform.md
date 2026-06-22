@@ -11,7 +11,7 @@
 - **Languages Used:** TypeScript, Shell, HCL, JavaScript, PLpgSQL, MDX, Go Template, HTML, CSS
 - **License:** Other
 - **Created:** June 10, 2026
-- **Last Updated:** June 20, 2026
+- **Last Updated:** June 21, 2026
 
 ## 📝 About
 
@@ -49,6 +49,14 @@ OnePlatform is a free, open-source alternative to Fivetran + n8n + Retool — co
 | App | User app hosting and runtime |
 | Logging | Centralized logs, audit, metrics |
 | Plugin | Plugin lifecycle, hooks, registry |
+
+## Preview
+
+| Dashboard | Pipeline Editor | App Builder |
+|-----------|----------------|-------------|
+| ![Dashboard — service health, recent runs, and key metrics](docs/images/dashboard.png) | ![Pipeline Editor — visual drag-and-drop node canvas](docs/images/pipeline-editor.png) | ![App Builder — drag-and-drop UI components with live preview](docs/images/app-builder.png) |
+
+> Screenshots will be added once the hosted demo environment is available. The images above show placeholder paths pointing to `docs/images/`.
 
 ## Quick Start
 
@@ -105,6 +113,14 @@ pnpm lint       # Lint all packages
 - [Architecture Decisions](./docs/decisions/001-architecture-decisions.md) — All 23 architecture decisions
 - [Design Spec](./docs/superpowers/specs/) — Detailed design specifications
 - [Development Process](./DEVELOPMENT-PROCESS.md) — How we build and review code
+
+## Learning Resources
+
+- [Quick Start](./docs/QUICKSTART.md) — Get OnePlatform running locally in under 10 minutes
+- [Plugin Development](./docs/quickstarts/plugin-quickstart.md) — Build your first connector or transformer plugin
+- [App Builder](./docs/quickstarts/app-quickstart.md) — Create and embed your first app
+
+> Interactive tutorials are planned for a future release. Until then, the quickstart guides above provide step-by-step walkthroughs for common workflows.
 
 ## License
 

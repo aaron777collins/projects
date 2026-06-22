@@ -7,7 +7,7 @@
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** TypeScript, CSS, Rust, HTML
+- **Languages Used:** TypeScript, Python, Rust, CSS, HTML
 - **License:** MIT License
 - **Created:** June 21, 2026
 - **Last Updated:** June 21, 2026
@@ -16,29 +16,32 @@
 
 # Pickr
 
-Drag-to-reorder photo/video curation tool with AI helpers.
+Drag-to-reorder photo/video curation tool with AI helpers. Built with Tauri 2 + React.
 
-Pick the best shots from a folder, reorder them, and export clean numbered copies. AI badges surface sharpness, duplicates, and faces so you can decide fast.
+Pick the best shots from a folder of photos and videos, reorder them by dragging, and export clean numbered copies. AI badges surface sharpness, near-duplicates, and faces so you can curate fast.
 
-> **Work in progress** -- not yet functional.
+## Features (v0.1)
 
-## v1 Scope
+- **Folder scanner** -- native dialog, scans for JPG/PNG/HEIC/MP4/MOV/AVI/WebM/MKV
+- **Thumbnail grid** with responsive layout and lazy loading
+- **Drag-and-drop reorder** via dnd-kit
+- **Fullscreen lightbox** for photos (zoom/pan) and videos (HTML5 controls)
+- **Include / Skip toggle** per item (Space in lightbox, eye icon on thumbnails)
+- **AI badges** on every thumbnail:
+  - Sharpness score (1-10, color-coded green/amber/red)
+  - Face count
+  - Duplicate group indicator (pHash-based)
+- **Smart filters** -- Sharp only, Has faces, Hide duplicates, Skipped only
+- **Face recognition** -- detect faces, tag with names, find the same person across all photos
+- **Export** -- copy selected items to a folder with numbered prefixes (01_, 02_, ...)
+- **Auto-save** -- project state (order, selections, face tags) saved to `.pickr.json`
+- **Dark mode** by default, toggleable
 
-- Folder picker (native dialog)
-- Thumbnail grid with lazy loading
-- Drag-and-drop reorder
-- Lightbox preview (photos + video)
-- Include / Skip toggle per media item
-- AI badges: sharpness, near-duplicate, face count
-- Face recognition (group by person)
-- Export renamed/numbered copies
-- Save / load session (JSON)
+## v2 Roadmap
 
-## v2 Scope
-
-- Face blurring (privacy export)
-- Aesthetic scoring
-- AI captioning
+- Face blurring on export (non-tagged faces Gaussian blurred)
+- Aesthetic scoring (NIMA model)
+- AI captioning (BLIP-2 / LLaVA)
 
 ## Tech Stack
 
@@ -48,16 +51,47 @@ Pick the best shots from a folder, reorder them, and export clean numbered copie
 | Frontend | React 19 + TypeScript + Vite |
 | Styling | Tailwind CSS v4 + shadcn/ui |
 | State | Zustand |
-| DnD | dnd-kit |
-| AI sidecar | Python 3.10+ CLI (ONNX Runtime, face_recognition, OpenCV) |
+| Drag & drop | dnd-kit |
+| AI sidecar | Python 3.10+ (OpenCV, face_recognition/dlib, imagehash, Pillow) |
 
-## Development
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- Rust (via rustup)
+- Python 3.10+
+- System deps (Linux): `sudo apt install cmake build-essential libopenblas-dev liblapack-dev libgtk-3-dev libwebkit2gtk-4.1-dev libsoup-3.0-dev librsvg2-dev ffmpeg`
+
+### Setup
 
 ```bash
-npm install          # install frontend deps
-npm run dev          # Vite dev server only
-npm run tauri dev    # full Tauri app (compiles Rust on first run)
+# Frontend
+npm install
+
+# Python sidecar
+cd sidecar
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"        # core features
+pip install -e ".[dev,faces]"  # + face recognition (requires cmake + dlib)
+cd ..
+
+# Run
+npm run dev          # Vite dev server only (http://localhost:1420)
+npm run tauri dev    # full desktop app (compiles Rust on first run)
 ```
+
+## Architecture
+
+```
+src/                  React frontend (components, stores, features)
+src-tauri/            Rust backend (Tauri commands, sidecar spawning)
+sidecar/              Python CLI for media analysis
+docs/                 Architecture docs + usage guide
+```
+
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the full architecture and [docs/USAGE.md](docs/USAGE.md) for the user journey.
 
 ## License
 
