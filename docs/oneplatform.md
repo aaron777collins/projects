@@ -8,10 +8,10 @@
 ## 📊 Project Details
 
 - **Primary Language:** TypeScript
-- **Languages Used:** TypeScript, Shell, HCL, JavaScript, PLpgSQL, MDX, Go Template, HTML, CSS
+- **Languages Used:** TypeScript, Shell, HCL, JavaScript, HTML, PLpgSQL, MDX, Go Template, Dockerfile, CSS
 - **License:** Other
 - **Created:** June 10, 2026
-- **Last Updated:** June 21, 2026
+- **Last Updated:** June 23, 2026
 
 ## 📝 About
 
