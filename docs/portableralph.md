@@ -14,7 +14,7 @@
 - **Languages Used:** Shell, PowerShell, Python, HTML, Batchfile, Dockerfile, Roff
 - **License:** None
 - **Created:** January 14, 2026
-- **Last Updated:** April 02, 2026
+- **Last Updated:** June 26, 2026
 
 ## 📝 About
 
@@ -163,6 +163,50 @@ ralph .\feature.md           # Build until done
 ralph .\feature.md plan      # Plan only (creates task list, exits)
 ralph .\feature.md build 20  # Build, max 20 iterations
 ```
+
+## Configuration
+
+Ralph is configured via `~/.ralph.env`. Available settings:
+
+```bash
+# Claude model to use (default: sonnet)
+export RALPH_MODEL="sonnet"
+# Other options: claude-opus-4-6, claude-haiku-4-5-20251001, etc.
+
+# Auto-commit after each iteration (default: true)
+export RALPH_AUTO_COMMIT="true"
+
+# Stream Claude output to the terminal in real-time (default: true)
+# Requires jq. Falls back to non-streaming if jq is not installed.
+# Set to false to capture output and display after each iteration completes.
+export RALPH_STREAM_OUTPUT="true"
+```
+
+You can also override the model per-run via environment variable:
+
+```bash
+RALPH_MODEL=claude-opus-4-6 ralph ./plan.md
+```
+
+Or use the config command for auto-commit:
+
+```bash
+ralph config commit off   # Disable auto-commit
+ralph config commit on    # Enable auto-commit
+```
+
+### Guardrails (Lessons Learned)
+
+Ralph maintains a `RALPH_GUARDRAILS.md` file in your project directory that captures project-specific lessons learned across iterations. This prevents Claude from repeating the same mistakes (wrong test commands, style violations, broken patterns).
+
+- **Created automatically** — Claude creates and appends to it when discovering project gotchas
+- **Persists across iterations** — each new Claude session reads it at startup
+- **You can seed it manually** — add your own rules before running Ralph:
+  ```markdown
+  - Always run `pytest -x` not `python -m pytest`
+  - Use tabs for indentation (project convention)
+  ```
+- **Self-maintaining** — Claude consolidates entries when the file grows past ~50 lines
 
 ## Plan File Format
 
