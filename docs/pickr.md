@@ -3,7 +3,7 @@
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/pickr)
-- [Latest Release: v0.8.0: Face Blur Export + Media Fixes](https://github.com/aaron777collins/pickr/releases/tag/v0.8.0) (June 28, 2026)
+- [Latest Release: v0.8.1: Cross-platform face detection](https://github.com/aaron777collins/pickr/releases/tag/v0.8.1) (June 29, 2026)
 
 ## 📊 Project Details
 
@@ -11,7 +11,7 @@
 - **Languages Used:** TypeScript, Python, Rust, Shell, CSS, HTML
 - **License:** MIT License
 - **Created:** June 21, 2026
-- **Last Updated:** June 28, 2026
+- **Last Updated:** June 29, 2026
 
 ## 📝 About
 
