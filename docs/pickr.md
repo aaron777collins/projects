@@ -3,7 +3,7 @@
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/pickr)
-- [Latest Release: v0.8.1: Cross-platform face detection](https://github.com/aaron777collins/pickr/releases/tag/v0.8.1) (June 29, 2026)
+- [Latest Release: Pickr v0.9.0](https://github.com/aaron777collins/pickr/releases/tag/v0.9.0) (June 29, 2026)
 
 ## 📊 Project Details
 
