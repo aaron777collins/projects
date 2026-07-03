@@ -127,6 +127,7 @@ nav:
       - Survival2D: Survival2D.md
       - TerminatorAI: TerminatorAI.md
       - tmux-sm: tmux-sm.md
+      - workmux: workmux.md
     - PHP:
       - phpshellterminal: phpshellterminal.md
     - PowerShell:
