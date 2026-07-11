@@ -3,7 +3,7 @@
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/pickr)
-- [Latest Release: v0.10.0](https://github.com/aaron777collins/pickr/releases/tag/v0.10.0) (July 02, 2026)
+- [Latest Release: Pickr v0.10.3](https://github.com/aaron777collins/pickr/releases/tag/v0.10.3) (July 11, 2026)
 
 ## 📊 Project Details
 
@@ -11,7 +11,7 @@
 - **Languages Used:** TypeScript, Python, Rust, Shell, CSS, HTML
 - **License:** MIT License
 - **Created:** June 21, 2026
-- **Last Updated:** July 03, 2026
+- **Last Updated:** July 11, 2026
 
 ## 📝 About
 
