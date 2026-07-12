@@ -14,7 +14,7 @@
 - **Languages Used:** Python, HTML, mcfunction, Shell, TypeScript, PowerShell, CSS, Ruby, Makefile
 - **License:** GNU General Public License v3.0
 - **Created:** August 26, 2025
-- **Last Updated:** July 10, 2026
+- **Last Updated:** July 11, 2026
 
 ## 📝 About
 

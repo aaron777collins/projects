@@ -118,6 +118,7 @@ nav:
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
       - odysseus: odysseus.md
+      - open-design: open-design.md
       - open-webui: open-webui.md
       - openclaw: openclaw.md
       - paperclip: paperclip.md
