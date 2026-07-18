@@ -1,0 +1,6508 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="himalaya.html">
+      
+      
+        <link rel="next" href="lavish-axi.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>kanban-mcp - Aaron Collins' Projects</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kanban-mcp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Aaron Collins&#39; Projects" class="md-header__button md-logo" aria-label="Aaron Collins' Projects" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Aaron Collins' Projects
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              kanban-mcp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 2c-1.05 0-2.05.16-3 .46 4.06 1.27 7 5.04 7 9.54s-2.94 8.27-7 9.54c.95.3 1.95.46 3 .46a10 10 0 0 0 10-10A10 10 0 0 0 9 2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Aaron Collins&#39; Projects" class="md-nav__button md-logo" aria-label="Aaron Collins' Projects" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Aaron Collins' Projects
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Featured Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Featured Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ZeroTier-GUI-Arch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroTier-GUI-Arch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="portableralph.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    portableralph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MinecraftDatapackLanguage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aaron777collins.github.io.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    aaron777collins.github.io
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ConnectedDrivingPipelineV4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ConnectedDrivingPipelineV4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paperclip-cli.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    paperclip-cli
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sophie-voice-bridge.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sophie-voice-bridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SteamDeckPacmanReInstaller.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SteamDeckPacmanReInstaller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ConnectedDrivingMachineLearningPipeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ConnectedDrivingMachineLearningPipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2dWebGame.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2dWebGame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PostAPic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostAPic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Control-Windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control-Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EasyMLLib.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EasyMLLib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MachineLearningIDE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MachineLearningIDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Projects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    All Projects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C#
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C#
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COMP3770A2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COMP3770A2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="comp3770A3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    comp3770A3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotnet6weatherapp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dotnet6weatherapp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dotnet7weatherapp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dotnet7weatherapp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ConnectedDrivingDataGenerator.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ConnectedDrivingDataGenerator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="learningcpp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    learningcpp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Go
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Go
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nvm-windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nvm-windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTML
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HTML
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aigateway.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    aigateway
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChurchScheduleTemplate.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChurchScheduleTemplate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ConnectedDrivingMachineLearningPipeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ConnectedDrivingMachineLearningPipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Deep-Space.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep-Space
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dwcc-website-snippets.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dwcc-website-snippets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="github-slideshow.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    github-slideshow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Marking-Assistant.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Marking-Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mermaid-editor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mermaid-editor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nginx-fancyindex-dark.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nginx-fancyindex-dark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projects-test.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    projects-test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="smartbudget.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    smartbudget
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2DTestGame.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2DTestGame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Basic-Browser.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic-Browser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CampusBookStore.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CampusBookStore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="comp4220_A2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    comp4220_A2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Key-Finder.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Key-Finder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Open-World-Zombies.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open-World-Zombies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="opengl-sandbox-game.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    opengl-sandbox-game
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sandbox-game-lwjgl.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sandbox-game-lwjgl
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JavaScript
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JavaScript
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2dgametest.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2dgametest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="kibana-extender.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    kibana-extender
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessageParser.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MessageParser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resume.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    resume
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="urlcron.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    urlcron
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Using-TLS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using-TLS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebGame.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WebGame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Other
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="awesome-zerotier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    awesome-zerotier
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BetterWorldEdit.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BetterWorldEdit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blackboard-help-clicker.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    blackboard-help-clicker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="browsidian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    browsidian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="claude-agent-team.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    claude-agent-team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gitconfig-aliases.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gitconfig-aliases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="github-upload.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    github-upload
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="himalaya.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    himalaya
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    kanban-mcp
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="kanban-mcp.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    kanban-mcp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Quick Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Project Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 About
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lavish-axi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lavish-axi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="markdown-portfolio.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    markdown-portfolio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ngx-admin.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ngx-admin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="odysseus.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    odysseus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="open-design.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    open-design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="open-webui.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    open-webui
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="openclaw.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    openclaw
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paperclip.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    paperclip
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pixel-agents.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pixel-agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="showerthought.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    showerthought
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Star-Office-UI.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Star-Office-UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Survival2D.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Survival2D
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TerminatorAI.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TerminatorAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tmux-sm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tmux-sm
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="workmux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    workmux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PHP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PHP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="phpshellterminal.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    phpshellterminal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PowerShell
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PowerShell
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OpenBashInWindowsTerminal.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenBashInWindowsTerminal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2sumsolution.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2sumsolution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="agentcompany.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    agentcompany
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Art-Data-Gatherer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Art-Data-Gatherer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clawdbotlibrary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    clawdbotlibrary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CompressVideoGUI.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CompressVideoGUI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ConnectedDrivingPipelineV4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ConnectedDrivingPipelineV4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="connecteddrivingresearch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    connecteddrivingresearch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Control-Windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control-Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Coupon-Counter.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coupon-Counter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Distracted-Drving-ML-V3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Distracted-Drving-ML-V3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DocSearch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DocSearch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Easy-Math-Substitution.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Easy-Math-Substitution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EasyMLLib.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EasyMLLib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EnhanceAndClick.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EnhanceAndClick
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extractembeddedpdftext.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    extractembeddedpdftext
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FlashGameManager.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FlashGameManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="google-translate-manga-viewer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    google-translate-manga-viewer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="live-manga-translator.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    live-manga-translator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MachineLearningIDE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MachineLearningIDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MinecraftDatapackLanguage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MinecraftDatapackLanguage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mouse-mover.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mouse-mover
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paperclip-cli.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    paperclip-cli
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pdf-to-text-ocr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pdf-to-text-ocr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="player-plus-minus-tracker.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    player-plus-minus-tracker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PracticeCICDRepo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PracticeCICDRepo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python-windowing-test.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    python-windowing-test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quicksnip.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    quicksnip
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="simple-ai-game.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    simple-ai-game
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sophie-mcp.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sophie-mcp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sophie-voice-bridge.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sophie-voice-bridge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StockTraderBotDDDQN.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    StockTraderBotDDDQN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vclick.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vclick
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="word-map-api.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    word-map-api
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ZeroTier-GUI-Arch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroTier-GUI-Arch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Racket
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Racket
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COMP4400A4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COMP4400A4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COMP4400A5.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COMP4400A5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Shell
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BashFunctions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BashFunctions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bible-drawing-pipeline.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    bible-drawing-pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cddg-docker.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cddg-docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Fast-Marker.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fast-Marker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MinecraftPipes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MinecraftPipes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="node-manager.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    node-manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="portableralph.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    portableralph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SteamDeckPacmanReInstaller.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SteamDeckPacmanReInstaller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tmux-config.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tmux-config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="zerotier-flatpaks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    zerotier-flatpaks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Svelte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Svelte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="synapse.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    synapse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TypeScript
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TypeScript
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2dWebGame.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2dWebGame
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aaron777collins.github.io.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    aaron777collins.github.io
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AngularTutorials.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AngularTutorials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BetterPGVectorN8N.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BetterPGVectorN8N
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="COMP3340Project.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COMP3340Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GoogleSearchMCP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GoogleSearchMCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MCSManager.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCSManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="melo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    melo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="oneplatform.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    oneplatform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="openrouterwhitelist.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    openrouterwhitelist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pickr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pickr
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PostAPic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostAPic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="react-playground.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    react-playground
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RecursiveManager.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RecursiveManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vellum-outpaint.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vellum-outpaint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="websitetemplate.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    websitetemplate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vim Script
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vim Script
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="python3-image.vim.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    python3-image.vim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vim-config.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vim-config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_16" id="__nav_3_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mcfunction
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    mcfunction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BetterFactoryMechanics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BetterFactoryMechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Quick Links
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Project Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 About
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="kanban-mcp">kanban-mcp</h1>
+<p>🔀 Fork</p>
+<h2 id="quick-links">🔗 Quick Links</h2>
+<ul>
+<li><a href="https://github.com/aaron777collins/kanban-mcp">View on GitHub</a></li>
+</ul>
+<h2 id="project-details">📊 Project Details</h2>
+<ul>
+<li><strong>Primary Language:</strong> None</li>
+<li><strong>Languages Used:</strong> Python, JavaScript, CSS, HTML, Shell, PowerShell, Dockerfile</li>
+<li><strong>License:</strong> MIT License</li>
+<li><strong>Created:</strong> July 17, 2026</li>
+<li><strong>Last Updated:</strong> July 17, 2026</li>
+</ul>
+<h2 id="about">📝 About</h2>
+<h1 id="kanban-mcp_1">kanban-mcp</h1>
+<p>A database-backed kanban board that AI coding agents use via <a href="https://modelcontextprotocol.io/">MCP</a> (Model Context Protocol). Track issues, features, todos, epics, and diary entries across all your projects — with a web UI for humans and 40+ tools for agents.</p>
+<p><img alt="Kanban board overview" src="webui.png" /></p>
+<details>
+<summary>More screenshots</summary>
+
+![Activity timeline](webui-timeline.png)
+![New item dialog](webui-issue.png)
+
+</details>
+
+<h2 id="what-it-does">What It Does</h2>
+<ul>
+<li><strong>Persistent project tracking</strong> — issues, features, todos, epics, questions, diary entries stored in SQLite (default) or MySQL/MariaDB</li>
+<li><strong>Status workflows</strong> — each item type has its own progression (backlog → todo → in_progress → review → done → closed)</li>
+<li><strong>Relationships &amp; epics</strong> — parent/child hierarchies, blocking relationships, epic progress tracking</li>
+<li><strong>Tags, decisions, file links</strong> — attach metadata to any item</li>
+<li><strong>Semantic search</strong> — find similar items using local ONNX embeddings (optional; downloads <a href="https://huggingface.co/nomic-ai/nomic-embed-text-v1.5">nomic-embed-text-v1.5</a> from HuggingFace on first use, ~140MB — the first query will block until download completes)</li>
+<li><strong>Activity timeline</strong> — unified view of status changes, decisions, updates, and git commits</li>
+<li><strong>Export</strong> — JSON, YAML, or Markdown output with filters</li>
+<li><strong>Web UI</strong> — browser-based board at localhost:5000</li>
+<li><strong>Session hooks</strong> — inject active items into AI agent sessions automatically</li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<p>Requires <strong>Python 3.10+</strong>.</p>
+<p><strong>Linux / macOS:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/multidimensionalcats/kanban-mcp/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</span></code></pre></div></p>
+<p><strong>Windows (PowerShell):</strong>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">irm </span><span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">multidimensionalcats</span><span class="p">/</span><span class="n">kanban-mcp</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">iex</span>
+</span></code></pre></div></p>
+<p>The script prompts interactively (backend choice, etc.) then installs pipx
+and kanban-mcp, sets up the database, runs migrations, and prints your MCP
+config. SQLite is the default — just press Enter. No database server required.</p>
+<p><strong>Want MySQL/MariaDB instead?</strong> Add <code>--mysql</code> (or <code>-MySQL</code> on Windows):
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/multidimensionalcats/kanban-mcp/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>--<span class="w"> </span>--auto<span class="w"> </span>--mysql
+</span></code></pre></div></p>
+<p><strong>Manual install (no script):</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pipx<span class="w"> </span>install<span class="w"> </span>kanban-mcp
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>summary<span class="w">   </span><span class="c1"># SQLite DB auto-created on first run</span>
+</span></code></pre></div>
+Then add the MCP server to your AI client — see <a href="#mcp-client-setup">MCP Client Setup</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><strong>Python 3.10+</strong></li>
+<li><strong>pipx</strong> (recommended) — installed automatically by the install script if missing</li>
+<li><strong>MySQL 8.0+ or MariaDB 11+</strong> <em>(optional)</em> — only needed if you choose MySQL over the default SQLite backend</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>The <a href="#quick-start">Quick Start</a> one-liner is the fastest path. Below are alternative install methods and additional options.</p>
+<h3 id="option-1-pipx-recommended">Option 1: pipx (recommended)</h3>
+<p><a href="https://pipx.pypa.io/">pipx</a> installs into an isolated virtualenv while making commands globally available. This avoids PEP 668 conflicts on modern distros and ensures hooks work outside the venv.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># SQLite backend (default, zero dependencies)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>pipx<span class="w"> </span>install<span class="w"> </span>kanban-mcp
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># With semantic search</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>pipx<span class="w"> </span>install<span class="w"> </span>kanban-mcp<span class="o">[</span>semantic<span class="o">]</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># With MySQL backend</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>pipx<span class="w"> </span>install<span class="w"> </span>kanban-mcp<span class="o">[</span>mysql<span class="o">]</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1"># Everything (MySQL + semantic)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>pipx<span class="w"> </span>install<span class="w"> </span>kanban-mcp<span class="o">[</span>full<span class="o">]</span>
+</span></code></pre></div>
+<p>The SQLite database is created automatically on first run — no extra setup needed. For MySQL, see <a href="#database-setup">Database Setup</a>.</p>
+<p>Upgrade later with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pipx<span class="w"> </span>upgrade<span class="w"> </span>kanban-mcp
+</span></code></pre></div>
+<h3 id="option-2-pip">Option 2: pip</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>kanban-mcp
+</span></code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> On modern distros (Debian 12+, Fedora 38+, Arch, Gentoo), bare <code>pip install</code> is blocked by <a href="https://peps.python.org/pep-0668/">PEP 668</a>. Use <code>--user</code>, <code>--break-system-packages</code>, or prefer pipx.</p>
+</blockquote>
+<h3 id="option-3-from-source-development">Option 3: From source (development)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/multidimensionalcats/kanban-mcp.git
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">cd</span><span class="w"> </span>kanban-mcp
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>dev<span class="o">]</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> If PEP 668 blocks the install, use a venv: <code>python3 -m venv .venv &amp;&amp; source .venv/bin/activate</code> first. Be aware that hooks run via <code>/bin/sh</code>, not the venv Python — you'll need to use full paths to the venv's console scripts in your hook configuration.</p>
+</blockquote>
+<h3 id="option-4-docker-mysqlmariadb-web-ui">Option 4: Docker (MySQL/MariaDB + web UI)</h3>
+<blockquote>
+<p><strong>Note:</strong> Docker compose runs MySQL/MariaDB, not SQLite. Use this if you want a containerized MySQL setup.</p>
+</blockquote>
+<p>The install script can start MySQL/MariaDB via Docker for you (<code>./install.sh --auto --mysql --docker</code> or choose Docker when prompted). To run the compose stack manually:</p>
+<ol>
+<li>
+<p><strong>Start the containers</strong> (MySQL 8.0 + web UI on port 5000):
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/multidimensionalcats/kanban-mcp.git
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">cd</span><span class="w"> </span>kanban-mcp
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>up
+</span></code></pre></div>
+   Migrations run automatically on web container startup. Credentials are configurable: <code>KANBAN_DB_USER=myuser KANBAN_DB_PASSWORD=secret docker compose up</code></p>
+</li>
+<li>
+<p><strong>Install the MCP server on the host</strong> — Docker only provides the database and web UI. MCP clients spawn the server as a subprocess, so it must be installed locally:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pipx<span class="w"> </span>install<span class="w"> </span>kanban-mcp<span class="o">[</span>mysql<span class="o">]</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Configure your MCP client</strong> — see <a href="#mcp-client-setup">MCP Client Setup</a>. The database is exposed on port 3306 so the host-side MCP server can connect.</p>
+</li>
+</ol>
+<h2 id="database-setup">Database Setup</h2>
+<p>kanban-mcp uses <strong>SQLite by default</strong> — no setup required. The database
+file is created automatically on first run at <code>~/.local/share/kanban-mcp/kanban.db</code>
+(or <code>$XDG_DATA_HOME/kanban-mcp/kanban.db</code>). You do not need to run <code>kanban-setup</code>
+for SQLite — it is only necessary if you want a custom database path or MySQL.</p>
+<p><code>kanban-setup --auto</code> defaults to SQLite. To choose a custom path:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>kanban-setup<span class="w"> </span>--auto<span class="w"> </span>--backend<span class="w"> </span>sqlite<span class="w"> </span>--sqlite-path<span class="w"> </span>/path/to/db
+</span></code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> <code>kanban-setup --with-semantic</code> installs the semantic search Python packages. This is only needed if you installed without <code>[semantic]</code> initially (e.g. <code>pipx install kanban-mcp</code>). If you already installed with <code>kanban-mcp[semantic]</code>, you don't need this flag. Works with any backend.</p>
+</blockquote>
+<h3 id="mysqlmariadb-optional">MySQL/MariaDB (optional)</h3>
+<p>If you need MySQL/MariaDB instead of SQLite:</p>
+<h4 id="automated-interactive">Automated (interactive)</h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>kanban-setup
+</span></code></pre></div>
+<p>Prompts for database name, user, password, and MySQL/MariaDB root credentials (including root password), then creates the database, runs migrations, and writes credentials to <code>~/.config/kanban-mcp/.env</code>.</p>
+<blockquote>
+<p><strong>Note:</strong> On Debian/Ubuntu, <code>default-mysql-server</code> installs MariaDB, which defaults to <code>auth_socket</code> for the root user. Socket auth only works when the OS user matches the MySQL user (i.e. running as OS root). For non-root users, provide the MySQL root password when prompted — this is the normal path.</p>
+</blockquote>
+<h4 id="automated-non-interactive-ai-agents">Automated (non-interactive / AI agents)</h4>
+<p>The <code>--auto</code> flag skips all interactive prompts. Without it, <code>kanban-setup</code> will prompt for each value.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># With root password (most common)</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>kanban-setup<span class="w"> </span>--auto<span class="w"> </span>--backend<span class="w"> </span>mysql<span class="w"> </span>--mysql-root-password<span class="w"> </span>rootpass
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># With explicit credentials via environment variables</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nv">KANBAN_DB_NAME</span><span class="o">=</span>kanban<span class="w"> </span><span class="nv">KANBAN_DB_USER</span><span class="o">=</span>kanban<span class="w"> </span><span class="nv">KANBAN_DB_PASSWORD</span><span class="o">=</span>secret<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>rootpass<span class="w"> </span>kanban-setup<span class="w"> </span>--auto<span class="w"> </span>--backend<span class="w"> </span>mysql
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1"># With CLI args</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>kanban-setup<span class="w"> </span>--auto<span class="w"> </span>--backend<span class="w"> </span>mysql<span class="w"> </span>--db-name<span class="w"> </span>mydb<span class="w"> </span>--db-user<span class="w"> </span>myuser<span class="w"> </span>--db-password<span class="w"> </span>secret
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="c1"># Socket auth (only works when OS user matches MySQL user, e.g. running as root)</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>kanban-setup<span class="w"> </span>--auto<span class="w"> </span>--backend<span class="w"> </span>mysql
+</span></code></pre></div>
+<blockquote>
+<p><strong>Important:</strong> <code>MYSQL_ROOT_PASSWORD</code> is <strong>required</strong> for non-interactive use unless you are running as OS root. Socket auth (<code>auth_socket</code>) only works when the OS user matches the MySQL user — this is uncommon outside of CI or Docker. On Debian/Ubuntu, MariaDB defaults root to <code>auth_socket</code> — set <code>MYSQL_ROOT_PASSWORD</code> or use the manual SQL setup below.</p>
+</blockquote>
+<h3 id="install-script-reference">Install script reference</h3>
+<p>The install scripts can be run from the repo or downloaded standalone:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>./install.sh<span class="w">                                        </span><span class="c1"># interactive (asks backend, installs pipx/kanban-mcp)</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>./install.sh<span class="w"> </span>--auto<span class="w">                                  </span><span class="c1"># non-interactive, SQLite (default, zero config)</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>./install.sh<span class="w"> </span>--auto<span class="w"> </span>--mysql<span class="w">                          </span><span class="c1"># non-interactive, local MySQL/MariaDB (socket auth)</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">MYSQL_ROOT_PASSWORD</span><span class="o">=</span>rootpass<span class="w"> </span>./install.sh<span class="w"> </span>--auto<span class="w"> </span>--mysql<span class="w">  </span><span class="c1"># non-interactive, MySQL with root password</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>./install.sh<span class="w"> </span>--auto<span class="w"> </span>--mysql<span class="w"> </span>--docker<span class="w">                 </span><span class="c1"># non-interactive, MySQL via Docker</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>./install.sh<span class="w"> </span>--auto<span class="w"> </span>--mysql<span class="w"> </span>--db-host<span class="w"> </span>HOST<span class="w">           </span><span class="c1"># non-interactive, remote MySQL</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>./install.sh<span class="w"> </span>--upgrade<span class="w">                               </span><span class="c1"># upgrade existing Docker install</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>.<span class="se">\i</span>nstall.ps1<span class="w">                         </span><span class="c1"># Windows interactive</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>.<span class="se">\i</span>nstall.ps1<span class="w"> </span>-Auto<span class="w">                   </span><span class="c1"># Windows non-interactive (SQLite)</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>.<span class="se">\i</span>nstall.ps1<span class="w"> </span>-Auto<span class="w"> </span>-MySQL<span class="w">            </span><span class="c1"># Windows MySQL</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>.<span class="se">\i</span>nstall.ps1<span class="w"> </span>-Auto<span class="w"> </span>-MySQL<span class="w"> </span>-Docker<span class="w">    </span><span class="c1"># Windows MySQL via Docker</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>.<span class="se">\i</span>nstall.ps1<span class="w"> </span>-Auto<span class="w"> </span>-MySQL<span class="w"> </span>-DbHost<span class="w"> </span>HOST<span class="w">  </span><span class="c1"># Windows remote MySQL</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>.<span class="se">\i</span>nstall.ps1<span class="w"> </span>-Upgrade<span class="w">                </span><span class="c1"># upgrade existing Docker install</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Env Variable</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>KANBAN_BACKEND</code></td>
+<td><code>sqlite</code></td>
+<td>Backend: <code>sqlite</code> or <code>mysql</code></td>
+</tr>
+<tr>
+<td><code>KANBAN_SQLITE_PATH</code></td>
+<td><code>$XDG_DATA_HOME/kanban-mcp/kanban.db</code></td>
+<td>SQLite database file path</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_NAME</code></td>
+<td><code>kanban</code></td>
+<td>MySQL database name</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_USER</code></td>
+<td><code>kanban</code></td>
+<td>Database user</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_PASSWORD</code></td>
+<td><em>(auto-generated)</em></td>
+<td>Database password</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_HOST</code></td>
+<td><code>localhost</code></td>
+<td>Database host</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_PORT</code></td>
+<td><code>3306</code></td>
+<td>Database port</td>
+</tr>
+<tr>
+<td><code>MYSQL_ROOT_USER</code></td>
+<td><code>root</code></td>
+<td>Database admin user</td>
+</tr>
+<tr>
+<td><code>MYSQL_ROOT_PASSWORD</code></td>
+<td><em>(none — tries socket auth)</em></td>
+<td>Database admin password (<strong>required</strong> unless running as OS root)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="manual">Manual</h4>
+<p>Manual setup is a good alternative if database root auth is problematic (e.g. socket auth issues, restricted access).</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1">-- As MySQL/MariaDB root user:</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">kanban</span><span class="w"> </span><span class="nb">CHARACTER</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">utf8mb4</span><span class="w"> </span><span class="k">COLLATE</span><span class="w"> </span><span class="n">utf8mb4_unicode_ci</span><span class="p">;</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;kanban&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;your_password_here&#39;</span><span class="p">;</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;kanban&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;your_password_here&#39;</span><span class="p">;</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="o">`</span><span class="n">kanban</span><span class="o">`</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;kanban&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="o">`</span><span class="n">kanban</span><span class="o">`</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;kanban&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span><span class="p">;</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="n">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> On MariaDB, <code>'kanban'@'%'</code> does not match localhost socket connections — you need both the <code>@'localhost'</code> and <code>@'%'</code> users.</p>
+</blockquote>
+<p>Run the migration files in order:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>mysql<span class="w"> </span>-u<span class="w"> </span>kanban<span class="w"> </span>-p<span class="w"> </span>kanban<span class="w"> </span>&lt;<span class="w"> </span>kanban_mcp/migrations/001_initial_schema.sql
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>mysql<span class="w"> </span>-u<span class="w"> </span>kanban<span class="w"> </span>-p<span class="w"> </span>kanban<span class="w"> </span>&lt;<span class="w"> </span>kanban_mcp/migrations/002_add_fulltext_search.sql
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>mysql<span class="w"> </span>-u<span class="w"> </span>kanban<span class="w"> </span>-p<span class="w"> </span>kanban<span class="w"> </span>&lt;<span class="w"> </span>kanban_mcp/migrations/003_add_embeddings.sql
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>mysql<span class="w"> </span>-u<span class="w"> </span>kanban<span class="w"> </span>-p<span class="w"> </span>kanban<span class="w"> </span>&lt;<span class="w"> </span>kanban_mcp/migrations/004_add_cascades_and_indexes.sql
+</span></code></pre></div>
+<h2 id="configuration">Configuration</h2>
+<h3 id="credentials">Credentials</h3>
+<p><code>kanban-setup</code> writes database credentials to a <code>.env</code> file in the user config directory:</p>
+<ul>
+<li><strong>Linux/macOS:</strong> <code>~/.config/kanban-mcp/.env</code> (or <code>$XDG_CONFIG_HOME/kanban-mcp/.env</code>)</li>
+<li><strong>Windows:</strong> <code>%APPDATA%\kanban-mcp\.env</code></li>
+</ul>
+<p>All install methods (pipx, pip, source) use this same location. You can also set credentials via environment variables or your MCP client's <code>env</code> block.</p>
+<p><strong>Precedence</strong> (highest to lowest): MCP client <code>env</code> block → shell environment variables → <code>.env</code> file. In practice, just use one method — the <code>.env</code> file from <code>kanban-setup</code> is simplest.</p>
+<blockquote>
+<p><strong>Warning:</strong> If you previously used MySQL and switch to SQLite, remove or rename the old <code>.env</code> file at <code>~/.config/kanban-mcp/.env</code>. Leftover <code>KANBAN_DB_USER</code>/<code>KANBAN_DB_PASSWORD</code>/<code>KANBAN_DB_NAME</code> values will silently trigger MySQL auto-detection. Alternatively, set <code>KANBAN_BACKEND=sqlite</code> explicitly to override.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>KANBAN_BACKEND</code></td>
+<td>No</td>
+<td><em>(auto-detect)</em></td>
+<td>Force backend: <code>sqlite</code> or <code>mysql</code>. Auto-detect uses MySQL if <code>KANBAN_DB_USER</code>, <code>KANBAN_DB_PASSWORD</code>, and <code>KANBAN_DB_NAME</code> are all set, otherwise SQLite</td>
+</tr>
+<tr>
+<td><code>KANBAN_SQLITE_PATH</code></td>
+<td>No</td>
+<td><code>$XDG_DATA_HOME/kanban-mcp/kanban.db</code></td>
+<td>SQLite database file path</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_HOST</code></td>
+<td>No</td>
+<td><code>localhost</code></td>
+<td>MySQL database server host</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_PORT</code></td>
+<td>No</td>
+<td><code>3306</code></td>
+<td>MySQL database server port</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_USER</code></td>
+<td>Yes (MySQL only)</td>
+<td>—</td>
+<td>MySQL database username</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_PASSWORD</code></td>
+<td>Yes (MySQL only)</td>
+<td>—</td>
+<td>MySQL database password</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_NAME</code></td>
+<td>Yes (MySQL only)</td>
+<td>—</td>
+<td>MySQL database name</td>
+</tr>
+<tr>
+<td><code>KANBAN_DB_POOL_SIZE</code></td>
+<td>No</td>
+<td><code>5</code></td>
+<td>MySQL connection pool size</td>
+</tr>
+<tr>
+<td><code>KANBAN_PROJECT_DIR</code></td>
+<td>No</td>
+<td>—</td>
+<td>Override project directory detection</td>
+</tr>
+<tr>
+<td><code>KANBAN_WEB_PORT</code></td>
+<td>No</td>
+<td><code>5000</code></td>
+<td>Web UI port (<code>kanban-web</code>)</td>
+</tr>
+<tr>
+<td><code>KANBAN_WEB_HOST</code></td>
+<td>No</td>
+<td><code>127.0.0.1</code></td>
+<td>Web UI bind address (<code>kanban-web</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mcp-client-setup">MCP Client Setup</h3>
+<p>The <code>kanban-mcp</code> server speaks JSON-RPC 2.0 over stdin/stdout (standard MCP STDIO transport). Any MCP client can use it. If <code>kanban-setup</code> already wrote your <code>.env</code> file, you only need the command — no <code>env</code> block required.</p>
+<p>If you need to pass credentials explicitly (e.g. the client doesn't inherit your shell environment), add an <code>env</code> block:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">&quot;KANBAN_DB_HOST&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="nt">&quot;KANBAN_DB_USER&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban&quot;</span><span class="p">,</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span><span class="nt">&quot;KANBAN_DB_PASSWORD&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;your_password_here&quot;</span><span class="p">,</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">  </span><span class="nt">&quot;KANBAN_DB_NAME&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban&quot;</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="claude-code">Claude Code</h4>
+<p>Add to <code>~/.claude.json</code> (global) or <code>.mcp.json</code> (per-project):</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="nt">&quot;kanban&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban-mcp&quot;</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="claude-desktop">Claude Desktop</h4>
+<p>Add to <code>~/.config/Claude/claude_desktop_config.json</code> (Linux) or <code>~/Library/Application Support/Claude/claude_desktop_config.json</code> (macOS):</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">{</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="nt">&quot;kanban&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban-mcp&quot;</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="gemini-cli">Gemini CLI</h4>
+<p>Add to <code>~/.gemini/settings.json</code>:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">{</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="nt">&quot;kanban&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban-mcp&quot;</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="vs-code-copilot">VS Code / Copilot</h4>
+<p>Add to <code>.vscode/mcp.json</code> (per-project):</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">{</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">  </span><span class="nt">&quot;servers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="nt">&quot;kanban&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban-mcp&quot;</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> VS Code uses the key <code>servers</code>, not <code>mcpServers</code>.</p>
+</blockquote>
+<h4 id="codex-cli">Codex CLI</h4>
+<p>Add to <code>~/.codex/config.toml</code>:</p>
+<div class="language-toml highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">[mcp_servers.kanban]</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;kanban-mcp&quot;</span>
+</span></code></pre></div>
+<h4 id="cursor">Cursor</h4>
+<p>Add to <code>.cursor/mcp.json</code> (per-project):</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">{</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">    </span><span class="nt">&quot;kanban&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban-mcp&quot;</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="other-mcp-clients">Other MCP Clients</h4>
+<p>For any other MCP-compatible tool: point it at the <code>kanban-mcp</code> command with STDIO transport. With the default SQLite backend, no env configuration is needed. If using MySQL and the tool can't read the <code>.env</code> file (e.g. it doesn't inherit your shell environment), pass the <code>KANBAN_DB_*</code> variables via the client's env configuration.</p>
+<h3 id="hooks">Hooks</h3>
+<p>Hooks are what make the agent use the board automatically. Without them, the agent only interacts with kanban-mcp when you explicitly ask it to.</p>
+<p>Two hooks ship as console scripts, installed alongside <code>kanban-mcp</code>:</p>
+<p><strong><code>kanban-hook-session-start</code></strong> — Runs at session start. Reads the project directory from the hook's stdin JSON (<code>cwd</code> field), looks up the project in the database, and prints any in-progress items. This output gets injected into the conversation context, so the agent knows what's active without being told.</p>
+<p><strong><code>kanban-hook-stop</code></strong> — Runs at session end. Lists items still in progress and suggests creating a diary entry, updating statuses, or adding progress notes. This nudges the agent (and you) to keep the board current.</p>
+<p>Both hooks exit silently if the project isn't tracked or the database is unreachable — they never block a session.</p>
+<h4 id="which-clients-support-hooks">Which clients support hooks?</h4>
+<table>
+<thead>
+<tr>
+<th>Client</th>
+<th>Session hooks?</th>
+<th>Config location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Code</td>
+<td>Yes</td>
+<td><code>~/.claude/settings.json</code></td>
+</tr>
+<tr>
+<td>Gemini CLI</td>
+<td>Yes</td>
+<td><code>~/.gemini/settings.json</code></td>
+</tr>
+<tr>
+<td>VS Code Copilot</td>
+<td>Yes (preview)</td>
+<td><code>~/.claude/settings.json</code>¹ or <code>.github/hooks/*.json</code></td>
+</tr>
+<tr>
+<td>Copilot CLI</td>
+<td>Yes</td>
+<td>Hook config files</td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td>Yes (plugin primitive)</td>
+<td>Hook config</td>
+</tr>
+</tbody>
+</table>
+<p>¹ VS Code Copilot reads Claude Code's hook configuration — if you already configured hooks for Claude Code, VS Code Copilot will use them too.</p>
+<p>Claude Code, Gemini CLI, and VS Code Copilot all use the same hook format. Gemini CLI also sets <code>CLAUDE_PROJECT_DIR</code> as a compatibility alias, so the kanban hooks work across all three without modification.</p>
+<h4 id="configuration_1">Configuration</h4>
+<p>Hooks run via <code>/bin/sh</code> (Linux/macOS) or <code>cmd</code> (Windows), which do <strong>not</strong> read shell profiles — you must use absolute paths.</p>
+<p>Find your paths:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Linux/macOS</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>which<span class="w"> </span>kanban-hook-session-start<span class="w">   </span><span class="c1"># typically ~/.local/bin/kanban-hook-session-start</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>which<span class="w"> </span>kanban-hook-stop
+</span></code></pre></div>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c"># Windows</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="nb">Get-Command</span> <span class="n">kanban-hook-session-start</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-ExpandProperty</span> <span class="n">Source</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c"># typically C:\Users\&lt;you&gt;\pipx\venvs\kanban-mcp\Scripts\kanban-hook-session-start.exe</span>
+</span></code></pre></div></p>
+<p>Merge into your client's settings file (<code>~/.claude/settings.json</code> for Claude Code and VS Code Copilot, <code>~/.gemini/settings.json</code> for Gemini CLI):</p>
+<p>Linux/macOS:
+<div class="language-json highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">{</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="nt">&quot;hooks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="nt">&quot;SessionStart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;hooks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;command&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/you/.local/bin/kanban-hook-session-start&quot;</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">    </span><span class="nt">&quot;Stop&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;hooks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;command&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/home/you/.local/bin/kanban-hook-stop&quot;</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-25-10"><a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<p>Windows:
+<div class="language-json highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="p">{</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">  </span><span class="nt">&quot;hooks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">    </span><span class="nt">&quot;SessionStart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;hooks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;command&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C:\\Users\\you\\pipx\\venvs\\kanban-mcp\\Scripts\\kanban-hook-session-start.exe&quot;</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="w">    </span><span class="nt">&quot;Stop&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;hooks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;command&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C:\\Users\\you\\pipx\\venvs\\kanban-mcp\\Scripts\\kanban-hook-stop.exe&quot;</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-26-10"><a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="p">}</span>
+</span></code></pre></div></p>
+<p>If you already have hooks configured, add the kanban entries to your existing arrays — don't replace them.</p>
+<blockquote>
+<p><strong>Tip:</strong> <code>install.sh</code> and <code>install.ps1</code> print a ready-to-use config snippet with your resolved paths after setup completes.</p>
+</blockquote>
+<h2 id="usage">Usage</h2>
+<h3 id="first-session">First session</h3>
+<p>Once installed and configured, open your AI agent in a project directory. The first time you do this:</p>
+<ol>
+<li>The session start hook fires but exits silently (it doesn't know about this project yet)</li>
+<li>The agent needs to call <code>set_current_project</code> with your working directory's <strong>absolute path</strong> — this auto-creates the project in the database</li>
+<li>From this point, all kanban tools work against this project</li>
+<li>At session end, the stop hook lists any in-progress items and suggests logging progress</li>
+</ol>
+<p>On subsequent sessions in the same directory, the start hook injects your active items into the conversation automatically — the agent picks up where you left off.</p>
+<p>There is no "create project" command. Projects are created implicitly the first time <code>set_current_project</code> is called for a directory. If the agent doesn't call it on its own, ask it to — or the hooks will handle project context once the project exists in the database.</p>
+<blockquote>
+<p><strong>Note:</strong> Paths are resolved (symlinks, <code>.</code>, <code>..</code>) before hashing, so <code>--project .</code> and <code>--project $PWD</code> refer to the same project. The same applies to <code>set_current_project</code>.</p>
+</blockquote>
+<h3 id="three-interfaces">Three interfaces</h3>
+<p>kanban-mcp provides three ways to interact with the same data:</p>
+<p><strong>MCP tools</strong> — 40+ tools the AI agent calls during conversation. This is the primary interface. The agent creates items, tracks dependencies, advances statuses, and logs progress as part of your normal workflow. You don't need to tell it to — the session hooks provide context and the agent uses the tools naturally.</p>
+<p><strong>Web UI</strong> — a browser-based kanban board for humans.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>kanban-web<span class="w">                    </span><span class="c1"># http://127.0.0.1:5000</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>kanban-web<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span><span class="w">        </span><span class="c1"># custom port</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>kanban-web<span class="w"> </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w">     </span><span class="c1"># network-accessible (no auth — use with care)</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="nv">KANBAN_WEB_PORT</span><span class="o">=</span><span class="m">8080</span><span class="w"> </span>kanban-web<span class="w">  </span><span class="c1"># port via env var</span>
+</span></code></pre></div>
+<p><code>kanban-web</code> runs in the foreground. To run it persistently, use a process manager (e.g. <code>systemd</code>, <code>screen</code>, <code>tmux</code>) or the Docker compose stack which includes the web UI.</p>
+<blockquote>
+<p><strong>macOS note:</strong> Port 5000 is used by AirPlay Receiver on modern macOS. If <code>kanban-web</code> fails to bind, use <code>--port 5001</code> or set <code>KANBAN_WEB_PORT=5001</code>.</p>
+</blockquote>
+<p>The board shows all status columns (backlog → todo → in_progress → review → done → closed) with drag-and-drop between them. Use the project dropdown in the header to switch between projects. Cards show priority, tags, epic membership, blocking relationships, and progress bars for epics.</p>
+<p><strong>CLI</strong> — <code>kanban-cli</code> for terminal queries, scripts, and exports. Every command takes <code>--project PATH</code> (the same directory path you'd use with your agent) and an optional <code>--format {text,json}</code>.</p>
+<h3 id="cli-reference">CLI reference</h3>
+<p>All commands take <code>--project PATH</code> with the <strong>absolute path</strong> to your project directory, and an optional <code>--format {text,json}</code>.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># What&#39;s currently being worked on?</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>active
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># What&#39;s in the backlog?</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>todos
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="c1"># Project overview — counts by type and status</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>summary
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="c1"># Search items and updates</span>
+</span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>search<span class="w"> </span><span class="s2">&quot;authentication&quot;</span>
+</span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>
+</span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="c1"># Semantic search (requires [semantic] extra)</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>semantic-search<span class="w"> </span><span class="s2">&quot;auth problems&quot;</span><span class="w"> </span>--limit<span class="w"> </span><span class="m">5</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="c1"># Export the full board</span>
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--format<span class="w"> </span>markdown
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--format<span class="w"> </span>json<span class="w"> </span>--metrics<span class="w"> </span>--relationships
+</span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a>
+</span><span id="__span-28-20"><a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a><span class="c1"># Get children of an epic</span>
+</span><span id="__span-28-21"><a id="__codelineno-28-21" name="__codelineno-28-21" href="#__codelineno-28-21"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>children<span class="w"> </span><span class="m">42</span><span class="w"> </span>--recursive
+</span><span id="__span-28-22"><a id="__codelineno-28-22" name="__codelineno-28-22" href="#__codelineno-28-22"></a>
+</span><span id="__span-28-23"><a id="__codelineno-28-23" name="__codelineno-28-23" href="#__codelineno-28-23"></a><span class="c1"># Context dump (what the session hooks use internally)</span>
+</span><span id="__span-28-24"><a id="__codelineno-28-24" name="__codelineno-28-24" href="#__codelineno-28-24"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>context
+</span><span id="__span-28-25"><a id="__codelineno-28-25" name="__codelineno-28-25" href="#__codelineno-28-25"></a>
+</span><span id="__span-28-26"><a id="__codelineno-28-26" name="__codelineno-28-26" href="#__codelineno-28-26"></a><span class="c1"># Rebuild embeddings after bulk changes</span>
+</span><span id="__span-28-27"><a id="__codelineno-28-27" name="__codelineno-28-27" href="#__codelineno-28-27"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/project<span class="w"> </span>rebuild-embeddings
+</span></code></pre></div>
+<blockquote>
+<p><strong>Tip:</strong> Paths are resolved (symlinks, <code>.</code>, <code>..</code>) before hashing, so <code>--project .</code> and <code>--project $PWD</code> refer to the same project.</p>
+</blockquote>
+<h2 id="upgrading">Upgrading</h2>
+<p>Database migrations run automatically on startup — no manual migration step needed after upgrading.</p>
+<p><strong>pipx:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>pipx<span class="w"> </span>upgrade<span class="w"> </span>kanban-mcp
+</span></code></pre></div></p>
+<p><strong>pip:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--upgrade<span class="w"> </span>kanban-mcp
+</span></code></pre></div></p>
+<p><strong>From source:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nb">cd</span><span class="w"> </span>kanban-mcp<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>pull<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>dev<span class="o">]</span>
+</span></code></pre></div></p>
+<p><strong>Docker:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>./install.sh<span class="w"> </span>--upgrade
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="c1"># Windows: .\install.ps1 -Upgrade</span>
+</span></code></pre></div></p>
+<p>This re-downloads the latest Docker files, rebuilds the web image from PyPI, and restarts the containers. Migrations run automatically on container startup.</p>
+<h2 id="for-ai-coding-agents">For AI Coding Agents</h2>
+<p><strong>Claude, Gemini, GPT, Codex, and other agents: start here.</strong></p>
+<p>If your human has asked you to install kanban-mcp, follow these steps exactly. Do not improvise. The <code>--auto</code> flag handles all prompts.</p>
+<h3 id="1-install-and-set-up-the-database">1. Install and set up the database</h3>
+<p>The default path uses SQLite — zero config, no database server needed:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/multidimensionalcats/kanban-mcp/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>--<span class="w"> </span>--auto
+</span></code></pre></div>
+<p>If your human specifically wants MySQL/MariaDB, add <code>--mysql</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># MySQL via Docker:</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/multidimensionalcats/kanban-mcp/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>--<span class="w"> </span>--auto<span class="w"> </span>--mysql<span class="w"> </span>--docker
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="c1"># Local MySQL (set MYSQL_ROOT_PASSWORD if needed):</span>
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/multidimensionalcats/kanban-mcp/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>--<span class="w"> </span>--auto<span class="w"> </span>--mysql
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="c1"># Remote MySQL:</span>
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/multidimensionalcats/kanban-mcp/main/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>--<span class="w"> </span>--auto<span class="w"> </span>--mysql<span class="w"> </span>--db-host<span class="w"> </span>HOST
+</span></code></pre></div>
+<p>For Windows (PowerShell — downloaded to a file because <code>irm | iex</code> doesn't support passing flags like <code>-Auto</code>):
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="nb">irm </span><span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">multidimensionalcats</span><span class="p">/</span><span class="n">kanban-mcp</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-OutFile</span> <span class="n">install</span><span class="p">.</span><span class="n">ps1</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="p">.\</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Auto</span>
+</span></code></pre></div></p>
+<p>This installs pipx (if needed), installs kanban-mcp, creates the database, runs migrations, and writes config to <code>~/.config/kanban-mcp/.env</code>.</p>
+<h3 id="2-add-mcp-config">2. Add MCP config</h3>
+<p>Write the config entry for whichever tool you are:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Config file</th>
+<th>Key</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Code</td>
+<td><code>.mcp.json</code> (project) or <code>~/.claude.json</code> (global)</td>
+<td><code>mcpServers</code></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>Claude Desktop</td>
+<td><code>~/.config/Claude/claude_desktop_config.json</code></td>
+<td><code>mcpServers</code></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>Gemini CLI</td>
+<td><code>~/.gemini/settings.json</code></td>
+<td><code>mcpServers</code></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>VS Code / Copilot</td>
+<td><code>.vscode/mcp.json</code></td>
+<td><code>servers</code></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td><code>.cursor/mcp.json</code></td>
+<td><code>mcpServers</code></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>Codex CLI</td>
+<td><code>~/.codex/config.toml</code></td>
+<td><code>[mcp_servers.kanban]</code></td>
+<td>TOML</td>
+</tr>
+</tbody>
+</table>
+<p>The server entry (JSON example):</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="p">{</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="w">  </span><span class="nt">&quot;kanban&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="w">    </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;kanban-mcp&quot;</span>
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>No <code>env</code> block is needed — credentials are read from <code>~/.config/kanban-mcp/.env</code> which the install script created in step 1.</p>
+<h3 id="3-verify">3. Verify</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>kanban-cli<span class="w"> </span>--project<span class="w"> </span>/path/to/humans/project<span class="w"> </span>summary
+</span></code></pre></div>
+<h3 id="4-configure-hooks-recommended">4. Configure hooks (recommended)</h3>
+<p>Hooks are what make you use the board automatically. Without them, you only interact with kanban-mcp when the human asks you to.</p>
+<ul>
+<li><strong><code>kanban-hook-session-start</code></strong> — Runs at session start. Reads the project directory, queries in-progress items, and injects them into the conversation so you know what's active.</li>
+<li><strong><code>kanban-hook-stop</code></strong> — Runs at session end. Lists items still in progress and reminds you to update statuses or create a diary entry.</li>
+</ul>
+<p>If your client supports hooks (Claude Code, Gemini CLI, VS Code Copilot, Copilot CLI, Cursor): resolve the absolute paths via <code>which</code>, read your client's hook config file, merge the kanban hook entries (preserving any existing hooks), and write back. Do not overwrite other hook entries. See the <a href="#hooks">Hooks</a> section above for per-client config formats and paths.</p>
+<h2 id="entry-points">Entry Points</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kanban-mcp</code></td>
+<td>MCP server (STDIO JSON-RPC) — used by AI clients</td>
+</tr>
+<tr>
+<td><code>kanban-web</code></td>
+<td>Web UI on localhost:5000 (<code>--port</code>, <code>--host</code>, <code>--debug</code> flags; env: <code>KANBAN_WEB_PORT</code>, <code>KANBAN_WEB_HOST</code>)</td>
+</tr>
+<tr>
+<td><code>kanban-cli</code></td>
+<td>CLI for manual queries and hook scripts (<code>--project</code>, <code>--format</code> flags)</td>
+</tr>
+<tr>
+<td><code>kanban-setup</code></td>
+<td>Database setup wizard (see flags below)</td>
+</tr>
+<tr>
+<td><code>kanban-hook-session-start</code></td>
+<td>Session start hook — injects active items into agent sessions</td>
+</tr>
+<tr>
+<td><code>kanban-hook-stop</code></td>
+<td>Session stop hook — prompts for progress updates</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kanban-setup-flags"><code>kanban-setup</code> flags</h3>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--auto</code></td>
+<td>Non-interactive mode (skip all prompts, use defaults)</td>
+</tr>
+<tr>
+<td><code>--backend {sqlite,mysql}</code></td>
+<td>Choose backend (default: <code>sqlite</code>)</td>
+</tr>
+<tr>
+<td><code>--sqlite-path PATH</code></td>
+<td>Custom SQLite database file path</td>
+</tr>
+<tr>
+<td><code>--db-name NAME</code></td>
+<td>MySQL database name (default: <code>kanban</code>)</td>
+</tr>
+<tr>
+<td><code>--db-user USER</code></td>
+<td>MySQL database user (default: <code>kanban</code>)</td>
+</tr>
+<tr>
+<td><code>--db-password PASS</code></td>
+<td>MySQL database password (default: auto-generated)</td>
+</tr>
+<tr>
+<td><code>--db-host HOST</code></td>
+<td>MySQL database host (default: <code>localhost</code>)</td>
+</tr>
+<tr>
+<td><code>--db-port PORT</code></td>
+<td>MySQL database port (default: <code>3306</code>)</td>
+</tr>
+<tr>
+<td><code>--mysql-root-password PASS</code></td>
+<td>MySQL root password for creating the database</td>
+</tr>
+<tr>
+<td><code>--with-semantic</code></td>
+<td>Install semantic search Python packages</td>
+</tr>
+<tr>
+<td><code>--docker</code></td>
+<td>Start MySQL via Docker</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mcp-tools-reference">MCP Tools Reference</h2>
+<h3 id="project-management">Project Management</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>set_current_project</code></td>
+<td>Set the current project context (called at session start with $PWD)</td>
+</tr>
+<tr>
+<td><code>get_current_project</code></td>
+<td>Get the current project context</td>
+</tr>
+<tr>
+<td><code>project_summary</code></td>
+<td>Get summary of items by type and status</td>
+</tr>
+<tr>
+<td><code>get_active_items</code></td>
+<td>Get items in 'in_progress' status</td>
+</tr>
+<tr>
+<td><code>get_todos</code></td>
+<td>Get items in 'backlog' status</td>
+</tr>
+</tbody>
+</table>
+<h3 id="item-crud">Item CRUD</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_item</code></td>
+<td>Create a new issue, todo, feature, epic, question, or diary entry</td>
+</tr>
+<tr>
+<td><code>list_items</code></td>
+<td>List items with optional type/status/tag filters</td>
+</tr>
+<tr>
+<td><code>get_item</code></td>
+<td>Get full details of a specific item</td>
+</tr>
+<tr>
+<td><code>edit_item</code></td>
+<td>Edit an item's title, description, priority, complexity, and/or parent</td>
+</tr>
+<tr>
+<td><code>delete_item</code></td>
+<td>Permanently delete an item</td>
+</tr>
+</tbody>
+</table>
+<h3 id="status-workflow">Status Workflow</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>advance_status</code></td>
+<td>Move item to next status in its workflow</td>
+</tr>
+<tr>
+<td><code>revert_status</code></td>
+<td>Move item to previous status</td>
+</tr>
+<tr>
+<td><code>set_status</code></td>
+<td>Set item to a specific status</td>
+</tr>
+<tr>
+<td><code>close_item</code></td>
+<td>Mark item as done/closed</td>
+</tr>
+<tr>
+<td><code>get_status_history</code></td>
+<td>Get status change history for an item</td>
+</tr>
+<tr>
+<td><code>get_item_metrics</code></td>
+<td>Get calculated metrics: lead_time, cycle_time, time_in_each_status</td>
+</tr>
+</tbody>
+</table>
+<h3 id="progress-updates">Progress Updates</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>add_update</code></td>
+<td>Add a progress update, optionally linked to items</td>
+</tr>
+<tr>
+<td><code>get_latest_update</code></td>
+<td>Get the most recent update</td>
+</tr>
+<tr>
+<td><code>get_updates</code></td>
+<td>Get recent updates</td>
+</tr>
+</tbody>
+</table>
+<h3 id="relationships-hierarchy">Relationships &amp; Hierarchy</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>add_relationship</code></td>
+<td>Add a relationship (blocks, depends_on, relates_to, duplicates)</td>
+</tr>
+<tr>
+<td><code>remove_relationship</code></td>
+<td>Remove a relationship</td>
+</tr>
+<tr>
+<td><code>get_item_relationships</code></td>
+<td>Get all relationships for an item</td>
+</tr>
+<tr>
+<td><code>get_blocking_items</code></td>
+<td>Get items that block a given item</td>
+</tr>
+<tr>
+<td><code>set_parent</code></td>
+<td>Set or remove parent relationship</td>
+</tr>
+<tr>
+<td><code>list_children</code></td>
+<td>Get children of an item (optional recursive)</td>
+</tr>
+<tr>
+<td><code>get_epic_progress</code></td>
+<td>Get progress stats for an epic</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tags">Tags</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>list_tags</code></td>
+<td>List all tags with usage counts</td>
+</tr>
+<tr>
+<td><code>add_tag</code></td>
+<td>Add a tag to an item</td>
+</tr>
+<tr>
+<td><code>remove_tag</code></td>
+<td>Remove a tag from an item</td>
+</tr>
+<tr>
+<td><code>get_item_tags</code></td>
+<td>Get all tags assigned to an item</td>
+</tr>
+<tr>
+<td><code>update_tag</code></td>
+<td>Update tag name and/or color</td>
+</tr>
+<tr>
+<td><code>delete_tag</code></td>
+<td>Delete a tag from the project</td>
+</tr>
+</tbody>
+</table>
+<h3 id="file-links-decisions">File Links &amp; Decisions</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>link_file</code></td>
+<td>Link a file (or file region) to an item</td>
+</tr>
+<tr>
+<td><code>unlink_file</code></td>
+<td>Remove a file link</td>
+</tr>
+<tr>
+<td><code>get_item_files</code></td>
+<td>Get all files linked to an item</td>
+</tr>
+<tr>
+<td><code>add_decision</code></td>
+<td>Add a decision record to an item</td>
+</tr>
+<tr>
+<td><code>get_item_decisions</code></td>
+<td>Get all decisions for an item</td>
+</tr>
+<tr>
+<td><code>delete_decision</code></td>
+<td>Delete a decision record</td>
+</tr>
+</tbody>
+</table>
+<h3 id="search-export">Search &amp; Export</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>search</code></td>
+<td>Full-text search across items and updates</td>
+</tr>
+<tr>
+<td><code>semantic_search</code></td>
+<td>Search by semantic similarity (requires <code>[semantic]</code> extra)</td>
+</tr>
+<tr>
+<td><code>find_similar</code></td>
+<td>Find items similar to a given item, decision, or update</td>
+</tr>
+<tr>
+<td><code>rebuild_embeddings</code></td>
+<td>Rebuild all embeddings for the project</td>
+</tr>
+<tr>
+<td><code>export_project</code></td>
+<td>Export project data in JSON, YAML, or Markdown</td>
+</tr>
+</tbody>
+</table>
+<h3 id="timeline">Timeline</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>get_item_timeline</code></td>
+<td>Activity timeline for a specific item</td>
+</tr>
+<tr>
+<td><code>get_project_timeline</code></td>
+<td>Activity timeline for the entire project</td>
+</tr>
+</tbody>
+</table>
+<h2 id="item-types-workflows">Item Types &amp; Workflows</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Workflow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>issue</td>
+<td>backlog → todo → in_progress → review → done → closed</td>
+</tr>
+<tr>
+<td>feature</td>
+<td>backlog → todo → in_progress → review → done → closed</td>
+</tr>
+<tr>
+<td>epic</td>
+<td>backlog → todo → in_progress → review → done → closed</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>backlog → todo → in_progress → done</td>
+</tr>
+<tr>
+<td>question</td>
+<td>backlog → in_progress → done</td>
+</tr>
+<tr>
+<td>diary</td>
+<td>done (single state)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contributing">Contributing</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/multidimensionalcats/kanban-mcp.git
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="nb">cd</span><span class="w"> </span>kanban-mcp
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>dev<span class="o">]</span>
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="c1"># Run tests (uses in-memory SQLite by default, no setup needed)</span>
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>pytest
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>
+</span><span id="__span-38-9"><a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a><span class="c1"># Run tests against MySQL (requires MySQL/MariaDB running)</span>
+</span><span id="__span-38-10"><a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a><span class="nv">KANBAN_BACKEND</span><span class="o">=</span>mysql<span class="w"> </span><span class="nv">KANBAN_DB_HOST</span><span class="o">=</span>localhost<span class="w"> </span><span class="nv">KANBAN_DB_USER</span><span class="o">=</span>kanban<span class="w"> </span><span class="nv">KANBAN_DB_PASSWORD</span><span class="o">=</span>secret<span class="w"> </span><span class="nv">KANBAN_DB_NAME</span><span class="o">=</span>kanban_test<span class="w"> </span>pytest
+</span><span id="__span-38-11"><a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a>
+</span><span id="__span-38-12"><a id="__codelineno-38-12" name="__codelineno-38-12" href="#__codelineno-38-12"></a><span class="c1"># Run frontend JS tests (requires Node.js — optional, only touches web UI code)</span>
+</span><span id="__span-38-13"><a id="__codelineno-38-13" name="__codelineno-38-13" href="#__codelineno-38-13"></a>npm<span class="w"> </span>install<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>npm<span class="w"> </span><span class="nb">test</span>
+</span></code></pre></div>
+<h2 id="changelog">Changelog</h2>
+<p>See <a href="CHANGELOG.md">CHANGELOG.md</a> for release notes. Check your installed version with:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>pipx<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>kanban-mcp
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="c1"># or</span>
+</span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>pip<span class="w"> </span>show<span class="w"> </span>kanban-mcp
+</span></code></pre></div>
+<h2 id="license">License</h2>
+<p><a href="LICENSE">MIT</a></p>
+<h2 id="i-fork-information">ℹ️ Fork Information</h2>
+<p>This is a fork of another repository.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.code.annotate", "search.suggest", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
