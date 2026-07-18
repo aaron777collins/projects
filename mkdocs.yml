@@ -114,6 +114,7 @@ nav:
       - gitconfig-aliases: gitconfig-aliases.md
       - github-upload: github-upload.md
       - himalaya: himalaya.md
+      - kanban-mcp: kanban-mcp.md
       - lavish-axi: lavish-axi.md
       - markdown-portfolio: markdown-portfolio.md
       - ngx-admin: ngx-admin.md
