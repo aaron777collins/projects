@@ -83,6 +83,7 @@ nav:
       - Deep-Space: Deep-Space.md
       - dwcc-website-snippets: dwcc-website-snippets.md
       - github-slideshow: github-slideshow.md
+      - halftone: halftone.md
       - Marking-Assistant: Marking-Assistant.md
       - mermaid-editor: mermaid-editor.md
       - nginx-fancyindex-dark: nginx-fancyindex-dark.md
@@ -99,6 +100,7 @@ nav:
       - sandbox-game-lwjgl: sandbox-game-lwjgl.md
     - JavaScript:
       - 2dgametest: 2dgametest.md
+      - halftone-apply: halftone-apply.md
       - kibana-extender: kibana-extender.md
       - MessageParser: MessageParser.md
       - resume: resume.md
