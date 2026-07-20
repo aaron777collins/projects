@@ -11,7 +11,7 @@
 - **Languages Used:** TypeScript, CSS, Dockerfile, HTML
 - **License:** MIT License
 - **Created:** July 15, 2026
-- **Last Updated:** July 16, 2026
+- **Last Updated:** July 19, 2026
 
 ## 📝 About
 
@@ -49,6 +49,12 @@ first load it works **fully offline**, and nothing you paint is ever uploaded, l
 anyone but you.
 
 - 🎨 **Infinite canvas** — pan, zoom, and frame any region to extend. Outpaint in every direction.
+- ↔️ **One-click expand** — press ← ↑ ↓ → and Vellum snaps the frame onto the picture's edge and
+  paints the scene *onward*, so the image genuinely grows instead of being overwritten in place.
+- 🩹 **Erase & repaint** — brush away any spot (a stray object, a bad patch), then Outpaint
+  regenerates just that area from its surroundings (inpainting).
+- ✦ **Suggest a prompt** — a small captioning model reads the current scene on-device and proposes
+  a prompt to continue it. Or leave the prompt blank and let the model simply continue what's there.
 - 🖼️ **Stamp your own photos** — drop, paste, or import an image, then drag & scale it onto the
   canvas and outpaint around it. The natural starting point for extending a real photograph.
 - 🔒 **Truly private** — no server, no account, no telemetry. It's a static site plus your browser.
