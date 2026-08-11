@@ -175,6 +175,8 @@ nav:
     - Racket:
       - COMP4400A4: COMP4400A4.md
       - COMP4400A5: COMP4400A5.md
+    - Rust:
+      - agentcron: agentcron.md
     - Shell:
       - BashFunctions: BashFunctions.md
       - bible-drawing-pipeline: bible-drawing-pipeline.md
