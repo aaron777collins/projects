@@ -5610,7 +5610,7 @@ source of truth; the standalone files mirror them for single-file deployments.
 Verify after enabling either overlay:
 
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>odysseus<span class="w"> </span>nvidia-smi<span class="w"> </span>-L<span class="w">   </span><span class="c1"># NVIDIA</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>odysseus<span class="w"> </span>sh<span class="w"> </span>-lc<span class="w"> </span><span class="s1">&#39;test -e /dev/kfd &amp;&amp; test -d /dev/dri &amp;&amp; ls -l /dev/kfd /dev/dri/renderD*&#39;</span><span class="w">  </span><span class="c1"># AMD</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>odysseus<span class="w"> </span>sh<span class="w"> </span>-lc<span class="w"> </span><span class="s1">'test -e /dev/kfd &amp;&amp; test -d /dev/dri &amp;&amp; ls -l /dev/kfd /dev/dri/renderD*'</span><span class="w">  </span><span class="c1"># AMD</span>
 </span></code></pre></div>
 
 > **GPU passthrough ≠ llama.cpp CUDA.** `nvidia-smi` passing inside the
@@ -5648,7 +5648,7 @@ install usually only need to add the endpoint in Settings.
 
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>--tail<span class="o">=</span><span class="m">120</span><span class="w"> </span>odysseus
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>odysseus<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;ChromaDB|MemoryVectorStore|DEGRADED&#39;</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>logs<span class="w"> </span>odysseus<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">'ChromaDB|MemoryVectorStore|DEGRADED'</span>
 </span></code></pre></div>
 
 **macOS details.** `start-macos.sh` installs Homebrew deps, creates the venv,

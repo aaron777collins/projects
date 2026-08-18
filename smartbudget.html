@@ -5555,15 +5555,15 @@
 </span></code></pre></div>
 <p>Edit <code>.env</code> and configure:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># Database
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>DATABASE_URL=&quot;postgresql://user:password@localhost:5432/smartbudget&quot;
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>DATABASE_URL="postgresql://user:password@localhost:5432/smartbudget"
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a># NextAuth
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>NEXTAUTH_URL=&quot;http://localhost:3000&quot;
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>NEXTAUTH_SECRET=&quot;your-secret-key-here&quot;
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>NEXTAUTH_URL="http://localhost:3000"
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>NEXTAUTH_SECRET="your-secret-key-here"
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a># Sentry (optional)
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>SENTRY_DSN=&quot;your-sentry-dsn&quot;
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>NEXT_PUBLIC_SENTRY_DSN=&quot;your-sentry-dsn&quot;
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>SENTRY_DSN="your-sentry-dsn"
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>NEXT_PUBLIC_SENTRY_DSN="your-sentry-dsn"
 </span></code></pre></div>
 <ol>
 <li><strong>Set up the database</strong></li>
@@ -5723,7 +5723,7 @@
 <li><strong>Commit your changes</strong></li>
 </ol>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: add awesome feature&quot;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"feat: add awesome feature"</span>
 </span></code></pre></div>
 <p>Follow <a href="https://www.conventionalcommits.org/">Conventional Commits</a> format:
 - <code>feat:</code> - New feature
@@ -5802,7 +5802,7 @@
 <h2 id="configuration">Configuration</h2>
 <h3 id="database">Database</h3>
 <p>SmartBudget uses PostgreSQL with Prisma ORM. Configure your database connection in <code>.env</code>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>DATABASE_URL=&quot;postgresql://user:password@host:port/database?schema=public&quot;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>DATABASE_URL="postgresql://user:password@host:port/database?schema=public"
 </span></code></pre></div>
 <h3 id="authentication">Authentication</h3>
 <p>Configure NextAuth.js providers in <code>src/auth.ts</code>:</p>
@@ -5813,14 +5813,14 @@
 </ul>
 <h3 id="ai-integration">AI Integration</h3>
 <p>To enable Claude AI merchant research:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>ANTHROPIC_API_KEY=&quot;your-api-key&quot;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>ANTHROPIC_API_KEY="your-api-key"
 </span></code></pre></div>
 <h3 id="sentry-error-monitoring">Sentry (Error Monitoring)</h3>
 <p>Optional but recommended for production:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>SENTRY_DSN=&quot;your-sentry-dsn&quot;
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>NEXT_PUBLIC_SENTRY_DSN=&quot;your-public-dsn&quot;
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>SENTRY_ORG=&quot;your-org&quot;
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>SENTRY_PROJECT=&quot;your-project&quot;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>SENTRY_DSN="your-sentry-dsn"
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>NEXT_PUBLIC_SENTRY_DSN="your-public-dsn"
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>SENTRY_ORG="your-org"
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>SENTRY_PROJECT="your-project"
 </span></code></pre></div>
 <p>See <a href="ERROR_MONITORING.md">ERROR_MONITORING.md</a> for setup details.</p>
 <hr />
@@ -5972,7 +5972,7 @@ A: 90%+ accuracy after initial training. Improves as you correct transactions.</
 </span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>Copyright (c) 2026 SmartBudget Contributors
 </span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
 </span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>Permission is hereby granted, free of charge, to any person obtaining a copy
-</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>of this software and associated documentation files (the &quot;Software&quot;), to deal
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>of this software and associated documentation files (the "Software"), to deal
 </span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>in the Software without restriction, including without limitation the rights
 </span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 </span><span id="__span-21-9"><a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>copies of the Software, and to permit persons to whom the Software is
@@ -5981,7 +5981,7 @@ A: 90%+ accuracy after initial training. Improves as you correct transactions.</
 </span><span id="__span-21-12"><a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>The above copyright notice and this permission notice shall be included in all
 </span><span id="__span-21-13"><a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>copies or substantial portions of the Software.
 </span><span id="__span-21-14"><a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>
-</span><span id="__span-21-15"><a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+</span><span id="__span-21-15"><a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 </span><span id="__span-21-16"><a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 </span><span id="__span-21-17"><a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 </span><span id="__span-21-18"><a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER

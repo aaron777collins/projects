@@ -9439,12 +9439,12 @@ defined in the project config.</p>
 <h3 id="project-configuration-example">Project configuration example</h3>
 <p><code>.workmux.yaml</code>:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">post_create</span><span class="p">:</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;&lt;global&gt;&#39;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">'&lt;global&gt;'</span>
 </span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mise use</span>
 </span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
 </span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nt">files</span><span class="p">:</span>
 </span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="nt">symlink</span><span class="p">:</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;&lt;global&gt;&#39;</span><span class="w"> </span><span class="c1"># Include global symlinks (node_modules)</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">'&lt;global&gt;'</span><span class="w"> </span><span class="c1"># Include global symlinks (node_modules)</span>
 </span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.pnpm-store</span><span class="w"> </span><span class="c1"># Add project-specific symlink</span>
 </span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
 </span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="nt">panes</span><span class="p">:</span>
@@ -9618,9 +9618,9 @@ mutually exclusive).</p>
 injection automatically, without needing the <code>&lt;agent&gt;</code> placeholder or a matching
 <code>agent</code> config:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">panes</span><span class="p">:</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;claude</span><span class="nv"> </span><span class="s">--dangerously-skip-permissions&#39;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">'claude</span><span class="nv"> </span><span class="s">--dangerously-skip-permissions'</span>
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="nt">focus</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;codex</span><span class="nv"> </span><span class="s">--yolo&#39;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">'codex</span><span class="nv"> </span><span class="s">--yolo'</span>
 </span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="nt">split</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vertical</span>
 </span></code></pre></div>
 <p>Each agent receives the prompt (via <code>-p</code>/<code>-P</code>/<code>-e</code>) using the correct format for
@@ -9704,9 +9704,9 @@ used, which may differ from <code>WM_WORKTREE_PATH</code> when using nested conf
 <h4 id="agent-status-icons">Agent status icons</h4>
 <p>Customize the icons shown in tmux window names:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nt">status_icons</span><span class="p">:</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">working</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;🤖&#39;</span><span class="w"> </span><span class="c1"># Agent is processing</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">waiting</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;💬&#39;</span><span class="w"> </span><span class="c1"># Agent needs input (auto-clears on focus)</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">done</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;✅&#39;</span><span class="w"> </span><span class="c1"># Agent finished (auto-clears on focus)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">working</span><span class="p">:</span><span class="w"> </span><span class="s">'🤖'</span><span class="w"> </span><span class="c1"># Agent is processing</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">waiting</span><span class="p">:</span><span class="w"> </span><span class="s">'💬'</span><span class="w"> </span><span class="c1"># Agent needs input (auto-clears on focus)</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">done</span><span class="p">:</span><span class="w"> </span><span class="s">'✅'</span><span class="w"> </span><span class="c1"># Agent finished (auto-clears on focus)</span>
 </span></code></pre></div>
 <p>Agents in "working" status that produce no pane output for 10 seconds are
 automatically detected as interrupted.</p>
@@ -9760,11 +9760,11 @@ install in parallel.</p>
 </span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>│   └── .workmux.yaml
 </span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>│
 </span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>└── my-project__worktrees/    &lt;-- Worktrees created by workmux
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>    ├── feature-A/            &lt;-- Isolated workspace for &#39;feature-A&#39; branch
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>    ├── feature-A/            &lt;-- Isolated workspace for 'feature-A' branch
 </span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    │   ├── src/
 </span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>    │   └── package.json
 </span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>    │
-</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>    └── bugfix-B/             &lt;-- Isolated workspace for &#39;bugfix-B&#39; branch
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>    └── bugfix-B/             &lt;-- Isolated workspace for 'bugfix-B' branch
 </span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>        ├── src/
 </span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>        └── package.json
 </span></code></pre></div>
@@ -9779,7 +9779,7 @@ global config namespace every repo's worktrees under one root, e.g.
 <code>worktree_dir: ~/.workmux/{project}</code>.</p>
 <h3 id="shell-alias-recommended">Shell alias (recommended)</h3>
 <p>For faster typing, alias <code>workmux</code> to <code>wm</code>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">wm</span><span class="o">=</span><span class="s1">&#39;workmux&#39;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">wm</span><span class="o">=</span><span class="s1">'workmux'</span>
 </span></code></pre></div>
 <h2 id="commands">Commands</h2>
 <ul>
@@ -9907,10 +9907,10 @@ immediately. If the branch doesn't exist, it will be created automatically.</p>
 </span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="c1"># Create a new branch from a specific base</span>
 </span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>workmux<span class="w"> </span>add<span class="w"> </span>hotfix<span class="w"> </span>--base<span class="w"> </span>production
 </span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
-</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="c1"># Create a worktree from a remote branch (creates local branch &quot;user-auth-pr&quot;)</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="c1"># Create a worktree from a remote branch (creates local branch "user-auth-pr")</span>
 </span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>workmux<span class="w"> </span>add<span class="w"> </span>origin/user-auth-pr
 </span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>
-</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="c1"># Remote branches with slashes work too (creates local branch &quot;feature/foo&quot;)</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="c1"># Remote branches with slashes work too (creates local branch "feature/foo")</span>
 </span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>workmux<span class="w"> </span>add<span class="w"> </span>origin/feature/foo
 </span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>
 </span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="c1"># Create a worktree in the background without switching to it</span>
@@ -9919,18 +9919,18 @@ immediately. If the branch doesn't exist, it will be created automatically.</p>
 </span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a><span class="c1"># Use a custom name for the worktree directory and tmux window</span>
 </span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>workmux<span class="w"> </span>add<span class="w"> </span>feature/long-descriptive-branch-name<span class="w"> </span>--name<span class="w"> </span>short
 </span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>
-</span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a><span class="c1"># Open existing worktree if it exists, create if it doesn&#39;t (idempotent)</span>
+</span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a><span class="c1"># Open existing worktree if it exists, create if it doesn't (idempotent)</span>
 </span><span id="__span-19-23"><a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>-o
 </span></code></pre></div>
 <h5 id="checking-out-pull-requests-and-fork-branches">Checking out pull requests and fork branches</h5>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Checkout PR #123. The local branch will be named after the PR&#39;s branch.</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Checkout PR #123. The local branch will be named after the PR's branch.</span>
 </span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>--pr<span class="w"> </span><span class="m">123</span>
 </span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
 </span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># Checkout PR #456 with a custom local branch name</span>
 </span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>workmux<span class="w"> </span>add<span class="w"> </span>fix/api-bug<span class="w"> </span>--pr<span class="w"> </span><span class="m">456</span>
 </span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
-</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Checkout a fork branch using GitHub&#39;s owner:branch format (copy from GitHub UI)</span>
-</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="c1"># Creates local branch &quot;someuser-feature-branch&quot; tracking the fork</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Checkout a fork branch using GitHub's owner:branch format (copy from GitHub UI)</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="c1"># Creates local branch "someuser-feature-branch" tracking the fork</span>
 </span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>workmux<span class="w"> </span>add<span class="w"> </span>someuser:feature-branch
 </span></code></pre></div>
 <h5 id="moving-changes-to-a-new-worktree">Moving changes to a new worktree</h5>
@@ -9945,7 +9945,7 @@ immediately. If the branch doesn't exist, it will be created automatically.</p>
 </span></code></pre></div>
 <h5 id="ai-agent-prompts">AI agent prompts</h5>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Create a worktree with an inline prompt for AI agents</span>
-</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>feature/ai<span class="w"> </span>--prompt<span class="w"> </span><span class="s2">&quot;Implement user authentication with OAuth&quot;</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>feature/ai<span class="w"> </span>--prompt<span class="w"> </span><span class="s2">"Implement user authentication with OAuth"</span>
 </span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
 </span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># Override the default agent for a specific worktree</span>
 </span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>workmux<span class="w"> </span>add<span class="w"> </span>feature/testing<span class="w"> </span>-a<span class="w"> </span>gemini
@@ -9963,16 +9963,16 @@ immediately. If the branch doesn't exist, it will be created automatically.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Skip expensive setup for documentation-only changes</span>
 </span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>docs-update<span class="w"> </span>--no-hooks<span class="w"> </span>--no-file-ops<span class="w"> </span>--no-pane-cmds
 </span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
-</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># Skip just the file operations (e.g., you don&#39;t need node_modules)</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># Skip just the file operations (e.g., you don't need node_modules)</span>
 </span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>workmux<span class="w"> </span>add<span class="w"> </span>quick-fix<span class="w"> </span>--no-file-ops
 </span></code></pre></div>
 <h5 id="scripting-with-wait">Scripting with --wait</h5>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># Block until the agent completes and closes the window</span>
-</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>feature/api<span class="w"> </span>--wait<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Implement the REST API, then run: workmux remove --keep-branch&quot;</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>feature/api<span class="w"> </span>--wait<span class="w"> </span>-p<span class="w"> </span><span class="s2">"Implement the REST API, then run: workmux remove --keep-branch"</span>
 </span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
 </span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># Use in a script to run sequential agent tasks</span>
 </span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="k">for</span><span class="w"> </span>task<span class="w"> </span><span class="k">in</span><span class="w"> </span>task1.md<span class="w"> </span>task2.md<span class="w"> </span>task3.md<span class="p">;</span><span class="w"> </span><span class="k">do</span>
-</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">  </span>workmux<span class="w"> </span>add<span class="w"> </span><span class="s2">&quot;task-</span><span class="k">$(</span>basename<span class="w"> </span><span class="nv">$task</span><span class="w"> </span>.md<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>--wait<span class="w"> </span>-P<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$task</span><span class="s2">&quot;</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">  </span>workmux<span class="w"> </span>add<span class="w"> </span><span class="s2">"task-</span><span class="k">$(</span>basename<span class="w"> </span><span class="nv">$task</span><span class="w"> </span>.md<span class="k">)</span><span class="s2">"</span><span class="w"> </span>--wait<span class="w"> </span>-P<span class="w"> </span><span class="s2">"</span><span class="nv">$task</span><span class="s2">"</span>
 </span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="k">done</span>
 </span></code></pre></div>
 <h4 id="ai-agent-integration">AI agent integration</h4>
@@ -10009,7 +10009,7 @@ LLM. The tool used depends on your configuration:</p>
 </span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>-A
 </span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
 </span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="c1"># With inline prompt</span>
-</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>workmux<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Add OAuth authentication&quot;</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>workmux<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span>-p<span class="w"> </span><span class="s2">"Add OAuth authentication"</span>
 </span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>
 </span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="c1"># With prompt file</span>
 </span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>workmux<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span>-P<span class="w"> </span>task-spec.md
@@ -10073,7 +10073,7 @@ having the agent installed.</p>
 <h5 id="configuration_1">Configuration</h5>
 <p>Optionally configure auto-name behavior in <code>.workmux.yaml</code>:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nt">auto_name</span><span class="p">:</span>
-</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">  </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;gemini-2.5-flash-lite&#39;</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">  </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="s">'gemini-2.5-flash-lite'</span>
 </span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">  </span><span class="nt">background</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span><span class="c1"># Always run in background when using --auto-name</span>
 </span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">  </span><span class="nt">system_prompt</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
 </span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">    </span><span class="no">Generate a concise git branch name based on the task description.</span>
@@ -10085,22 +10085,22 @@ having the agent installed.</p>
 </span><span id="__span-28-11"><a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="w">    </span><span class="no">- No prefixes like feat/, fix/, chore/</span>
 </span><span id="__span-28-12"><a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>
 </span><span id="__span-28-13"><a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="w">    </span><span class="no">Examples of good branch names:</span>
-</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="w">    </span><span class="no">- &quot;Add dark mode toggle&quot; → dark-mode</span>
-</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="w">    </span><span class="no">- &quot;Fix the search results not showing&quot; → fix-search</span>
-</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="w">    </span><span class="no">- &quot;Refactor the authentication module&quot; → auth-refactor</span>
-</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="w">    </span><span class="no">- &quot;Add CSV export to reports&quot; → export-csv</span>
-</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="w">    </span><span class="no">- &quot;Shell completion is broken&quot; → shell-completion</span>
+</span><span id="__span-28-14"><a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="w">    </span><span class="no">- "Add dark mode toggle" → dark-mode</span>
+</span><span id="__span-28-15"><a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="w">    </span><span class="no">- "Fix the search results not showing" → fix-search</span>
+</span><span id="__span-28-16"><a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="w">    </span><span class="no">- "Refactor the authentication module" → auth-refactor</span>
+</span><span id="__span-28-17"><a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="w">    </span><span class="no">- "Add CSV export to reports" → export-csv</span>
+</span><span id="__span-28-18"><a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="w">    </span><span class="no">- "Shell completion is broken" → shell-completion</span>
 </span><span id="__span-28-19"><a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a>
 </span><span id="__span-28-20"><a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a><span class="w">    </span><span class="no">Output ONLY the branch name, nothing else.</span>
 </span></code></pre></div>
 <p>To use a specific tool, set <code>auto_name.command</code>. The command string is split
 into program and arguments, and the composed prompt is piped via stdin.</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="nt">auto_name</span><span class="p">:</span>
-</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;claude</span><span class="nv"> </span><span class="s">-p&#39;</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">'claude</span><span class="nv"> </span><span class="s">-p'</span>
 </span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>
 </span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="c1"># Force llm even when an agent is configured</span>
 </span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="nt">auto_name</span><span class="p">:</span>
-</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;llm&#39;</span>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="w">  </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">'llm'</span>
 </span></code></pre></div>
 <table>
 <thead>
@@ -10226,14 +10226,14 @@ uses them.</p>
 line becomes available as the <code>{{ input }}</code> template variable in your prompt.
 This is useful for batch-processing tasks from external sources.</p>
 <p><strong>Plain text:</strong> Each line becomes <code>{{ input }}</code></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;api\nauth\ndatabase&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>workmux<span class="w"> </span>add<span class="w"> </span>refactor<span class="w"> </span>-P<span class="w"> </span>task.md
-</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="c1"># {{ input }} = &quot;api&quot;, &quot;auth&quot;, &quot;database&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">"api\nauth\ndatabase"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>workmux<span class="w"> </span>add<span class="w"> </span>refactor<span class="w"> </span>-P<span class="w"> </span>task.md
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="c1"># {{ input }} = "api", "auth", "database"</span>
 </span></code></pre></div>
 <p><strong>JSON lines:</strong> Each key becomes a template variable</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>gh<span class="w"> </span>repo<span class="w"> </span>list<span class="w"> </span>--json<span class="w"> </span>url,name<span class="w"> </span>--jq<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;.[]&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>workmux<span class="w"> </span>add<span class="w"> </span>analyze<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="w">  </span>--branch-template<span class="w"> </span><span class="s1">&#39;{{ base_name }}-{{ name }}&#39;</span><span class="w"> </span><span class="se">\</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>gh<span class="w"> </span>repo<span class="w"> </span>list<span class="w"> </span>--json<span class="w"> </span>url,name<span class="w"> </span>--jq<span class="w"> </span>-c<span class="w"> </span><span class="s1">'.[]'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>workmux<span class="w"> </span>add<span class="w"> </span>analyze<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="w">  </span>--branch-template<span class="w"> </span><span class="s1">'{{ base_name }}-{{ name }}'</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="w">  </span>-P<span class="w"> </span>prompt.md
-</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="c1"># Line: {&quot;url&quot;:&quot;https://github.com/raine/workmux&quot;,&quot;name&quot;:&quot;workmux&quot;}</span>
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="c1"># Line: {"url":"https://github.com/raine/workmux","name":"workmux"}</span>
 </span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="c1"># Variables: {{ url }}, {{ name }}, {{ input }} (raw JSON line)</span>
 </span></code></pre></div>
 <p>This lets you structure data upstream with <code>jq</code> and use meaningful branch names
@@ -10249,19 +10249,19 @@ while keeping the full URL available in your prompt.</p>
 </ul>
 <h5 id="examples_1">Examples</h5>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1"># Create one worktree for claude and one for gemini with a focused prompt</span>
-</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>-a<span class="w"> </span>claude<span class="w"> </span>-a<span class="w"> </span>gemini<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Implement the new search API integration&quot;</span>
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>-a<span class="w"> </span>claude<span class="w"> </span>-a<span class="w"> </span>gemini<span class="w"> </span>-p<span class="w"> </span><span class="s2">"Implement the new search API integration"</span>
 </span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="c1"># Generates worktrees: my-feature-claude, my-feature-gemini</span>
 </span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>
 </span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="c1"># Create 2 instances of the default agent</span>
-</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Implement task #{{ num }} in TASKS.md&quot;</span>
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">"Implement task #{{ num }} in TASKS.md"</span>
 </span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a><span class="c1"># Generates worktrees: my-feature-1, my-feature-2</span>
 </span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>
 </span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="c1"># Create worktrees from a variable matrix</span>
-</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>--foreach<span class="w"> </span><span class="s2">&quot;platform:iOS,Android&quot;</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Build for {{ platform }}&quot;</span>
+</span><span id="__span-36-10"><a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>--foreach<span class="w"> </span><span class="s2">"platform:iOS,Android"</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">"Build for {{ platform }}"</span>
 </span><span id="__span-36-11"><a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a><span class="c1"># Generates worktrees: my-feature-ios, my-feature-android</span>
 </span><span id="__span-36-12"><a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a>
 </span><span id="__span-36-13"><a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a><span class="c1"># Create agent-specific worktrees via --foreach</span>
-</span><span id="__span-36-14"><a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>--foreach<span class="w"> </span><span class="s2">&quot;agent:claude,gemini&quot;</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Implement the dashboard refactor&quot;</span>
+</span><span id="__span-36-14"><a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>workmux<span class="w"> </span>add<span class="w"> </span>my-feature<span class="w"> </span>--foreach<span class="w"> </span><span class="s2">"agent:claude,gemini"</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">"Implement the dashboard refactor"</span>
 </span><span id="__span-36-15"><a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a><span class="c1"># Generates worktrees: my-feature-claude, my-feature-gemini</span>
 </span><span id="__span-36-16"><a id="__codelineno-36-16" name="__codelineno-36-16" href="#__codelineno-36-16"></a>
 </span><span id="__span-36-17"><a id="__codelineno-36-17" name="__codelineno-36-17" href="#__codelineno-36-17"></a><span class="c1"># Use frontmatter in a prompt file for cleaner syntax</span>
@@ -10277,7 +10277,7 @@ while keeping the full URL available in your prompt.</p>
 </span><span id="__span-36-27"><a id="__codelineno-36-27" name="__codelineno-36-27" href="#__codelineno-36-27"></a>
 </span><span id="__span-36-28"><a id="__codelineno-36-28" name="__codelineno-36-28" href="#__codelineno-36-28"></a><span class="c1"># Pipe input from stdin to create worktrees</span>
 </span><span id="__span-36-29"><a id="__codelineno-36-29" name="__codelineno-36-29" href="#__codelineno-36-29"></a><span class="c1"># review.md contains: Review the {{ input }} module for security issues.</span>
-</span><span id="__span-36-30"><a id="__codelineno-36-30" name="__codelineno-36-30" href="#__codelineno-36-30"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;auth\npayments\napi&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>workmux<span class="w"> </span>add<span class="w"> </span>review<span class="w"> </span>-A<span class="w"> </span>-P<span class="w"> </span>review.md
+</span><span id="__span-36-30"><a id="__codelineno-36-30" name="__codelineno-36-30" href="#__codelineno-36-30"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">"auth\npayments\napi"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>workmux<span class="w"> </span>add<span class="w"> </span>review<span class="w"> </span>-A<span class="w"> </span>-P<span class="w"> </span>review.md
 </span><span id="__span-36-31"><a id="__codelineno-36-31" name="__codelineno-36-31" href="#__codelineno-36-31"></a><span class="c1"># Generates worktrees with LLM-generated branch names for each module</span>
 </span></code></pre></div>
 <h5 id="recipe-batch-processing-with-worker-pools">Recipe: Batch processing with worker pools</h5>
@@ -10289,9 +10289,9 @@ worker pool that processes items from an external command.</p>
 </span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="c1"># the exported functions. Focus on happy path and edge cases.</span>
 </span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="c1"># When done, run: workmux remove --keep-branch</span>
 </span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>
-</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>find<span class="w"> </span>src/utils<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.ts&quot;</span><span class="w"> </span>!<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.test.ts&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>find<span class="w"> </span>src/utils<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*.ts"</span><span class="w"> </span>!<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*.test.ts"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="w">  </span>workmux<span class="w"> </span>add<span class="w"> </span>add-tests<span class="w"> </span><span class="se">\</span>
-</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="w">    </span>--branch-template<span class="w"> </span><span class="s1">&#39;{{ base_name }}-{{ index }}&#39;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-37-8"><a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="w">    </span>--branch-template<span class="w"> </span><span class="s1">'{{ base_name }}-{{ index }}'</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-37-9"><a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="w">    </span>--prompt-file<span class="w"> </span>generate-tests.md<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-37-10"><a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a><span class="w">    </span>--max-concurrent<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
 </span><span id="__span-37-11"><a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a><span class="w">    </span>--background
@@ -10380,8 +10380,8 @@ you're on, merge it into main, and close the current window as part of cleanup.<
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># Merge branch into main (default: merge commit)</span>
 </span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>workmux<span class="w"> </span>merge<span class="w"> </span>user-auth
 </span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>
-</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="c1"># Merge the current worktree you&#39;re in</span>
-</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a><span class="c1"># (run this from within the worktree&#39;s tmux window)</span>
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="c1"># Merge the current worktree you're in</span>
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a><span class="c1"># (run this from within the worktree's tmux window)</span>
 </span><span id="__span-40-6"><a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>workmux<span class="w"> </span>merge
 </span><span id="__span-40-7"><a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>
 </span><span id="__span-40-8"><a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a><span class="c1"># Rebase onto main before merging for a linear history</span>
@@ -10624,11 +10624,11 @@ worktrees at once.</p>
 </span><span id="__span-46-10"><a id="__codelineno-46-10" name="__codelineno-46-10" href="#__codelineno-46-10"></a><span class="c1"># Open in session mode (converts from window mode if needed)</span>
 </span><span id="__span-46-11"><a id="__codelineno-46-11" name="__codelineno-46-11" href="#__codelineno-46-11"></a>workmux<span class="w"> </span>open<span class="w"> </span>user-auth<span class="w"> </span>--session
 </span><span id="__span-46-12"><a id="__codelineno-46-12" name="__codelineno-46-12" href="#__codelineno-46-12"></a>
-</span><span id="__span-46-13"><a id="__codelineno-46-13" name="__codelineno-46-13" href="#__codelineno-46-13"></a><span class="c1"># Resume the agent&#39;s last conversation</span>
+</span><span id="__span-46-13"><a id="__codelineno-46-13" name="__codelineno-46-13" href="#__codelineno-46-13"></a><span class="c1"># Resume the agent's last conversation</span>
 </span><span id="__span-46-14"><a id="__codelineno-46-14" name="__codelineno-46-14" href="#__codelineno-46-14"></a>workmux<span class="w"> </span>open<span class="w"> </span>user-auth<span class="w"> </span>--continue
 </span><span id="__span-46-15"><a id="__codelineno-46-15" name="__codelineno-46-15" href="#__codelineno-46-15"></a>
 </span><span id="__span-46-16"><a id="__codelineno-46-16" name="__codelineno-46-16" href="#__codelineno-46-16"></a><span class="c1"># Resume and send a follow-up prompt</span>
-</span><span id="__span-46-17"><a id="__codelineno-46-17" name="__codelineno-46-17" href="#__codelineno-46-17"></a>workmux<span class="w"> </span>open<span class="w"> </span>user-auth<span class="w"> </span>--continue<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Continue implementing the login flow&quot;</span>
+</span><span id="__span-46-17"><a id="__codelineno-46-17" name="__codelineno-46-17" href="#__codelineno-46-17"></a>workmux<span class="w"> </span>open<span class="w"> </span>user-auth<span class="w"> </span>--continue<span class="w"> </span>-p<span class="w"> </span><span class="s2">"Continue implementing the login flow"</span>
 </span><span id="__span-46-18"><a id="__codelineno-46-18" name="__codelineno-46-18" href="#__codelineno-46-18"></a>
 </span><span id="__span-46-19"><a id="__codelineno-46-19" name="__codelineno-46-19" href="#__codelineno-46-19"></a><span class="c1"># Open and re-run dependency installation</span>
 </span><span id="__span-46-20"><a id="__codelineno-46-20" name="__codelineno-46-20" href="#__codelineno-46-20"></a>workmux<span class="w"> </span>open<span class="w"> </span>user-auth<span class="w"> </span>--run-hooks
@@ -10652,7 +10652,7 @@ free resources, but plan to return to the work later.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="c1"># Close the window for a specific worktree</span>
 </span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>workmux<span class="w"> </span>close<span class="w"> </span>user-auth
 </span><span id="__span-47-3"><a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>
-</span><span id="__span-47-4"><a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a><span class="c1"># Close the current worktree&#39;s window (run from within the worktree)</span>
+</span><span id="__span-47-4"><a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a><span class="c1"># Close the current worktree's window (run from within the worktree)</span>
 </span><span id="__span-47-5"><a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>workmux<span class="w"> </span>close
 </span></code></pre></div>
 <p>To reopen the window later, use <a href="#workmux-open-name"><code>workmux open</code></a>.</p>
@@ -10711,10 +10711,10 @@ quickly navigating to a worktree directory.</p>
 </span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a><span class="c1"># Output: /Users/you/project__worktrees/user-auth</span>
 </span><span id="__span-50-4"><a id="__codelineno-50-4" name="__codelineno-50-4" href="#__codelineno-50-4"></a>
 </span><span id="__span-50-5"><a id="__codelineno-50-5" name="__codelineno-50-5" href="#__codelineno-50-5"></a><span class="c1"># Use in scripts or with cd</span>
-</span><span id="__span-50-6"><a id="__codelineno-50-6" name="__codelineno-50-6" href="#__codelineno-50-6"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>workmux<span class="w"> </span>path<span class="w"> </span>user-auth<span class="k">)</span><span class="s2">&quot;</span>
+</span><span id="__span-50-6"><a id="__codelineno-50-6" name="__codelineno-50-6" href="#__codelineno-50-6"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span>workmux<span class="w"> </span>path<span class="w"> </span>user-auth<span class="k">)</span><span class="s2">"</span>
 </span><span id="__span-50-7"><a id="__codelineno-50-7" name="__codelineno-50-7" href="#__codelineno-50-7"></a>
 </span><span id="__span-50-8"><a id="__codelineno-50-8" name="__codelineno-50-8" href="#__codelineno-50-8"></a><span class="c1"># Copy a file to a worktree</span>
-</span><span id="__span-50-9"><a id="__codelineno-50-9" name="__codelineno-50-9" href="#__codelineno-50-9"></a>cp<span class="w"> </span>config.json<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>workmux<span class="w"> </span>path<span class="w"> </span>feature-branch<span class="k">)</span><span class="s2">/&quot;</span>
+</span><span id="__span-50-9"><a id="__codelineno-50-9" name="__codelineno-50-9" href="#__codelineno-50-9"></a>cp<span class="w"> </span>config.json<span class="w"> </span><span class="s2">"</span><span class="k">$(</span>workmux<span class="w"> </span>path<span class="w"> </span>feature-branch<span class="k">)</span><span class="s2">/"</span>
 </span></code></pre></div>
 <hr />
 <h3 id="workmux-dashboard"><code>workmux dashboard</code></h3>
@@ -10967,10 +10967,10 @@ comment. Useful for giving feedback like "This function should handle the error
 case".</p>
 <h4 id="example-tmux-binding">Example tmux binding</h4>
 <p>Add to your <code>~/.tmux.conf</code> for quick access:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="nb">bind</span><span class="w"> </span>C-s<span class="w"> </span>display-popup<span class="w"> </span>-h<span class="w"> </span><span class="m">30</span><span class="w"> </span>-w<span class="w"> </span><span class="m">100</span><span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;workmux dashboard&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="nb">bind</span><span class="w"> </span>C-s<span class="w"> </span>display-popup<span class="w"> </span>-h<span class="w"> </span><span class="m">30</span><span class="w"> </span>-w<span class="w"> </span><span class="m">100</span><span class="w"> </span>-E<span class="w"> </span><span class="s2">"workmux dashboard"</span>
 </span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>
 </span><span id="__span-51-3"><a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a><span class="c1"># Open directly on Worktrees tab</span>
-</span><span id="__span-51-4"><a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a><span class="nb">bind</span><span class="w"> </span>C-w<span class="w"> </span>display-popup<span class="w"> </span>-h<span class="w"> </span><span class="m">30</span><span class="w"> </span>-w<span class="w"> </span><span class="m">100</span><span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;workmux dashboard --tab worktrees&quot;</span>
+</span><span id="__span-51-4"><a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a><span class="nb">bind</span><span class="w"> </span>C-w<span class="w"> </span>display-popup<span class="w"> </span>-h<span class="w"> </span><span class="m">30</span><span class="w"> </span>-w<span class="w"> </span><span class="m">100</span><span class="w"> </span>-E<span class="w"> </span><span class="s2">"workmux dashboard --tab worktrees"</span>
 </span></code></pre></div>
 <p>Then press <code>prefix + Ctrl-s</code> to open the dashboard as a tmux popup.</p>
 <hr />
@@ -11031,9 +11031,9 @@ current tmux session only. Run the same command again to show it in that session
 again while keeping the global sidebar active elsewhere.</p>
 <p>Configure placement, width, and layout in <code>.workmux.yaml</code>:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="nt">sidebar</span><span class="p">:</span>
-</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="w">  </span><span class="nt">position</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">left</span><span class="w"> </span><span class="c1"># &quot;left&quot; (default) or &quot;top&quot;</span>
-</span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a><span class="w">  </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40</span><span class="w"> </span><span class="c1"># left width in columns, or &quot;15%&quot; for percentage</span>
-</span><span id="__span-53-4"><a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a><span class="w">  </span><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiles</span><span class="w"> </span><span class="c1"># left only: &quot;compact&quot; or &quot;tiles&quot; (default)</span>
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="w">  </span><span class="nt">position</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">left</span><span class="w"> </span><span class="c1"># "left" (default) or "top"</span>
+</span><span id="__span-53-3"><a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a><span class="w">  </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">40</span><span class="w"> </span><span class="c1"># left width in columns, or "15%" for percentage</span>
+</span><span id="__span-53-4"><a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a><span class="w">  </span><span class="nt">layout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiles</span><span class="w"> </span><span class="c1"># left only: "compact" or "tiles" (default)</span>
 </span></code></pre></div>
 <p>The left sidebar defaults to 10% of terminal width, clamped between 25 and 50
 columns. Widths above 80 columns use the default width so tmux pane expansion
@@ -11041,7 +11041,7 @@ recovers automatically.</p>
 <p>Use <code>workmux sidebar --position top</code> or <code>--position left</code> to override the
 configured placement when enabling the sidebar.</p>
 <h4 id="example-tmux-binding_1">Example tmux binding</h4>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="nb">bind</span><span class="w"> </span>C-t<span class="w"> </span>run-shell<span class="w"> </span><span class="s2">&quot;workmux sidebar&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="nb">bind</span><span class="w"> </span>C-t<span class="w"> </span>run-shell<span class="w"> </span><span class="s2">"workmux sidebar"</span>
 </span></code></pre></div>
 <p>Then press <code>prefix + Ctrl-t</code> to toggle the sidebar.</p>
 <blockquote>
@@ -11158,7 +11158,7 @@ When piped (e.g., to an LLM), outputs raw markdown for clean context.</p>
 </span><span id="__span-59-3"><a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>  shell on top of each other
 </span><span id="__span-59-4"><a id="__codelineno-59-4" name="__codelineno-59-4" href="#__codelineno-59-4"></a>
 </span><span id="__span-59-5"><a id="__codelineno-59-5" name="__codelineno-59-5" href="#__codelineno-59-5"></a>⏺ Bash(workmux docs)
-</span><span id="__span-59-6"><a id="__codelineno-59-6" name="__codelineno-59-6" href="#__codelineno-59-6"></a>  ⎿  &lt;p align=&quot;center&quot;&gt;
+</span><span id="__span-59-6"><a id="__codelineno-59-6" name="__codelineno-59-6" href="#__codelineno-59-6"></a>  ⎿  &lt;p align="center"&gt;
 </span><span id="__span-59-7"><a id="__codelineno-59-7" name="__codelineno-59-7" href="#__codelineno-59-7"></a>       &lt;picture&gt;
 </span><span id="__span-59-8"><a id="__codelineno-59-8" name="__codelineno-59-8" href="#__codelineno-59-8"></a>     … +923 lines
 </span><span id="__span-59-9"><a id="__codelineno-59-9" name="__codelineno-59-9" href="#__codelineno-59-9"></a>
@@ -11281,9 +11281,9 @@ to limitations in the Copilot CLI hooks implementation.</p>
 <p>You can customize the icons in your config:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="c1"># ~/.config/workmux/config.yaml</span>
 </span><span id="__span-65-2"><a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a><span class="nt">status_icons</span><span class="p">:</span>
-</span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a><span class="w">  </span><span class="nt">working</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;🔄&#39;</span>
-</span><span id="__span-65-4"><a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a><span class="w">  </span><span class="nt">waiting</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;⏸️&#39;</span>
-</span><span id="__span-65-5"><a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a><span class="w">  </span><span class="nt">done</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;✔️&#39;</span>
+</span><span id="__span-65-3"><a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a><span class="w">  </span><span class="nt">working</span><span class="p">:</span><span class="w"> </span><span class="s">'🔄'</span>
+</span><span id="__span-65-4"><a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a><span class="w">  </span><span class="nt">waiting</span><span class="p">:</span><span class="w"> </span><span class="s">'⏸️'</span>
+</span><span id="__span-65-5"><a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a><span class="w">  </span><span class="nt">done</span><span class="p">:</span><span class="w"> </span><span class="s">'✔️'</span>
 </span></code></pre></div>
 <p>If you prefer to manage the tmux format yourself, disable auto-modification and
 add the status variable to your <code>~/.tmux.conf</code>:</p>
@@ -11291,8 +11291,8 @@ add the status variable to your <code>~/.tmux.conf</code>:</p>
 </span><span id="__span-66-2"><a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a><span class="nt">status_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="c1"># ~/.tmux.conf</span>
-</span><span id="__span-67-2"><a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a><span class="nb">set</span><span class="w"> </span>-g<span class="w"> </span>window-status-format<span class="w"> </span><span class="s1">&#39;#I:#W#{?@workmux_status, #{@workmux_status},}#{?window_flags,#{window_flags}, }&#39;</span>
-</span><span id="__span-67-3"><a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a><span class="nb">set</span><span class="w"> </span>-g<span class="w"> </span>window-status-current-format<span class="w"> </span><span class="s1">&#39;#I:#W#{?@workmux_status, #{@workmux_status},}#{?window_flags,#{window_flags}, }&#39;</span>
+</span><span id="__span-67-2"><a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a><span class="nb">set</span><span class="w"> </span>-g<span class="w"> </span>window-status-format<span class="w"> </span><span class="s1">'#I:#W#{?@workmux_status, #{@workmux_status},}#{?window_flags,#{window_flags}, }'</span>
+</span><span id="__span-67-3"><a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a><span class="nb">set</span><span class="w"> </span>-g<span class="w"> </span>window-status-current-format<span class="w"> </span><span class="s1">'#I:#W#{?@workmux_status, #{@workmux_status},}#{?window_flags,#{window_flags}, }'</span>
 </span></code></pre></div>
 <h3 id="jump-to-completed-or-waiting-agents">Jump to completed or waiting agents</h3>
 <p>Use <code>workmux last-done</code> to quickly switch to the agent that most recently
@@ -11300,7 +11300,7 @@ finished its task or is waiting for user input. Repeated invocations cycle
 through all completed and waiting agents in reverse chronological order.</p>
 <p>Add a tmux keybinding for quick access:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="c1"># ~/.tmux.conf</span>
-</span><span id="__span-68-2"><a id="__codelineno-68-2" name="__codelineno-68-2" href="#__codelineno-68-2"></a>bind-key<span class="w"> </span>L<span class="w"> </span>run-shell<span class="w"> </span><span class="s2">&quot;workmux last-done&quot;</span>
+</span><span id="__span-68-2"><a id="__codelineno-68-2" name="__codelineno-68-2" href="#__codelineno-68-2"></a>bind-key<span class="w"> </span>L<span class="w"> </span>run-shell<span class="w"> </span><span class="s2">"workmux last-done"</span>
 </span></code></pre></div>
 <p>Then press <code>prefix + L</code> to jump to the last completed or waiting agent, press
 again to cycle to the next oldest, and so on.</p>
@@ -11312,7 +11312,7 @@ returns you to where you were.</p>
 <p>This is available both as a CLI command and as the <code>Tab</code> key in the dashboard.</p>
 <p>Add a tmux keybinding for quick access:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-69-1"><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="c1"># ~/.tmux.conf</span>
-</span><span id="__span-69-2"><a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a><span class="nb">bind</span><span class="w"> </span>Tab<span class="w"> </span>run-shell<span class="w"> </span><span class="s2">&quot;workmux last-agent&quot;</span>
+</span><span id="__span-69-2"><a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a><span class="nb">bind</span><span class="w"> </span>Tab<span class="w"> </span>run-shell<span class="w"> </span><span class="s2">"workmux last-agent"</span>
 </span></code></pre></div>
 <p>Then press <code>prefix + Tab</code> to toggle between your two most recent agents.</p>
 <h2 id="sandbox">Sandbox</h2>
@@ -11481,8 +11481,8 @@ development workflows practical.</p>
 </span><span id="__span-75-8"><a id="__codelineno-75-8" name="__codelineno-75-8" href="#__codelineno-75-8"></a>
 </span><span id="__span-75-9"><a id="__codelineno-75-9" name="__codelineno-75-9" href="#__codelineno-75-9"></a><span class="c1"># 2. Manually create and configure the tmux window</span>
 </span><span id="__span-75-10"><a id="__codelineno-75-10" name="__codelineno-75-10" href="#__codelineno-75-10"></a>tmux<span class="w"> </span>new-window<span class="w"> </span>-n<span class="w"> </span>user-auth
-</span><span id="__span-75-11"><a id="__codelineno-75-11" name="__codelineno-75-11" href="#__codelineno-75-11"></a>tmux<span class="w"> </span>split-window<span class="w"> </span>-h<span class="w"> </span><span class="s1">&#39;npm run dev&#39;</span>
-</span><span id="__span-75-12"><a id="__codelineno-75-12" name="__codelineno-75-12" href="#__codelineno-75-12"></a>tmux<span class="w"> </span>send-keys<span class="w"> </span>-t<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="s1">&#39;claude&#39;</span><span class="w"> </span>C-m
+</span><span id="__span-75-11"><a id="__codelineno-75-11" name="__codelineno-75-11" href="#__codelineno-75-11"></a>tmux<span class="w"> </span>split-window<span class="w"> </span>-h<span class="w"> </span><span class="s1">'npm run dev'</span>
+</span><span id="__span-75-12"><a id="__codelineno-75-12" name="__codelineno-75-12" href="#__codelineno-75-12"></a>tmux<span class="w"> </span>send-keys<span class="w"> </span>-t<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="s1">'claude'</span><span class="w"> </span>C-m
 </span><span id="__span-75-13"><a id="__codelineno-75-13" name="__codelineno-75-13" href="#__codelineno-75-13"></a><span class="c1"># ... repeat for every pane in your desired layout</span>
 </span><span id="__span-75-14"><a id="__codelineno-75-14" name="__codelineno-75-14" href="#__codelineno-75-14"></a>
 </span><span id="__span-75-15"><a id="__codelineno-75-15" name="__codelineno-75-15" href="#__codelineno-75-15"></a><span class="c1"># 3. When done, manually merge and clean everything up</span>
@@ -11505,8 +11505,8 @@ development workflows practical.</p>
 <h3 id="the-parallel-ai-workflow">The parallel AI workflow</h3>
 <p>Run multiple AI agents simultaneously, each in its own worktree.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-77-1"><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a><span class="c1"># Spin up two agents working on different tasks</span>
-</span><span id="__span-77-2"><a id="__codelineno-77-2" name="__codelineno-77-2" href="#__codelineno-77-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>refactor-user-model<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Refactor the User model to use composition&quot;</span>
-</span><span id="__span-77-3"><a id="__codelineno-77-3" name="__codelineno-77-3" href="#__codelineno-77-3"></a>workmux<span class="w"> </span>add<span class="w"> </span>add-search-endpoint<span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Add a /search endpoint with pagination&quot;</span>
+</span><span id="__span-77-2"><a id="__codelineno-77-2" name="__codelineno-77-2" href="#__codelineno-77-2"></a>workmux<span class="w"> </span>add<span class="w"> </span>refactor-user-model<span class="w"> </span>-p<span class="w"> </span><span class="s2">"Refactor the User model to use composition"</span>
+</span><span id="__span-77-3"><a id="__codelineno-77-3" name="__codelineno-77-3" href="#__codelineno-77-3"></a>workmux<span class="w"> </span>add<span class="w"> </span>add-search-endpoint<span class="w"> </span>-p<span class="w"> </span><span class="s2">"Add a /search endpoint with pagination"</span>
 </span><span id="__span-77-4"><a id="__codelineno-77-4" name="__codelineno-77-4" href="#__codelineno-77-4"></a>
 </span><span id="__span-77-5"><a id="__codelineno-77-5" name="__codelineno-77-5" href="#__codelineno-77-5"></a><span class="c1"># Each agent works in isolation. Check progress via tmux windows or the dashboard</span>
 </span><span id="__span-77-6"><a id="__codelineno-77-6" name="__codelineno-77-6" href="#__codelineno-77-6"></a>workmux<span class="w"> </span>dashboard
@@ -11615,7 +11615,7 @@ dependencies across worktrees:</p>
 </span></code></pre></div>
 <p>Add to <code>~/.cargo/config.toml</code>:</p>
 <div class="language-toml highlight"><pre><span></span><code><span id="__span-81-1"><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a><span class="k">[build]</span>
-</span><span id="__span-81-2"><a id="__codelineno-81-2" name="__codelineno-81-2" href="#__codelineno-81-2"></a><span class="n">rustc-wrapper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;sccache&quot;</span>
+</span><span id="__span-81-2"><a id="__codelineno-81-2" name="__codelineno-81-2" href="#__codelineno-81-2"></a><span class="n">rustc-wrapper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"sccache"</span>
 </span></code></pre></div>
 <p>This caches compiled dependencies globally, so new worktrees benefit from cached
 artifacts without any lock contention.</p>
@@ -11636,19 +11636,19 @@ earlier ones.</p>
 </span><span id="__span-82-2"><a id="__codelineno-82-2" name="__codelineno-82-2" href="#__codelineno-82-2"></a><span class="nb">set</span><span class="w"> </span>-euo<span class="w"> </span>pipefail
 </span><span id="__span-82-3"><a id="__codelineno-82-3" name="__codelineno-82-3" href="#__codelineno-82-3"></a>
 </span><span id="__span-82-4"><a id="__codelineno-82-4" name="__codelineno-82-4" href="#__codelineno-82-4"></a>port_in_use<span class="o">()</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-82-5"><a id="__codelineno-82-5" name="__codelineno-82-5" href="#__codelineno-82-5"></a><span class="w">  </span>lsof<span class="w"> </span>-nP<span class="w"> </span>-iTCP:<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span>-sTCP:LISTEN<span class="w"> </span><span class="p">&amp;</span>&gt;/dev/null
+</span><span id="__span-82-5"><a id="__codelineno-82-5" name="__codelineno-82-5" href="#__codelineno-82-5"></a><span class="w">  </span>lsof<span class="w"> </span>-nP<span class="w"> </span>-iTCP:<span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span><span class="w"> </span>-sTCP:LISTEN<span class="w"> </span><span class="p">&amp;</span>&gt;/dev/null
 </span><span id="__span-82-6"><a id="__codelineno-82-6" name="__codelineno-82-6" href="#__codelineno-82-6"></a><span class="o">}</span>
 </span><span id="__span-82-7"><a id="__codelineno-82-7" name="__codelineno-82-7" href="#__codelineno-82-7"></a>
 </span><span id="__span-82-8"><a id="__codelineno-82-8" name="__codelineno-82-8" href="#__codelineno-82-8"></a>find_port<span class="o">()</span><span class="w"> </span><span class="o">{</span>
 </span><span id="__span-82-9"><a id="__codelineno-82-9" name="__codelineno-82-9" href="#__codelineno-82-9"></a><span class="w">  </span><span class="nb">local</span><span class="w"> </span><span class="nv">port</span><span class="o">=</span><span class="nv">$1</span>
-</span><span id="__span-82-10"><a id="__codelineno-82-10" name="__codelineno-82-10" href="#__codelineno-82-10"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span>port_in_use<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$port</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-82-10"><a id="__codelineno-82-10" name="__codelineno-82-10" href="#__codelineno-82-10"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span>port_in_use<span class="w"> </span><span class="s2">"</span><span class="nv">$port</span><span class="s2">"</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 </span><span id="__span-82-11"><a id="__codelineno-82-11" name="__codelineno-82-11" href="#__codelineno-82-11"></a><span class="w">    </span><span class="o">((</span>port++<span class="o">))</span>
 </span><span id="__span-82-12"><a id="__codelineno-82-12" name="__codelineno-82-12" href="#__codelineno-82-12"></a><span class="w">  </span><span class="k">done</span>
-</span><span id="__span-82-13"><a id="__codelineno-82-13" name="__codelineno-82-13" href="#__codelineno-82-13"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$port</span><span class="s2">&quot;</span>
+</span><span id="__span-82-13"><a id="__codelineno-82-13" name="__codelineno-82-13" href="#__codelineno-82-13"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"</span><span class="nv">$port</span><span class="s2">"</span>
 </span><span id="__span-82-14"><a id="__codelineno-82-14" name="__codelineno-82-14" href="#__codelineno-82-14"></a><span class="o">}</span>
 </span><span id="__span-82-15"><a id="__codelineno-82-15" name="__codelineno-82-15" href="#__codelineno-82-15"></a>
 </span><span id="__span-82-16"><a id="__codelineno-82-16" name="__codelineno-82-16" href="#__codelineno-82-16"></a><span class="c1"># Hash the handle to get a deterministic port offset (0-99)</span>
-</span><span id="__span-82-17"><a id="__codelineno-82-17" name="__codelineno-82-17" href="#__codelineno-82-17"></a><span class="nv">hash</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$WM_HANDLE</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>md5<span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-c1-4<span class="k">)</span>
+</span><span id="__span-82-17"><a id="__codelineno-82-17" name="__codelineno-82-17" href="#__codelineno-82-17"></a><span class="nv">hash</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="s2">"</span><span class="nv">$WM_HANDLE</span><span class="s2">"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>md5<span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-c1-4<span class="k">)</span>
 </span><span id="__span-82-18"><a id="__codelineno-82-18" name="__codelineno-82-18" href="#__codelineno-82-18"></a><span class="nv">offset</span><span class="o">=</span><span class="k">$((</span><span class="m">16#</span><span class="nv">$hash</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="m">100</span><span class="k">))</span>
 </span><span id="__span-82-19"><a id="__codelineno-82-19" name="__codelineno-82-19" href="#__codelineno-82-19"></a>
 </span><span id="__span-82-20"><a id="__codelineno-82-20" name="__codelineno-82-20" href="#__codelineno-82-20"></a><span class="c1"># Find available ports starting from the hash-based offset</span>
@@ -11662,7 +11662,7 @@ earlier ones.</p>
 </span><span id="__span-82-28"><a id="__codelineno-82-28" name="__codelineno-82-28" href="#__codelineno-82-28"></a><span class="s">VITE_PUBLIC_API_URL=http://localhost:$api_port</span>
 </span><span id="__span-82-29"><a id="__codelineno-82-29" name="__codelineno-82-29" href="#__codelineno-82-29"></a><span class="s">EOF</span>
 </span><span id="__span-82-30"><a id="__codelineno-82-30" name="__codelineno-82-30" href="#__codelineno-82-30"></a>
-</span><span id="__span-82-31"><a id="__codelineno-82-31" name="__codelineno-82-31" href="#__codelineno-82-31"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Created .env.local with ports: API=</span><span class="nv">$api_port</span><span class="s2">, VITE=</span><span class="nv">$vite_port</span><span class="s2">&quot;</span>
+</span><span id="__span-82-31"><a id="__codelineno-82-31" name="__codelineno-82-31" href="#__codelineno-82-31"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"Created .env.local with ports: API=</span><span class="nv">$api_port</span><span class="s2">, VITE=</span><span class="nv">$vite_port</span><span class="s2">"</span>
 </span></code></pre></div>
 <p>Configure workmux to copy <code>.env</code> and generate <code>.env.local</code>:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-83-1"><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a><span class="c1"># .workmux.yaml</span>
@@ -11676,9 +11676,9 @@ earlier ones.</p>
 <p>For plain Node.js (without framework support), load both files with later
 overriding earlier:</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-84-1"><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a><span class="p">{</span>
-</span><span id="__span-84-2"><a id="__codelineno-84-2" name="__codelineno-84-2" href="#__codelineno-84-2"></a><span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-84-3"><a id="__codelineno-84-3" name="__codelineno-84-3" href="#__codelineno-84-3"></a><span class="w">    </span><span class="nt">&quot;api&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node --env-file=.env --env-file=.env.local api/server.js&quot;</span><span class="p">,</span>
-</span><span id="__span-84-4"><a id="__codelineno-84-4" name="__codelineno-84-4" href="#__codelineno-84-4"></a><span class="w">    </span><span class="nt">&quot;web&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node --env-file=.env --env-file=.env.local web/server.js&quot;</span>
+</span><span id="__span-84-2"><a id="__codelineno-84-2" name="__codelineno-84-2" href="#__codelineno-84-2"></a><span class="w">  </span><span class="nt">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-84-3"><a id="__codelineno-84-3" name="__codelineno-84-3" href="#__codelineno-84-3"></a><span class="w">    </span><span class="nt">"api"</span><span class="p">:</span><span class="w"> </span><span class="s2">"node --env-file=.env --env-file=.env.local api/server.js"</span><span class="p">,</span>
+</span><span id="__span-84-4"><a id="__codelineno-84-4" name="__codelineno-84-4" href="#__codelineno-84-4"></a><span class="w">    </span><span class="nt">"web"</span><span class="p">:</span><span class="w"> </span><span class="s2">"node --env-file=.env --env-file=.env.local web/server.js"</span>
 </span><span id="__span-84-5"><a id="__codelineno-84-5" name="__codelineno-84-5" href="#__codelineno-84-5"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-84-6"><a id="__codelineno-84-6" name="__codelineno-84-6" href="#__codelineno-84-6"></a><span class="p">}</span>
 </span></code></pre></div>
@@ -11737,11 +11737,11 @@ your global config when an agent needs a wrapper command, extra arguments, or
 environment variables. Simple string aliases still work:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-90-1"><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a><span class="c1"># ~/.config/workmux/config.yaml</span>
 </span><span id="__span-90-2"><a id="__codelineno-90-2" name="__codelineno-90-2" href="#__codelineno-90-2"></a><span class="nt">agents</span><span class="p">:</span>
-</span><span id="__span-90-3"><a id="__codelineno-90-3" name="__codelineno-90-3" href="#__codelineno-90-3"></a><span class="w">  </span><span class="nt">cc-work</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;claude&quot;</span>
-</span><span id="__span-90-4"><a id="__codelineno-90-4" name="__codelineno-90-4" href="#__codelineno-90-4"></a><span class="w">  </span><span class="nt">cc-personal</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;env</span><span class="nv"> </span><span class="s">CLAUDE_CONFIG_DIR=~/.claude-personal</span><span class="nv"> </span><span class="s">claude&quot;</span>
-</span><span id="__span-90-5"><a id="__codelineno-90-5" name="__codelineno-90-5" href="#__codelineno-90-5"></a><span class="w">  </span><span class="nt">cc-bedrock</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;env</span><span class="nv"> </span><span class="s">-u</span><span class="nv"> </span><span class="s">CLAUDE_CODE_USE_BEDROCK</span><span class="nv"> </span><span class="s">-u</span><span class="nv"> </span><span class="s">AWS_REGION</span><span class="nv"> </span><span class="s">AWS_PROFILE=prod</span><span class="nv"> </span><span class="s">claude&quot;</span>
-</span><span id="__span-90-6"><a id="__codelineno-90-6" name="__codelineno-90-6" href="#__codelineno-90-6"></a><span class="w">  </span><span class="nt">cc-yolo</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;claude</span><span class="nv"> </span><span class="s">--dangerously-skip-permissions&quot;</span>
-</span><span id="__span-90-7"><a id="__codelineno-90-7" name="__codelineno-90-7" href="#__codelineno-90-7"></a><span class="w">  </span><span class="nt">cod</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;codex</span><span class="nv"> </span><span class="s">--yolo&quot;</span>
+</span><span id="__span-90-3"><a id="__codelineno-90-3" name="__codelineno-90-3" href="#__codelineno-90-3"></a><span class="w">  </span><span class="nt">cc-work</span><span class="p">:</span><span class="w"> </span><span class="s">"claude"</span>
+</span><span id="__span-90-4"><a id="__codelineno-90-4" name="__codelineno-90-4" href="#__codelineno-90-4"></a><span class="w">  </span><span class="nt">cc-personal</span><span class="p">:</span><span class="w"> </span><span class="s">"env</span><span class="nv"> </span><span class="s">CLAUDE_CONFIG_DIR=~/.claude-personal</span><span class="nv"> </span><span class="s">claude"</span>
+</span><span id="__span-90-5"><a id="__codelineno-90-5" name="__codelineno-90-5" href="#__codelineno-90-5"></a><span class="w">  </span><span class="nt">cc-bedrock</span><span class="p">:</span><span class="w"> </span><span class="s">"env</span><span class="nv"> </span><span class="s">-u</span><span class="nv"> </span><span class="s">CLAUDE_CODE_USE_BEDROCK</span><span class="nv"> </span><span class="s">-u</span><span class="nv"> </span><span class="s">AWS_REGION</span><span class="nv"> </span><span class="s">AWS_PROFILE=prod</span><span class="nv"> </span><span class="s">claude"</span>
+</span><span id="__span-90-6"><a id="__codelineno-90-6" name="__codelineno-90-6" href="#__codelineno-90-6"></a><span class="w">  </span><span class="nt">cc-yolo</span><span class="p">:</span><span class="w"> </span><span class="s">"claude</span><span class="nv"> </span><span class="s">--dangerously-skip-permissions"</span>
+</span><span id="__span-90-7"><a id="__codelineno-90-7" name="__codelineno-90-7" href="#__codelineno-90-7"></a><span class="w">  </span><span class="nt">cod</span><span class="p">:</span><span class="w"> </span><span class="s">"codex</span><span class="nv"> </span><span class="s">--yolo"</span>
 </span></code></pre></div>
 <p>Structured profiles make the same kind of config easier to maintain because
 arguments and environment are not written as one long shell string:</p>
@@ -11794,10 +11794,10 @@ including <code>/merge</code>, <code>/rebase</code>, <code>/coordinator</code>, 
 <p>To enable tab completions for commands and branch names, add the following to
 your shell's configuration file.</p>
 <p>For <strong>bash</strong>, add to your <code>.bashrc</code>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-94-1"><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>workmux<span class="w"> </span>completions<span class="w"> </span>bash<span class="k">)</span><span class="s2">&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-94-1"><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a><span class="nb">eval</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span>workmux<span class="w"> </span>completions<span class="w"> </span>bash<span class="k">)</span><span class="s2">"</span>
 </span></code></pre></div>
 <p>For <strong>zsh</strong>, add to your <code>.zshrc</code>:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-95-1"><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a><span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>workmux<span class="w"> </span>completions<span class="w"> </span>zsh<span class="k">)</span><span class="s2">&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-95-1"><a id="__codelineno-95-1" name="__codelineno-95-1" href="#__codelineno-95-1"></a><span class="nb">eval</span><span class="w"> </span><span class="s2">"</span><span class="k">$(</span>workmux<span class="w"> </span>completions<span class="w"> </span>zsh<span class="k">)</span><span class="s2">"</span>
 </span></code></pre></div>
 <p>For <strong>fish</strong>, add to your <code>config.fish</code>:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-96-1"><a id="__codelineno-96-1" name="__codelineno-96-1" href="#__codelineno-96-1"></a>workmux<span class="w"> </span>completions<span class="w"> </span>fish<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nb">source</span>

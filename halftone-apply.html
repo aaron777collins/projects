@@ -5511,18 +5511,18 @@ rendered into an <code>output\</code> subfolder as <code>&lt;name&gt;_comic.mp4<
 <h3 id="render-folderps1-double-click-friendly"><code>render-folder.ps1</code> (double-click friendly)</h3>
 <p>Batches a folder without installing the right-click menu. Double-click it (it
 shows a folder-picker), or run it with paths:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>powershell -NoProfile -ExecutionPolicy Bypass -File render-folder.ps1 &quot;C:\clips&quot; [&quot;C:\out&quot;]
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>powershell -NoProfile -ExecutionPolicy Bypass -File render-folder.ps1 "C:\clips" ["C:\out"]
 </span></code></pre></div>
 <p><code>$args[0]</code> is the input folder (omit for a folder-picker, or defaults to the
 current directory); <code>$args[1]</code> is an optional output folder (default
 <code>&lt;input&gt;\output</code>). It validates node + ffmpeg + <code>renderer/node_modules/puppeteer</code>,
 shows progress, and pauses at the end.</p>
 <h3 id="renderjs-cli-single-file-or-folder"><code>render.js</code> CLI (single file or folder)</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># Single file  → &quot;&lt;name&gt;_comic.mp4&quot; next to the input (or --out &lt;file&gt;)
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>node renderer/render.js &quot;C:\path\to\clip.mp4&quot; [--out out.mp4]
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># Single file  → "&lt;name&gt;_comic.mp4" next to the input (or --out &lt;file&gt;)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>node renderer/render.js "C:\path\to\clip.mp4" [--out out.mp4]
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a># Folder       → every video → &quot;output\&quot; subfolder (or --out &lt;dir&gt;)
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>node renderer/render.js &quot;C:\path\to\folder&quot; [--out &quot;C:\out&quot;]
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a># Folder       → every video → "output\" subfolder (or --out &lt;dir&gt;)
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>node renderer/render.js "C:\path\to\folder" [--out "C:\out"]
 </span></code></pre></div>
 <p>In folder mode the renderer reuses <strong>one</strong> headless-Chromium/WebGL context
 across all files (it does not relaunch per file), prints per-file progress

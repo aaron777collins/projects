@@ -5509,7 +5509,7 @@
 <li><strong>Languages Used:</strong> Python, HTML, mcfunction, Shell, TypeScript, PowerShell, CSS, Ruby, Makefile</li>
 <li><strong>License:</strong> GNU General Public License v3.0</li>
 <li><strong>Created:</strong> August 26, 2025</li>
-<li><strong>Last Updated:</strong> August 16, 2026</li>
+<li><strong>Last Updated:</strong> August 17, 2026</li>
 </ul>
 <h2 id="about">📝 About</h2>
 <h1 id="minecraft-datapack-language-mdl"><img src="https://github.com/aaron777collins/MinecraftDatapackLanguage/raw/main/icons/icon-128.png" width="32" height="32" alt="MDL Icon"> Minecraft Datapack Language (MDL)</h1>
@@ -5616,15 +5616,15 @@
 <hr />
 <h2 id="language-examples">📝 Language Examples</h2>
 <h3 id="basic-structure">Basic Structure</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pack &quot;MyPack&quot; &quot;My awesome datapack&quot; 15;
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>namespace &quot;game&quot;;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pack "MyPack" "My awesome datapack" 15;
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>namespace "game";
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>var num player_score&lt;@s&gt; = 0;
 </span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>var num team_score&lt;@a[team=red]&gt; = 0;
 </span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
 </span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>function game:start {
 </span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    player_score&lt;@s&gt; = 100;
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    say &quot;Welcome! Your score is $player_score&lt;@s&gt;$&quot;;
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    say "Welcome! Your score is $player_score&lt;@s&gt;$";
 </span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>}
 </span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
 </span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>on_load game:start;
@@ -5632,10 +5632,10 @@
 <h3 id="control-structures">Control Structures</h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>function game:check_score {
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    if $player_score&lt;@s&gt;$ &gt; 10 {
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        say &quot;Great score!&quot;;
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        say "Great score!";
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        player_score&lt;@s&gt; = $player_score&lt;@s&gt;$ + 5;
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    } else {
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        say &quot;Keep trying!&quot;;
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        say "Keep trying!";
 </span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    }
 </span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
 </span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    while $player_score&lt;@s&gt;$ &lt; 100 {
@@ -5645,14 +5645,14 @@
 </span></code></pre></div>
 <h3 id="tags-and-resources">Tags and Resources</h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>// Recipe tags
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>tag recipe &quot;diamond_sword&quot; &quot;recipes/diamond_sword.json&quot;;
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>tag loot_table &quot;epic_loot&quot; &quot;loot_tables/epic_loot.json&quot;;
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>tag advancement &quot;first_spell&quot; &quot;advancements/first_spell.json&quot;;
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>tag recipe "diamond_sword" "recipes/diamond_sword.json";
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>tag loot_table "epic_loot" "loot_tables/epic_loot.json";
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>tag advancement "first_spell" "advancements/first_spell.json";
 </span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
 </span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>// Item modifiers and predicates
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>tag item_modifier &quot;enchanted_tool&quot; &quot;item_modifiers/enchanted_tool.json&quot;;
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>tag predicate &quot;has_mana&quot; &quot;predicates/has_mana.json&quot;;
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>tag structure &quot;wizard_tower&quot; &quot;structures/wizard_tower.json&quot;;
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>tag item_modifier "enchanted_tool" "item_modifiers/enchanted_tool.json";
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>tag predicate "has_mana" "predicates/has_mana.json";
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>tag structure "wizard_tower" "structures/wizard_tower.json";
 </span></code></pre></div>
 <h3 id="raw-blocks-and-say-commands">Raw Blocks and Say Commands</h3>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>function game:special_effect {
@@ -5661,7 +5661,7 @@
 </span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    execute as @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1 1
 </span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    raw!$
 </span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    say &quot;Special effect triggered! Score: $player_score&lt;@s&gt;$&quot;;
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    say "Special effect triggered! Score: $player_score&lt;@s&gt;$";
 </span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>}
 </span></code></pre></div>
 <hr />

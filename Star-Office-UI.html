@@ -5464,9 +5464,9 @@
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>python3<span class="w"> </span>app.py
 </span></code></pre></div>
 <p>打开 <strong>http://127.0.0.1:19000</strong>，然后试试切状态：</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>writing<span class="w"> </span><span class="s2">&quot;正在整理文档&quot;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>error<span class="w"> </span><span class="s2">&quot;发现问题，排查中&quot;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>idle<span class="w"> </span><span class="s2">&quot;待命中&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>writing<span class="w"> </span><span class="s2">"正在整理文档"</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>error<span class="w"> </span><span class="s2">"发现问题，排查中"</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>idle<span class="w"> </span><span class="s2">"待命中"</span>
 </span></code></pre></div>
 <p><img alt="Star Office UI 预览" src="docs/screenshots/readme-cover-1.jpg" /></p>
 <hr />
@@ -5510,10 +5510,10 @@
 <p>✅ 首次部署可以先保留默认配置；在生产环境中，请复制 <code>.env.example</code> 为 <code>.env</code> 并设置强随机的 <code>FLASK_SECRET_KEY</code> 与 <code>ASSET_DRAWER_PASS</code>，避免弱密码和会话泄露。</p>
 </blockquote>
 <h3 id="4">4) 切换状态</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>writing<span class="w"> </span><span class="s2">&quot;正在整理文档&quot;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>syncing<span class="w"> </span><span class="s2">&quot;同步进度中&quot;</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>error<span class="w"> </span><span class="s2">&quot;发现问题，排查中&quot;</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>idle<span class="w"> </span><span class="s2">&quot;待命中&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>writing<span class="w"> </span><span class="s2">"正在整理文档"</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>syncing<span class="w"> </span><span class="s2">"同步进度中"</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>error<span class="w"> </span><span class="s2">"发现问题，排查中"</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>python3<span class="w"> </span>set_state.py<span class="w"> </span>idle<span class="w"> </span><span class="s2">"待命中"</span>
 </span></code></pre></div>
 <h3 id="5">5) 公网访问（可选）</h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>cloudflared<span class="w"> </span>tunnel<span class="w"> </span>--url<span class="w"> </span>http://127.0.0.1:19000
@@ -5531,8 +5531,8 @@
 <h3 id="_5">状态自动同步</h3>
 <p>在你的 <code>SOUL.md</code>（或 Agent 规则文件）中加入以下规则，让 Agent 自觉维护状态：</p>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="gu">## Star Office 状态同步规则</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">-</span><span class="w"> </span>接到任务时：先执行 <span class="sb">`python3 set_state.py &lt;状态&gt; &quot;&lt;描述&gt;&quot;`</span> 再开始工作
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">-</span><span class="w"> </span>完成任务后：执行 <span class="sb">`python3 set_state.py idle &quot;待命中&quot;`</span> 再回复
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">-</span><span class="w"> </span>接到任务时：先执行 <span class="sb">`python3 set_state.py &lt;状态&gt; "&lt;描述&gt;"`</span> 再开始工作
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">-</span><span class="w"> </span>完成任务后：执行 <span class="sb">`python3 set_state.py idle "待命中"`</span> 再回复
 </span></code></pre></div>
 <p><strong>6 种状态 → 3 个区域的映射：</strong></p>
 <table>
@@ -5581,9 +5581,9 @@
 <p>首次启动后端时，如果当前目录下不存在 <code>join-keys.json</code>，服务会自动根据 <code>join-keys.sample.json</code> 生成一个运行时的 <code>join-keys.json</code>（内含示例 key，例如 <code>ocj_example_team_01</code>）。你可以在生成后的 <code>join-keys.json</code> 中自行添加、修改或删除 key，每个 key 默认支持最多 3 人同时在线。</p>
 <p><strong>Step 2：让访客 Agent 运行推送脚本</strong></p>
 <p>访客只需下载 <code>office-agent-push.py</code>，填写 3 个变量即可：</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">JOIN_KEY</span> <span class="o">=</span> <span class="s2">&quot;ocj_starteam02&quot;</span>          <span class="c1"># 你分配的 key</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">AGENT_NAME</span> <span class="o">=</span> <span class="s2">&quot;小明的龙虾&quot;</span>            <span class="c1"># 显示名称</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">OFFICE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://office.hyacinth.im&quot;</span>  <span class="c1"># 你的办公室地址</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">JOIN_KEY</span> <span class="o">=</span> <span class="s2">"ocj_starteam02"</span>          <span class="c1"># 你分配的 key</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">AGENT_NAME</span> <span class="o">=</span> <span class="s2">"小明的龙虾"</span>            <span class="c1"># 显示名称</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">OFFICE_URL</span> <span class="o">=</span> <span class="s2">"https://office.hyacinth.im"</span>  <span class="c1"># 你的办公室地址</span>
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>python3<span class="w"> </span>office-agent-push.py
 </span></code></pre></div>
