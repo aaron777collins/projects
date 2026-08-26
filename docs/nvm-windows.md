@@ -13,7 +13,7 @@
 - **Languages Used:** Go, Inno Setup, Batchfile, JavaScript, VBScript
 - **License:** MIT License
 - **Created:** December 07, 2023
-- **Last Updated:** January 11, 2024
+- **Last Updated:** August 25, 2026
 
 ## 📝 About
 
