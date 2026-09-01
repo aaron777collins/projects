@@ -140,6 +140,7 @@ nav:
       - 2sumsolution: 2sumsolution.md
       - agentcompany: agentcompany.md
       - Art-Data-Gatherer: Art-Data-Gatherer.md
+      - claude-bridge-browser: claude-bridge-browser.md
       - clawdbotlibrary: clawdbotlibrary.md
       - CompressVideoGUI: CompressVideoGUI.md
       - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
