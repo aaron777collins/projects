@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="resume.html">
+        <link rel="prev" href="MessageParser.html">
       
       
-        <link rel="next" href="Using-TLS.html">
+        <link rel="next" href="resume.html">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>urlcron - Aaron Collins' Projects</title>
+        <title>popularapps - Aaron Collins' Projects</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#urlcron" class="md-skip">
+        <a href="#popularapps" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              urlcron
+              popularapps
             
           </span>
         </div>
@@ -1982,62 +1982,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="popularapps.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    popularapps
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="resume.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    resume
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -2057,7 +2001,7 @@
   <span class="md-ellipsis">
     
   
-    urlcron
+    popularapps
   
 
     
@@ -2068,14 +2012,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="urlcron.html" class="md-nav__link md-nav__link--active">
+      <a href="popularapps.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    urlcron
+    popularapps
   
 
     
@@ -2137,6 +2081,62 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resume.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    resume
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="urlcron.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    urlcron
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -5554,23 +5554,64 @@
 
 
 
-<h1 id="urlcron">urlcron</h1>
+<h1 id="popularapps">popularapps</h1>
 <h2 id="quick-links">🔗 Quick Links</h2>
 <ul>
-<li><a href="https://github.com/aaron777collins/urlcron">View on GitHub</a></li>
-<li><a href="http://www.aaroncollins.info/urlcron/">GitHub Pages Site</a></li>
+<li><a href="https://github.com/aaron777collins/popularapps">View on GitHub</a></li>
+<li><a href="http://www.aaroncollins.info/popularapps/">GitHub Pages Site</a></li>
 </ul>
 <h2 id="project-details">📊 Project Details</h2>
 <ul>
 <li><strong>Primary Language:</strong> JavaScript</li>
-<li><strong>Languages Used:</strong> JavaScript, HTML, CSS</li>
-<li><strong>License:</strong> Apache License 2.0</li>
-<li><strong>Created:</strong> March 14, 2024</li>
-<li><strong>Last Updated:</strong> March 14, 2024</li>
+<li><strong>Languages Used:</strong> JavaScript, CSS, HTML</li>
+<li><strong>License:</strong> None</li>
+<li><strong>Created:</strong> September 17, 2026</li>
+<li><strong>Last Updated:</strong> September 17, 2026</li>
 </ul>
 <h2 id="about">📝 About</h2>
-<h1 id="urlcron_1">urlcron</h1>
-<p>Hits a url at specific intervals</p>
+<h1 id="rankwatch">Rankwatch</h1>
+<p>Live App Store chart positions, by country and category — filterable, at a glance.</p>
+<p><strong><a href="https://aaron777collins.github.io/popularapps/">Open the live site →</a></strong></p>
+<h2 id="what-it-does">What it does</h2>
+<p>Rankwatch pulls the public iTunes charts feed every 6 hours and shows the current
+Top Free, Top Paid, and Top Grossing apps for the US App Store, broken out across
+26 categories. You can filter by chart type and category, search by app or
+developer name, sort by rank/name/price, and see:</p>
+<ul>
+<li><strong>Overview stats</strong> — apps in view, category count, last updated time, free vs.
+  paid split.</li>
+<li><strong>Movers</strong> — the biggest rank risers and fallers since the previous data
+  refresh, once at least two days of history exist.</li>
+<li><strong>Rank history</strong> — click any app to see its chart position over time.</li>
+</ul>
+<p>No backend, no build step. It's a static site that reads two JSON files.</p>
+<h2 id="how-its-built">How it's built</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>scripts/fetch-data.mjs          Fetches the charts, writes data/latest.json and data/history.json
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>.github/workflows/update-data.yml   Runs the fetch every 6 hours, commits the result
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>.github/workflows/deploy-pages.yml  Deploys the repo to GitHub Pages on every push to main
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>index.html, assets/             The dashboard itself — plain HTML/CSS/JS, Chart.js for charts
+</span></code></pre></div>
+<p>Data source: Apple's public iTunes RSS charts
+(<code>itunes.apple.com/{country}/rss/{chart}/limit=100/genre={id}/json</code>). No API key
+needed. <code>data/history.json</code> keeps the last 30 daily snapshots per country/chart/
+category, which is what powers the movers panel and rank-history charts.</p>
+<h2 id="running-it-locally">Running it locally</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span><span class="m">8000</span>
+</span></code></pre></div>
+<p>then open <code>http://localhost:8000</code>. (Opening <code>index.html</code> directly via <code>file://</code>
+won't work — the browser blocks <code>fetch()</code> of local JSON files under that
+protocol.)</p>
+<p>To refresh the data yourself:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>node<span class="w"> </span>scripts/fetch-data.mjs
+</span></code></pre></div>
+<h2 id="extending-it">Extending it</h2>
+<ul>
+<li><strong>More countries</strong>: add entries to the <code>COUNTRIES</code> array in
+  <code>scripts/fetch-data.mjs</code>. The frontend already reads the country list from the
+  data file, so no UI changes are needed.</li>
+<li><strong>More categories</strong>: Apple's genre IDs are listed at the top of
+  <code>scripts/fetch-data.mjs</code>.</li>
+</ul>
 
 
 
