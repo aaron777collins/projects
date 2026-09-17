@@ -103,6 +103,7 @@ nav:
       - halftone-apply: halftone-apply.md
       - kibana-extender: kibana-extender.md
       - MessageParser: MessageParser.md
+      - popularapps: popularapps.md
       - resume: resume.md
       - urlcron: urlcron.md
       - Using-TLS: Using-TLS.md
@@ -189,6 +190,8 @@ nav:
       - zerotier-flatpaks: zerotier-flatpaks.md
     - Svelte:
       - synapse: synapse.md
+    - Swift:
+      - caffeinate-menu: caffeinate-menu.md
     - TypeScript:
       - 2dWebGame: 2dWebGame.md
       - aaron777collins.github.io: aaron777collins.github.io.md
