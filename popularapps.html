@@ -5566,17 +5566,18 @@
 <li><strong>Languages Used:</strong> JavaScript, CSS, HTML</li>
 <li><strong>License:</strong> None</li>
 <li><strong>Created:</strong> September 17, 2026</li>
-<li><strong>Last Updated:</strong> September 17, 2026</li>
+<li><strong>Last Updated:</strong> September 18, 2026</li>
 </ul>
 <h2 id="about">📝 About</h2>
 <h1 id="rankwatch">Rankwatch</h1>
 <p>Live App Store chart positions, by country and category — filterable, at a glance.</p>
 <p><strong><a href="https://aaron777collins.github.io/popularapps/">Open the live site →</a></strong></p>
 <h2 id="what-it-does">What it does</h2>
-<p>Rankwatch pulls the public iTunes charts feed every 6 hours and shows the current
-Top Free, Top Paid, and Top Grossing apps for the US App Store, broken out across
-26 categories. You can filter by chart type and category, search by app or
-developer name, sort by rank/name/price, and see:</p>
+<p>Rankwatch pulls the public iTunes charts feed daily and shows the current
+Top Free, Top Paid, and Top Grossing apps across 4 App Store storefronts (US,
+UK, Canada, Australia) and 26 categories each, up to 100 apps deep per list
+(Apple's feed hard-caps at 100 — no key or workaround gets you further). You can filter by chart type and category,
+search by app or developer name, sort by rank/name/price, and see:</p>
 <ul>
 <li><strong>Overview stats</strong> — apps in view, category count, last updated time, free vs.
   paid split.</li>
@@ -5587,14 +5588,39 @@ developer name, sort by rank/name/price, and see:</p>
 <p>No backend, no build step. It's a static site that reads two JSON files.</p>
 <h2 id="how-its-built">How it's built</h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>scripts/fetch-data.mjs          Fetches the charts, writes data/latest.json and data/history.json
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>.github/workflows/update-data.yml   Runs the fetch every 6 hours, commits the result
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>.github/workflows/deploy-pages.yml  Deploys the repo to GitHub Pages on every push to main
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>index.html, assets/             The dashboard itself — plain HTML/CSS/JS, Chart.js for charts
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Jenkinsfile                     Runs the fetch daily on Jenkins (dev3), commits the result
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>.github/workflows/update-data.yml   Manual fallback (workflow_dispatch only) if Jenkins is down
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>.github/workflows/deploy-pages.yml  Deploys the repo to GitHub Pages on every push to main
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>index.html, assets/             The dashboard itself — plain HTML/CSS/JS, Chart.js for charts
 </span></code></pre></div>
 <p>Data source: Apple's public iTunes RSS charts
 (<code>itunes.apple.com/{country}/rss/{chart}/limit=100/genre={id}/json</code>). No API key
 needed. <code>data/history.json</code> keeps the last 30 daily snapshots per country/chart/
-category, which is what powers the movers panel and rank-history charts.</p>
+category, top 100 apps per snapshot — that's what powers the movers panel and
+rank-history charts.</p>
+<h2 id="jenkins-setup-one-time-on-dev3">Jenkins setup (one-time, on dev3)</h2>
+<p>The daily fetch runs on Jenkins instead of GitHub Actions, because dev3 is
+Aaron's own box and it's free to run there. To wire it up:</p>
+<ol>
+<li><strong>Credential.</strong> Reuses the existing shared <code>github-credentials</code>
+   credential in Jenkins (username/password from <code>GITHUB_USERNAME</code> /
+   <code>GITHUB_TOKEN</code> in <code>.env</code> on dev3) rather than a repo-specific one — the
+   Jenkinsfile references it by that ID. If that credential ever needs a
+   fresh PAT, github.com → Settings → Developer settings → Fine-grained
+   tokens → generate one scoped to <code>popularapps</code>, Contents: Read and write,
+   and update <code>GITHUB_TOKEN</code> in <code>.env</code>.</li>
+<li><strong>Create the job.</strong> New Item → Pipeline (or Multibranch Pipeline) →</li>
+<li>Pipeline script from SCM</li>
+<li>SCM: Git, repo URL <code>https://github.com/aaron777collins/popularapps.git</code></li>
+<li>Script path: <code>Jenkinsfile</code></li>
+<li><strong>Node.</strong> The Jenkinsfile pins <code>agent { label 'built-in' }</code> — it runs
+   on the Jenkins controller itself, not on <code>agent-1</code>, because the
+   controller's custom image has Node 20 baked in and <code>agent-1</code> (a bare
+   <code>jenkins/inbound-agent</code> image) doesn't. Confirmed by hitting <code>node: not
+   found</code> on <code>agent-1</code> on the first real run and pinning it after.</li>
+<li>Trigger a build manually once to confirm it pushes correctly, then let the
+   <code>cron('H 6 * * *')</code> schedule in the Jenkinsfile take over.</li>
+</ol>
 <h2 id="running-it-locally">Running it locally</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>http.server<span class="w"> </span><span class="m">8000</span>
 </span></code></pre></div>
@@ -5607,8 +5633,11 @@ protocol.)</p>
 <h2 id="extending-it">Extending it</h2>
 <ul>
 <li><strong>More countries</strong>: add entries to the <code>COUNTRIES</code> array in
-  <code>scripts/fetch-data.mjs</code>. The frontend already reads the country list from the
-  data file, so no UI changes are needed.</li>
+  <code>scripts/fetch-data.mjs</code> (ISO country code Apple's storefronts use, e.g.
+  <code>de</code>, <code>fr</code>, <code>jp</code>). The frontend already reads the country list from the data
+  file, so no UI changes are needed — but each additional country adds ~78
+  requests to the run (~2-3 min at current throughput), so bump the
+  <code>Jenkinsfile</code>'s <code>timeout(...)</code> if you add several at once.</li>
 <li><strong>More categories</strong>: Apple's genre IDs are listed at the top of
   <code>scripts/fetch-data.mjs</code>.</li>
 </ul>
