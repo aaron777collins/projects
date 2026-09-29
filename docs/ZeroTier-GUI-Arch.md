@@ -1,6 +1,6 @@
 # ZeroTier-GUI-Arch
 
-⭐ 42 stars | 🔀 Fork
+⭐ 42 stars | 🔱 1 forks | 🔀 Fork
 
 ## 🔗 Quick Links
 
