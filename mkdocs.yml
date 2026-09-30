@@ -58,13 +58,13 @@ nav:
     - ConnectedDrivingPipelineV4: ConnectedDrivingPipelineV4.md
     - paperclip-cli: paperclip-cli.md
     - sophie-voice-bridge: sophie-voice-bridge.md
+    - FlashGameManager: FlashGameManager.md
     - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
     - ConnectedDrivingMachineLearningPipeline: ConnectedDrivingMachineLearningPipeline.md
     - 2dWebGame: 2dWebGame.md
     - PostAPic: PostAPic.md
     - Control-Windows: Control-Windows.md
     - EasyMLLib: EasyMLLib.md
-    - MachineLearningIDE: MachineLearningIDE.md
   - All Projects:
     - C#:
       - COMP3770A2: COMP3770A2.md

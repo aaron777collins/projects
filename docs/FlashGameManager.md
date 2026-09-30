@@ -1,5 +1,7 @@
 # FlashGameManager
 
+⭐ 1 stars
+
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/FlashGameManager)
@@ -11,7 +13,7 @@
 - **Languages Used:** Python, Shell, CSS, JavaScript
 - **License:** None
 - **Created:** November 08, 2024
-- **Last Updated:** December 03, 2024
+- **Last Updated:** September 29, 2026
 
 ## 📝 About
 
