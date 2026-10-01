@@ -11,7 +11,7 @@
 - **Languages Used:** JavaScript, CSS, HTML
 - **License:** None
 - **Created:** September 17, 2026
-- **Last Updated:** September 30, 2026
+- **Last Updated:** October 01, 2026
 
 ## 📝 About
 
