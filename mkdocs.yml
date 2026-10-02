@@ -159,6 +159,7 @@ nav:
       - google-translate-manga-viewer: google-translate-manga-viewer.md
       - live-manga-translator: live-manga-translator.md
       - MachineLearningIDE: MachineLearningIDE.md
+      - mcsmanager-market: mcsmanager-market.md
       - MinecraftDatapackLanguage: MinecraftDatapackLanguage.md
       - mouse-mover: mouse-mover.md
       - paperclip-cli: paperclip-cli.md
@@ -184,6 +185,7 @@ nav:
       - cddg-docker: cddg-docker.md
       - Fast-Marker: Fast-Marker.md
       - MinecraftPipes: MinecraftPipes.md
+      - msixrun: msixrun.md
       - node-manager: node-manager.md
       - portableralph: portableralph.md
       - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md
