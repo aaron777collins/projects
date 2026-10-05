@@ -137,6 +137,7 @@ nav:
     - PHP:
       - phpshellterminal: phpshellterminal.md
     - PowerShell:
+      - msixrun: msixrun.md
       - OpenBashInWindowsTerminal: OpenBashInWindowsTerminal.md
     - Python:
       - 2sumsolution: 2sumsolution.md
@@ -185,7 +186,6 @@ nav:
       - cddg-docker: cddg-docker.md
       - Fast-Marker: Fast-Marker.md
       - MinecraftPipes: MinecraftPipes.md
-      - msixrun: msixrun.md
       - node-manager: node-manager.md
       - portableralph: portableralph.md
       - SteamDeckPacmanReInstaller: SteamDeckPacmanReInstaller.md

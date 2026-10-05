@@ -12,7 +12,7 @@
 - **Languages Used:** HTML, CSS
 - **License:** None
 - **Created:** September 20, 2026
-- **Last Updated:** October 02, 2026
+- **Last Updated:** October 05, 2026
 
 ## 📝 About
 
