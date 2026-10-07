@@ -10,7 +10,7 @@
 - **Languages Used:** PowerShell, Shell
 - **License:** MIT License
 - **Created:** October 01, 2026
-- **Last Updated:** October 04, 2026
+- **Last Updated:** October 06, 2026
 
 ## 📝 About
 
