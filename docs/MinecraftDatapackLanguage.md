@@ -1,6 +1,6 @@
 # MinecraftDatapackLanguage
 
-⭐ 2 stars | 🔱 1 forks
+⭐ 3 stars | 🔱 1 forks
 
 ## 🔗 Quick Links
 
@@ -14,7 +14,7 @@
 - **Languages Used:** Python, HTML, mcfunction, Shell, TypeScript, PowerShell, CSS, Ruby, Makefile
 - **License:** GNU General Public License v3.0
 - **Created:** August 26, 2025
-- **Last Updated:** October 20, 2026
+- **Last Updated:** October 21, 2026
 
 ## 📝 About
 
