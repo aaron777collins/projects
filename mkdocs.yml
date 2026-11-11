@@ -117,6 +117,7 @@ nav:
       - claude-agent-team: claude-agent-team.md
       - gitconfig-aliases: gitconfig-aliases.md
       - github-upload: github-upload.md
+      - guides: guides.md
       - himalaya: himalaya.md
       - kanban-mcp: kanban-mcp.md
       - lavish-axi: lavish-axi.md
