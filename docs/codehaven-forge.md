@@ -7,7 +7,7 @@
 ## 📊 Project Details
 
 - **Primary Language:** Rust
-- **Languages Used:** Rust, HTML, Shell, Python, CSS, JavaScript, Dockerfile, Makefile
+- **Languages Used:** Rust, JavaScript, HTML, Shell, Python, CSS, PLpgSQL, Dockerfile, Makefile
 - **License:** MIT License
 - **Created:** November 22, 2026
 - **Last Updated:** November 22, 2026
@@ -20,8 +20,10 @@ A self-hosted code forge written in Rust. It hosts git over HTTP and SSH and has
 requests with review, CI with registered runners, releases, packages and a container registry.
 
 It is made to be run by anyone. There is no sign-up page: the first account is made on the
-server with one command, and every account after it comes from an invite. Nothing is readable
-without signing in.
+server with one command, and every account after it comes from an invite. A repository starts
+private. Its owner can open it to every signed-in account on the server, or to anyone on the
+internet while the site admin allows public repositories. Public repositories are off until
+an admin turns them on, and everything else needs an account.
 
 ## Quick start
 
@@ -95,8 +97,8 @@ walks the first run and the runner.
 
 ## The browser workspace
 
-Codehaven now has a workspace for each repository at `/{owner}/{repo}/workspace`. These parts
-are live:
+Every repository has a workspace at `/{owner}/{repo}/workspace`, opened from the repository page.
+It has four parts, and all four are live:
 
 - **Editor.** Monaco, the editor inside VS Code, with a file tree, tabs, search and a diff.
   Unsaved edits are kept as drafts in the browser, encrypted, and locked when you sign out.
@@ -104,14 +106,18 @@ are live:
   link when you commit to a new branch.
 - **Runs.** The workflows of each commit and their live logs beside the code, with run, re-run
   and cancel.
+- **Terminal.** A bash shell with pipes, loops, grep, sed, awk, find, sort, diff and jq, on a copy
+  of the repository's files with your drafts on top. It runs in your browser, with no internet,
+  and nothing it changes reaches your drafts until you tick it in review.
 
 It is for signed-in accounts only. Nobody who is signed out can open any workspace page, file or
 stream, even for a public repository. A signed-in account sees the workspace of a repository it
-can read, and needs write access to commit or run. The server starts no shell and no container
-for it, and the editor is served by the instance itself, with nothing loaded from another site.
+can read, and needs write access to commit or run. Streams close as soon as access ends. The
+server starts no shell and no container for it, not even for the terminal, and every file the
+workspace needs is served by the instance itself, with nothing loaded from another site.
 
-The terminal, a shell that runs in your browser, is still being built. The workspace code comes
-to this repository with the next source update.
+A site admin with two-factor sign-in can turn the editor off at `/admin/workspace`. The terminal
+is on by default and can be turned off there separately from the editor.
 
 ## Building and testing
 
