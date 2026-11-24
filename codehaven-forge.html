@@ -5785,7 +5785,7 @@
 <h2 id="project-details">📊 Project Details</h2>
 <ul>
 <li><strong>Primary Language:</strong> Rust</li>
-<li><strong>Languages Used:</strong> Rust, HTML, Shell, Python, CSS, JavaScript, Dockerfile, Makefile</li>
+<li><strong>Languages Used:</strong> Rust, JavaScript, HTML, Shell, Python, CSS, PLpgSQL, Dockerfile, Makefile</li>
 <li><strong>License:</strong> MIT License</li>
 <li><strong>Created:</strong> November 22, 2026</li>
 <li><strong>Last Updated:</strong> November 22, 2026</li>
@@ -5795,8 +5795,10 @@
 <p>A self-hosted code forge written in Rust. It hosts git over HTTP and SSH and has issues, pull
 requests with review, CI with registered runners, releases, packages and a container registry.</p>
 <p>It is made to be run by anyone. There is no sign-up page: the first account is made on the
-server with one command, and every account after it comes from an invite. Nothing is readable
-without signing in.</p>
+server with one command, and every account after it comes from an invite. A repository starts
+private. Its owner can open it to every signed-in account on the server, or to anyone on the
+internet while the site admin allows public repositories. Public repositories are off until
+an admin turns them on, and everything else needs an account.</p>
 <h2 id="quick-start">Quick start</h2>
 <p>You need a Linux machine with Docker (Compose 2.24 or newer, and buildx), git, openssl, curl,
 python3 and iproute2, 4 GB of memory and 20 GB of free disk. You do not need Rust or PostgreSQL
@@ -5901,8 +5903,8 @@ anyone in by accident. After it is up, check it from outside:</p>
 <p><code>docs/operations.md</code> covers backup, restore, upgrade and rollback in full. <code>docs/integration.md</code>
 walks the first run and the runner.</p>
 <h2 id="the-browser-workspace">The browser workspace</h2>
-<p>Codehaven now has a workspace for each repository at <code>/{owner}/{repo}/workspace</code>. These parts
-are live:</p>
+<p>Every repository has a workspace at <code>/{owner}/{repo}/workspace</code>, opened from the repository page.
+It has four parts, and all four are live:</p>
 <ul>
 <li><strong>Editor.</strong> Monaco, the editor inside VS Code, with a file tree, tabs, search and a diff.
   Unsaved edits are kept as drafts in the browser, encrypted, and locked when you sign out.</li>
@@ -5910,13 +5912,17 @@ are live:</p>
   link when you commit to a new branch.</li>
 <li><strong>Runs.</strong> The workflows of each commit and their live logs beside the code, with run, re-run
   and cancel.</li>
+<li><strong>Terminal.</strong> A bash shell with pipes, loops, grep, sed, awk, find, sort, diff and jq, on a copy
+  of the repository's files with your drafts on top. It runs in your browser, with no internet,
+  and nothing it changes reaches your drafts until you tick it in review.</li>
 </ul>
 <p>It is for signed-in accounts only. Nobody who is signed out can open any workspace page, file or
 stream, even for a public repository. A signed-in account sees the workspace of a repository it
-can read, and needs write access to commit or run. The server starts no shell and no container
-for it, and the editor is served by the instance itself, with nothing loaded from another site.</p>
-<p>The terminal, a shell that runs in your browser, is still being built. The workspace code comes
-to this repository with the next source update.</p>
+can read, and needs write access to commit or run. Streams close as soon as access ends. The
+server starts no shell and no container for it, not even for the terminal, and every file the
+workspace needs is served by the instance itself, with nothing loaded from another site.</p>
+<p>A site admin with two-factor sign-in can turn the editor off at <code>/admin/workspace</code>. The terminal
+is on by default and can be turned off there separately from the editor.</p>
 <h2 id="building-and-testing">Building and testing</h2>
 <p>Builds and tests run in a container, on this machine or on another host over ssh. Set <code>CH_HOST</code>
 and <code>CH_REMOTE_ROOT</code> (in the environment, or in the untracked <code>deploy/dev/local.env</code>) to build
