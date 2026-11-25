@@ -5796,9 +5796,8 @@
 requests with review, CI with registered runners, releases, packages and a container registry.</p>
 <p>It is made to be run by anyone. There is no sign-up page: the first account is made on the
 server with one command, and every account after it comes from an invite. A repository starts
-private. Its owner can open it to every signed-in account on the server, or to anyone on the
-internet while the site admin allows public repositories. Public repositories are off until
-an admin turns them on, and everything else needs an account.</p>
+private; its owner can widen it to every signed-in account on the server, or to anyone on the
+internet while the site admin allows public repositories.</p>
 <h2 id="quick-start">Quick start</h2>
 <p>You need a Linux machine with Docker (Compose 2.24 or newer, and buildx), git, openssl, curl,
 python3 and iproute2, 4 GB of memory and 20 GB of free disk. You do not need Rust or PostgreSQL
@@ -5919,10 +5918,21 @@ It has four parts, and all four are live:</p>
 <p>It is for signed-in accounts only. Nobody who is signed out can open any workspace page, file or
 stream, even for a public repository. A signed-in account sees the workspace of a repository it
 can read, and needs write access to commit or run. Streams close as soon as access ends. The
-server starts no shell and no container for it, not even for the terminal, and every file the
-workspace needs is served by the instance itself, with nothing loaded from another site.</p>
+server starts no shell and no container for it, and every file the editor needs is served by the
+instance itself, with nothing loaded from another site.</p>
 <p>A site admin with two-factor sign-in can turn the editor off at <code>/admin/workspace</code>. The terminal
 is on by default and can be turned off there separately from the editor.</p>
+<h2 id="pages">Pages</h2>
+<p>A repository can publish a static site from a branch, from its root or its <code>docs</code> folder, like
+GitHub Pages. Every push to that branch publishes a new copy; a failed copy says why and the last
+good one keeps serving, and an older copy can be put back. Turn it on in the repository's
+Settings &gt; Pages.</p>
+<p>Sites live on a host of their own, never the app's: <code>https://pages.example.com/&lt;owner&gt;/&lt;project&gt;/</code>
+when <code>CODEHAVEN_PAGES_HOST</code> is set. Each page runs sandboxed with no cookies, and gets its own
+<code>localStorage</code> per project. Who can see a site follows the repository: anyone for a public one,
+signed-in accounts for an internal one, people with access for a private one. A site admin can
+also turn on full mode at <code>/admin/pages</code>, which serves sites at <code>https://&lt;owner&gt;.pages.example.com/</code>
+with no sandbox; it needs a wildcard certificate. The design is <code>docs/design/pages.md</code>.</p>
 <h2 id="building-and-testing">Building and testing</h2>
 <p>Builds and tests run in a container, on this machine or on another host over ssh. Set <code>CH_HOST</code>
 and <code>CH_REMOTE_ROOT</code> (in the environment, or in the untracked <code>deploy/dev/local.env</code>) to build
