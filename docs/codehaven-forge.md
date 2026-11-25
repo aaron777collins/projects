@@ -21,9 +21,8 @@ requests with review, CI with registered runners, releases, packages and a conta
 
 It is made to be run by anyone. There is no sign-up page: the first account is made on the
 server with one command, and every account after it comes from an invite. A repository starts
-private. Its owner can open it to every signed-in account on the server, or to anyone on the
-internet while the site admin allows public repositories. Public repositories are off until
-an admin turns them on, and everything else needs an account.
+private; its owner can widen it to every signed-in account on the server, or to anyone on the
+internet while the site admin allows public repositories.
 
 ## Quick start
 
@@ -113,11 +112,25 @@ It has four parts, and all four are live:
 It is for signed-in accounts only. Nobody who is signed out can open any workspace page, file or
 stream, even for a public repository. A signed-in account sees the workspace of a repository it
 can read, and needs write access to commit or run. Streams close as soon as access ends. The
-server starts no shell and no container for it, not even for the terminal, and every file the
-workspace needs is served by the instance itself, with nothing loaded from another site.
+server starts no shell and no container for it, and every file the editor needs is served by the
+instance itself, with nothing loaded from another site.
 
 A site admin with two-factor sign-in can turn the editor off at `/admin/workspace`. The terminal
 is on by default and can be turned off there separately from the editor.
+
+## Pages
+
+A repository can publish a static site from a branch, from its root or its `docs` folder, like
+GitHub Pages. Every push to that branch publishes a new copy; a failed copy says why and the last
+good one keeps serving, and an older copy can be put back. Turn it on in the repository's
+Settings > Pages.
+
+Sites live on a host of their own, never the app's: `https://pages.example.com/<owner>/<project>/`
+when `CODEHAVEN_PAGES_HOST` is set. Each page runs sandboxed with no cookies, and gets its own
+`localStorage` per project. Who can see a site follows the repository: anyone for a public one,
+signed-in accounts for an internal one, people with access for a private one. A site admin can
+also turn on full mode at `/admin/pages`, which serves sites at `https://<owner>.pages.example.com/`
+with no sandbox; it needs a wildcard certificate. The design is `docs/design/pages.md`.
 
 ## Building and testing
 
