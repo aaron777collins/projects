@@ -7,7 +7,7 @@
 ## 📊 Project Details
 
 - **Primary Language:** Rust
-- **Languages Used:** Rust, JavaScript, HTML, Shell, Python, CSS, PLpgSQL, Dockerfile, Makefile
+- **Languages Used:** Rust, JavaScript, HTML, Python, Shell, CSS, PLpgSQL, Dockerfile, Makefile
 - **License:** MIT License
 - **Created:** November 22, 2026
 - **Last Updated:** November 22, 2026
