@@ -5781,11 +5781,12 @@
 <h2 id="quick-links">🔗 Quick Links</h2>
 <ul>
 <li><a href="https://github.com/aaron777collins/codehaven-forge">View on GitHub</a></li>
+<li><a href="http://www.aaroncollins.info/codehaven-forge/">GitHub Pages Site</a></li>
 </ul>
 <h2 id="project-details">📊 Project Details</h2>
 <ul>
 <li><strong>Primary Language:</strong> Rust</li>
-<li><strong>Languages Used:</strong> Rust, JavaScript, HTML, Python, Shell, CSS, PLpgSQL, Dockerfile, Makefile</li>
+<li><strong>Languages Used:</strong> Rust, HTML, JavaScript, Python, Shell, CSS, PLpgSQL, Dockerfile, Makefile</li>
 <li><strong>License:</strong> MIT License</li>
 <li><strong>Created:</strong> November 22, 2026</li>
 <li><strong>Last Updated:</strong> November 22, 2026</li>
@@ -5802,17 +5803,19 @@ internet while the site admin allows public repositories.</p>
 <p>You need a Linux machine with Docker (Compose 2.24 or newer, and buildx), git, openssl, curl,
 python3 and iproute2, 4 GB of memory and 20 GB of free disk. You do not need Rust or PostgreSQL
 on the host. Everything builds and runs in containers.</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;repository-url&gt;<span class="w"> </span>codehaven<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>codehaven
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/aaron777collins/codehaven-forge<span class="w"> </span>codehaven<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>codehaven
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cp<span class="w"> </span>.env.example<span class="w"> </span>.env<span class="w">                      </span><span class="c1"># set the URL, the paths and the proxy</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>bash<span class="w"> </span>deploy/prod/setup.sh<span class="w">            </span><span class="c1"># checks the host, makes the directories and secrets</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>sudo<span class="w"> </span>bash<span class="w"> </span>deploy/prod/up.sh<span class="w">               </span><span class="c1"># builds the images and starts the instance</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>bash<span class="w"> </span>deploy/prod/first-admin.sh<span class="w"> </span>&lt;username&gt;<span class="w"> </span>&lt;email&gt;
 </span></code></pre></div>
-<p><code>first-admin.sh</code> prints a link that works once, for one hour. Open it, choose a password and turn
-on two-factor sign-in. The script refuses to run when any account exists, and it never deletes
+<p><code>first-admin.sh</code> prints a link that works once, for one hour. Open it, choose a password, then turn
+on two-factor sign-in in Settings (site admin pages and the Claude connector need it). The script refuses to run when any account exists, and it never deletes
 one.</p>
 <p>The first build compiles the server, so it takes a while. Setup generates the database password
 once and never prints it, and the server makes its own master key on first start.</p>
+<p>Next steps (a first repository, a pull request, a first CI run, a backup) are in
+<code>docs/getting-started.md</code>.</p>
 <h3 id="what-goes-in-env">What goes in <code>.env</code></h3>
 <p><code>.env.example</code> lists every setting with a comment. A setting that is missing stops the scripts
 with its name; nothing falls back to a guess. The ones you must choose:</p>
@@ -5829,8 +5832,8 @@ with its name; nothing falls back to a guess. The ones you must choose:</p>
 <td>The address people open, for example <code>https://code.example.com</code></td>
 </tr>
 <tr>
-<td><code>CODEHAVEN_DATA_DIR</code>, <code>CODEHAVEN_SECRETS_DIR</code>, <code>CODEHAVEN_BACKUP_DIR</code></td>
-<td>Where data, database credentials and backups live. Backups must be outside the checkout</td>
+<td><code>CODEHAVEN_DATA_DIR</code>, <code>CODEHAVEN_SECRETS_DIR</code>, <code>CODEHAVEN_BACKUP_DIR</code>, <code>CODEHAVEN_BUILD_ROOT</code></td>
+<td>Where data, database credentials, backups and build locks live, for example <code>/srv/codehaven/data</code>, <code>/srv/codehaven/secrets</code>, <code>/srv/codehaven/backups</code> and <code>/srv/codehaven</code>. The scripts create them. Backups must be outside the checkout</td>
 </tr>
 <tr>
 <td><code>CODEHAVEN_PROXY</code></td>
@@ -5845,8 +5848,9 @@ with its name; nothing falls back to a guess. The ones you must choose:</p>
 <h3 id="putting-it-on-the-internet">Putting it on the internet</h3>
 <p>Codehaven speaks plain HTTP and expects a proxy to add TLS.</p>
 <ul>
-<li><code>CODEHAVEN_PROXY=none</code> publishes the web server and ssh on loopback only. Use it to try
-  Codehaven on one machine, or behind a proxy that runs on the host.</li>
+<li><code>CODEHAVEN_PROXY=none</code> publishes the web server and ssh on <code>CODEHAVEN_HTTP_BIND</code> and
+  <code>CODEHAVEN_SSH_BIND</code>, which are loopback in <code>.env.example</code>. Use it to try Codehaven on one
+  machine, or behind a proxy that runs on the host.</li>
 <li><code>CODEHAVEN_PROXY=network</code> joins the server to a Docker network where your own proxy already
   runs. Set <code>CODEHAVEN_PROXY_NETWORK</code> and <code>CODEHAVEN_PROXY_ALIAS</code>, then point a site at
   <code>&lt;alias&gt;:3200</code>.</li>
@@ -5894,13 +5898,22 @@ anyone in by accident. After it is up, check it from outside:</p>
 <td><code>deploy/compose.sh ps</code>, <code>deploy/compose.sh logs server</code></td>
 </tr>
 <tr>
+<td>Try it on one machine first</td>
+<td>Loopback <code>http</code>, no domain. What works there and what needs the real setup is a table in <code>docs/getting-started.md</code></td>
+</tr>
+<tr>
 <td>Connect Claude</td>
-<td>Set <code>CODEHAVEN_MCP_ENABLED=true</code>, run <code>up.sh</code> again, then add <code>https://&lt;your address&gt;/mcp</code> as a connector (see <code>docs/connector.md</code>)</td>
+<td>You need a public <code>https</code> address (Claude on the web, desktop and mobile; Claude Code can use a private <code>https</code> one), two-factor on your account, and <code>CODEHAVEN_MCP_ENABLED=true</code>. Run <code>up.sh</code> again, then add <code>https://&lt;your address&gt;/mcp</code> as a connector. With <code>CODEHAVEN_PROXY=caddy</code> the paths need nothing more. Check with <code>curl -s https://&lt;your address&gt;/.well-known/oauth-protected-resource</code>, which prints JSON naming your address. See <code>docs/connector.md</code></td>
+</tr>
+<tr>
+<td>Open public repositories</td>
+<td><code>deploy/compose.sh exec server codehaven admin public-repos on</code>, or Site admin, Settings. It makes nothing public by itself</td>
 </tr>
 </tbody>
 </table>
 <p><code>docs/operations.md</code> covers backup, restore, upgrade and rollback in full. <code>docs/integration.md</code>
-walks the first run and the runner.</p>
+walks the first run and the runner. <code>docs/configuration.md</code> explains every setting, and
+<code>docs/troubleshooting.md</code> lists what commonly goes wrong.</p>
 <h2 id="the-browser-workspace">The browser workspace</h2>
 <p>Every repository has a workspace at <code>/{owner}/{repo}/workspace</code>, opened from the repository page.
 It has four parts, and all four are live:</p>
@@ -5934,6 +5947,8 @@ signed-in accounts for an internal one, people with access for a private one. A 
 also turn on full mode at <code>/admin/pages</code>, which serves sites at <code>https://&lt;owner&gt;.pages.example.com/</code>
 with no sandbox; it needs a wildcard certificate. The design is <code>docs/design/pages.md</code>.</p>
 <h2 id="building-and-testing">Building and testing</h2>
+<p>This section is for people working on Codehaven itself. To publish the docs site from the docs, run
+<code>python3 site/build/build.py</code> and then <code>python3 site/build/check.py</code>.</p>
 <p>Builds and tests run in a container, on this machine or on another host over ssh. Set <code>CH_HOST</code>
 and <code>CH_REMOTE_ROOT</code> (in the environment, or in the untracked <code>deploy/dev/local.env</code>) to build
 over ssh. With neither set, nothing ever contacts another machine.</p>
@@ -5945,11 +5960,33 @@ over ssh. With neither set, nothing ever contacts another machine.</p>
 particular server gets into the tree. Test stacks use a project name and an image tag that must
 be throwaway names, and refuse any stack that already holds an account.</p>
 <h2 id="documents">Documents</h2>
+<p>The docs are also published as <a href="https://aaron777collins.github.io/codehaven-forge/">the Codehaven documentation site</a>.
+They are the files below, so you can read either.</p>
+<p>Start here:</p>
+<ul>
+<li><code>docs/getting-started.md</code>: what you need, the install, the first admin and the first push.</li>
+<li><code>docs/configuration.md</code>: every setting, with its default and whether it is required.</li>
+<li><code>docs/operations.md</code>: backup, restore, upgrade and rollback. <code>docs/integration.md</code> walks the first run and the runner.</li>
+</ul>
+<p>Use it:</p>
+<ul>
+<li><code>docs/accounts.md</code>: invites, sign-in, two-factor (authenticator app and passkeys), recovery, tokens and SSH keys.</li>
+<li><code>docs/repositories.md</code>: the three visibility tiers, access, forks, branch protection, releases and webhooks.</li>
+<li><code>docs/pull-requests.md</code>: issues, issue forms, labels, milestones, pull requests, review, the merge queue and notifications.</li>
+<li><code>docs/using-ci.md</code>: workflows, runners, secrets, environments, caches and artifacts, and what is not supported.</li>
+<li><code>docs/packages.md</code>: the container registry and NuGet feeds. <code>docs/pages.md</code>: static sites. <code>docs/workspace.md</code>: the
+  browser workspace (<code>docs/terminal.md</code> has the terminal). <code>docs/connector.md</code>: connecting Claude. <code>docs/admin.md</code>: site admin.</li>
+</ul>
+<p>When something goes wrong:</p>
+<ul>
+<li><code>docs/troubleshooting.md</code>: real failures and the command to run for each. <code>docs/faq.md</code>: short answers.</li>
+</ul>
+<p>How it is built:</p>
 <ul>
 <li><code>ARCHITECTURE.md</code>: the design and the decisions behind it.</li>
 <li><code>ROADMAP.md</code>: the build plan and the end-to-end test.</li>
-<li><code>docs/</code>: one page per area (<code>foundation</code>, <code>identity</code>, <code>git</code>, <code>web</code>, <code>collab</code>, <code>ci</code>, <code>runner</code>,
-  <code>integration</code>), <code>operations</code> and <code>connector</code> (connecting Claude).</li>
+<li><code>docs/state.md</code>: what is built, how it is checked, and what is left out on purpose.</li>
+<li><code>docs/</code>: one page per area (<code>foundation</code>, <code>identity</code>, <code>git</code>, <code>web</code>, <code>collab</code>, <code>ci</code>, <code>runner</code>).</li>
 </ul>
 
 
