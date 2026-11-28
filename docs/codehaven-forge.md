@@ -3,11 +3,12 @@
 ## 🔗 Quick Links
 
 - [View on GitHub](https://github.com/aaron777collins/codehaven-forge)
+- [GitHub Pages Site](http://www.aaroncollins.info/codehaven-forge/)
 
 ## 📊 Project Details
 
 - **Primary Language:** Rust
-- **Languages Used:** Rust, JavaScript, HTML, Python, Shell, CSS, PLpgSQL, Dockerfile, Makefile
+- **Languages Used:** Rust, HTML, JavaScript, Python, Shell, CSS, PLpgSQL, Dockerfile, Makefile
 - **License:** MIT License
 - **Created:** November 22, 2026
 - **Last Updated:** November 22, 2026
@@ -31,19 +32,22 @@ python3 and iproute2, 4 GB of memory and 20 GB of free disk. You do not need Rus
 on the host. Everything builds and runs in containers.
 
 ```sh
-git clone <repository-url> codehaven && cd codehaven
+git clone https://github.com/aaron777collins/codehaven-forge codehaven && cd codehaven
 cp .env.example .env                      # set the URL, the paths and the proxy
 sudo bash deploy/prod/setup.sh            # checks the host, makes the directories and secrets
 sudo bash deploy/prod/up.sh               # builds the images and starts the instance
 sudo bash deploy/prod/first-admin.sh <username> <email>
 ```
 
-`first-admin.sh` prints a link that works once, for one hour. Open it, choose a password and turn
-on two-factor sign-in. The script refuses to run when any account exists, and it never deletes
+`first-admin.sh` prints a link that works once, for one hour. Open it, choose a password, then turn
+on two-factor sign-in in Settings (site admin pages and the Claude connector need it). The script refuses to run when any account exists, and it never deletes
 one.
 
 The first build compiles the server, so it takes a while. Setup generates the database password
 once and never prints it, and the server makes its own master key on first start.
+
+Next steps (a first repository, a pull request, a first CI run, a backup) are in
+`docs/getting-started.md`.
 
 ### What goes in `.env`
 
@@ -53,7 +57,7 @@ with its name; nothing falls back to a guess. The ones you must choose:
 | Setting | What it is |
 | --- | --- |
 | `CODEHAVEN_EXTERNAL_URL` | The address people open, for example `https://code.example.com` |
-| `CODEHAVEN_DATA_DIR`, `CODEHAVEN_SECRETS_DIR`, `CODEHAVEN_BACKUP_DIR` | Where data, database credentials and backups live. Backups must be outside the checkout |
+| `CODEHAVEN_DATA_DIR`, `CODEHAVEN_SECRETS_DIR`, `CODEHAVEN_BACKUP_DIR`, `CODEHAVEN_BUILD_ROOT` | Where data, database credentials, backups and build locks live, for example `/srv/codehaven/data`, `/srv/codehaven/secrets`, `/srv/codehaven/backups` and `/srv/codehaven`. The scripts create them. Backups must be outside the checkout |
 | `CODEHAVEN_PROXY` | How people reach the server: `none`, `network` or `caddy` (below) |
 | `CODEHAVEN_TRUSTED_PROXIES` | A JSON list of the networks your proxy reaches the server from. `[]` when nothing sits in front |
 
@@ -61,8 +65,9 @@ with its name; nothing falls back to a guess. The ones you must choose:
 
 Codehaven speaks plain HTTP and expects a proxy to add TLS.
 
-- `CODEHAVEN_PROXY=none` publishes the web server and ssh on loopback only. Use it to try
-  Codehaven on one machine, or behind a proxy that runs on the host.
+- `CODEHAVEN_PROXY=none` publishes the web server and ssh on `CODEHAVEN_HTTP_BIND` and
+  `CODEHAVEN_SSH_BIND`, which are loopback in `.env.example`. Use it to try Codehaven on one
+  machine, or behind a proxy that runs on the host.
 - `CODEHAVEN_PROXY=network` joins the server to a Docker network where your own proxy already
   runs. Set `CODEHAVEN_PROXY_NETWORK` and `CODEHAVEN_PROXY_ALIAS`, then point a site at
   `<alias>:3200`.
@@ -89,10 +94,13 @@ bash deploy/dev/public-smoke.sh https://code.example.com
 | Restore | `sudo bash deploy/prod/restore.sh <archive>`, into an empty location |
 | Upgrade | Back up, `git pull`, then `sudo bash deploy/prod/up.sh` |
 | See the state | `deploy/compose.sh ps`, `deploy/compose.sh logs server` |
-| Connect Claude | Set `CODEHAVEN_MCP_ENABLED=true`, run `up.sh` again, then add `https://<your address>/mcp` as a connector (see `docs/connector.md`) |
+| Try it on one machine first | Loopback `http`, no domain. What works there and what needs the real setup is a table in `docs/getting-started.md` |
+| Connect Claude | You need a public `https` address (Claude on the web, desktop and mobile; Claude Code can use a private `https` one), two-factor on your account, and `CODEHAVEN_MCP_ENABLED=true`. Run `up.sh` again, then add `https://<your address>/mcp` as a connector. With `CODEHAVEN_PROXY=caddy` the paths need nothing more. Check with `curl -s https://<your address>/.well-known/oauth-protected-resource`, which prints JSON naming your address. See `docs/connector.md` |
+| Open public repositories | `deploy/compose.sh exec server codehaven admin public-repos on`, or Site admin, Settings. It makes nothing public by itself |
 
 `docs/operations.md` covers backup, restore, upgrade and rollback in full. `docs/integration.md`
-walks the first run and the runner.
+walks the first run and the runner. `docs/configuration.md` explains every setting, and
+`docs/troubleshooting.md` lists what commonly goes wrong.
 
 ## The browser workspace
 
@@ -134,6 +142,9 @@ with no sandbox; it needs a wildcard certificate. The design is `docs/design/pag
 
 ## Building and testing
 
+This section is for people working on Codehaven itself. To publish the docs site from the docs, run
+`python3 site/build/build.py` and then `python3 site/build/check.py`.
+
 Builds and tests run in a container, on this machine or on another host over ssh. Set `CH_HOST`
 and `CH_REMOTE_ROOT` (in the environment, or in the untracked `deploy/dev/local.env`) to build
 over ssh. With neither set, nothing ever contacts another machine.
@@ -150,8 +161,32 @@ be throwaway names, and refuse any stack that already holds an account.
 
 ## Documents
 
+The docs are also published as [the Codehaven documentation site](https://aaron777collins.github.io/codehaven-forge/).
+They are the files below, so you can read either.
+
+Start here:
+
+- `docs/getting-started.md`: what you need, the install, the first admin and the first push.
+- `docs/configuration.md`: every setting, with its default and whether it is required.
+- `docs/operations.md`: backup, restore, upgrade and rollback. `docs/integration.md` walks the first run and the runner.
+
+Use it:
+
+- `docs/accounts.md`: invites, sign-in, two-factor (authenticator app and passkeys), recovery, tokens and SSH keys.
+- `docs/repositories.md`: the three visibility tiers, access, forks, branch protection, releases and webhooks.
+- `docs/pull-requests.md`: issues, issue forms, labels, milestones, pull requests, review, the merge queue and notifications.
+- `docs/using-ci.md`: workflows, runners, secrets, environments, caches and artifacts, and what is not supported.
+- `docs/packages.md`: the container registry and NuGet feeds. `docs/pages.md`: static sites. `docs/workspace.md`: the
+  browser workspace (`docs/terminal.md` has the terminal). `docs/connector.md`: connecting Claude. `docs/admin.md`: site admin.
+
+When something goes wrong:
+
+- `docs/troubleshooting.md`: real failures and the command to run for each. `docs/faq.md`: short answers.
+
+How it is built:
+
 - `ARCHITECTURE.md`: the design and the decisions behind it.
 - `ROADMAP.md`: the build plan and the end-to-end test.
-- `docs/`: one page per area (`foundation`, `identity`, `git`, `web`, `collab`, `ci`, `runner`,
-  `integration`), `operations` and `connector` (connecting Claude).
+- `docs/state.md`: what is built, how it is checked, and what is left out on purpose.
+- `docs/`: one page per area (`foundation`, `identity`, `git`, `web`, `collab`, `ci`, `runner`).
 
